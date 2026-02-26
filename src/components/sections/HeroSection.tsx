@@ -2,9 +2,12 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { useLocale } from '@/contexts/LocaleContext'
 import Button from '@/components/ui/Button'
 
 export default function HeroSection() {
+  const { t } = useLocale()
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-white via-secondary/30 to-white min-h-[90vh] flex items-center">
       {/* Background decoration */}
@@ -15,15 +18,25 @@ export default function HeroSection() {
 
       <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Studio badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full text-sm font-medium text-primary mb-8"
+          >
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            {t('hero.badge')}
+          </motion.div>
+
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-text leading-tight"
           >
-            Создаем{' '}
-            <span className="text-gradient">мобильные решения</span>
-            {' '}для бизнеса
+            {t('hero.title')}{' '}
+            <span className="text-gradient">{t('hero.titleHighlight')}</span>
           </motion.h1>
 
           <motion.p
@@ -32,8 +45,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto"
           >
-            Разрабатываем iOS и Android приложения для стартапов и бизнеса. 
-            От идеи до запуска в магазинах приложений.
+            {t('hero.subtitle')}
           </motion.p>
 
           <motion.div
@@ -44,12 +56,12 @@ export default function HeroSection() {
           >
             <Link href="/apps">
               <Button variant="primary" size="lg">
-                Смотреть кейсы
+                {t('hero.cta.apps')}
               </Button>
             </Link>
             <Link href="/development">
               <Button variant="outline" size="lg">
-                Узнать подробнее
+                {t('hero.cta.learn')}
               </Button>
             </Link>
           </motion.div>
@@ -62,13 +74,13 @@ export default function HeroSection() {
             className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
           >
             {[
-              { value: '50+', label: 'Проектов' },
-              { value: '5+', label: 'Лет опыта' },
-              { value: '30+', label: 'Клиентов' },
+              { value: '3', labelKey: 'hero.stats.apps' as const },
+              { value: '2+', labelKey: 'hero.stats.years' as const },
+              { value: '10K+', labelKey: 'hero.stats.downloads' as const },
             ].map((stat) => (
-              <div key={stat.label} className="text-center">
+              <div key={stat.labelKey} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-primary">{stat.value}</div>
-                <div className="text-sm text-gray-500 mt-1">{stat.label}</div>
+                <div className="text-sm text-gray-500 mt-1">{t(stat.labelKey)}</div>
               </div>
             ))}
           </motion.div>

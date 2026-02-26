@@ -1,73 +1,98 @@
 export interface App {
   id: string
   title: string
+  tagline: string
   description: string
   fullDescription: string
   category: string
-  platform: string
+  platform: 'iOS'
+  appStoreId: string | null
+  appStoreUrl: string | null
+  supportEmail: string
+  gradient: string
   features: string[]
-  screenshots: number
+  color: string
+}
+
+export const DOMAIN = 'nikibstudio.site'
+
+export function getAppStoreConnectUrls(app: App) {
+  return {
+    marketing: `https://${DOMAIN}/apps/${app.id}`,
+    privacy: `https://${DOMAIN}/apps/${app.id}/privacy`,
+    support: `https://${DOMAIN}/apps/${app.id}/support`,
+    redirect: `https://${DOMAIN}/go/${app.id}`,
+  }
 }
 
 export const apps: App[] = [
   {
-    id: 'fitness-tracker',
-    title: 'Fitness Tracker',
-    description: 'Приложение для отслеживания тренировок и питания с персонализированными рекомендациями на основе ИИ.',
-    fullDescription: 'Fitness Tracker — это комплексное решение для тех, кто заботится о своем здоровье. Приложение позволяет отслеживать тренировки, питание, сон и прогресс в достижении целей. Встроенный ИИ-ассистент дает персонализированные рекомендации.',
-    category: 'Здоровье',
-    platform: 'iOS / Android',
-    features: ['Отслеживание тренировок', 'Дневник питания', 'Персональные рекомендации', 'Синхронизация с носимыми устройствами'],
-    screenshots: 4,
+    id: 'ldream',
+    title: 'Ldream',
+    tagline: 'Your dream journal',
+    description: 'Record, explore, and understand your dreams with AI-powered analysis.',
+    fullDescription:
+      'Ldream is your personal dream companion. Capture your dreams the moment you wake up, explore recurring symbols, and uncover patterns in your subconscious. With AI-powered analysis, Ldream helps you understand what your mind is telling you at night.',
+    category: 'Lifestyle',
+    platform: 'iOS',
+    appStoreId: null,
+    appStoreUrl: null,
+    supportEmail: `ldream@${DOMAIN}`,
+    gradient: 'from-indigo-500 to-purple-700',
+    color: '#6366f1',
+    features: [
+      'Voice and text dream journaling',
+      'AI symbol analysis and interpretation',
+      'Dream pattern recognition',
+      'Mood and sleep tracking',
+      'Beautiful dream visualization',
+      'Reminder to record on wake up',
+    ],
   },
   {
-    id: 'task-manager',
-    title: 'Task Manager Pro',
-    description: 'Мощный инструмент для управления задачами с командной работой и интеграциями.',
-    fullDescription: 'Task Manager Pro — это профессиональный инструмент для управления проектами и задачами. Поддержка командной работы, канбан-доски, интеграция с популярными сервисами и детальная аналитика продуктивности.',
-    category: 'Продуктивность',
-    platform: 'iOS / Android',
-    features: ['Канбан-доски', 'Командная работа', 'Интеграции', 'Аналитика продуктивности'],
-    screenshots: 4,
+    id: 'tarotaper',
+    title: 'Tarotaper',
+    tagline: 'Tarot in your pocket',
+    description: 'Daily tarot readings, spreads, and an interactive card library.',
+    fullDescription:
+      'Tarotaper brings the ancient wisdom of tarot to your iPhone. Draw daily cards, explore custom spreads, and dive deep into the meaning of each card with beautiful artwork and detailed interpretations. Whether you\'re a beginner or an experienced reader, Tarotaper grows with you.',
+    category: 'Entertainment',
+    platform: 'iOS',
+    appStoreId: null,
+    appStoreUrl: null,
+    supportEmail: `tarotaper@${DOMAIN}`,
+    gradient: 'from-purple-600 to-pink-600',
+    color: '#9333ea',
+    features: [
+      'Daily card draw with interpretation',
+      'Classic and custom spreads',
+      'Full 78-card library with artwork',
+      'Guided reading sessions',
+      'Reading history and journal',
+      'Intuitive, beautiful interface',
+    ],
   },
   {
-    id: 'e-commerce',
-    title: 'ShopEasy',
-    description: 'Мобильный магазин с удобным каталогом, корзиной и системой оплаты.',
-    fullDescription: 'ShopEasy — современное e-commerce решение с интуитивным интерфейсом. Умный поиск, персонализированные рекомендации, безопасная оплата и отслеживание заказов в реальном времени.',
-    category: 'E-commerce',
-    platform: 'iOS / Android',
-    features: ['Умный поиск', 'Персональные рекомендации', 'Безопасная оплата', 'Отслеживание заказов'],
-    screenshots: 4,
-  },
-  {
-    id: 'meditation',
-    title: 'CalmMind',
-    description: 'Приложение для медитации и релаксации с-guided сессиями и звуковым сопровождением.',
-    fullDescription: 'CalmMind помогает найти внутренний покой в суете современного мира. Более 500 медитаций, звуки природы, сон под истории и ежедневные практики осознанности.',
-    category: 'Здоровье',
-    platform: 'iOS / Android',
-    features: ['500+ медитаций', 'Звуки природы', 'Сон под истории', 'Ежедневные практики'],
-    screenshots: 4,
-  },
-  {
-    id: 'finance',
-    title: 'MoneyWise',
-    description: 'Умный учет финансов с автоматической категоризацией расходов и бюджетированием.',
-    fullDescription: 'MoneyWise — ваш персональный финансовый ассистент. Автоматическая категоризация расходов, цели накопления, напоминания о платежах и детальная отчетность.',
-    category: 'Финансы',
-    platform: 'iOS / Android',
-    features: ['Авто-категоризация', 'Бюджетирование', 'Напоминания', 'Финансовые отчеты'],
-    screenshots: 4,
-  },
-  {
-    id: 'learning',
-    title: 'LearnHub',
-    description: 'Платформа для онлайн-обучения с интерактивными курсами и прогресс-трекингом.',
-    fullDescription: 'LearnHub — это доступ к тысячам курсов по программированию, дизайну, бизнесу и многому другому. Интерактивные уроки, тестирование и сертификаты.',
-    category: 'Образование',
-    platform: 'iOS / Android',
-    features: ['Тысячи курсов', 'Интерактивные уроки', 'Тестирование', 'Сертификаты'],
-    screenshots: 4,
+    id: 'colorbrain',
+    title: 'Colorbrain',
+    tagline: 'Train your color sense',
+    description: 'Sharpen your color perception with daily puzzles and brain challenges.',
+    fullDescription:
+      'Colorbrain is a color training game that sharpens your visual perception and creative thinking. Complete daily color puzzles, master gradient challenges, and track how your color sense improves over time. Designed for artists, designers, and anyone who wants a beautifully different brain workout.',
+    category: 'Games',
+    platform: 'iOS',
+    appStoreId: null,
+    appStoreUrl: null,
+    supportEmail: `colorbrain@${DOMAIN}`,
+    gradient: 'from-pink-500 via-orange-400 to-yellow-400',
+    color: '#f97316',
+    features: [
+      'Daily color challenges',
+      'Gradient and hue perception puzzles',
+      'Progress tracking and statistics',
+      'Multiple difficulty levels',
+      'Colorblind-friendly mode',
+      'Leaderboards and achievements',
+    ],
   },
 ]

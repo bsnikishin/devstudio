@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
+import { LocaleProvider } from '@/contexts/LocaleContext'
 
 export const metadata: Metadata = {
-  title: 'DevStudio - Разработка мобильных приложений',
-  description: 'Создаем мобильные решения для бизнеса. Разработка iOS и Android приложений, UI/UX дизайн.',
+  title: 'NikiB Studio — iOS Apps',
+  description: 'iOS apps built with care. Ldream, Tarotaper, Colorbrain and more.',
 }
 
 export default function RootLayout({
@@ -14,13 +15,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ru">
+    <html lang="en">
       <body className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-1">
-          {children}
-        </main>
-        <Footer />
+        <LocaleProvider>
+          <Header />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </LocaleProvider>
       </body>
     </html>
   )
