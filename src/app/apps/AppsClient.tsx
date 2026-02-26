@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Heart } from 'lucide-react'
 import { useLocale } from '@/contexts/LocaleContext'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import Card from '@/components/ui/Card'
@@ -60,6 +60,14 @@ export default function AppsClient() {
             </AnimatedSection>
           ))}
         </div>
+
+        {/* Love note */}
+        <AnimatedSection className="mt-20 text-center max-w-2xl mx-auto">
+          <Heart className="w-6 h-6 text-primary mx-auto mb-4 opacity-60" />
+          <p className="text-gray-500 text-base leading-relaxed italic">
+            {t('apps.love')}
+          </p>
+        </AnimatedSection>
       </div>
     </div>
   )

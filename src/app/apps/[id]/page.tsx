@@ -14,13 +14,13 @@ export async function generateMetadata({
   const { id } = await params
   const app = apps.find((a) => a.id === id)
 
-  if (!app) return { title: 'App not found — NikiB Studio' }
+  if (!app) return { title: 'App not found — NikiBStudio' }
 
   return {
-    title: `${app.title} — NikiB Studio`,
+    title: `${app.title} — NikiBStudio`,
     description: app.description,
     openGraph: {
-      title: `${app.title} — NikiB Studio`,
+      title: `${app.title} — NikiBStudio`,
       description: app.description,
       type: 'website',
     },

@@ -14,8 +14,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block">
-              <span className="text-xl font-bold text-primary">NikiB Studio</span>
+            <Link href="/" className="inline-flex items-center gap-2.5">
+              <img src="/favicon.svg" alt="NikiBStudio" className="w-9 h-9 rounded-xl" />
+              <span className="text-xl font-bold text-primary">
+                NikiB<span className="font-light opacity-70">Studio</span>
+              </span>
             </Link>
             <p className="mt-4 text-gray-600 text-sm">
               {t('footer.tagline')}
@@ -103,7 +106,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} NikiB Studio. {t('footer.rights')}
+              © {new Date().getFullYear()} NikiBStudio. {t('footer.rights')}
             </p>
             <div className="flex gap-6">
               <Link href="/privacy" className="text-gray-500 hover:text-primary transition-colors text-sm">

@@ -5,8 +5,13 @@ import Footer from '@/components/ui/Footer'
 import { LocaleProvider } from '@/contexts/LocaleContext'
 
 export const metadata: Metadata = {
-  title: 'NikiB Studio — iOS Apps',
+  title: 'NikiBStudio — iOS Apps',
   description: 'iOS apps built with care. Ldream, Tarotaper, Colorbrain and more.',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({

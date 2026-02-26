@@ -16,9 +16,9 @@ export default function Header() {
 
   const navItems = [
     { labelKey: 'nav.apps' as const, href: '/apps' },
-    { labelKey: 'nav.blog' as const, href: '/blog' },
-    { labelKey: 'nav.merch' as const, href: '/merch' },
     { labelKey: 'nav.development' as const, href: '/development' },
+    { labelKey: 'nav.merch' as const, href: '/merch' },
+    { labelKey: 'nav.blog' as const, href: '/blog' },
     { labelKey: 'nav.contacts' as const, href: '/contacts' },
   ]
 
@@ -39,8 +39,11 @@ export default function Header() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <span className="text-xl font-bold text-primary">NikiB Studio</span>
+          <Link href="/" className="flex items-center gap-2.5">
+            <img src="/favicon.svg" alt="NikiBStudio" className="w-8 h-8 rounded-lg" />
+            <span className="text-xl font-bold text-primary">
+              NikiB<span className="font-light opacity-70">Studio</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

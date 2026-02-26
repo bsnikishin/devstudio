@@ -207,33 +207,40 @@ export default function AppPageClient({ app }: Props) {
         {/* ── SECTION 3: Support ───────────────────────────────────── */}
         <section id="support" className="mb-20 scroll-mt-24">
           <AnimatedSection>
-            <div className={`bg-gradient-to-br ${app.gradient} rounded-3xl p-8 md:p-12 text-center`}>
-              <Mail className="w-12 h-12 text-white mx-auto mb-6" />
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            <div className="mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-text mb-2">
                 {t('support.title')}
               </h2>
-              <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-                {t('support.desc')}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href={`mailto:${app.supportEmail}`}
-                  className="inline-flex items-center gap-2 bg-white text-text font-medium px-6 py-3 rounded-xl hover:bg-white/90 transition-colors"
-                >
-                  <Mail className="w-5 h-5" />
-                  {t('support.emailBtn')}
-                </a>
-                <a
-                  href="https://t.me/nikibstudio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white/20 text-white font-medium px-6 py-3 rounded-xl hover:bg-white/30 transition-colors backdrop-blur-sm"
-                >
-                  <Send className="w-5 h-5" />
-                  {t('support.telegramBtn')}
-                </a>
-              </div>
-              <p className="text-white/60 text-sm mt-6">{app.supportEmail}</p>
+              <p className="text-gray-500">{t('support.desc')}</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a
+                href={`mailto:${app.supportEmail}`}
+                className={`flex items-center gap-4 p-5 bg-gradient-to-br ${app.gradient} rounded-2xl hover:opacity-90 transition-opacity group`}
+              >
+                <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-white/30 transition-colors">
+                  <Mail className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <div className="font-semibold text-white">{t('support.emailBtn')}</div>
+                  <div className="text-white/70 text-xs mt-0.5">{app.supportEmail}</div>
+                </div>
+              </a>
+
+              <a
+                href="https://t.me/nikibstudio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-5 bg-secondary/50 rounded-2xl hover:bg-secondary transition-colors group"
+              >
+                <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm group-hover:shadow transition-shadow">
+                  <Send className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <div className="font-semibold text-text">{t('support.telegramBtn')}</div>
+                  <div className="text-gray-400 text-xs mt-0.5">@nikibstudio</div>
+                </div>
+              </a>
             </div>
           </AnimatedSection>
         </section>
