@@ -12,6 +12,7 @@ export interface App {
   gradient: string
   features: string[]
   color: string
+  iconPath: string
 }
 
 export const DOMAIN = 'nikibstudio.site'
@@ -40,6 +41,7 @@ export const apps: App[] = [
     supportEmail: `ldream@${DOMAIN}`,
     gradient: 'from-indigo-500 to-purple-700',
     color: '#6366f1',
+    iconPath: '/icons/ldream.png',
     features: [
       'Voice and text dream journaling',
       'AI symbol analysis and interpretation',
@@ -63,6 +65,7 @@ export const apps: App[] = [
     supportEmail: `tarotaper@${DOMAIN}`,
     gradient: 'from-purple-600 to-pink-600',
     color: '#9333ea',
+    iconPath: '/icons/tarotaper.png',
     features: [
       'Daily card draw with interpretation',
       'Classic and custom spreads',
@@ -86,6 +89,7 @@ export const apps: App[] = [
     supportEmail: `colorbrain@${DOMAIN}`,
     gradient: 'from-pink-500 via-orange-400 to-yellow-400',
     color: '#f97316',
+    iconPath: '/icons/colorbrain.png',
     features: [
       'Daily color challenges',
       'Gradient and hue perception puzzles',

@@ -53,9 +53,11 @@ export default function GoClient({ id }: { id: string }) {
 
       <div className="relative z-10 text-center px-6 max-w-sm">
         {/* App Icon */}
-        <div className="w-32 h-32 bg-white/20 backdrop-blur-sm rounded-[2rem] flex items-center justify-center mx-auto mb-6 shadow-2xl border border-white/30">
-          <span className="text-white text-6xl font-bold">{app.title.charAt(0)}</span>
-        </div>
+        <img
+          src={app.iconPath}
+          alt={app.title}
+          className="w-32 h-32 rounded-[2rem] mx-auto mb-6 shadow-2xl object-cover"
+        />
 
         <h1 className="text-3xl font-bold text-white mb-2">{app.title}</h1>
         <p className="text-white/80 mb-10">{app.tagline}</p>

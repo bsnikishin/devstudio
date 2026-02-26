@@ -30,11 +30,11 @@ export default function AppsClient() {
               <Link href={`/apps/${app.id}`}>
                 <Card className="h-full cursor-pointer group">
                   {/* App Icon */}
-                  <div className={`w-20 h-20 bg-gradient-to-br ${app.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                    <span className="text-white text-2xl font-bold">
-                      {app.title.charAt(0)}
-                    </span>
-                  </div>
+                  <img
+                    src={app.iconPath}
+                    alt={app.title}
+                    className="w-20 h-20 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg object-cover"
+                  />
 
                   <span className="inline-block px-3 py-1 bg-secondary text-primary text-sm rounded-full mb-3">
                     {app.category}

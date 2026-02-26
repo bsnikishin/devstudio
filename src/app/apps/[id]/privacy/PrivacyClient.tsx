@@ -25,9 +25,11 @@ export default function PrivacyClient({ id }: { id: string }) {
         </Link>
 
         <div className="flex items-center gap-4 mb-10">
-          <div className={`w-16 h-16 bg-gradient-to-br ${app.gradient} rounded-2xl flex items-center justify-center shadow-lg`}>
-            <span className="text-white text-2xl font-bold">{app.title.charAt(0)}</span>
-          </div>
+          <img
+            src={app.iconPath}
+            alt={app.title}
+            className="w-16 h-16 rounded-2xl shadow-lg object-cover"
+          />
           <div>
             <h1 className="text-3xl font-bold text-text">{t('privacy.title')}</h1>
             <p className="text-gray-500 text-sm mt-1">{app.title} · NikiB Studio</p>
