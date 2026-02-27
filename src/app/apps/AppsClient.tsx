@@ -18,8 +18,9 @@ export default function AppsClient() {
           <h1 className="text-4xl md:text-5xl font-bold text-text">
             {t('apps.title')}
           </h1>
-          <p className="mt-4 text-lg text-gray-600">
-            {t('apps.subtitle')}
+          <p className="mt-4 text-gray-400 text-sm leading-relaxed italic flex items-center justify-center gap-2">
+            <Heart className="w-4 h-4 text-primary opacity-50 flex-shrink-0" />
+            {t('apps.love')}
           </p>
         </AnimatedSection>
 
@@ -61,13 +62,6 @@ export default function AppsClient() {
           ))}
         </div>
 
-        {/* Love note */}
-        <AnimatedSection className="mt-20 text-center max-w-2xl mx-auto">
-          <Heart className="w-6 h-6 text-primary mx-auto mb-4 opacity-60" />
-          <p className="text-gray-500 text-base leading-relaxed italic">
-            {t('apps.love')}
-          </p>
-        </AnimatedSection>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowLeft, Mail, Send, MessageCircle } from 'lucide-react'
+import { ArrowLeft, Mail, Send } from 'lucide-react'
 import { apps } from '@/data/apps'
 import { useLocale } from '@/contexts/LocaleContext'
 
@@ -38,17 +38,17 @@ export default function SupportClient({ id }: { id: string }) {
 
         <p className="text-gray-600 mb-10 text-lg">{t('support.desc')}</p>
 
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <a
             href={`mailto:${app.supportEmail}`}
-            className={`flex items-center gap-4 p-6 bg-gradient-to-r ${app.gradient} text-white rounded-2xl hover:opacity-90 transition-opacity`}
+            className={`flex items-center gap-4 p-5 bg-gradient-to-br ${app.gradient} rounded-2xl hover:opacity-90 transition-opacity group`}
           >
-            <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-              <Mail className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-white/30 transition-colors">
+              <Mail className="w-5 h-5 text-white" />
             </div>
             <div>
-              <div className="font-semibold text-lg">{t('support.emailBtn')}</div>
-              <div className="text-white/80 text-sm">{app.supportEmail}</div>
+              <div className="font-semibold text-white">{t('support.emailBtn')}</div>
+              <div className="text-white/70 text-xs mt-0.5">{app.supportEmail}</div>
             </div>
           </a>
 
@@ -56,26 +56,16 @@ export default function SupportClient({ id }: { id: string }) {
             href="https://t.me/nikibstudio"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 p-6 bg-secondary/50 rounded-2xl hover:bg-secondary transition-colors"
+            className="flex items-center gap-4 p-5 bg-secondary/50 rounded-2xl hover:bg-secondary transition-colors group"
           >
-            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
-              <Send className="w-6 h-6 text-primary" />
+            <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm group-hover:shadow transition-shadow">
+              <Send className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <div className="font-semibold text-text text-lg">{t('support.telegramBtn')}</div>
-              <div className="text-gray-500 text-sm">@nikibstudio</div>
+              <div className="font-semibold text-text">{t('support.telegramBtn')}</div>
+              <div className="text-gray-400 text-xs mt-0.5">@nikibstudio</div>
             </div>
           </a>
-
-          <div className="flex items-center gap-4 p-6 bg-secondary/30 rounded-2xl">
-            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
-              <MessageCircle className="w-6 h-6 text-primary" />
-            </div>
-            <div>
-              <div className="font-semibold text-text">nikibstudio.site</div>
-              <div className="text-gray-500 text-sm">hello@nikibstudio.site</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
