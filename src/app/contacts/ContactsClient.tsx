@@ -8,8 +8,8 @@ const contactMethods = [
   {
     icon: Mail,
     title: 'Email',
-    value: 'hello@nikibstudio.site',
-    href: 'mailto:hello@nikibstudio.site',
+    value: 'B.S.NikishinG@gmail.com',
+    href: 'mailto:B.S.NikishinG@gmail.com',
     description: 'Для общих вопросов и деловых предложений',
   },
   {

@@ -8,6 +8,15 @@ import {
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import { App } from '@/data/apps'
 import { useLocale } from '@/contexts/LocaleContext'
+import { ldreamMarketing, type AppMarketing } from '@/data/ldream-marketing'
+import { tarotaperMarketing } from '@/data/tarotaper-marketing'
+import { colorbrainMarketing } from '@/data/colorbrain-marketing'
+
+const marketingData: Record<string, Record<string, AppMarketing>> = {
+  ldream: ldreamMarketing,
+  tarotaper: tarotaperMarketing,
+  colorbrain: colorbrainMarketing,
+}
 
 interface Props { app: App }
 
@@ -66,7 +75,9 @@ function SectionNav({ sections }: { sections: { id: string; label: string }[] })
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function AppPageClient({ app }: Props) {
-  const { t } = useLocale()
+  const { t, locale } = useLocale()
+  const appMarketing = marketingData[app.id]
+  const marketing = appMarketing ? (appMarketing[locale] ?? appMarketing.en) : null
 
   const sections = [
     { id: 'marketing', label: t('section.marketing') },
@@ -112,9 +123,9 @@ export default function AppPageClient({ app }: Props) {
               <h1 className="text-4xl md:text-5xl font-bold text-text mb-3">
                 {app.title}
               </h1>
-              <p className="text-xl text-primary font-medium mb-4">{app.tagline}</p>
+              <p className="text-xl text-primary font-medium mb-4">{marketing?.tagline ?? app.tagline}</p>
               <p className="text-lg text-gray-600 mb-8">
-                {app.fullDescription}
+                {marketing?.description ?? app.fullDescription}
               </p>
 
               <AppStoreButton
@@ -132,8 +143,8 @@ export default function AppPageClient({ app }: Props) {
                   {t('app.features')}
                 </h2>
                 <div className="space-y-3">
-                  {app.features.map((feature) => (
-                    <div key={feature} className="flex items-start gap-3">
+                  {(marketing?.features ?? app.features).map((feature, i) => (
+                    <div key={i} className="flex items-start gap-3">
                       <div className={`w-6 h-6 bg-gradient-to-br ${app.gradient} rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
                         <Check className="w-3.5 h-3.5 text-white" />
                       </div>
@@ -215,30 +226,30 @@ export default function AppPageClient({ app }: Props) {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a
-                href={`mailto:${app.supportEmail}`}
+                href="https://t.me/nikibstudio"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 p-5 bg-primary rounded-2xl hover:opacity-90 transition-opacity group"
               >
                 <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-white/30 transition-colors">
-                  <Mail className="w-5 h-5 text-white" />
+                  <Send className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-white">{t('support.emailBtn')}</div>
-                  <div className="text-white/70 text-xs mt-0.5">{app.supportEmail}</div>
+                  <div className="font-semibold text-white">{t('support.telegramBtn')}</div>
+                  <div className="text-white/70 text-xs mt-0.5">@nikibstudio</div>
                 </div>
               </a>
 
               <a
-                href="https://t.me/nikibstudio"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`mailto:${app.supportEmail}`}
                 className="flex items-center gap-4 p-5 bg-secondary/50 rounded-2xl hover:bg-secondary transition-colors group"
               >
                 <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm group-hover:shadow transition-shadow">
-                  <Send className="w-5 h-5 text-primary" />
+                  <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="font-semibold text-text">{t('support.telegramBtn')}</div>
-                  <div className="text-gray-400 text-xs mt-0.5">@nikibstudio</div>
+                  <div className="font-semibold text-text">{t('support.emailBtn')}</div>
+                  <div className="text-gray-400 text-xs mt-0.5">{app.supportEmail}</div>
                 </div>
               </a>
             </div>

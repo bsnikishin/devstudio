@@ -31,7 +31,11 @@ export default function AboutSection() {
       <div className="container-custom">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-text">
-            {t('about.title')}
+            {t('about.title').split('NikiBStudio').map((part, i, arr) => (
+              i < arr.length - 1
+                ? <span key={i}>{part}<span className="text-primary">NikiB</span><span className="font-light opacity-70">Studio</span></span>
+                : <span key={i}>{part}</span>
+            ))}
           </h2>
           <p className="mt-4 text-lg text-gray-600">
             {t('about.subtitle')}

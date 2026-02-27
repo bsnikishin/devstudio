@@ -80,11 +80,11 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:hello@nikibstudio.site"
+                  href="mailto:B.S.NikishinG@gmail.com"
                   className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors text-sm"
                 >
                   <Mail size={16} />
-                  hello@nikibstudio.site
+                  B.S.NikishinG@gmail.com
                 </a>
               </li>
               <li>
@@ -114,6 +114,9 @@ export default function Footer() {
               </Link>
               <Link href="/terms" className="text-gray-500 hover:text-primary transition-colors text-sm">
                 {t('footer.terms')}
+              </Link>
+              <Link href="/cookies" className="text-gray-500 hover:text-primary transition-colors text-sm">
+                {t('footer.cookies')}
               </Link>
             </div>
           </div>

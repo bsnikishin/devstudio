@@ -6,9 +6,18 @@ import { useLocale } from '@/contexts/LocaleContext'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import Card from '@/components/ui/Card'
 import { apps } from '@/data/apps'
+import { ldreamMarketing, type AppMarketing } from '@/data/ldream-marketing'
+import { tarotaperMarketing } from '@/data/tarotaper-marketing'
+import { colorbrainMarketing } from '@/data/colorbrain-marketing'
+
+const marketingData: Record<string, Record<string, AppMarketing>> = {
+  ldream: ldreamMarketing,
+  tarotaper: tarotaperMarketing,
+  colorbrain: colorbrainMarketing,
+}
 
 export default function AppsPreviewSection() {
-  const { t } = useLocale()
+  const { t, locale } = useLocale()
   const previewApps = apps.slice(0, 3)
 
   return (
@@ -24,7 +33,10 @@ export default function AppsPreviewSection() {
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {previewApps.map((app, index) => (
+          {previewApps.map((app, index) => {
+            const m = marketingData[app.id]
+            const marketing = m ? (m[locale] ?? m.en) : null
+            return (
             <AnimatedSection key={app.id} delay={index * 0.1}>
               <Link href={`/apps/${app.id}`}>
                 <Card className="h-full cursor-pointer group">
@@ -39,12 +51,15 @@ export default function AppsPreviewSection() {
                     {app.category}
                   </span>
 
-                  <h3 className="text-xl font-semibold text-text mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold text-text mb-1 group-hover:text-primary transition-colors">
                     {app.title}
                   </h3>
+                  <p className="text-sm text-primary/70 mb-3 font-medium">
+                    {marketing?.tagline ?? app.tagline}
+                  </p>
 
                   <p className="text-gray-600 mb-4 text-sm">
-                    {app.tagline}
+                    {marketing?.description ?? app.description}
                   </p>
 
                   <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
@@ -56,7 +71,8 @@ export default function AppsPreviewSection() {
                 </Card>
               </Link>
             </AnimatedSection>
-          ))}
+            )
+          })}
         </div>
 
         <AnimatedSection delay={0.4} className="text-center mt-12">

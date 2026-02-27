@@ -6,9 +6,18 @@ import { useLocale } from '@/contexts/LocaleContext'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import Card from '@/components/ui/Card'
 import { apps } from '@/data/apps'
+import { ldreamMarketing, type AppMarketing } from '@/data/ldream-marketing'
+import { tarotaperMarketing } from '@/data/tarotaper-marketing'
+import { colorbrainMarketing } from '@/data/colorbrain-marketing'
+
+const marketingData: Record<string, Record<string, AppMarketing>> = {
+  ldream: ldreamMarketing,
+  tarotaper: tarotaperMarketing,
+  colorbrain: colorbrainMarketing,
+}
 
 export default function AppsClient() {
-  const { t } = useLocale()
+  const { t, locale } = useLocale()
 
   return (
     <div className="section-padding">
@@ -26,7 +35,10 @@ export default function AppsClient() {
 
         {/* Apps Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {apps.map((app, index) => (
+          {apps.map((app, index) => {
+            const m = marketingData[app.id]
+            const marketing = m ? (m[locale] ?? m.en) : null
+            return (
             <AnimatedSection key={app.id} delay={index * 0.1}>
               <Link href={`/apps/${app.id}`}>
                 <Card className="h-full cursor-pointer group">
@@ -44,10 +56,10 @@ export default function AppsClient() {
                   <h3 className="text-xl font-semibold text-text mb-1 group-hover:text-primary transition-colors">
                     {app.title}
                   </h3>
-                  <p className="text-sm text-primary/70 mb-3 font-medium">{app.tagline}</p>
+                  <p className="text-sm text-primary/70 mb-3 font-medium">{marketing?.tagline ?? app.tagline}</p>
 
                   <p className="text-gray-600 mb-4 text-sm">
-                    {app.description}
+                    {marketing?.description ?? app.description}
                   </p>
 
                   <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
@@ -59,7 +71,8 @@ export default function AppsClient() {
                 </Card>
               </Link>
             </AnimatedSection>
-          ))}
+            )
+          })}
         </div>
 
       </div>
