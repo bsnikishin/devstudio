@@ -26,7 +26,7 @@ export default function HeroSection() {
             className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full text-sm font-medium text-primary mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            {t('hero.badge')}
+            <span className="font-bold">NikiB</span><span className="font-light opacity-70">Studio</span>
           </motion.div>
 
           <motion.h1

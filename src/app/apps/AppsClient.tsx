@@ -18,8 +18,8 @@ export default function AppsClient() {
           <h1 className="text-4xl md:text-5xl font-bold text-text">
             {t('apps.title')}
           </h1>
-          <p className="mt-4 text-gray-400 text-sm leading-relaxed italic flex items-center justify-center gap-2">
-            <Heart className="w-4 h-4 text-primary opacity-50 flex-shrink-0" />
+          <Heart className="w-5 h-5 text-primary opacity-40 mx-auto mt-5 mb-3" />
+          <p className="text-gray-400 text-sm leading-relaxed italic">
             {t('apps.love')}
           </p>
         </AnimatedSection>

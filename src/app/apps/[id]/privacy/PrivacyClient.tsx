@@ -32,7 +32,7 @@ export default function PrivacyClient({ id }: { id: string }) {
           />
           <div>
             <h1 className="text-3xl font-bold text-text">{t('privacy.title')}</h1>
-            <p className="text-gray-500 text-sm mt-1">{app.title} · NikiBStudio</p>
+            <p className="text-gray-500 text-sm mt-1">{app.title} · <span className="font-semibold text-gray-600">NikiB</span><span className="font-light">Studio</span></p>
           </div>
         </div>
 

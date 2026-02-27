@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Smartphone, Palette, Code2, CheckCircle, Clock, Users, FileText, Rocket, Send } from 'lucide-react'
+import { Smartphone, Palette, Code2, CheckCircle, Send } from 'lucide-react'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import Card from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
@@ -27,43 +27,6 @@ const services = [
   },
 ]
 
-const timeline = [
-  {
-    step: 1,
-    icon: Users,
-    title: 'Анализ и планирование',
-    description: 'Изучаем ваши требования, анализируем рынок и конкурентов, формируем техническое задание.',
-    duration: '1-2 недели',
-  },
-  {
-    step: 2,
-    icon: Palette,
-    title: 'UI/UX дизайн',
-    description: 'Создаем wireframes, прототипы и финальный дизайн интерфейса с учетом ваших пожеланий.',
-    duration: '2-4 недели',
-  },
-  {
-    step: 3,
-    icon: Code2,
-    title: 'Разработка',
-    description: 'Пишем код, реализуем функциональность, проводим code review и оптимизацию.',
-    duration: '4-12 недель',
-  },
-  {
-    step: 4,
-    icon: FileText,
-    title: 'Тестирование',
-    description: 'Проводим ручное и автоматическое тестирование, исправляем баги, оптимизируем производительность.',
-    duration: '1-2 недели',
-  },
-  {
-    step: 5,
-    icon: Rocket,
-    title: 'Запуск',
-    description: 'Публикуем приложение в App Store и Google Play, настраиваем аналитику и мониторинг.',
-    duration: '1 неделя',
-  },
-]
 
 export default function DevelopmentClient() {
   const [formData, setFormData] = useState({
@@ -136,50 +99,6 @@ export default function DevelopmentClient() {
                     ))}
                   </ul>
                 </Card>
-              </AnimatedSection>
-            ))}
-          </div>
-        </AnimatedSection>
-
-        {/* Timeline Section */}
-        <AnimatedSection className="mb-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-text mb-4 text-center">
-            Этапы работы
-          </h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Прозрачный процесс разработки с четкими этапами и сроками
-          </p>
-
-          <div className="max-w-3xl mx-auto">
-            {timeline.map((item, index) => (
-              <AnimatedSection key={item.step} delay={index * 0.1}>
-                <div className="flex gap-6 mb-8 last:mb-0">
-                  {/* Timeline Line */}
-                  <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      {item.step}
-                    </div>
-                    {index < timeline.length - 1 && (
-                      <div className="w-0.5 h-full bg-primary/20 mt-2" />
-                    )}
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex-1 pb-8">
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
-                      <h3 className="text-xl font-semibold text-text">
-                        {item.title}
-                      </h3>
-                      <span className="inline-flex items-center gap-1 text-sm text-primary bg-secondary px-3 py-1 rounded-full w-fit">
-                        <Clock className="w-3 h-3" />
-                        {item.duration}
-                      </span>
-                    </div>
-                    <p className="text-gray-600">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
               </AnimatedSection>
             ))}
           </div>
@@ -331,6 +250,24 @@ export default function DevelopmentClient() {
                   </Button>
                 </form>
               )}
+
+              <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center gap-4">
+                <span className="text-gray-400 text-sm">или</span>
+                <a
+                  href="https://t.me/nikibstudio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-5 py-3 bg-secondary/60 hover:bg-secondary rounded-xl transition-colors group w-full sm:w-auto justify-center"
+                >
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
+                    <Send className="w-4 h-4 text-primary" />
+                  </div>
+                  <div className="text-left">
+                    <div className="font-semibold text-text text-sm">Напишите нам в Telegram</div>
+                    <div className="text-gray-400 text-xs">@nikibstudio</div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </AnimatedSection>

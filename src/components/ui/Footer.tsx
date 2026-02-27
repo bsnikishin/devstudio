@@ -52,8 +52,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-600 hover:text-primary transition-colors text-sm">
-                  {t('nav.blog')}
+                <Link href="/development" className="text-gray-600 hover:text-primary transition-colors text-sm">
+                  {t('footer.development')}
                 </Link>
               </li>
               <li>
@@ -62,8 +62,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/development" className="text-gray-600 hover:text-primary transition-colors text-sm">
-                  {t('footer.development')}
+                <Link href="/blog" className="text-gray-600 hover:text-primary transition-colors text-sm">
+                  {t('nav.blog')}
                 </Link>
               </li>
               <li>
@@ -106,7 +106,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} NikiBStudio. {t('footer.rights')}
+              © {new Date().getFullYear()} <span className="font-semibold text-gray-600">NikiB</span><span className="font-light">Studio</span>. {t('footer.rights')}
             </p>
             <div className="flex gap-6">
               <Link href="/privacy" className="text-gray-500 hover:text-primary transition-colors text-sm">

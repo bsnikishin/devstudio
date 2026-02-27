@@ -32,7 +32,7 @@ export default function SupportClient({ id }: { id: string }) {
           />
           <div>
             <h1 className="text-3xl font-bold text-text">{t('support.title')}</h1>
-            <p className="text-gray-500 text-sm mt-1">{app.title} · NikiBStudio</p>
+            <p className="text-gray-500 text-sm mt-1">{app.title} · <span className="font-semibold text-gray-600">NikiB</span><span className="font-light">Studio</span></p>
           </div>
         </div>
 
