@@ -8,7 +8,7 @@ export type { PrivacySection, PrivacyPolicy }
 export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   en: {
     title: `Privacy Policy`,
-    effectiveDate: `Effective Date: February 27, 2026`,
+    effectiveDate: `Effective Date: March 3, 2026`,
     intro: `NikiBStudio ("we", "our", or "us") built <strong>LDream</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
     sections: [
       {
@@ -28,9 +28,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI Interpretation and Image Generation Service`,
-        content: `<p>When you request an AI-powered dream interpretation or dream image, the App sends the following information to our server:</p>
+        content: `<p>When you request an AI-powered dream interpretation or dream image, the App sends the following information to third-party AI service providers through our server:</p>
 <ul><li>The text of your dream entry</li><li>Your device's language setting (to provide the interpretation in your language)</li></ul>
-<p>This data is processed in real time to generate your interpretation or image and is <strong>not stored on our servers</strong>. No personal identifiers, device information, or user accounts are associated with these requests. Each request is fully anonymous.</p>`,
+<p>The data is processed as follows:</p>
+<ul><li><strong>Dream interpretation</strong> — your dream text and language setting are sent to <strong>DeepSeek</strong> (DeepSeek, China) via their API to generate an AI-powered interpretation of your dream.</li><li><strong>Dream image generation</strong> — a summary of your dream is sent to <strong>fal.ai</strong> (fal.ai, Inc.) via their API to generate a visual representation of your dream.</li></ul>
+<p>This data is processed in real time and is <strong>not stored on our servers</strong>. Data is transmitted only after you explicitly request an interpretation or image. No personal identifiers, device information, or user accounts are associated with these requests. Each request is fully anonymous.</p>`,
       },
       {
         heading: `iCloud Sync`,
@@ -40,6 +42,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Third-Party Services`,
         content: `<h3>Apple (App Store & StoreKit)</h3>
 <p>If you purchase a subscription, the transaction is processed entirely by Apple through the App Store. We do not have access to your payment information, Apple ID, or billing details. Apple's handling of your data is governed by Apple's Privacy Policy (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+<h3>DeepSeek (AI Dream Interpretation)</h3>
+<p>When you request a dream interpretation, the text of your dream and your device's language setting are sent to DeepSeek via their API. DeepSeek processes this data to generate the interpretation. DeepSeek's handling of data is governed by their Privacy Policy (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
+<h3>fal.ai (AI Image Generation)</h3>
+<p>When you request a dream image, a summary of your dream is sent to fal.ai via their API. fal.ai processes this data to generate the image. fal.ai's handling of data is governed by their Privacy Policy (<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>).</p>
 <h3>No Other Third-Party Services</h3>
 <p>The App does not integrate any third-party analytics, advertising, crash reporting, or social media SDKs. We do not use Firebase, Google Analytics, Facebook SDK, or any similar services.</p>`,
       },
@@ -57,15 +63,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Data Sharing`,
-        content: `<p>We do not sell, trade, rent, or otherwise share any user data with third parties.</p>`,
+        content: `<p>We share the following data with third-party service providers solely for the purpose of providing the App's AI features:</p>
+<ul><li><strong>DeepSeek</strong> — receives the text of your dream entry and your device's language setting to generate dream interpretations.</li><li><strong>fal.ai</strong> — receives a summary of your dream to generate dream images.</li></ul>
+<p>This data is transmitted only when you explicitly request an AI interpretation or image. We do not sell, trade, rent, or otherwise share any user data with third parties for marketing, advertising, or any other purposes.</p>`,
       },
       {
         heading: `Data Security`,
-        content: `<p>All communication between the App and our server is encrypted using HTTPS. Since we do not collect or store personal data on our servers, there is minimal risk of data breach affecting your personal information.</p>`,
+        content: `<p>All communication between the App and our server, as well as between our server and third-party AI providers (DeepSeek and fal.ai), is encrypted using HTTPS/TLS. Since we do not collect or store personal data on our servers, there is minimal risk of data breach affecting your personal information. Dream journal entries are stored only on your device (and optionally in your personal iCloud account).</p>`,
       },
       {
         heading: `Your Rights`,
-        content: `<p>Since we do not collect personal data, there is typically no personal data for us to provide, modify, or delete. All App data is stored locally on your device (and optionally in your personal iCloud) and can be removed by uninstalling the App. If you have any questions about your data, please contact us.</p>`,
+        content: `<p>You have the following rights regarding your data:</p>
+<ul><li>You can choose not to use AI interpretation and image generation features, in which case no data is sent to third-party providers.</li><li>All App data is stored locally on your device (and optionally in your personal iCloud) and can be removed by uninstalling the App.</li><li>Since we do not collect or store personal data on our servers, there is no personal data for us to provide, modify, or delete.</li></ul>
+<p>If you have any questions about your data, please contact us.</p>`,
       },
       {
         heading: `Changes to This Policy`,
@@ -80,7 +90,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   ru: {
     title: `Политика конфиденциальности`,
-    effectiveDate: `Дата вступления в силу: 27 февраля 2026 г.`,
+    effectiveDate: `Дата вступления в силу: 3 марта 2026 г.`,
     intro: `NikiBStudio («мы», «наш» или «нас») разработала приложение <strong>LDream</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
     sections: [
       {
@@ -100,9 +110,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Сервис AI-интерпретации и генерации изображений`,
-        content: `<p>Когда вы запрашиваете AI-интерпретацию сна или изображение сна, Приложение отправляет на наш сервер следующую информацию:</p>
+        content: `<p>Когда вы запрашиваете AI-интерпретацию сна или изображение сна, Приложение отправляет следующую информацию сторонним AI-провайдерам через наш сервер:</p>
 <ul><li>Текст вашей записи сна</li><li>Языковые настройки вашего устройства (для предоставления интерпретации на вашем языке)</li></ul>
-<p>Эти данные обрабатываются в реальном времени для генерации интерпретации или изображения и <strong>не сохраняются на наших серверах</strong>. Никакие личные идентификаторы, информация об устройстве или учётные записи не связаны с этими запросами. Каждый запрос полностью анонимен.</p>`,
+<p>Данные обрабатываются следующим образом:</p>
+<ul><li><strong>Интерпретация сна</strong> — текст вашего сна и языковые настройки отправляются в <strong>DeepSeek</strong> (DeepSeek, Китай) через их API для генерации AI-интерпретации вашего сна.</li><li><strong>Генерация изображения сна</strong> — краткое описание вашего сна отправляется в <strong>fal.ai</strong> (fal.ai, Inc.) через их API для генерации визуального представления вашего сна.</li></ul>
+<p>Эти данные обрабатываются в реальном времени и <strong>не сохраняются на наших серверах</strong>. Данные передаются только после того, как вы явно запросите интерпретацию или изображение. Никакие личные идентификаторы, информация об устройстве или учётные записи не связаны с этими запросами. Каждый запрос полностью анонимен.</p>`,
       },
       {
         heading: `Синхронизация iCloud`,
@@ -112,6 +124,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Сторонние сервисы`,
         content: `<h3>Apple (App Store и StoreKit)</h3>
 <p>Если вы приобретаете подписку, транзакция полностью обрабатывается Apple через App Store. Мы не имеем доступа к вашей платёжной информации, Apple ID или платёжным реквизитам. Обработка ваших данных компанией Apple регулируется Политикой конфиденциальности Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+<h3>DeepSeek (AI-интерпретация снов)</h3>
+<p>Когда вы запрашиваете интерпретацию сна, текст вашего сна и языковые настройки устройства отправляются в DeepSeek через их API. DeepSeek обрабатывает эти данные для генерации интерпретации. Обработка данных компанией DeepSeek регулируется их Политикой конфиденциальности (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
+<h3>fal.ai (AI-генерация изображений)</h3>
+<p>Когда вы запрашиваете изображение сна, краткое описание вашего сна отправляется в fal.ai через их API. fal.ai обрабатывает эти данные для генерации изображения. Обработка данных компанией fal.ai регулируется их Политикой конфиденциальности (<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>).</p>
 <h3>Отсутствие других сторонних сервисов</h3>
 <p>Приложение не интегрирует сторонние сервисы аналитики, рекламы, отчётов о сбоях или SDK социальных сетей. Мы не используем Firebase, Google Analytics, Facebook SDK или аналогичные сервисы.</p>`,
       },
@@ -129,15 +145,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Передача данных`,
-        content: `<p>Мы не продаём, не обмениваем, не сдаём в аренду и не передаём иным образом данные пользователей третьим лицам.</p>`,
+        content: `<p>Мы передаём следующие данные сторонним поставщикам услуг исключительно для обеспечения AI-функций Приложения:</p>
+<ul><li><strong>DeepSeek</strong> — получает текст вашей записи сна и языковые настройки устройства для генерации интерпретаций снов.</li><li><strong>fal.ai</strong> — получает краткое описание вашего сна для генерации изображений снов.</li></ul>
+<p>Эти данные передаются только когда вы явно запрашиваете AI-интерпретацию или изображение. Мы не продаём, не обмениваем, не сдаём в аренду и не передаём иным образом данные пользователей третьим лицам в маркетинговых, рекламных или иных целях.</p>`,
       },
       {
         heading: `Безопасность данных`,
-        content: `<p>Все коммуникации между Приложением и нашим сервером шифруются с использованием HTTPS. Поскольку мы не собираем и не храним персональные данные на наших серверах, риск утечки данных, затрагивающей вашу личную информацию, минимален.</p>`,
+        content: `<p>Все коммуникации между Приложением и нашим сервером, а также между нашим сервером и сторонними AI-провайдерами (DeepSeek и fal.ai), шифруются с использованием HTTPS/TLS. Поскольку мы не собираем и не храним персональные данные на наших серверах, риск утечки данных, затрагивающей вашу личную информацию, минимален. Записи дневника снов хранятся только на вашем устройстве (и опционально в вашем личном аккаунте iCloud).</p>`,
       },
       {
         heading: `Ваши права`,
-        content: `<p>Поскольку мы не собираем персональные данные, как правило, нет данных, которые мы могли бы предоставить, изменить или удалить. Все данные Приложения хранятся локально на вашем устройстве (и опционально в вашем личном iCloud) и могут быть удалены путём удаления Приложения. Если у вас есть вопросы о ваших данных, свяжитесь с нами.</p>`,
+        content: `<p>Вы имеете следующие права в отношении ваших данных:</p>
+<ul><li>Вы можете не использовать функции AI-интерпретации и генерации изображений — в этом случае никакие данные не передаются сторонним провайдерам.</li><li>Все данные Приложения хранятся локально на вашем устройстве (и опционально в вашем личном iCloud) и могут быть удалены путём удаления Приложения.</li><li>Поскольку мы не собираем и не храним персональные данные на наших серверах, нет данных, которые мы могли бы предоставить, изменить или удалить.</li></ul>
+<p>Если у вас есть вопросы о ваших данных, свяжитесь с нами.</p>`,
       },
       {
         heading: `Изменения в настоящей Политике`,
@@ -152,7 +172,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   zh: {
     title: `隐私政策`,
-    effectiveDate: `生效日期：2026年2月27日`,
+    effectiveDate: `生效日期：2026年3月3日`,
     intro: `NikiBStudio（"我们"或"我方"）开发了 <strong>LDream</strong>（"本应用"）作为商业应用程序。本隐私政策说明了您使用本应用时我们如何处理信息。`,
     sections: [
       {
@@ -172,9 +192,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI解梦与图像生成服务`,
-        content: `<p>当您请求AI梦境解读或梦境图像时，本应用会将以下信息发送到我们的服务器：</p>
+        content: `<p>当您请求AI梦境解读或梦境图像时，本应用会通过我们的服务器将以下信息发送给第三方AI服务提供商：</p>
 <ul><li>您的梦境记录文本</li><li>您设备的语言设置（以便用您的语言提供解读）</li></ul>
-<p>这些数据被实时处理以生成您的解读或图像，<strong>不会存储在我们的服务器上</strong>。没有个人标识符、设备信息或用户帐户与这些请求关联。每个请求都是完全匿名的。</p>`,
+<p>数据处理方式如下：</p>
+<ul><li><strong>梦境解读</strong> — 您的梦境文本和语言设置通过其API发送至<strong>DeepSeek</strong>（深度求索，中国）以生成AI梦境解读。</li><li><strong>梦境图像生成</strong> — 您梦境的摘要通过其API发送至<strong>fal.ai</strong>（fal.ai, Inc.）以生成梦境的视觉呈现。</li></ul>
+<p>这些数据被实时处理，<strong>不会存储在我们的服务器上</strong>。数据仅在您明确请求解读或图像后才会传输。没有个人标识符、设备信息或用户帐户与这些请求关联。每个请求都是完全匿名的。</p>`,
       },
       {
         heading: `iCloud同步`,
@@ -183,7 +205,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `第三方服务`,
         content: `<h3>Apple（App Store和StoreKit）</h3>
-<p>如果您购买订阅，交易完全由Apple通过App Store处理。我们无法访问您的付款信息、Apple ID或账单详情。Apple对您数据的处理受Apple隐私政策（(<a href="https://www.apple.com/legal/privacy/）管辖。" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy/）管辖。</a>)</p>
+<p>如果您购买订阅，交易完全由Apple通过App Store处理。我们无法访问您的付款信息、Apple ID或账单详情。Apple对您数据的处理受Apple隐私政策（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）管辖。</p>
+<h3>DeepSeek（AI梦境解读）</h3>
+<p>当您请求梦境解读时，您的梦境文本和设备语言设置通过其API发送至DeepSeek。DeepSeek处理这些数据以生成解读。DeepSeek的数据处理受其隐私政策（<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>）管辖。</p>
+<h3>fal.ai（AI图像生成）</h3>
+<p>当您请求梦境图像时，您梦境的摘要通过其API发送至fal.ai。fal.ai处理这些数据以生成图像。fal.ai的数据处理受其隐私政策（<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>）管辖。</p>
 <h3>无其他第三方服务</h3>
 <p>本应用不集成任何第三方分析、广告、崩溃报告或社交媒体SDK。我们不使用Firebase、Google Analytics、Facebook SDK或任何类似服务。</p>`,
       },
@@ -201,15 +227,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `数据共享`,
-        content: `<p>我们不会以任何方式向第三方出售、交换、出租或共享用户数据。</p>`,
+        content: `<p>我们仅出于提供本应用AI功能的目的，与第三方服务提供商共享以下数据：</p>
+<ul><li><strong>DeepSeek</strong> — 接收您的梦境记录文本和设备语言设置以生成梦境解读。</li><li><strong>fal.ai</strong> — 接收您梦境的摘要以生成梦境图像。</li></ul>
+<p>这些数据仅在您明确请求AI解读或图像时才会传输。我们不会以任何方式向第三方出售、交换、出租或共享用户数据用于营销、广告或任何其他目的。</p>`,
       },
       {
         heading: `数据安全`,
-        content: `<p>本应用与我们服务器之间的所有通信均使用HTTPS加密。由于我们不在服务器上收集或存储个人数据，因此影响您个人信息的数据泄露风险极小。</p>`,
+        content: `<p>本应用与我们服务器之间以及我们服务器与第三方AI提供商（DeepSeek和fal.ai）之间的所有通信均使用HTTPS/TLS加密。由于我们不在服务器上收集或存储个人数据，因此影响您个人信息的数据泄露风险极小。梦境日记记录仅存储在您的设备上（也可选择存储在您的个人iCloud帐户中）。</p>`,
       },
       {
         heading: `您的权利`,
-        content: `<p>由于我们不收集个人数据，通常没有我们可以提供、修改或删除的个人数据。本应用的所有数据都本地存储在您的设备上（也可选择存储在您的个人iCloud中），可以通过卸载本应用来删除。如果您对您的数据有任何疑问，请与我们联系。</p>`,
+        content: `<p>您对自己的数据拥有以下权利：</p>
+<ul><li>您可以选择不使用AI解读和图像生成功能，在这种情况下不会向第三方提供商发送任何数据。</li><li>本应用的所有数据都本地存储在您的设备上（也可选择存储在您的个人iCloud中），可以通过卸载本应用来删除。</li><li>由于我们不在服务器上收集或存储个人数据，因此没有我们可以提供、修改或删除的个人数据。</li></ul>
+<p>如果您对您的数据有任何疑问，请与我们联系。</p>`,
       },
       {
         heading: `本政策的变更`,
@@ -224,7 +254,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   es: {
     title: `Política de privacidad`,
-    effectiveDate: `Fecha de vigencia: 27 de febrero de 2026`,
+    effectiveDate: `Fecha de vigencia: 3 de marzo de 2026`,
     intro: `NikiBStudio ("nosotros", "nuestro" o "nos") ha desarrollado <strong>LDream</strong> ("la Aplicación") como una aplicación comercial. Esta Política de privacidad explica cómo manejamos la información cuando utiliza nuestra Aplicación.`,
     sections: [
       {
@@ -244,9 +274,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Servicio de interpretación IA y generación de imágenes`,
-        content: `<p>Cuando solicita una interpretación de sueño por IA o una imagen de sueño, la Aplicación envía la siguiente información a nuestro servidor:</p>
+        content: `<p>Cuando solicita una interpretación de sueño por IA o una imagen de sueño, la Aplicación envía la siguiente información a proveedores de servicios de IA de terceros a través de nuestro servidor:</p>
 <ul><li>El texto de su entrada de sueño</li><li>La configuración de idioma de su dispositivo (para proporcionar la interpretación en su idioma)</li></ul>
-<p>Estos datos se procesan en tiempo real para generar su interpretación o imagen y <strong>no se almacenan en nuestros servidores</strong>. Ningún identificador personal, información del dispositivo o cuenta de usuario se asocia con estas solicitudes. Cada solicitud es completamente anónima.</p>`,
+<p>Los datos se procesan de la siguiente manera:</p>
+<ul><li><strong>Interpretación del sueño</strong> — el texto de su sueño y la configuración de idioma se envían a <strong>DeepSeek</strong> (DeepSeek, China) a través de su API para generar una interpretación del sueño con IA.</li><li><strong>Generación de imagen del sueño</strong> — un resumen de su sueño se envía a <strong>fal.ai</strong> (fal.ai, Inc.) a través de su API para generar una representación visual de su sueño.</li></ul>
+<p>Estos datos se procesan en tiempo real y <strong>no se almacenan en nuestros servidores</strong>. Los datos se transmiten solo después de que usted solicite explícitamente una interpretación o imagen. Ningún identificador personal, información del dispositivo o cuenta de usuario se asocia con estas solicitudes. Cada solicitud es completamente anónima.</p>`,
       },
       {
         heading: `Sincronización de iCloud`,
@@ -256,6 +288,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Servicios de terceros`,
         content: `<h3>Apple (App Store y StoreKit)</h3>
 <p>Si adquiere una suscripción, la transacción es procesada completamente por Apple a través del App Store. No tenemos acceso a su información de pago, Apple ID ni detalles de facturación. El manejo de sus datos por parte de Apple se rige por la Política de privacidad de Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+<h3>DeepSeek (Interpretación de sueños con IA)</h3>
+<p>Cuando solicita una interpretación de sueño, el texto de su sueño y la configuración de idioma de su dispositivo se envían a DeepSeek a través de su API. DeepSeek procesa estos datos para generar la interpretación. El manejo de datos por parte de DeepSeek se rige por su Política de privacidad (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
+<h3>fal.ai (Generación de imágenes con IA)</h3>
+<p>Cuando solicita una imagen de sueño, un resumen de su sueño se envía a fal.ai a través de su API. fal.ai procesa estos datos para generar la imagen. El manejo de datos por parte de fal.ai se rige por su Política de privacidad (<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>).</p>
 <h3>Sin otros servicios de terceros</h3>
 <p>La Aplicación no integra ningún SDK de análisis, publicidad, informes de errores o redes sociales de terceros. No utilizamos Firebase, Google Analytics, Facebook SDK ni servicios similares.</p>`,
       },
@@ -273,15 +309,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Compartición de datos`,
-        content: `<p>No vendemos, intercambiamos, alquilamos ni compartimos de ninguna otra manera los datos de los usuarios con terceros.</p>`,
+        content: `<p>Compartimos los siguientes datos con proveedores de servicios de terceros únicamente con el propósito de proporcionar las funciones de IA de la Aplicación:</p>
+<ul><li><strong>DeepSeek</strong> — recibe el texto de su entrada de sueño y la configuración de idioma de su dispositivo para generar interpretaciones de sueños.</li><li><strong>fal.ai</strong> — recibe un resumen de su sueño para generar imágenes de sueños.</li></ul>
+<p>Estos datos se transmiten solo cuando usted solicita explícitamente una interpretación o imagen con IA. No vendemos, intercambiamos, alquilamos ni compartimos de ninguna otra manera los datos de los usuarios con terceros con fines de marketing, publicidad o cualquier otro propósito.</p>`,
       },
       {
         heading: `Seguridad de datos`,
-        content: `<p>Todas las comunicaciones entre la Aplicación y nuestro servidor están cifradas mediante HTTPS. Dado que no recopilamos ni almacenamos datos personales en nuestros servidores, existe un riesgo mínimo de violación de datos que afecte su información personal.</p>`,
+        content: `<p>Todas las comunicaciones entre la Aplicación y nuestro servidor, así como entre nuestro servidor y los proveedores de IA de terceros (DeepSeek y fal.ai), están cifradas mediante HTTPS/TLS. Dado que no recopilamos ni almacenamos datos personales en nuestros servidores, existe un riesgo mínimo de violación de datos que afecte su información personal. Las entradas del diario de sueños se almacenan solo en su dispositivo (y opcionalmente en su cuenta personal de iCloud).</p>`,
       },
       {
         heading: `Sus derechos`,
-        content: `<p>Dado que no recopilamos datos personales, normalmente no hay datos personales que podamos proporcionar, modificar o eliminar. Todos los datos de la Aplicación se almacenan localmente en su dispositivo (y opcionalmente en su iCloud personal) y pueden eliminarse desinstalando la Aplicación. Si tiene preguntas sobre sus datos, contáctenos.</p>`,
+        content: `<p>Usted tiene los siguientes derechos con respecto a sus datos:</p>
+<ul><li>Puede optar por no utilizar las funciones de interpretación y generación de imágenes con IA, en cuyo caso no se enviará ningún dato a proveedores de terceros.</li><li>Todos los datos de la Aplicación se almacenan localmente en su dispositivo (y opcionalmente en su iCloud personal) y pueden eliminarse desinstalando la Aplicación.</li><li>Dado que no recopilamos ni almacenamos datos personales en nuestros servidores, no hay datos personales que podamos proporcionar, modificar o eliminar.</li></ul>
+<p>Si tiene preguntas sobre sus datos, contáctenos.</p>`,
       },
       {
         heading: `Cambios en esta política`,
@@ -296,7 +336,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   fr: {
     title: `Politique de confidentialité`,
-    effectiveDate: `Date d'entrée en vigueur : 27 février 2026`,
+    effectiveDate: `Date d'entrée en vigueur : 3 mars 2026`,
     intro: `NikiBStudio (« nous », « notre » ou « nos ») a développé <strong>LDream</strong> (« l'Application ») en tant qu'application commerciale. La présente Politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez notre Application.`,
     sections: [
       {
@@ -316,9 +356,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Service d'interprétation IA et de génération d'images`,
-        content: `<p>Lorsque vous demandez une interprétation de rêve par IA ou une image de rêve, l'Application envoie les informations suivantes à notre serveur :</p>
+        content: `<p>Lorsque vous demandez une interprétation de rêve par IA ou une image de rêve, l'Application envoie les informations suivantes à des fournisseurs de services d'IA tiers via notre serveur :</p>
 <ul><li>Le texte de votre entrée de rêve</li><li>Le paramètre de langue de votre appareil (pour fournir l'interprétation dans votre langue)</li></ul>
-<p>Ces données sont traitées en temps réel pour générer votre interprétation ou image et ne sont <strong>pas stockées sur nos serveurs</strong>. Aucun identifiant personnel, information d'appareil ou compte utilisateur n'est associé à ces demandes. Chaque demande est entièrement anonyme.</p>`,
+<p>Les données sont traitées comme suit :</p>
+<ul><li><strong>Interprétation du rêve</strong> — le texte de votre rêve et le paramètre de langue sont envoyés à <strong>DeepSeek</strong> (DeepSeek, Chine) via leur API pour générer une interprétation du rêve par IA.</li><li><strong>Génération d'image du rêve</strong> — un résumé de votre rêve est envoyé à <strong>fal.ai</strong> (fal.ai, Inc.) via leur API pour générer une représentation visuelle de votre rêve.</li></ul>
+<p>Ces données sont traitées en temps réel et ne sont <strong>pas stockées sur nos serveurs</strong>. Les données ne sont transmises qu'après votre demande explicite d'interprétation ou d'image. Aucun identifiant personnel, information d'appareil ou compte utilisateur n'est associé à ces demandes. Chaque demande est entièrement anonyme.</p>`,
       },
       {
         heading: `Synchronisation iCloud`,
@@ -328,6 +370,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Services tiers`,
         content: `<h3>Apple (App Store et StoreKit)</h3>
 <p>Si vous achetez un abonnement, la transaction est entièrement traitée par Apple via l'App Store. Nous n'avons pas accès à vos informations de paiement, votre identifiant Apple ou vos détails de facturation. Le traitement de vos données par Apple est régi par la Politique de confidentialité d'Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+<h3>DeepSeek (Interprétation des rêves par IA)</h3>
+<p>Lorsque vous demandez une interprétation de rêve, le texte de votre rêve et le paramètre de langue de votre appareil sont envoyés à DeepSeek via leur API. DeepSeek traite ces données pour générer l'interprétation. Le traitement des données par DeepSeek est régi par leur Politique de confidentialité (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
+<h3>fal.ai (Génération d'images par IA)</h3>
+<p>Lorsque vous demandez une image de rêve, un résumé de votre rêve est envoyé à fal.ai via leur API. fal.ai traite ces données pour générer l'image. Le traitement des données par fal.ai est régi par leur Politique de confidentialité (<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>).</p>
 <h3>Aucun autre service tiers</h3>
 <p>L'Application n'intègre aucun SDK d'analyse, de publicité, de rapport d'erreurs ou de réseaux sociaux tiers. Nous n'utilisons pas Firebase, Google Analytics, Facebook SDK ou tout service similaire.</p>`,
       },
@@ -345,15 +391,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Partage de données`,
-        content: `<p>Nous ne vendons, n'échangeons, ne louons et ne partageons d'aucune autre manière les données des utilisateurs avec des tiers.</p>`,
+        content: `<p>Nous partageons les données suivantes avec des fournisseurs de services tiers uniquement dans le but de fournir les fonctionnalités d'IA de l'Application :</p>
+<ul><li><strong>DeepSeek</strong> — reçoit le texte de votre entrée de rêve et le paramètre de langue de votre appareil pour générer des interprétations de rêves.</li><li><strong>fal.ai</strong> — reçoit un résumé de votre rêve pour générer des images de rêves.</li></ul>
+<p>Ces données ne sont transmises que lorsque vous demandez explicitement une interprétation ou une image par IA. Nous ne vendons, n'échangeons, ne louons et ne partageons d'aucune autre manière les données des utilisateurs avec des tiers à des fins de marketing, de publicité ou à toute autre fin.</p>`,
       },
       {
         heading: `Sécurité des données`,
-        content: `<p>Toutes les communications entre l'Application et notre serveur sont chiffrées à l'aide du protocole HTTPS. Étant donné que nous ne collectons ni ne stockons de données personnelles sur nos serveurs, le risque de violation de données affectant vos informations personnelles est minimal.</p>`,
+        content: `<p>Toutes les communications entre l'Application et notre serveur, ainsi qu'entre notre serveur et les fournisseurs d'IA tiers (DeepSeek et fal.ai), sont chiffrées à l'aide du protocole HTTPS/TLS. Étant donné que nous ne collectons ni ne stockons de données personnelles sur nos serveurs, le risque de violation de données affectant vos informations personnelles est minimal. Les entrées du journal de rêves sont stockées uniquement sur votre appareil (et éventuellement dans votre compte iCloud personnel).</p>`,
       },
       {
         heading: `Vos droits`,
-        content: `<p>Étant donné que nous ne collectons pas de données personnelles, il n'y a généralement pas de données personnelles que nous pourrions fournir, modifier ou supprimer. Toutes les données de l'Application sont stockées localement sur votre appareil (et éventuellement dans votre iCloud personnel) et peuvent être supprimées en désinstallant l'Application. Si vous avez des questions concernant vos données, veuillez nous contacter.</p>`,
+        content: `<p>Vous disposez des droits suivants concernant vos données :</p>
+<ul><li>Vous pouvez choisir de ne pas utiliser les fonctionnalités d'interprétation et de génération d'images par IA, auquel cas aucune donnée n'est envoyée aux fournisseurs tiers.</li><li>Toutes les données de l'Application sont stockées localement sur votre appareil (et éventuellement dans votre iCloud personnel) et peuvent être supprimées en désinstallant l'Application.</li><li>Étant donné que nous ne collectons ni ne stockons de données personnelles sur nos serveurs, il n'y a pas de données personnelles que nous pourrions fournir, modifier ou supprimer.</li></ul>
+<p>Si vous avez des questions concernant vos données, veuillez nous contacter.</p>`,
       },
       {
         heading: `Modifications de cette politique`,
@@ -368,7 +418,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   de: {
     title: `Datenschutzrichtlinie`,
-    effectiveDate: `Gültig ab: 27. Februar 2026`,
+    effectiveDate: `Gültig ab: 3. März 2026`,
     intro: `NikiBStudio („wir", „unser" oder „uns") hat <strong>LDream</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzrichtlinie erklärt, wie wir mit Informationen umgehen, wenn Sie unsere App nutzen.`,
     sections: [
       {
@@ -388,9 +438,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `KI-Deutungs- und Bildgenerierungsdienst`,
-        content: `<p>Wenn Sie eine KI-gestützte Traumdeutung oder ein Traumbild anfordern, sendet die App folgende Informationen an unseren Server:</p>
+        content: `<p>Wenn Sie eine KI-gestützte Traumdeutung oder ein Traumbild anfordern, sendet die App folgende Informationen über unseren Server an Drittanbieter von KI-Diensten:</p>
 <ul><li>Den Text Ihres Traumeintrags</li><li>Die Spracheinstellung Ihres Geräts (um die Deutung in Ihrer Sprache bereitzustellen)</li></ul>
-<p>Diese Daten werden in Echtzeit verarbeitet, um Ihre Deutung oder Ihr Bild zu generieren, und werden <strong>nicht auf unseren Servern gespeichert</strong>. Keine persönlichen Kennungen, Geräteinformationen oder Benutzerkonten werden mit diesen Anfragen verknüpft. Jede Anfrage ist vollständig anonym.</p>`,
+<p>Die Daten werden wie folgt verarbeitet:</p>
+<ul><li><strong>Traumdeutung</strong> — Ihr Traumtext und Ihre Spracheinstellung werden über deren API an <strong>DeepSeek</strong> (DeepSeek, China) gesendet, um eine KI-gestützte Traumdeutung zu generieren.</li><li><strong>Traumbildgenerierung</strong> — eine Zusammenfassung Ihres Traums wird über deren API an <strong>fal.ai</strong> (fal.ai, Inc.) gesendet, um eine visuelle Darstellung Ihres Traums zu generieren.</li></ul>
+<p>Diese Daten werden in Echtzeit verarbeitet und <strong>nicht auf unseren Servern gespeichert</strong>. Daten werden nur übertragen, nachdem Sie ausdrücklich eine Deutung oder ein Bild angefordert haben. Keine persönlichen Kennungen, Geräteinformationen oder Benutzerkonten werden mit diesen Anfragen verknüpft. Jede Anfrage ist vollständig anonym.</p>`,
       },
       {
         heading: `iCloud-Synchronisierung`,
@@ -400,6 +452,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Drittanbieterdienste`,
         content: `<h3>Apple (App Store & StoreKit)</h3>
 <p>Wenn Sie ein Abonnement erwerben, wird die Transaktion vollständig von Apple über den App Store abgewickelt. Wir haben keinen Zugriff auf Ihre Zahlungsinformationen, Apple-ID oder Rechnungsdetails. Der Umgang von Apple mit Ihren Daten wird durch die Datenschutzrichtlinie von Apple geregelt (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+<h3>DeepSeek (KI-Traumdeutung)</h3>
+<p>Wenn Sie eine Traumdeutung anfordern, werden der Text Ihres Traums und die Spracheinstellung Ihres Geräts über deren API an DeepSeek gesendet. DeepSeek verarbeitet diese Daten, um die Deutung zu generieren. Der Umgang von DeepSeek mit Daten wird durch deren Datenschutzrichtlinie geregelt (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
+<h3>fal.ai (KI-Bildgenerierung)</h3>
+<p>Wenn Sie ein Traumbild anfordern, wird eine Zusammenfassung Ihres Traums über deren API an fal.ai gesendet. fal.ai verarbeitet diese Daten, um das Bild zu generieren. Der Umgang von fal.ai mit Daten wird durch deren Datenschutzrichtlinie geregelt (<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>).</p>
 <h3>Keine weiteren Drittanbieterdienste</h3>
 <p>Die App integriert keine Drittanbieter-Analyse-, Werbe-, Absturzberichterstattungs- oder Social-Media-SDKs. Wir verwenden kein Firebase, Google Analytics, Facebook SDK oder ähnliche Dienste.</p>`,
       },
@@ -417,15 +473,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Datenweitergabe`,
-        content: `<p>Wir verkaufen, handeln, vermieten oder teilen keine Benutzerdaten mit Dritten.</p>`,
+        content: `<p>Wir teilen die folgenden Daten mit Drittanbietern ausschließlich zum Zweck der Bereitstellung der KI-Funktionen der App:</p>
+<ul><li><strong>DeepSeek</strong> — erhält den Text Ihres Traumeintrags und die Spracheinstellung Ihres Geräts zur Generierung von Traumdeutungen.</li><li><strong>fal.ai</strong> — erhält eine Zusammenfassung Ihres Traums zur Generierung von Traumbildern.</li></ul>
+<p>Diese Daten werden nur übertragen, wenn Sie ausdrücklich eine KI-Deutung oder ein Bild anfordern. Wir verkaufen, handeln, vermieten oder teilen keine Benutzerdaten mit Dritten zu Marketing-, Werbe- oder sonstigen Zwecken.</p>`,
       },
       {
         heading: `Datensicherheit`,
-        content: `<p>Alle Kommunikation zwischen der App und unserem Server wird mit HTTPS verschlüsselt. Da wir keine persönlichen Daten auf unseren Servern erfassen oder speichern, besteht ein minimales Risiko einer Datenverletzung, die Ihre persönlichen Informationen betrifft.</p>`,
+        content: `<p>Alle Kommunikation zwischen der App und unserem Server sowie zwischen unserem Server und den KI-Drittanbietern (DeepSeek und fal.ai) wird mit HTTPS/TLS verschlüsselt. Da wir keine persönlichen Daten auf unseren Servern erfassen oder speichern, besteht ein minimales Risiko einer Datenverletzung, die Ihre persönlichen Informationen betrifft. Traumtagebuch-Einträge werden nur auf Ihrem Gerät gespeichert (und optional in Ihrem persönlichen iCloud-Konto).</p>`,
       },
       {
         heading: `Ihre Rechte`,
-        content: `<p>Da wir keine persönlichen Daten erfassen, gibt es in der Regel keine persönlichen Daten, die wir bereitstellen, ändern oder löschen könnten. Alle App-Daten werden lokal auf Ihrem Gerät (und optional in Ihrem persönlichen iCloud) gespeichert und können durch Deinstallation der App entfernt werden. Bei Fragen zu Ihren Daten kontaktieren Sie uns bitte.</p>`,
+        content: `<p>Sie haben folgende Rechte bezüglich Ihrer Daten:</p>
+<ul><li>Sie können die KI-Deutungs- und Bildgenerierungsfunktionen nicht nutzen, in diesem Fall werden keine Daten an Drittanbieter gesendet.</li><li>Alle App-Daten werden lokal auf Ihrem Gerät (und optional in Ihrem persönlichen iCloud) gespeichert und können durch Deinstallation der App entfernt werden.</li><li>Da wir keine persönlichen Daten auf unseren Servern erfassen oder speichern, gibt es keine persönlichen Daten, die wir bereitstellen, ändern oder löschen könnten.</li></ul>
+<p>Bei Fragen zu Ihren Daten kontaktieren Sie uns bitte.</p>`,
       },
       {
         heading: `Änderungen dieser Richtlinie`,
@@ -440,7 +500,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   ja: {
     title: `プライバシーポリシー`,
-    effectiveDate: `発効日：2026年2月27日`,
+    effectiveDate: `発効日：2026年3月3日`,
     intro: `NikiBStudio（「当社」、「私たち」）は、商用アプリケーションとして<strong>LDream</strong>（「本アプリ」）を開発しました。本プライバシーポリシーは、本アプリをご利用いただく際の情報の取り扱いについて説明します。`,
     sections: [
       {
@@ -460,9 +520,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI解釈および画像生成サービス`,
-        content: `<p>AI による夢の解釈または夢の画像をリクエストすると、本アプリは以下の情報を当社のサーバーに送信します：</p>
+        content: `<p>AIによる夢の解釈または夢の画像をリクエストすると、本アプリは以下の情報を当社のサーバーを通じてサードパーティAIサービスプロバイダーに送信します：</p>
 <ul><li>お客様の夢の記録テキスト</li><li>お客様のデバイスの言語設定（お客様の言語で解釈を提供するため）</li></ul>
-<p>これらのデータはリアルタイムで処理され、解釈または画像を生成し、<strong>当社のサーバーには保存されません</strong>。個人識別子、デバイス情報、ユーザーアカウントはこれらのリクエストに関連付けられません。各リクエストは完全に匿名です。</p>`,
+<p>データは以下のように処理されます：</p>
+<ul><li><strong>夢の解釈</strong> — お客様の夢のテキストと言語設定は、APIを通じて<strong>DeepSeek</strong>（DeepSeek、中国）に送信され、AIによる夢の解釈が生成されます。</li><li><strong>夢の画像生成</strong> — お客様の夢の要約は、APIを通じて<strong>fal.ai</strong>（fal.ai, Inc.）に送信され、夢の視覚的表現が生成されます。</li></ul>
+<p>これらのデータはリアルタイムで処理され、<strong>当社のサーバーには保存されません</strong>。データは、お客様が明示的に解釈または画像をリクエストした場合にのみ送信されます。個人識別子、デバイス情報、ユーザーアカウントはこれらのリクエストに関連付けられません。各リクエストは完全に匿名です。</p>`,
       },
       {
         heading: `iCloud同期`,
@@ -471,7 +533,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `サードパーティサービス`,
         content: `<h3>Apple（App StoreおよびStoreKit）</h3>
-<p>サブスクリプションを購入される場合、取引はApp Storeを通じてAppleが完全に処理します。当社はお客様の支払い情報、Apple ID、請求先情報にアクセスできません。Appleによるデータの取り扱いはAppleのプライバシーポリシー（(<a href="https://www.apple.com/legal/privacy/）に準拠します。" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy/）に準拠します。</a>)</p>
+<p>サブスクリプションを購入される場合、取引はApp Storeを通じてAppleが完全に処理します。当社はお客様の支払い情報、Apple ID、請求先情報にアクセスできません。Appleによるデータの取り扱いはAppleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に準拠します。</p>
+<h3>DeepSeek（AI夢解釈）</h3>
+<p>夢の解釈をリクエストすると、お客様の夢のテキストとデバイスの言語設定がAPIを通じてDeepSeekに送信されます。DeepSeekはこれらのデータを処理して解釈を生成します。DeepSeekのデータの取り扱いは、そのプライバシーポリシー（<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>）に準拠します。</p>
+<h3>fal.ai（AI画像生成）</h3>
+<p>夢の画像をリクエストすると、お客様の夢の要約がAPIを通じてfal.aiに送信されます。fal.aiはこれらのデータを処理して画像を生成します。fal.aiのデータの取り扱いは、そのプライバシーポリシー（<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>）に準拠します。</p>
 <h3>その他のサードパーティサービスなし</h3>
 <p>本アプリは、サードパーティの分析、広告、クラッシュレポート、ソーシャルメディアSDKを統合していません。Firebase、Google Analytics、Facebook SDKまたは同様のサービスは使用していません。</p>`,
       },
@@ -489,15 +555,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `データの共有`,
-        content: `<p>当社はユーザーデータを第三者に販売、交換、貸出、またはその他の方法で共有しません。</p>`,
+        content: `<p>当社は、本アプリのAI機能を提供する目的でのみ、以下のデータをサードパーティサービスプロバイダーと共有します：</p>
+<ul><li><strong>DeepSeek</strong> — 夢の解釈を生成するために、お客様の夢の記録テキストとデバイスの言語設定を受け取ります。</li><li><strong>fal.ai</strong> — 夢の画像を生成するために、お客様の夢の要約を受け取ります。</li></ul>
+<p>これらのデータは、お客様が明示的にAI解釈または画像をリクエストした場合にのみ送信されます。当社はユーザーデータをマーケティング、広告、その他の目的で第三者に販売、交換、貸出、またはその他の方法で共有しません。</p>`,
       },
       {
         heading: `データセキュリティ`,
-        content: `<p>本アプリと当社サーバー間のすべての通信はHTTPSで暗号化されています。当社はサーバーに個人データを収集・保存しないため、お客様の個人情報に影響するデータ侵害のリスクは最小限です。</p>`,
+        content: `<p>本アプリと当社サーバー間、および当社サーバーとサードパーティAIプロバイダー（DeepSeekおよびfal.ai）間のすべての通信はHTTPS/TLSで暗号化されています。当社はサーバーに個人データを収集・保存しないため、お客様の個人情報に影響するデータ侵害のリスクは最小限です。夢日記の記録はお客様のデバイスにのみ保存されます（オプションで個人のiCloudアカウントにも保存）。</p>`,
       },
       {
         heading: `お客様の権利`,
-        content: `<p>当社は個人データを収集しないため、通常、提供、変更、削除する個人データはありません。本アプリのすべてのデータはお客様のデバイスにローカルで保存され（オプションで個人のiCloudにも保存）、本アプリをアンインストールすることで削除できます。データについてご質問がある場合は、お問い合わせください。</p>`,
+        content: `<p>お客様はデータに関して以下の権利を有します：</p>
+<ul><li>AI解釈および画像生成機能を使用しないことを選択できます。この場合、サードパーティプロバイダーにデータは送信されません。</li><li>本アプリのすべてのデータはお客様のデバイスにローカルで保存され（オプションで個人のiCloudにも保存）、本アプリをアンインストールすることで削除できます。</li><li>当社はサーバーに個人データを収集・保存しないため、提供、変更、削除する個人データはありません。</li></ul>
+<p>データについてご質問がある場合は、お問い合わせください。</p>`,
       },
       {
         heading: `本ポリシーの変更`,
@@ -512,7 +582,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   ko: {
     title: `개인정보 처리방침`,
-    effectiveDate: `시행일: 2026년 2월 27일`,
+    effectiveDate: `시행일: 2026년 3월 3일`,
     intro: `NikiBStudio("당사", "우리" 또는 "저희")는 상용 애플리케이션으로 <strong>LDream</strong>("본 앱")을 개발했습니다. 본 개인정보 처리방침은 본 앱을 사용할 때 당사가 정보를 처리하는 방법을 설명합니다.`,
     sections: [
       {
@@ -532,9 +602,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI 해석 및 이미지 생성 서비스`,
-        content: `<p>AI 기반 꿈 해석 또는 꿈 이미지를 요청하면 본 앱은 다음 정보를 당사 서버에 전송합니다:</p>
+        content: `<p>AI 기반 꿈 해석 또는 꿈 이미지를 요청하면 본 앱은 당사 서버를 통해 다음 정보를 제3자 AI 서비스 제공업체에 전송합니다:</p>
 <ul><li>꿈 항목의 텍스트</li><li>기기의 언어 설정(귀하의 언어로 해석을 제공하기 위해)</li></ul>
-<p>이 데이터는 해석 또는 이미지를 생성하기 위해 실시간으로 처리되며 <strong>당사 서버에 저장되지 않습니다</strong>. 개인 식별자, 기기 정보 또는 사용자 계정은 이러한 요청과 연관되지 않습니다. 각 요청은 완전히 익명입니다.</p>`,
+<p>데이터는 다음과 같이 처리됩니다:</p>
+<ul><li><strong>꿈 해석</strong> — 귀하의 꿈 텍스트와 언어 설정이 API를 통해 <strong>DeepSeek</strong>(DeepSeek, 중국)에 전송되어 AI 기반 꿈 해석이 생성됩니다.</li><li><strong>꿈 이미지 생성</strong> — 귀하의 꿈 요약이 API를 통해 <strong>fal.ai</strong>(fal.ai, Inc.)에 전송되어 꿈의 시각적 표현이 생성됩니다.</li></ul>
+<p>이 데이터는 실시간으로 처리되며 <strong>당사 서버에 저장되지 않습니다</strong>. 데이터는 귀하가 명시적으로 해석 또는 이미지를 요청한 경우에만 전송됩니다. 개인 식별자, 기기 정보 또는 사용자 계정은 이러한 요청과 연관되지 않습니다. 각 요청은 완전히 익명입니다.</p>`,
       },
       {
         heading: `iCloud 동기화`,
@@ -544,6 +616,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `타사 서비스`,
         content: `<h3>Apple (App Store 및 StoreKit)</h3>
 <p>구독을 구매하는 경우 거래는 App Store를 통해 Apple에서 전적으로 처리합니다. 당사는 귀하의 결제 정보, Apple ID 또는 청구 세부 정보에 접근할 수 없습니다. Apple의 데이터 처리는 Apple의 개인정보 처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)에 따릅니다.</p>
+<h3>DeepSeek (AI 꿈 해석)</h3>
+<p>꿈 해석을 요청하면 귀하의 꿈 텍스트와 기기 언어 설정이 API를 통해 DeepSeek에 전송됩니다. DeepSeek은 해석을 생성하기 위해 이 데이터를 처리합니다. DeepSeek의 데이터 처리는 그들의 개인정보 처리방침(<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>)에 따릅니다.</p>
+<h3>fal.ai (AI 이미지 생성)</h3>
+<p>꿈 이미지를 요청하면 귀하의 꿈 요약이 API를 통해 fal.ai에 전송됩니다. fal.ai는 이미지를 생성하기 위해 이 데이터를 처리합니다. fal.ai의 데이터 처리는 그들의 개인정보 처리방침(<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>)에 따릅니다.</p>
 <h3>기타 타사 서비스 없음</h3>
 <p>본 앱은 타사 분석, 광고, 충돌 보고 또는 소셜 미디어 SDK를 통합하지 않습니다. Firebase, Google Analytics, Facebook SDK 또는 이와 유사한 서비스를 사용하지 않습니다.</p>`,
       },
@@ -561,15 +637,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `데이터 공유`,
-        content: `<p>당사는 사용자 데이터를 제3자에게 판매, 교환, 임대 또는 기타 방법으로 공유하지 않습니다.</p>`,
+        content: `<p>당사는 본 앱의 AI 기능을 제공할 목적으로만 다음 데이터를 제3자 서비스 제공업체와 공유합니다:</p>
+<ul><li><strong>DeepSeek</strong> — 꿈 해석을 생성하기 위해 귀하의 꿈 항목 텍스트와 기기 언어 설정을 수신합니다.</li><li><strong>fal.ai</strong> — 꿈 이미지를 생성하기 위해 귀하의 꿈 요약을 수신합니다.</li></ul>
+<p>이 데이터는 귀하가 명시적으로 AI 해석 또는 이미지를 요청할 때만 전송됩니다. 당사는 마케팅, 광고 또는 기타 목적으로 사용자 데이터를 제3자에게 판매, 교환, 임대 또는 기타 방법으로 공유하지 않습니다.</p>`,
       },
       {
         heading: `데이터 보안`,
-        content: `<p>본 앱과 당사 서버 간의 모든 통신은 HTTPS로 암호화됩니다. 당사는 서버에 개인 데이터를 수집하거나 저장하지 않으므로 귀하의 개인정보에 영향을 미치는 데이터 유출 위험이 최소화됩니다.</p>`,
+        content: `<p>본 앱과 당사 서버 간, 그리고 당사 서버와 제3자 AI 제공업체(DeepSeek 및 fal.ai) 간의 모든 통신은 HTTPS/TLS로 암호화됩니다. 당사는 서버에 개인 데이터를 수집하거나 저장하지 않으므로 귀하의 개인정보에 영향을 미치는 데이터 유출 위험이 최소화됩니다. 꿈 일기 항목은 귀하의 기기에만 저장됩니다(선택적으로 개인 iCloud 계정에도 저장).</p>`,
       },
       {
         heading: `귀하의 권리`,
-        content: `<p>당사는 개인 데이터를 수집하지 않으므로 일반적으로 제공, 수정 또는 삭제할 개인 데이터가 없습니다. 본 앱의 모든 데이터는 귀하의 기기에 로컬로 저장되며(선택적으로 개인 iCloud에도 저장) 본 앱을 삭제하면 제거할 수 있습니다. 데이터에 대한 질문이 있으시면 문의해 주십시오.</p>`,
+        content: `<p>귀하는 데이터에 관해 다음과 같은 권리를 갖습니다:</p>
+<ul><li>AI 해석 및 이미지 생성 기능을 사용하지 않도록 선택할 수 있으며, 이 경우 제3자 제공업체에 데이터가 전송되지 않습니다.</li><li>본 앱의 모든 데이터는 귀하의 기기에 로컬로 저장되며(선택적으로 개인 iCloud에도 저장) 본 앱을 삭제하면 제거할 수 있습니다.</li><li>당사는 서버에 개인 데이터를 수집하거나 저장하지 않으므로 제공, 수정 또는 삭제할 개인 데이터가 없습니다.</li></ul>
+<p>데이터에 대한 질문이 있으시면 문의해 주십시오.</p>`,
       },
       {
         heading: `본 방침의 변경`,
@@ -584,7 +664,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   pt: {
     title: `Política de Privacidade`,
-    effectiveDate: `Data de vigência: 27 de fevereiro de 2026`,
+    effectiveDate: `Data de vigência: 3 de março de 2026`,
     intro: `NikiBStudio ("nós", "nosso" ou "nos") desenvolveu o <strong>LDream</strong> ("o Aplicativo") como um aplicativo comercial. Esta Política de Privacidade explica como lidamos com as informações quando você usa nosso Aplicativo.`,
     sections: [
       {
@@ -604,9 +684,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Serviço de interpretação IA e geração de imagens`,
-        content: `<p>Quando você solicita uma interpretação de sonho por IA ou uma imagem de sonho, o Aplicativo envia as seguintes informações ao nosso servidor:</p>
+        content: `<p>Quando você solicita uma interpretação de sonho por IA ou uma imagem de sonho, o Aplicativo envia as seguintes informações a provedores de serviços de IA terceirizados através do nosso servidor:</p>
 <ul><li>O texto da sua entrada de sonho</li><li>A configuração de idioma do seu dispositivo (para fornecer a interpretação no seu idioma)</li></ul>
-<p>Esses dados são processados em tempo real para gerar sua interpretação ou imagem e <strong>não são armazenados em nossos servidores</strong>. Nenhum identificador pessoal, informação do dispositivo ou conta de usuário está associado a essas solicitações. Cada solicitação é completamente anônima.</p>`,
+<p>Os dados são processados da seguinte forma:</p>
+<ul><li><strong>Interpretação do sonho</strong> — o texto do seu sonho e a configuração de idioma são enviados ao <strong>DeepSeek</strong> (DeepSeek, China) através de sua API para gerar uma interpretação do sonho com IA.</li><li><strong>Geração de imagem do sonho</strong> — um resumo do seu sonho é enviado ao <strong>fal.ai</strong> (fal.ai, Inc.) através de sua API para gerar uma representação visual do seu sonho.</li></ul>
+<p>Esses dados são processados em tempo real e <strong>não são armazenados em nossos servidores</strong>. Os dados são transmitidos somente após você solicitar explicitamente uma interpretação ou imagem. Nenhum identificador pessoal, informação do dispositivo ou conta de usuário está associado a essas solicitações. Cada solicitação é completamente anônima.</p>`,
       },
       {
         heading: `Sincronização do iCloud`,
@@ -616,6 +698,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Serviços de terceiros`,
         content: `<h3>Apple (App Store e StoreKit)</h3>
 <p>Se você adquirir uma assinatura, a transação é processada inteiramente pela Apple através da App Store. Não temos acesso às suas informações de pagamento, Apple ID ou detalhes de cobrança. O tratamento dos seus dados pela Apple é regido pela Política de Privacidade da Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+<h3>DeepSeek (Interpretação de sonhos com IA)</h3>
+<p>Quando você solicita uma interpretação de sonho, o texto do seu sonho e a configuração de idioma do seu dispositivo são enviados ao DeepSeek através de sua API. O DeepSeek processa esses dados para gerar a interpretação. O tratamento de dados pelo DeepSeek é regido por sua Política de Privacidade (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
+<h3>fal.ai (Geração de imagens com IA)</h3>
+<p>Quando você solicita uma imagem de sonho, um resumo do seu sonho é enviado ao fal.ai através de sua API. O fal.ai processa esses dados para gerar a imagem. O tratamento de dados pelo fal.ai é regido por sua Política de Privacidade (<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>).</p>
 <h3>Sem outros serviços de terceiros</h3>
 <p>O Aplicativo não integra nenhum SDK de análise, publicidade, relatório de falhas ou mídias sociais de terceiros. Não usamos Firebase, Google Analytics, Facebook SDK ou qualquer serviço similar.</p>`,
       },
@@ -633,15 +719,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Compartilhamento de dados`,
-        content: `<p>Não vendemos, trocamos, alugamos ou compartilhamos de qualquer outra forma os dados dos usuários com terceiros.</p>`,
+        content: `<p>Compartilhamos os seguintes dados com provedores de serviços terceirizados exclusivamente para fornecer os recursos de IA do Aplicativo:</p>
+<ul><li><strong>DeepSeek</strong> — recebe o texto da sua entrada de sonho e a configuração de idioma do seu dispositivo para gerar interpretações de sonhos.</li><li><strong>fal.ai</strong> — recebe um resumo do seu sonho para gerar imagens de sonhos.</li></ul>
+<p>Esses dados são transmitidos somente quando você solicita explicitamente uma interpretação ou imagem com IA. Não vendemos, trocamos, alugamos ou compartilhamos de qualquer outra forma os dados dos usuários com terceiros para fins de marketing, publicidade ou qualquer outro propósito.</p>`,
       },
       {
         heading: `Segurança dos dados`,
-        content: `<p>Toda comunicação entre o Aplicativo e nosso servidor é criptografada usando HTTPS. Como não coletamos nem armazenamos dados pessoais em nossos servidores, há risco mínimo de violação de dados afetando suas informações pessoais.</p>`,
+        content: `<p>Toda comunicação entre o Aplicativo e nosso servidor, bem como entre nosso servidor e os provedores de IA terceirizados (DeepSeek e fal.ai), é criptografada usando HTTPS/TLS. Como não coletamos nem armazenamos dados pessoais em nossos servidores, há risco mínimo de violação de dados afetando suas informações pessoais. As entradas do diário de sonhos são armazenadas apenas em seu dispositivo (e opcionalmente em sua conta pessoal do iCloud).</p>`,
       },
       {
         heading: `Seus direitos`,
-        content: `<p>Como não coletamos dados pessoais, normalmente não há dados pessoais para fornecermos, modificarmos ou excluirmos. Todos os dados do Aplicativo são armazenados localmente em seu dispositivo (e opcionalmente em seu iCloud pessoal) e podem ser removidos desinstalando o Aplicativo. Se você tiver dúvidas sobre seus dados, entre em contato conosco.</p>`,
+        content: `<p>Você tem os seguintes direitos em relação aos seus dados:</p>
+<ul><li>Você pode optar por não usar os recursos de interpretação e geração de imagens com IA, caso em que nenhum dado será enviado a provedores terceirizados.</li><li>Todos os dados do Aplicativo são armazenados localmente em seu dispositivo (e opcionalmente em seu iCloud pessoal) e podem ser removidos desinstalando o Aplicativo.</li><li>Como não coletamos nem armazenamos dados pessoais em nossos servidores, não há dados pessoais para fornecermos, modificarmos ou excluirmos.</li></ul>
+<p>Se você tiver dúvidas sobre seus dados, entre em contato conosco.</p>`,
       },
       {
         heading: `Alterações nesta política`,
@@ -656,7 +746,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   ar: {
     title: `سياسة الخصوصية`,
-    effectiveDate: `تاريخ السريان: 27 فبراير 2026`,
+    effectiveDate: `تاريخ السريان: 3 مارس 2026`,
     intro: `قامت NikiBStudio ("نحن" أو "لنا" أو "خاصتنا") بتطوير <strong>LDream</strong> ("التطبيق") كتطبيق تجاري. توضح سياسة الخصوصية هذه كيفية تعاملنا مع المعلومات عند استخدامك لتطبيقنا.`,
     sections: [
       {
@@ -676,9 +766,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `خدمة التفسير بالذكاء الاصطناعي وتوليد الصور`,
-        content: `<p>عند طلب تفسير حلم بالذكاء الاصطناعي أو صورة حلم، يرسل التطبيق المعلومات التالية إلى خادمنا:</p>
+        content: `<p>عند طلب تفسير حلم بالذكاء الاصطناعي أو صورة حلم، يرسل التطبيق المعلومات التالية إلى مزودي خدمات الذكاء الاصطناعي من أطراف ثالثة عبر خادمنا:</p>
 <ul><li>نص إدخال الحلم الخاص بك</li><li>إعداد لغة جهازك (لتقديم التفسير بلغتك)</li></ul>
-<p>تتم معالجة هذه البيانات في الوقت الفعلي لتوليد تفسيرك أو صورتك و<strong>لا يتم تخزينها على خوادمنا</strong>. لا يتم ربط أي معرّفات شخصية أو معلومات عن الجهاز أو حسابات مستخدمين بهذه الطلبات. كل طلب مجهول الهوية تمامًا.</p>`,
+<p>تتم معالجة البيانات على النحو التالي:</p>
+<ul><li><strong>تفسير الحلم</strong> — يتم إرسال نص حلمك وإعداد اللغة إلى <strong>DeepSeek</strong> (DeepSeek، الصين) عبر واجهة برمجة التطبيقات الخاصة بهم لتوليد تفسير الحلم بالذكاء الاصطناعي.</li><li><strong>توليد صورة الحلم</strong> — يتم إرسال ملخص حلمك إلى <strong>fal.ai</strong> (fal.ai, Inc.) عبر واجهة برمجة التطبيقات الخاصة بهم لتوليد تمثيل بصري لحلمك.</li></ul>
+<p>تتم معالجة هذه البيانات في الوقت الفعلي و<strong>لا يتم تخزينها على خوادمنا</strong>. يتم نقل البيانات فقط بعد طلبك الصريح للتفسير أو الصورة. لا يتم ربط أي معرّفات شخصية أو معلومات عن الجهاز أو حسابات مستخدمين بهذه الطلبات. كل طلب مجهول الهوية تمامًا.</p>`,
       },
       {
         heading: `مزامنة iCloud`,
@@ -688,6 +780,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `خدمات الطرف الثالث`,
         content: `<h3>Apple (App Store و StoreKit)</h3>
 <p>إذا قمت بشراء اشتراك، تتم معالجة المعاملة بالكامل بواسطة Apple عبر App Store. ليس لدينا إمكانية الوصول إلى معلومات الدفع الخاصة بك أو معرّف Apple أو تفاصيل الفوترة. يخضع تعامل Apple مع بياناتك لسياسة خصوصية Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+<h3>DeepSeek (تفسير الأحلام بالذكاء الاصطناعي)</h3>
+<p>عند طلب تفسير حلم، يتم إرسال نص حلمك وإعداد لغة جهازك إلى DeepSeek عبر واجهة برمجة التطبيقات الخاصة بهم. يعالج DeepSeek هذه البيانات لتوليد التفسير. يخضع تعامل DeepSeek مع البيانات لسياسة الخصوصية الخاصة بهم (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
+<h3>fal.ai (توليد الصور بالذكاء الاصطناعي)</h3>
+<p>عند طلب صورة حلم، يتم إرسال ملخص حلمك إلى fal.ai عبر واجهة برمجة التطبيقات الخاصة بهم. يعالج fal.ai هذه البيانات لتوليد الصورة. يخضع تعامل fal.ai مع البيانات لسياسة الخصوصية الخاصة بهم (<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>).</p>
 <h3>لا توجد خدمات طرف ثالث أخرى</h3>
 <p>لا يدمج التطبيق أي حزم SDK للتحليلات أو الإعلانات أو تقارير الأعطال أو وسائل التواصل الاجتماعي من أطراف ثالثة. نحن لا نستخدم Firebase أو Google Analytics أو Facebook SDK أو أي خدمات مماثلة.</p>`,
       },
@@ -705,15 +801,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `مشاركة البيانات`,
-        content: `<p>نحن لا نبيع أو نتبادل أو نؤجر أو نشارك بأي طريقة أخرى بيانات المستخدمين مع أطراف ثالثة.</p>`,
+        content: `<p>نشارك البيانات التالية مع مزودي خدمات من أطراف ثالثة فقط لغرض توفير ميزات الذكاء الاصطناعي في التطبيق:</p>
+<ul><li><strong>DeepSeek</strong> — يتلقى نص إدخال حلمك وإعداد لغة جهازك لتوليد تفسيرات الأحلام.</li><li><strong>fal.ai</strong> — يتلقى ملخص حلمك لتوليد صور الأحلام.</li></ul>
+<p>يتم نقل هذه البيانات فقط عندما تطلب صراحةً تفسيرًا أو صورة بالذكاء الاصطناعي. نحن لا نبيع أو نتبادل أو نؤجر أو نشارك بأي طريقة أخرى بيانات المستخدمين مع أطراف ثالثة لأغراض التسويق أو الإعلان أو أي أغراض أخرى.</p>`,
       },
       {
         heading: `أمان البيانات`,
-        content: `<p>جميع الاتصالات بين التطبيق وخادمنا مشفرة باستخدام HTTPS. نظرًا لأننا لا نجمع أو نخزن بيانات شخصية على خوادمنا، فإن خطر اختراق البيانات الذي يؤثر على معلوماتك الشخصية ضئيل للغاية.</p>`,
+        content: `<p>جميع الاتصالات بين التطبيق وخادمنا، وكذلك بين خادمنا ومزودي الذكاء الاصطناعي من أطراف ثالثة (DeepSeek و fal.ai)، مشفرة باستخدام HTTPS/TLS. نظرًا لأننا لا نجمع أو نخزن بيانات شخصية على خوادمنا، فإن خطر اختراق البيانات الذي يؤثر على معلوماتك الشخصية ضئيل للغاية. يتم تخزين إدخالات يوميات الأحلام فقط على جهازك (واختياريًا في حساب iCloud الشخصي الخاص بك).</p>`,
       },
       {
         heading: `حقوقك`,
-        content: `<p>نظرًا لأننا لا نجمع بيانات شخصية، فلا توجد عادةً بيانات شخصية يمكننا تقديمها أو تعديلها أو حذفها. يتم تخزين جميع بيانات التطبيق محليًا على جهازك (واختياريًا في iCloud الشخصي الخاص بك) ويمكن إزالتها عن طريق إلغاء تثبيت التطبيق. إذا كانت لديك أسئلة حول بياناتك، يرجى الاتصال بنا.</p>`,
+        content: `<p>لديك الحقوق التالية فيما يتعلق ببياناتك:</p>
+<ul><li>يمكنك اختيار عدم استخدام ميزات التفسير وتوليد الصور بالذكاء الاصطناعي، وفي هذه الحالة لن يتم إرسال أي بيانات إلى مزودي الطرف الثالث.</li><li>يتم تخزين جميع بيانات التطبيق محليًا على جهازك (واختياريًا في iCloud الشخصي الخاص بك) ويمكن إزالتها عن طريق إلغاء تثبيت التطبيق.</li><li>نظرًا لأننا لا نجمع أو نخزن بيانات شخصية على خوادمنا، لا توجد بيانات شخصية يمكننا تقديمها أو تعديلها أو حذفها.</li></ul>
+<p>إذا كانت لديك أسئلة حول بياناتك، يرجى الاتصال بنا.</p>`,
       },
       {
         heading: `التغييرات على هذه السياسة`,
@@ -728,7 +828,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   it: {
     title: `Informativa sulla privacy`,
-    effectiveDate: `Data di entrata in vigore: 27 febbraio 2026`,
+    effectiveDate: `Data di entrata in vigore: 3 marzo 2026`,
     intro: `NikiBStudio ("noi", "nostro" o "ci") ha sviluppato <strong>LDream</strong> ("l'App") come applicazione commerciale. La presente Informativa sulla privacy spiega come gestiamo le informazioni quando utilizzi la nostra App.`,
     sections: [
       {
@@ -748,9 +848,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Servizio di interpretazione IA e generazione di immagini`,
-        content: `<p>Quando richiedi un'interpretazione del sogno tramite IA o un'immagine del sogno, l'App invia le seguenti informazioni al nostro server:</p>
+        content: `<p>Quando richiedi un'interpretazione del sogno tramite IA o un'immagine del sogno, l'App invia le seguenti informazioni a fornitori di servizi di IA di terze parti tramite il nostro server:</p>
 <ul><li>Il testo della tua voce del sogno</li><li>L'impostazione della lingua del tuo dispositivo (per fornire l'interpretazione nella tua lingua)</li></ul>
-<p>Questi dati vengono elaborati in tempo reale per generare la tua interpretazione o immagine e <strong>non vengono memorizzati sui nostri server</strong>. Nessun identificatore personale, informazione sul dispositivo o account utente è associato a queste richieste. Ogni richiesta è completamente anonima.</p>`,
+<p>I dati vengono elaborati come segue:</p>
+<ul><li><strong>Interpretazione del sogno</strong> — il testo del tuo sogno e l'impostazione della lingua vengono inviati a <strong>DeepSeek</strong> (DeepSeek, Cina) tramite la loro API per generare un'interpretazione del sogno con IA.</li><li><strong>Generazione dell'immagine del sogno</strong> — un riepilogo del tuo sogno viene inviato a <strong>fal.ai</strong> (fal.ai, Inc.) tramite la loro API per generare una rappresentazione visiva del tuo sogno.</li></ul>
+<p>Questi dati vengono elaborati in tempo reale e <strong>non vengono memorizzati sui nostri server</strong>. I dati vengono trasmessi solo dopo la tua richiesta esplicita di interpretazione o immagine. Nessun identificatore personale, informazione sul dispositivo o account utente è associato a queste richieste. Ogni richiesta è completamente anonima.</p>`,
       },
       {
         heading: `Sincronizzazione iCloud`,
@@ -760,6 +862,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Servizi di terze parti`,
         content: `<h3>Apple (App Store e StoreKit)</h3>
 <p>Se acquisti un abbonamento, la transazione viene elaborata interamente da Apple tramite l'App Store. Non abbiamo accesso alle tue informazioni di pagamento, Apple ID o dettagli di fatturazione. La gestione dei tuoi dati da parte di Apple è regolata dall'Informativa sulla privacy di Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+<h3>DeepSeek (Interpretazione dei sogni con IA)</h3>
+<p>Quando richiedi un'interpretazione del sogno, il testo del tuo sogno e l'impostazione della lingua del tuo dispositivo vengono inviati a DeepSeek tramite la loro API. DeepSeek elabora questi dati per generare l'interpretazione. La gestione dei dati da parte di DeepSeek è regolata dalla loro Informativa sulla privacy (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
+<h3>fal.ai (Generazione di immagini con IA)</h3>
+<p>Quando richiedi un'immagine del sogno, un riepilogo del tuo sogno viene inviato a fal.ai tramite la loro API. fal.ai elabora questi dati per generare l'immagine. La gestione dei dati da parte di fal.ai è regolata dalla loro Informativa sulla privacy (<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>).</p>
 <h3>Nessun altro servizio di terze parti</h3>
 <p>L'App non integra SDK di analisi, pubblicità, segnalazione di crash o social media di terze parti. Non utilizziamo Firebase, Google Analytics, Facebook SDK o servizi simili.</p>`,
       },
@@ -777,15 +883,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Condivisione dei dati`,
-        content: `<p>Non vendiamo, scambiamo, affittiamo o condividiamo in alcun altro modo i dati degli utenti con terze parti.</p>`,
+        content: `<p>Condividiamo i seguenti dati con fornitori di servizi di terze parti esclusivamente allo scopo di fornire le funzionalità di IA dell'App:</p>
+<ul><li><strong>DeepSeek</strong> — riceve il testo della tua voce del sogno e l'impostazione della lingua del tuo dispositivo per generare interpretazioni dei sogni.</li><li><strong>fal.ai</strong> — riceve un riepilogo del tuo sogno per generare immagini dei sogni.</li></ul>
+<p>Questi dati vengono trasmessi solo quando richiedi esplicitamente un'interpretazione o un'immagine con IA. Non vendiamo, scambiamo, affittiamo o condividiamo in alcun altro modo i dati degli utenti con terze parti per scopi di marketing, pubblicità o qualsiasi altro scopo.</p>`,
       },
       {
         heading: `Sicurezza dei dati`,
-        content: `<p>Tutte le comunicazioni tra l'App e il nostro server sono crittografate tramite HTTPS. Poiché non raccogliamo né memorizziamo dati personali sui nostri server, il rischio di violazione dei dati che influisca sulle tue informazioni personali è minimo.</p>`,
+        content: `<p>Tutte le comunicazioni tra l'App e il nostro server, nonché tra il nostro server e i fornitori di IA di terze parti (DeepSeek e fal.ai), sono crittografate tramite HTTPS/TLS. Poiché non raccogliamo né memorizziamo dati personali sui nostri server, il rischio di violazione dei dati che influisca sulle tue informazioni personali è minimo. Le voci del diario dei sogni sono memorizzate solo sul tuo dispositivo (e facoltativamente nel tuo account iCloud personale).</p>`,
       },
       {
         heading: `I tuoi diritti`,
-        content: `<p>Poiché non raccogliamo dati personali, generalmente non ci sono dati personali che possiamo fornire, modificare o eliminare. Tutti i dati dell'App sono memorizzati localmente sul tuo dispositivo (e facoltativamente nel tuo iCloud personale) e possono essere rimossi disinstallando l'App. Se hai domande sui tuoi dati, contattaci.</p>`,
+        content: `<p>Hai i seguenti diritti riguardo ai tuoi dati:</p>
+<ul><li>Puoi scegliere di non utilizzare le funzionalità di interpretazione e generazione di immagini con IA, nel qual caso nessun dato verrà inviato ai fornitori di terze parti.</li><li>Tutti i dati dell'App sono memorizzati localmente sul tuo dispositivo (e facoltativamente nel tuo iCloud personale) e possono essere rimossi disinstallando l'App.</li><li>Poiché non raccogliamo né memorizziamo dati personali sui nostri server, non ci sono dati personali che possiamo fornire, modificare o eliminare.</li></ul>
+<p>Se hai domande sui tuoi dati, contattaci.</p>`,
       },
       {
         heading: `Modifiche a questa informativa`,
@@ -800,7 +910,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   hi: {
     title: `गोपनीयता नीति`,
-    effectiveDate: `प्रभावी तिथि: 27 फरवरी 2026`,
+    effectiveDate: `प्रभावी तिथि: 3 मार्च 2026`,
     intro: `NikiBStudio ("हम", "हमारा" या "हमें") ने <strong>LDream</strong> ("ऐप") को एक वाणिज्यिक एप्लिकेशन के रूप में विकसित किया है। यह गोपनीयता नीति बताती है कि जब आप हमारे ऐप का उपयोग करते हैं तो हम जानकारी को कैसे संभालते हैं।`,
     sections: [
       {
@@ -820,9 +930,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI व्याख्या और छवि निर्माण सेवा`,
-        content: `<p>जब आप AI-संचालित स्वप्न व्याख्या या स्वप्न छवि का अनुरोध करते हैं, तो ऐप हमारे सर्वर को निम्नलिखित जानकारी भेजता है:</p>
+        content: `<p>जब आप AI-संचालित स्वप्न व्याख्या या स्वप्न छवि का अनुरोध करते हैं, तो ऐप हमारे सर्वर के माध्यम से निम्नलिखित जानकारी तृतीय-पक्ष AI सेवा प्रदाताओं को भेजता है:</p>
 <ul><li>आपकी स्वप्न प्रविष्टि का पाठ</li><li>आपके डिवाइस की भाषा सेटिंग (आपकी भाषा में व्याख्या प्रदान करने के लिए)</li></ul>
-<p>यह डेटा आपकी व्याख्या या छवि उत्पन्न करने के लिए वास्तविक समय में संसाधित किया जाता है और <strong>हमारे सर्वर पर संग्रहीत नहीं किया जाता है</strong>। इन अनुरोधों के साथ कोई व्यक्तिगत पहचानकर्ता, डिवाइस जानकारी या उपयोगकर्ता खाते संबद्ध नहीं हैं। प्रत्येक अनुरोध पूरी तरह से गुमनाम है।</p>`,
+<p>डेटा निम्नानुसार संसाधित किया जाता है:</p>
+<ul><li><strong>स्वप्न व्याख्या</strong> — आपके सपने का पाठ और भाषा सेटिंग <strong>DeepSeek</strong> (DeepSeek, चीन) को उनकी API के माध्यम से भेजी जाती है ताकि AI-संचालित स्वप्न व्याख्या उत्पन्न की जा सके।</li><li><strong>स्वप्न छवि निर्माण</strong> — आपके सपने का सारांश <strong>fal.ai</strong> (fal.ai, Inc.) को उनकी API के माध्यम से भेजा जाता है ताकि आपके सपने का दृश्य प्रतिनिधित्व उत्पन्न किया जा सके।</li></ul>
+<p>यह डेटा वास्तविक समय में संसाधित किया जाता है और <strong>हमारे सर्वर पर संग्रहीत नहीं किया जाता है</strong>। डेटा केवल तब प्रेषित किया जाता है जब आप स्पष्ट रूप से व्याख्या या छवि का अनुरोध करते हैं। इन अनुरोधों के साथ कोई व्यक्तिगत पहचानकर्ता, डिवाइस जानकारी या उपयोगकर्ता खाते संबद्ध नहीं हैं। प्रत्येक अनुरोध पूरी तरह से गुमनाम है।</p>`,
       },
       {
         heading: `iCloud सिंक`,
@@ -832,6 +944,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `तृतीय-पक्ष सेवाएँ`,
         content: `<h3>Apple (App Store और StoreKit)</h3>
 <p>यदि आप सदस्यता खरीदते हैं, तो लेनदेन पूरी तरह से Apple द्वारा App Store के माध्यम से संसाधित किया जाता है। हमारे पास आपकी भुगतान जानकारी, Apple ID या बिलिंग विवरण तक पहुँच नहीं है। Apple द्वारा आपके डेटा का प्रबंधन Apple की गोपनीयता नीति (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>) द्वारा शासित होता है।</p>
+<h3>DeepSeek (AI स्वप्न व्याख्या)</h3>
+<p>जब आप स्वप्न व्याख्या का अनुरोध करते हैं, तो आपके सपने का पाठ और डिवाइस की भाषा सेटिंग उनकी API के माध्यम से DeepSeek को भेजी जाती है। DeepSeek व्याख्या उत्पन्न करने के लिए इन डेटा को संसाधित करता है। DeepSeek का डेटा प्रबंधन उनकी गोपनीयता नीति (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>) द्वारा शासित होता है।</p>
+<h3>fal.ai (AI छवि निर्माण)</h3>
+<p>जब आप स्वप्न छवि का अनुरोध करते हैं, तो आपके सपने का सारांश उनकी API के माध्यम से fal.ai को भेजा जाता है। fal.ai छवि उत्पन्न करने के लिए इन डेटा को संसाधित करता है। fal.ai का डेटा प्रबंधन उनकी गोपनीयता नीति (<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>) द्वारा शासित होता है।</p>
 <h3>कोई अन्य तृतीय-पक्ष सेवाएँ नहीं</h3>
 <p>ऐप किसी भी तृतीय-पक्ष विश्लेषण, विज्ञापन, क्रैश रिपोर्टिंग या सोशल मीडिया SDK को एकीकृत नहीं करता है। हम Firebase, Google Analytics, Facebook SDK या किसी भी समान सेवा का उपयोग नहीं करते हैं।</p>`,
       },
@@ -849,15 +965,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `डेटा साझाकरण`,
-        content: `<p>हम किसी भी तरह से उपयोगकर्ता डेटा को तीसरे पक्ष को बेचते, व्यापार करते, किराए पर देते या साझा नहीं करते हैं।</p>`,
+        content: `<p>हम ऐप की AI सुविधाएँ प्रदान करने के उद्देश्य से ही निम्नलिखित डेटा तृतीय-पक्ष सेवा प्रदाताओं के साथ साझा करते हैं:</p>
+<ul><li><strong>DeepSeek</strong> — स्वप्न व्याख्या उत्पन्न करने के लिए आपकी स्वप्न प्रविष्टि का पाठ और डिवाइस की भाषा सेटिंग प्राप्त करता है।</li><li><strong>fal.ai</strong> — स्वप्न छवियाँ उत्पन्न करने के लिए आपके सपने का सारांश प्राप्त करता है।</li></ul>
+<p>यह डेटा केवल तब प्रेषित किया जाता है जब आप स्पष्ट रूप से AI व्याख्या या छवि का अनुरोध करते हैं। हम किसी भी तरह से उपयोगकर्ता डेटा को विपणन, विज्ञापन या किसी अन्य उद्देश्य के लिए तीसरे पक्ष को बेचते, व्यापार करते, किराए पर देते या साझा नहीं करते हैं।</p>`,
       },
       {
         heading: `डेटा सुरक्षा`,
-        content: `<p>ऐप और हमारे सर्वर के बीच सभी संचार HTTPS का उपयोग करके एन्क्रिप्ट किए गए हैं। चूंकि हम अपने सर्वर पर व्यक्तिगत डेटा एकत्र या संग्रहीत नहीं करते हैं, आपकी व्यक्तिगत जानकारी को प्रभावित करने वाले डेटा उल्लंघन का जोखिम न्यूनतम है।</p>`,
+        content: `<p>ऐप और हमारे सर्वर के बीच, साथ ही हमारे सर्वर और तृतीय-पक्ष AI प्रदाताओं (DeepSeek और fal.ai) के बीच सभी संचार HTTPS/TLS का उपयोग करके एन्क्रिप्ट किए गए हैं। चूंकि हम अपने सर्वर पर व्यक्तिगत डेटा एकत्र या संग्रहीत नहीं करते हैं, आपकी व्यक्तिगत जानकारी को प्रभावित करने वाले डेटा उल्लंघन का जोखिम न्यूनतम है। स्वप्न डायरी प्रविष्टियाँ केवल आपके डिवाइस पर संग्रहीत होती हैं (और वैकल्पिक रूप से आपके व्यक्तिगत iCloud खाते में)।</p>`,
       },
       {
         heading: `आपके अधिकार`,
-        content: `<p>चूंकि हम व्यक्तिगत डेटा एकत्र नहीं करते हैं, आम तौर पर हमारे पास प्रदान करने, संशोधित करने या हटाने के लिए कोई व्यक्तिगत डेटा नहीं है। ऐप का सारा डेटा आपके डिवाइस पर स्थानीय रूप से (और वैकल्पिक रूप से आपके व्यक्तिगत iCloud में) संग्रहीत है और ऐप को अनइंस्टॉल करके हटाया जा सकता है। यदि आपके डेटा के बारे में कोई प्रश्न हैं, तो कृपया हमसे संपर्क करें।</p>`,
+        content: `<p>आपके डेटा के संबंध में आपके निम्नलिखित अधिकार हैं:</p>
+<ul><li>आप AI व्याख्या और छवि निर्माण सुविधाओं का उपयोग न करने का विकल्प चुन सकते हैं, इस स्थिति में कोई डेटा तृतीय-पक्ष प्रदाताओं को नहीं भेजा जाएगा।</li><li>ऐप का सारा डेटा आपके डिवाइस पर स्थानीय रूप से (और वैकल्पिक रूप से आपके व्यक्तिगत iCloud में) संग्रहीत है और ऐप को अनइंस्टॉल करके हटाया जा सकता है।</li><li>चूंकि हम अपने सर्वर पर व्यक्तिगत डेटा एकत्र या संग्रहीत नहीं करते हैं, कोई व्यक्तिगत डेटा नहीं है जो हम प्रदान, संशोधित या हटा सकें।</li></ul>
+<p>यदि आपके डेटा के बारे में कोई प्रश्न हैं, तो कृपया हमसे संपर्क करें।</p>`,
       },
       {
         heading: `इस नीति में परिवर्तन`,
@@ -872,7 +992,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   },
   he: {
     title: `מדיניות פרטיות`,
-    effectiveDate: `תאריך תחילה: 27 בפברואר 2026`,
+    effectiveDate: `תאריך תחילה: 3 במרץ 2026`,
     intro: `NikiBStudio ("אנחנו", "שלנו" או "אותנו") פיתחה את <strong>LDream</strong> ("האפליקציה") כאפליקציה מסחרית. מדיניות פרטיות זו מסבירה כיצד אנו מטפלים במידע כאשר אתה משתמש באפליקציה שלנו.`,
     sections: [
       {
@@ -892,9 +1012,11 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `שירות פרשנות AI ויצירת תמונות`,
-        content: `<p>כאשר אתה מבקש פרשנות חלום מבוססת AI או תמונת חלום, האפליקציה שולחת את המידע הבא לשרת שלנו:</p>
+        content: `<p>כאשר אתה מבקש פרשנות חלום מבוססת AI או תמונת חלום, האפליקציה שולחת את המידע הבא לספקי שירותי AI של צד שלישי דרך השרת שלנו:</p>
 <ul><li>טקסט רשומת החלום שלך</li><li>הגדרת השפה של המכשיר שלך (כדי לספק את הפרשנות בשפה שלך)</li></ul>
-<p>נתונים אלה מעובדים בזמן אמת ליצירת הפרשנות או התמונה שלך ו<strong>אינם מאוחסנים בשרתים שלנו</strong>. אין מזהים אישיים, מידע על המכשיר או חשבונות משתמש המשויכים לבקשות אלה. כל בקשה היא אנונימית לחלוטין.</p>`,
+<p>הנתונים מעובדים כדלקמן:</p>
+<ul><li><strong>פרשנות החלום</strong> — טקסט החלום שלך והגדרת השפה נשלחים ל-<strong>DeepSeek</strong> (DeepSeek, סין) דרך ה-API שלהם ליצירת פרשנות חלום מבוססת AI.</li><li><strong>יצירת תמונת חלום</strong> — סיכום החלום שלך נשלח ל-<strong>fal.ai</strong> (fal.ai, Inc.) דרך ה-API שלהם ליצירת ייצוג חזותי של החלום שלך.</li></ul>
+<p>נתונים אלה מעובדים בזמן אמת ו<strong>אינם מאוחסנים בשרתים שלנו</strong>. הנתונים מועברים רק לאחר שתבקש במפורש פרשנות או תמונה. אין מזהים אישיים, מידע על המכשיר או חשבונות משתמש המשויכים לבקשות אלה. כל בקשה היא אנונימית לחלוטין.</p>`,
       },
       {
         heading: `סנכרון iCloud`,
@@ -904,6 +1026,10 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `שירותי צד שלישי`,
         content: `<h3>Apple (App Store ו-StoreKit)</h3>
 <p>אם תרכוש מנוי, העסקה מעובדת במלואה על ידי Apple דרך App Store. אין לנו גישה לפרטי התשלום שלך, Apple ID או פרטי החיוב שלך. הטיפול של Apple בנתונים שלך מוסדר על ידי מדיניות הפרטיות של Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+<h3>DeepSeek (פרשנות חלומות AI)</h3>
+<p>כאשר אתה מבקש פרשנות חלום, טקסט החלום שלך והגדרת שפת המכשיר נשלחים ל-DeepSeek דרך ה-API שלהם. DeepSeek מעבד נתונים אלה ליצירת הפרשנות. הטיפול של DeepSeek בנתונים מוסדר על ידי מדיניות הפרטיות שלהם (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
+<h3>fal.ai (יצירת תמונות AI)</h3>
+<p>כאשר אתה מבקש תמונת חלום, סיכום החלום שלך נשלח ל-fal.ai דרך ה-API שלהם. fal.ai מעבד נתונים אלה ליצירת התמונה. הטיפול של fal.ai בנתונים מוסדר על ידי מדיניות הפרטיות שלהם (<a href="https://fal.ai/privacy" target="_blank" rel="noopener noreferrer">fal.ai/privacy</a>).</p>
 <h3>אין שירותי צד שלישי אחרים</h3>
 <p>האפליקציה אינה משלבת שום SDK של צד שלישי לניתוח, פרסום, דיווחי קריסות או רשתות חברתיות. אנחנו לא משתמשים ב-Firebase, Google Analytics, Facebook SDK או שירותים דומים.</p>`,
       },
@@ -921,15 +1047,19 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `שיתוף נתונים`,
-        content: `<p>אנחנו לא מוכרים, מחליפים, משכירים או משתפים בכל דרך אחרת נתוני משתמשים עם צדדים שלישיים.</p>`,
+        content: `<p>אנחנו משתפים את הנתונים הבאים עם ספקי שירותים של צד שלישי אך ורק לצורך אספקת תכונות ה-AI של האפליקציה:</p>
+<ul><li><strong>DeepSeek</strong> — מקבל את טקסט רשומת החלום שלך ואת הגדרת שפת המכשיר ליצירת פרשנויות חלומות.</li><li><strong>fal.ai</strong> — מקבל סיכום של החלום שלך ליצירת תמונות חלומות.</li></ul>
+<p>נתונים אלה מועברים רק כאשר אתה מבקש במפורש פרשנות או תמונה מבוססת AI. אנחנו לא מוכרים, מחליפים, משכירים או משתפים בכל דרך אחרת נתוני משתמשים עם צדדים שלישיים למטרות שיווק, פרסום או כל מטרה אחרת.</p>`,
       },
       {
         heading: `אבטחת נתונים`,
-        content: `<p>כל התקשורת בין האפליקציה לשרת שלנו מוצפנת באמצעות HTTPS. מכיוון שאנחנו לא אוספים או מאחסנים נתונים אישיים בשרתים שלנו, הסיכון לפריצת נתונים המשפיעה על המידע האישי שלך הוא מינימלי.</p>`,
+        content: `<p>כל התקשורת בין האפליקציה לשרת שלנו, וכן בין השרת שלנו לספקי AI של צד שלישי (DeepSeek ו-fal.ai), מוצפנת באמצעות HTTPS/TLS. מכיוון שאנחנו לא אוספים או מאחסנים נתונים אישיים בשרתים שלנו, הסיכון לפריצת נתונים המשפיעה על המידע האישי שלך הוא מינימלי. רשומות יומן החלומות מאוחסנות רק במכשיר שלך (ובאופן אופציונלי בחשבון iCloud האישי שלך).</p>`,
       },
       {
         heading: `הזכויות שלך`,
-        content: `<p>מכיוון שאנחנו לא אוספים נתונים אישיים, בדרך כלל אין נתונים אישיים שנוכל לספק, לשנות או למחוק. כל נתוני האפליקציה מאוחסנים באופן מקומי במכשיר שלך (ובאופן אופציונלי ב-iCloud האישי שלך) וניתן להסירם על ידי הסרת האפליקציה. אם יש לך שאלות לגבי הנתונים שלך, אנא צור איתנו קשר.</p>`,
+        content: `<p>יש לך את הזכויות הבאות בנוגע לנתונים שלך:</p>
+<ul><li>אתה יכול לבחור שלא להשתמש בתכונות פרשנות ויצירת תמונות AI, ובמקרה זה לא יישלחו נתונים לספקי צד שלישי.</li><li>כל נתוני האפליקציה מאוחסנים באופן מקומי במכשיר שלך (ובאופן אופציונלי ב-iCloud האישי שלך) וניתן להסירם על ידי הסרת האפליקציה.</li><li>מכיוון שאנחנו לא אוספים או מאחסנים נתונים אישיים בשרתים שלנו, אין נתונים אישיים שנוכל לספק, לשנות או למחוק.</li></ul>
+<p>אם יש לך שאלות לגבי הנתונים שלך, אנא צור איתנו קשר.</p>`,
       },
       {
         heading: `שינויים במדיניות זו`,
