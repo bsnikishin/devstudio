@@ -99,4 +99,28 @@ export const apps: App[] = [
       'Leaderboards and achievements',
     ],
   },
+  {
+    id: 'aline',
+    title: 'Aline',
+    tagline: 'Aligner tracker & timer',
+    description: 'Track aligner wear time, keep a photo diary, and come prepared to every appointment.',
+    fullDescription:
+      'Aline is a calm, ad-free companion for your aligner journey. Tap the ring when you take your trays out, get a gentle reminder to put them back in, and watch your daily wear progress. Keep a weekly photo diary with before/after compare and timelapse export, jot down notes with tags, and let Aline organize them into a short brief for your next appointment. Your photos stay on your device and in your personal iCloud — no ads, no tracking.',
+    category: 'Health & Fitness',
+    platform: 'iOS',
+    appStoreId: null,
+    appStoreUrl: null,
+    supportEmail: 'B.S.NikishinG@gmail.com',
+    gradient: 'from-rose-300 to-rose-500',
+    color: '#B5837A',
+    iconPath: '/icons/aline.png',
+    features: [
+      'Tray-out timer with daily wear progress ring',
+      'Aligner calendar: tray changes, appointments, tonal wear map',
+      'Photo diary with before/after compare and timelapse export',
+      'Notes with tags and an auto-list for your next appointment',
+      'AI pre-appointment summary, widgets, Watch and Siri (Aline+)',
+      'SOS flow for a lost aligner',
+    ],
+  },
 ]

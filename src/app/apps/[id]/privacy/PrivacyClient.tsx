@@ -7,11 +7,13 @@ import { useLocale } from '@/contexts/LocaleContext'
 import { tarotaperPrivacy, type PrivacyPolicy } from '@/data/tarotaper-privacy'
 import { ldreamPrivacy } from '@/data/ldream-privacy'
 import { colorbrainPrivacy } from '@/data/colorbrain-privacy'
+import { alinePrivacy } from '@/data/aline-privacy'
 
 const privacyData: Record<string, Record<string, PrivacyPolicy>> = {
   tarotaper: tarotaperPrivacy,
   ldream: ldreamPrivacy,
   colorbrain: colorbrainPrivacy,
+  aline: alinePrivacy,
 }
 
 export default function PrivacyClient({ id }: { id: string }) {
