@@ -101,11 +101,11 @@ export const apps: App[] = [
   },
   {
     id: 'aline',
-    title: 'Aline',
+    title: 'Aliner',
     tagline: 'Aligner tracker & timer',
     description: 'Track aligner wear time, keep a photo diary, and come prepared to every appointment.',
     fullDescription:
-      'Aline is a calm, ad-free companion for your aligner journey. Tap the ring when you take your trays out, get a gentle reminder to put them back in, and watch your daily wear progress. Keep a weekly photo diary with before/after compare and timelapse export, jot down notes with tags, and let Aline organize them into a short brief for your next appointment. Your photos stay on your device and in your personal iCloud — no ads, no tracking.',
+      'Aliner is a calm, ad-free companion for your aligner journey. Tap the ring when you take your trays out, get a gentle reminder to put them back in, and watch your daily wear progress. Keep a weekly photo diary with before/after compare and timelapse export, jot down notes with tags, and let Aliner organize them into a short brief for your next appointment. Your photos stay on your device and in your personal iCloud — no ads, no tracking.',
     category: 'Health & Fitness',
     platform: 'iOS',
     appStoreId: null,
@@ -119,7 +119,7 @@ export const apps: App[] = [
       'Aligner calendar: tray changes, appointments, tonal wear map',
       'Photo diary with before/after compare and timelapse export',
       'Notes with tags and an auto-list for your next appointment',
-      'AI pre-appointment summary, widgets, Watch and Siri (Aline+)',
+      'AI pre-appointment summary, widgets, Watch and Siri (Aliner+)',
       'SOS flow for a lost aligner',
     ],
   },

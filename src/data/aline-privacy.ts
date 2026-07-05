@@ -6,11 +6,11 @@ export const alinePrivacy: Record<string, PrivacyPolicy> = {
   en: {
     title: `Privacy Policy`,
     effectiveDate: `Effective Date: June 11, 2026`,
-    intro: `NikiBStudio ("we", "our", or "us") built <strong>Aline</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
+    intro: `NikiBStudio ("we", "our", or "us") built <strong>Aliner</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
     sections: [
       {
         heading: `Overview`,
-        content: `<p>Aline is designed with your privacy in mind. The App does not require account creation, login, or any form of user registration, shows no ads, and performs no cross-app tracking. Aline only displays your own data and does not provide medical advice — treatment questions belong to your doctor.</p>`,
+        content: `<p>Aliner is designed with your privacy in mind. The App does not require account creation, login, or any form of user registration, shows no ads, and performs no cross-app tracking. Aliner only displays your own data and does not provide medical advice — treatment questions belong to your doctor.</p>`,
       },
       {
         heading: `Information We Do Not Collect`,
@@ -25,19 +25,19 @@ export const alinePrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI Appointment Summary`,
-        content: `<p>Aline can organize your notes into a short pre-appointment summary. When you request a summary <strong>and have given explicit consent</strong> (a consent dialog on first use, and a toggle in the App's settings), the App sends the following to a third-party AI provider:</p>
+        content: `<p>Aliner can organize your notes into a short pre-appointment summary. When you request a summary <strong>and have given explicit consent</strong> (a consent dialog on first use, and a toggle in the App's settings), the App sends the following to a third-party AI provider:</p>
 <ul><li>The text of your notes for the period and their dates</li><li>Tray numbers and dates of photos taken in the period (dates only — never the images themselves)</li></ul>
 <p>This data is sent to <strong>DeepSeek</strong> via their API and processed in real time. It is <strong>not stored on our servers</strong> — we do not operate any servers. Data is transmitted only after your explicit request, and no personal identifiers or user accounts are associated with these requests. If you do not give consent, the summary is generated on your device and nothing is sent. DeepSeek's handling of data is governed by their Privacy Policy (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
 <p><strong>The content of your photos is never sent to any AI service or analyzed in any way.</strong></p>`,
       },
       {
-        heading: `iCloud Photo Sync (Aline+)`,
+        heading: `iCloud Photo Sync (Aliner+)`,
         content: `<p>If you enable photo sync, your photo diary is stored in your personal iCloud account using Apple's CloudKit private database. This data is protected by your Apple ID and is not accessible to us. Sync is off by default, and turning it off does not delete your local photos. Apple's handling of your iCloud data is governed by Apple's Privacy Policy (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Third-Party Services`,
         content: `<h3>Apple (App Store & StoreKit)</h3>
-<p>If you purchase an Aline+ subscription, the transaction is processed entirely by Apple through the App Store. We do not have access to your payment information, Apple ID, or billing details.</p>
+<p>If you purchase an Aliner+ subscription, the transaction is processed entirely by Apple through the App Store. We do not have access to your payment information, Apple ID, or billing details.</p>
 <h3>RevenueCat (Subscription Management)</h3>
 <p>The App uses RevenueCat to validate subscription status. RevenueCat receives an anonymous app-generated identifier and purchase receipt information — never your name, email, or payment details. RevenueCat's handling of data is governed by their Privacy Policy (<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">www.revenuecat.com/privacy</a>).</p>
 <h3>PostHog (Anonymous Usage Analytics)</h3>
@@ -82,11 +82,11 @@ export const alinePrivacy: Record<string, PrivacyPolicy> = {
   ru: {
     title: `Политика конфиденциальности`,
     effectiveDate: `Дата вступления в силу: 11 июня 2026 г.`,
-    intro: `NikiBStudio («мы», «наш» или «нас») разработала приложение <strong>Aline</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
+    intro: `NikiBStudio («мы», «наш» или «нас») разработала приложение <strong>Aliner</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
     sections: [
       {
         heading: `Обзор`,
-        content: `<p>Aline разработано с заботой о вашей конфиденциальности. Приложение не требует создания аккаунта или регистрации, не показывает рекламу и не отслеживает вас между приложениями. Aline показывает только ваши собственные данные и не даёт медицинских рекомендаций — вопросы лечения решает ваш врач.</p>`,
+        content: `<p>Aliner разработано с заботой о вашей конфиденциальности. Приложение не требует создания аккаунта или регистрации, не показывает рекламу и не отслеживает вас между приложениями. Aliner показывает только ваши собственные данные и не даёт медицинских рекомендаций — вопросы лечения решает ваш врач.</p>`,
       },
       {
         heading: `Какую информацию мы не собираем`,
@@ -101,19 +101,19 @@ export const alinePrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI-сводка к приёму`,
-        content: `<p>Aline может собрать ваши заметки в короткую сводку к приёму. Когда вы запрашиваете сводку <strong>и дали явное согласие</strong> (диалог при первом использовании и переключатель в настройках), Приложение отправляет стороннему ИИ-провайдеру:</p>
+        content: `<p>Aliner может собрать ваши заметки в короткую сводку к приёму. Когда вы запрашиваете сводку <strong>и дали явное согласие</strong> (диалог при первом использовании и переключатель в настройках), Приложение отправляет стороннему ИИ-провайдеру:</p>
 <ul><li>Тексты заметок за период и их даты</li><li>Номера пар и даты снимков за период (только даты — никогда сами изображения)</li></ul>
 <p>Данные отправляются в <strong>DeepSeek</strong> через их API и обрабатываются в реальном времени. Они <strong>не сохраняются на наших серверах</strong> — у нас нет серверов. Передача происходит только по вашему явному запросу, без каких-либо персональных идентификаторов. Без согласия сводка собирается на устройстве, и ничего не отправляется. Обработка данных DeepSeek регулируется их Политикой конфиденциальности (<a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">www.deepseek.com/privacy</a>).</p>
 <p><strong>Содержимое ваших фото никогда не отправляется ИИ-сервисам и никак не анализируется.</strong></p>`,
       },
       {
-        heading: `Синхронизация фото через iCloud (Aline+)`,
+        heading: `Синхронизация фото через iCloud (Aliner+)`,
         content: `<p>Если вы включите синхронизацию фото, фотодневник хранится в вашем личном iCloud в закрытой базе CloudKit. Эти данные защищены вашим Apple ID и недоступны нам. Синхронизация выключена по умолчанию; её отключение не удаляет локальные фото. Обработка данных iCloud регулируется Политикой конфиденциальности Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Сторонние сервисы`,
         content: `<h3>Apple (App Store и StoreKit)</h3>
-<p>Покупка подписки Aline+ полностью обрабатывается Apple через App Store. У нас нет доступа к вашим платёжным данным, Apple ID и реквизитам.</p>
+<p>Покупка подписки Aliner+ полностью обрабатывается Apple через App Store. У нас нет доступа к вашим платёжным данным, Apple ID и реквизитам.</p>
 <h3>RevenueCat (управление подпиской)</h3>
 <p>Приложение использует RevenueCat для проверки статуса подписки. RevenueCat получает анонимный идентификатор, сгенерированный приложением, и данные чека покупки — никогда ваше имя, почту или платёжные данные. Политика: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">www.revenuecat.com/privacy</a>.</p>
 <h3>PostHog (анонимная аналитика использования)</h3>
