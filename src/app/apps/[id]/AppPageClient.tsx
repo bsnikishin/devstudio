@@ -12,12 +12,14 @@ import { ldreamMarketing, type AppMarketing } from '@/data/ldream-marketing'
 import { tarotaperMarketing } from '@/data/tarotaper-marketing'
 import { colorbrainMarketing } from '@/data/colorbrain-marketing'
 import { alineMarketing } from '@/data/aline-marketing'
+import { cozyballMarketing } from '@/data/cozyball-marketing'
 
 const marketingData: Record<string, Record<string, AppMarketing>> = {
   ldream: ldreamMarketing,
   tarotaper: tarotaperMarketing,
   colorbrain: colorbrainMarketing,
   aline: alineMarketing,
+  cozyball: cozyballMarketing,
 }
 
 interface Props { app: App }

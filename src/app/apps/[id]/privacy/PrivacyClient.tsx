@@ -8,12 +8,14 @@ import { tarotaperPrivacy, type PrivacyPolicy } from '@/data/tarotaper-privacy'
 import { ldreamPrivacy } from '@/data/ldream-privacy'
 import { colorbrainPrivacy } from '@/data/colorbrain-privacy'
 import { alinePrivacy } from '@/data/aline-privacy'
+import { cozyballPrivacy } from '@/data/cozyball-privacy'
 
 const privacyData: Record<string, Record<string, PrivacyPolicy>> = {
   tarotaper: tarotaperPrivacy,
   ldream: ldreamPrivacy,
   colorbrain: colorbrainPrivacy,
   aline: alinePrivacy,
+  cozyball: cozyballPrivacy,
 }
 
 export default function PrivacyClient({ id }: { id: string }) {

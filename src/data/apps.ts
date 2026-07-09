@@ -28,6 +28,31 @@ export function getAppStoreConnectUrls(app: App) {
 
 export const apps: App[] = [
   {
+    id: 'cozyball',
+    title: 'Cozy Ball',
+    tagline: 'A cozy arcade ball run',
+    description: 'Roll across a calm sunset ocean, dodge obstacles, and unwind. No ads, ever.',
+    fullDescription:
+      'Cozy Ball is a relaxing arcade runner. Guide a ball rolling across a serene ocean boardwalk: hold the left or right side of the screen to steer, both sides to jump. Travel through sunset, lagoon, bioluminescent night, and dawn, collect pearls, unlock ball skins, and chase your best distance on Game Center leaderboards. No ads — just a calm, focused run.',
+    category: 'Games',
+    platform: 'iOS',
+    appStoreId: '6479428845',
+    appStoreUrl: 'https://apps.apple.com/app/id6479428845',
+    supportEmail: 'B.S.NikishinG@gmail.com',
+    gradient: 'from-amber-300 via-orange-400 to-teal-500',
+    color: '#fb923c',
+    iconPath: '/icons/cozyball.png',
+    features: [
+      'One-touch cozy controls — steer with screen halves, jump with both',
+      'Real ball physics with forgiving, smooth jumps',
+      'Four scenic biomes — sunset, lagoon, night, and dawn',
+      '10 collectible ball skins',
+      'Daily missions with pearl rewards',
+      'Game Center leaderboards',
+      'No ads — ever',
+    ],
+  },
+  {
     id: 'ldream',
     title: 'Ldream',
     tagline: 'Your dream journal',
