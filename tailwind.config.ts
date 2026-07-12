@@ -9,13 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#6A0DAD',
-        secondary: '#E6E6FA',
+        primary: '#7C3AED',
+        'primary-dark': '#6D28D9',
+        secondary: '#EDE9FE',
         background: '#FFFFFF',
-        text: '#333333',
+        text: '#1E1B4B',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         'xl': '1rem',

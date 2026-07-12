@@ -6,7 +6,6 @@ import { Menu, X, Globe, ChevronDown } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLocale } from '@/contexts/LocaleContext'
 import { LOCALES } from '@/lib/translations'
-import Button from './Button'
 
 export default function Header() {
   const { t, locale, setLocale } = useLocale()
@@ -16,8 +15,6 @@ export default function Header() {
 
   const navItems = [
     { labelKey: 'nav.apps' as const, href: '/apps' },
-    { labelKey: 'nav.development' as const, href: '/development' },
-    { labelKey: 'nav.merch' as const, href: '/merch' },
     { labelKey: 'nav.blog' as const, href: '/blog' },
     { labelKey: 'nav.contacts' as const, href: '/contacts' },
   ]
@@ -100,10 +97,6 @@ export default function Header() {
                 )}
               </AnimatePresence>
             </div>
-
-            <Link href="/development#contact-form">
-              <Button variant="primary" size="sm">{t('nav.orderProject')}</Button>
-            </Link>
           </div>
 
           {/* Mobile: lang + burger */}
@@ -173,11 +166,6 @@ export default function Header() {
                     {t(item.labelKey)}
                   </Link>
                 ))}
-                <Link href="/development#contact-form" onClick={() => setIsMenuOpen(false)}>
-                  <Button variant="primary" className="w-full mt-4">
-                    {t('nav.orderProject')}
-                  </Button>
-                </Link>
               </div>
             </motion.div>
           )}

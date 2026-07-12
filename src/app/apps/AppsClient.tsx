@@ -9,11 +9,17 @@ import { apps } from '@/data/apps'
 import { ldreamMarketing, type AppMarketing } from '@/data/ldream-marketing'
 import { tarotaperMarketing } from '@/data/tarotaper-marketing'
 import { colorbrainMarketing } from '@/data/colorbrain-marketing'
+import { alineMarketing } from '@/data/aline-marketing'
+import { cozyballMarketing } from '@/data/cozyball-marketing'
+import { bookpatherMarketing } from '@/data/bookpather-marketing'
 
 const marketingData: Record<string, Record<string, AppMarketing>> = {
   ldream: ldreamMarketing,
   tarotaper: tarotaperMarketing,
   colorbrain: colorbrainMarketing,
+  aline: alineMarketing,
+  cozyball: cozyballMarketing,
+  bookpather: bookpatherMarketing,
 }
 
 export default function AppsClient() {
@@ -64,7 +70,7 @@ export default function AppsClient() {
 
                   <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                     <span className="text-xs font-medium text-gray-400 bg-gray-100 px-2 py-1 rounded-full">
-                      {t('common.iosOnly')}
+                      {app.platform === 'Telegram' ? 'Telegram' : t('common.iosOnly')}
                     </span>
                     <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-2 transition-transform" />
                   </div>

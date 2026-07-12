@@ -5,9 +5,10 @@ export interface App {
   description: string
   fullDescription: string
   category: string
-  platform: 'iOS'
+  platform: 'iOS' | 'Telegram'
   appStoreId: string | null
   appStoreUrl: string | null
+  telegramUrl?: string
   supportEmail: string
   gradient: string
   features: string[]
@@ -27,6 +28,30 @@ export function getAppStoreConnectUrls(app: App) {
 }
 
 export const apps: App[] = [
+  {
+    id: 'bookpather',
+    title: 'Bookpather',
+    tagline: 'Your reading planner',
+    description: 'Scan your bookshelf, get concise AI insights, and turn your books into a clear reading path.',
+    fullDescription:
+      'Bookpather turns the books you already own into a reading plan you can actually follow. Scan covers and barcodes, organize your personal library, save concise AI insights about each book, and let AI arrange your shelf into step-by-step reading chains around the skills you want to grow. No account required — your library stays on your device and in your personal iCloud.',
+    category: 'Books',
+    platform: 'iOS',
+    appStoreId: null,
+    appStoreUrl: null,
+    supportEmail: 'B.S.NikishinG@gmail.com',
+    gradient: 'from-emerald-400 via-teal-500 to-cyan-600',
+    color: '#0d9488',
+    iconPath: '/icons/bookpather.png',
+    features: [
+      'Scan books by cover, barcode, or shelf photo',
+      'Digital bookshelf with statuses, topics, and notes',
+      'Concise AI book insights: central idea, takeaways, difficulty',
+      'AI reading chains built around your goals',
+      'Private by design — no account, on-device library, iCloud sync',
+      'Export your books, notes, and chains as JSON',
+    ],
+  },
   {
     id: 'cozyball',
     title: 'Cozy Ball',
@@ -79,14 +104,15 @@ export const apps: App[] = [
   {
     id: 'tarotaper',
     title: 'Tarotaper',
-    tagline: 'Tarot in your pocket',
-    description: 'Daily tarot readings, spreads, and an interactive card library.',
+    tagline: 'Tarot in Telegram',
+    description: 'Daily tarot readings, spreads, and AI interpretations — right in Telegram.',
     fullDescription:
-      'Tarotaper brings the ancient wisdom of tarot to your iPhone. Draw daily cards, explore custom spreads, and dive deep into the meaning of each card with beautiful artwork and detailed interpretations. Whether you\'re a beginner or an experienced reader, Tarotaper grows with you.',
+      'Tarotaper brings the ancient wisdom of tarot to Telegram. Draw daily cards, explore spreads, and dive deep into the meaning of each card with beautiful artwork and AI-powered interpretations. Whether you\'re a beginner or an experienced reader, Tarotaper grows with you — no installation needed, just open the bot.',
     category: 'Entertainment',
-    platform: 'iOS',
+    platform: 'Telegram',
     appStoreId: null,
     appStoreUrl: null,
+    telegramUrl: 'https://t.me/TaroTaper_bot',
     supportEmail: 'B.S.NikishinG@gmail.com',
     gradient: 'from-purple-600 to-pink-600',
     color: '#9333ea',

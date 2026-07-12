@@ -11,7 +11,7 @@ interface CardProps {
 export default function Card({ children, className = '', hover = true, onClick }: CardProps) {
   return (
     <motion.div
-      className={`bg-white rounded-2xl p-6 shadow-sm border border-gray-100 ${hover ? 'hover:shadow-lg hover:border-primary/20' : ''} transition-all duration-300 ${className}`}
+      className={`bg-white rounded-3xl p-6 shadow-sm border border-gray-100 ${hover ? 'hover:shadow-xl hover:shadow-primary/10 hover:border-primary/20' : ''} transition-all duration-300 ${className}`}
       whileHover={hover ? { y: -4 } : {}}
       onClick={onClick}
     >

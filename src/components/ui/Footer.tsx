@@ -52,16 +52,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/development" className="text-gray-600 hover:text-primary transition-colors text-sm">
-                  {t('footer.development')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/merch" className="text-gray-600 hover:text-primary transition-colors text-sm">
-                  {t('nav.merch')}
-                </Link>
-              </li>
-              <li>
                 <Link href="/blog" className="text-gray-600 hover:text-primary transition-colors text-sm">
                   {t('nav.blog')}
                 </Link>

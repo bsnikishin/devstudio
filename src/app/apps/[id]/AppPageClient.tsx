@@ -13,6 +13,7 @@ import { tarotaperMarketing } from '@/data/tarotaper-marketing'
 import { colorbrainMarketing } from '@/data/colorbrain-marketing'
 import { alineMarketing } from '@/data/aline-marketing'
 import { cozyballMarketing } from '@/data/cozyball-marketing'
+import { bookpatherMarketing } from '@/data/bookpather-marketing'
 
 const marketingData: Record<string, Record<string, AppMarketing>> = {
   ldream: ldreamMarketing,
@@ -20,9 +21,28 @@ const marketingData: Record<string, Record<string, AppMarketing>> = {
   colorbrain: colorbrainMarketing,
   aline: alineMarketing,
   cozyball: cozyballMarketing,
+  bookpather: bookpatherMarketing,
 }
 
 interface Props { app: App }
+
+// ─── Telegram Button ─────────────────────────────────────────────────────────
+function TelegramButton({ app, label }: { app: App; label: string }) {
+  return (
+    <a
+      href={app.telegramUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-3 bg-[#2AABEE] text-white px-6 py-3 rounded-xl hover:bg-[#229ED9] transition-colors shadow-lg shadow-[#2AABEE]/25"
+    >
+      <Send className="w-6 h-6" />
+      <div className="text-left">
+        <div className="text-xs opacity-80">{label}</div>
+        <div className="text-base font-semibold -mt-0.5">Telegram</div>
+      </div>
+    </a>
+  )
+}
 
 // ─── App Store Button ────────────────────────────────────────────────────────
 function AppStoreButton({ app, label, comingSoon }: { app: App; label: string; comingSoon: string }) {
@@ -121,7 +141,7 @@ export default function AppPageClient({ app }: Props) {
                 {app.category}
               </span>
               <span className="inline-block ml-2 px-3 py-1 bg-gray-100 text-gray-500 text-xs rounded-full mb-4 font-medium">
-                {t('common.iosOnly')}
+                {app.platform === 'Telegram' ? 'Telegram' : t('common.iosOnly')}
               </span>
 
               <h1 className="text-4xl md:text-5xl font-bold text-text mb-3">
@@ -132,11 +152,15 @@ export default function AppPageClient({ app }: Props) {
                 {marketing?.description ?? app.fullDescription}
               </p>
 
-              <AppStoreButton
-                app={app}
-                label={t('app.downloadAppStore')}
-                comingSoon={t('app.comingSoon')}
-              />
+              {app.telegramUrl ? (
+                <TelegramButton app={app} label={t('app.openTelegram')} />
+              ) : (
+                <AppStoreButton
+                  app={app}
+                  label={t('app.downloadAppStore')}
+                  comingSoon={t('app.comingSoon')}
+                />
+              )}
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
