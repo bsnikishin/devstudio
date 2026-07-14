@@ -9,6 +9,7 @@ import { ldreamPrivacy } from '@/data/ldream-privacy'
 import { colorbrainPrivacy } from '@/data/colorbrain-privacy'
 import { alinePrivacy } from '@/data/aline-privacy'
 import { cozyballPrivacy } from '@/data/cozyball-privacy'
+import { swirlballPrivacy } from '@/data/swirlball-privacy'
 import { bookpatherPrivacy } from '@/data/bookpather-privacy'
 
 const privacyData: Record<string, Record<string, PrivacyPolicy>> = {
@@ -17,6 +18,7 @@ const privacyData: Record<string, Record<string, PrivacyPolicy>> = {
   colorbrain: colorbrainPrivacy,
   aline: alinePrivacy,
   cozyball: cozyballPrivacy,
+  swirlball: swirlballPrivacy,
   bookpather: bookpatherPrivacy,
 }
 

@@ -11,6 +11,7 @@ import { tarotaperMarketing } from '@/data/tarotaper-marketing'
 import { colorbrainMarketing } from '@/data/colorbrain-marketing'
 import { alineMarketing } from '@/data/aline-marketing'
 import { cozyballMarketing } from '@/data/cozyball-marketing'
+import { swirlballMarketing } from '@/data/swirlball-marketing'
 import { bookpatherMarketing } from '@/data/bookpather-marketing'
 
 const marketingData: Record<string, Record<string, AppMarketing>> = {
@@ -19,6 +20,7 @@ const marketingData: Record<string, Record<string, AppMarketing>> = {
   colorbrain: colorbrainMarketing,
   aline: alineMarketing,
   cozyball: cozyballMarketing,
+  swirlball: swirlballMarketing,
   bookpather: bookpatherMarketing,
 }
 
