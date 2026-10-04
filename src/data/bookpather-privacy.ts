@@ -5,7 +5,7 @@ export type { PrivacySection, PrivacyPolicy }
 export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   en: {
     title: `Privacy Policy`,
-    effectiveDate: `Effective Date: July 12, 2026`,
+    effectiveDate: `Effective Date: October 5, 2026`,
     intro: `NikiBStudio ("we", "our", or "us") built <strong>Bookpather</strong> ("the App") as a commercial application. This Privacy Policy explains what information the App handles, where it is stored, and what leaves your device — and what never does.`,
     sections: [
       {
@@ -26,11 +26,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `AI Features and What They Send`,
         content: `<p>AI book insights and AI reading chains are optional and run only after you explicitly agree to use AI features. When you request them, the App sends the following to our server (an AI proxy we operate on Cloudflare):</p>
 <ul><li>Book metadata: title, author, and, where available, a public description of the book.</li><li>Your interface language, so the answer is written in it.</li><li>A random installation identifier and technical request data used for quota management and abuse prevention.</li></ul>
-<p>Our server forwards the book metadata to an AI provider (currently DeepSeek) to generate the result. <strong>Your personal notes, your photos, your name, and your contact details are never sent to us or to the AI provider.</strong> AI requests are not used to build a profile of you, and we do not sell or share this data.</p>`,
+<p>Our server forwards the book metadata to an AI provider (currently DeepSeek) to generate the result. <strong>Your personal notes, your photos, your name, and your contact details are never sent to us or to the AI provider.</strong> AI requests are not used to build a profile of you, and we do not sell or share this data. DeepSeek processes these requests on servers located in the People's Republic of China.</p>`,
       },
       {
-        heading: `Book Search (Google Books)`,
-        content: `<p>When you search for a book by title, author, or ISBN, the App queries the Google Books API to find matching editions, covers, and descriptions. Only the search query itself is sent. Google's processing of these requests is governed by Google's Privacy Policy (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
+        heading: `Book Search (Open Library and Google Books)`,
+        content: `<p>When you search for a book by title, author, or ISBN, the App queries the Open Library API (run by the Internet Archive) and, if Open Library finds no match, the Google Books API, to find matching editions, covers, and descriptions. Only the search query itself is sent. Open Library requests are governed by the Internet Archive's terms and privacy policy (<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>); Google Books requests by Google's Privacy Policy (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
       },
       {
         heading: `Subscriptions and Purchases`,
@@ -66,7 +66,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   ru: {
     title: `Политика конфиденциальности`,
-    effectiveDate: `Дата вступления в силу: 12 июля 2026 г.`,
+    effectiveDate: `Дата вступления в силу: 5 октября 2026 г.`,
     intro: `NikiBStudio («мы», «наш», «нас») разработала <strong>Bookpather</strong> («Приложение») как коммерческое приложение. Эта Политика конфиденциальности объясняет, какие данные обрабатывает Приложение, где они хранятся, что покидает ваше устройство — а что не покидает его никогда.`,
     sections: [
       {
@@ -87,11 +87,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `AI-функции и что они отправляют`,
         content: `<p>AI-справки о книгах и AI-цепочки чтения — необязательные функции, которые работают только после вашего явного согласия на использование AI. При запросе Приложение отправляет на наш сервер (AI-прокси, размещённый нами в Cloudflare):</p>
 <ul><li>Метаданные книги: название, автора и, если доступно, публичное описание книги.</li><li>Язык вашего интерфейса, чтобы ответ был написан на нём.</li><li>Случайный идентификатор установки и технические данные запроса — для учёта квот и защиты от злоупотреблений.</li></ul>
-<p>Наш сервер передаёт метаданные книги AI-провайдеру (в настоящее время DeepSeek) для генерации результата. <strong>Ваши личные заметки, фотографии, имя и контактные данные никогда не отправляются ни нам, ни AI-провайдеру.</strong> AI-запросы не используются для составления вашего профиля; мы не продаём и не передаём эти данные.</p>`,
+<p>Наш сервер передаёт метаданные книги AI-провайдеру (в настоящее время DeepSeek) для генерации результата. <strong>Ваши личные заметки, фотографии, имя и контактные данные никогда не отправляются ни нам, ни AI-провайдеру.</strong> AI-запросы не используются для составления вашего профиля; мы не продаём и не передаём эти данные. DeepSeek обрабатывает эти запросы на серверах, расположенных в Китайской Народной Республике.</p>`,
       },
       {
-        heading: `Поиск книг (Google Books)`,
-        content: `<p>Когда вы ищете книгу по названию, автору или ISBN, Приложение обращается к Google Books API, чтобы найти издания, обложки и описания. Отправляется только сам поисковый запрос. Обработка этих запросов Google регулируется Политикой конфиденциальности Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
+        heading: `Поиск книг (Open Library и Google Books)`,
+        content: `<p>Когда вы ищете книгу по названию, автору или ISBN, Приложение обращается к API Open Library (сервис Internet Archive), а если там ничего не найдено — к Google Books API, чтобы найти издания, обложки и описания. Отправляется только сам поисковый запрос. Запросы к Open Library регулируются условиями и политикой конфиденциальности Internet Archive (<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>), запросы к Google Books — Политикой конфиденциальности Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
       },
       {
         heading: `Подписки и покупки`,
@@ -127,7 +127,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   de: {
     title: `Datenschutzerklärung`,
-    effectiveDate: `Gültig ab: 12. Juli 2026`,
+    effectiveDate: `Gültig ab: 5. Oktober 2026`,
     intro: `NikiBStudio („wir", „unser" oder „uns") hat <strong>Bookpather</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzerklärung erläutert, welche Daten die App verarbeitet, wo sie gespeichert werden und was Ihr Gerät verlässt — und was niemals.`,
     sections: [
       {
@@ -148,11 +148,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `KI-Funktionen und was sie senden`,
         content: `<p>KI-Einblicke und KI-Leseketten sind optional und laufen erst, nachdem Sie der Nutzung von KI-Funktionen ausdrücklich zugestimmt haben. Bei einer Anfrage sendet die App an unseren Server (einen von uns bei Cloudflare betriebenen KI-Proxy):</p>
 <ul><li>Buchmetadaten: Titel, Autor und, sofern verfügbar, eine öffentliche Beschreibung des Buches.</li><li>Ihre Oberflächensprache, damit die Antwort darin verfasst wird.</li><li>Eine zufällige Installations-ID und technische Anfragedaten für Kontingentverwaltung und Missbrauchsschutz.</li></ul>
-<p>Unser Server leitet die Buchmetadaten an einen KI-Anbieter (derzeit DeepSeek) weiter. <strong>Ihre persönlichen Notizen, Fotos, Ihr Name und Ihre Kontaktdaten werden niemals an uns oder den KI-Anbieter gesendet.</strong> KI-Anfragen werden nicht zur Profilbildung genutzt; wir verkaufen oder teilen diese Daten nicht.</p>`,
+<p>Unser Server leitet die Buchmetadaten an einen KI-Anbieter (derzeit DeepSeek) weiter. <strong>Ihre persönlichen Notizen, Fotos, Ihr Name und Ihre Kontaktdaten werden niemals an uns oder den KI-Anbieter gesendet.</strong> KI-Anfragen werden nicht zur Profilbildung genutzt; wir verkaufen oder teilen diese Daten nicht. DeepSeek verarbeitet diese Anfragen auf Servern in der Volksrepublik China.</p>`,
       },
       {
-        heading: `Buchsuche (Google Books)`,
-        content: `<p>Bei der Suche nach Titel, Autor oder ISBN fragt die App die Google Books API ab, um Ausgaben, Cover und Beschreibungen zu finden. Es wird nur die Suchanfrage selbst gesendet. Googles Verarbeitung unterliegt der Datenschutzerklärung von Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
+        heading: `Buchsuche (Open Library und Google Books)`,
+        content: `<p>Bei der Suche nach Titel, Autor oder ISBN fragt die App die Open-Library-API (betrieben vom Internet Archive) und, falls dort nichts gefunden wird, die Google Books API ab, um Ausgaben, Cover und Beschreibungen zu finden. Es wird nur die Suchanfrage selbst gesendet. Für Anfragen an Open Library gelten die Nutzungsbedingungen und die Datenschutzerklärung des Internet Archive (<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>), für Anfragen an Google Books die Datenschutzerklärung von Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
       },
       {
         heading: `Abonnements und Käufe`,
@@ -188,7 +188,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   fr: {
     title: `Politique de confidentialité`,
-    effectiveDate: `Date d'entrée en vigueur : 12 juillet 2026`,
+    effectiveDate: `Date d'entrée en vigueur : 5 octobre 2026`,
     intro: `NikiBStudio (« nous », « notre ») a développé <strong>Bookpather</strong> (« l'App ») en tant qu'application commerciale. Cette politique explique quelles données l'App traite, où elles sont stockées et ce qui quitte votre appareil — et ce qui ne le quitte jamais.`,
     sections: [
       {
@@ -209,11 +209,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Fonctions IA : ce qui est envoyé`,
         content: `<p>Les résumés IA et les chaînes de lecture IA sont optionnels et ne fonctionnent qu'après votre accord explicite. Lors d'une demande, l'App envoie à notre serveur (un proxy IA que nous exploitons chez Cloudflare) :</p>
 <ul><li>Les métadonnées du livre : titre, auteur et, si disponible, une description publique du livre.</li><li>Votre langue d'interface, afin que la réponse soit rédigée dans celle-ci.</li><li>Un identifiant d'installation aléatoire et des données techniques servant à la gestion des quotas et à la prévention des abus.</li></ul>
-<p>Notre serveur transmet les métadonnées du livre à un fournisseur d'IA (actuellement DeepSeek). <strong>Vos notes personnelles, vos photos, votre nom et vos coordonnées ne sont jamais envoyés, ni à nous ni au fournisseur d'IA.</strong> Les requêtes IA ne servent pas à établir un profil, et nous ne vendons ni ne partageons ces données.</p>`,
+<p>Notre serveur transmet les métadonnées du livre à un fournisseur d'IA (actuellement DeepSeek). <strong>Vos notes personnelles, vos photos, votre nom et vos coordonnées ne sont jamais envoyés, ni à nous ni au fournisseur d'IA.</strong> Les requêtes IA ne servent pas à établir un profil, et nous ne vendons ni ne partageons ces données. DeepSeek traite ces requêtes sur des serveurs situés en République populaire de Chine.</p>`,
       },
       {
-        heading: `Recherche de livres (Google Books)`,
-        content: `<p>Lorsque vous cherchez un livre par titre, auteur ou ISBN, l'App interroge l'API Google Books pour trouver éditions, couvertures et descriptions. Seule la requête de recherche est envoyée. Le traitement par Google est régi par sa politique de confidentialité (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
+        heading: `Recherche de livres (Open Library et Google Books)`,
+        content: `<p>Lorsque vous cherchez un livre par titre, auteur ou ISBN, l'App interroge l'API Open Library (gérée par l'Internet Archive) puis, si rien n'y est trouvé, l'API Google Books, pour trouver éditions, couvertures et descriptions. Seule la requête de recherche est envoyée. Les requêtes à Open Library sont régies par les conditions et la politique de confidentialité de l'Internet Archive (<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>), celles à Google Books par la politique de confidentialité de Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
       },
       {
         heading: `Abonnements et achats`,
@@ -249,7 +249,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   es: {
     title: `Política de privacidad`,
-    effectiveDate: `Fecha de entrada en vigor: 12 de julio de 2026`,
+    effectiveDate: `Fecha de entrada en vigor: 5 de octubre de 2026`,
     intro: `NikiBStudio («nosotros», «nuestro») desarrolló <strong>Bookpather</strong> («la App») como aplicación comercial. Esta política explica qué datos maneja la App, dónde se almacenan y qué sale de tu dispositivo — y qué no sale nunca.`,
     sections: [
       {
@@ -270,11 +270,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Funciones de IA y qué envían`,
         content: `<p>Los resúmenes de IA y las cadenas de lectura con IA son opcionales y solo funcionan tras tu acuerdo explícito. Al solicitarlos, la App envía a nuestro servidor (un proxy de IA que operamos en Cloudflare):</p>
 <ul><li>Metadatos del libro: título, autor y, si está disponible, una descripción pública del libro.</li><li>Tu idioma de interfaz, para que la respuesta se redacte en él.</li><li>Un identificador de instalación aleatorio y datos técnicos para la gestión de cuotas y la prevención de abusos.</li></ul>
-<p>Nuestro servidor reenvía los metadatos del libro a un proveedor de IA (actualmente DeepSeek). <strong>Tus notas personales, tus fotos, tu nombre y tus datos de contacto nunca se envían, ni a nosotros ni al proveedor de IA.</strong> Las solicitudes de IA no se usan para crear un perfil tuyo, y no vendemos ni compartimos estos datos.</p>`,
+<p>Nuestro servidor reenvía los metadatos del libro a un proveedor de IA (actualmente DeepSeek). <strong>Tus notas personales, tus fotos, tu nombre y tus datos de contacto nunca se envían, ni a nosotros ni al proveedor de IA.</strong> Las solicitudes de IA no se usan para crear un perfil tuyo, y no vendemos ni compartimos estos datos. DeepSeek procesa estas solicitudes en servidores ubicados en la República Popular China.</p>`,
       },
       {
-        heading: `Búsqueda de libros (Google Books)`,
-        content: `<p>Cuando buscas un libro por título, autor o ISBN, la App consulta la API de Google Books para encontrar ediciones, portadas y descripciones. Solo se envía la propia consulta de búsqueda. El tratamiento por parte de Google se rige por su política de privacidad (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
+        heading: `Búsqueda de libros (Open Library y Google Books)`,
+        content: `<p>Cuando buscas un libro por título, autor o ISBN, la App consulta la API de Open Library (gestionada por Internet Archive) y, si allí no encuentra nada, la API de Google Books, para encontrar ediciones, portadas y descripciones. Solo se envía la propia consulta de búsqueda. Las consultas a Open Library se rigen por los términos y la política de privacidad de Internet Archive (<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>); las consultas a Google Books, por la política de privacidad de Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
       },
       {
         heading: `Suscripciones y compras`,
@@ -310,7 +310,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   it: {
     title: `Informativa sulla privacy`,
-    effectiveDate: `Data di entrata in vigore: 12 luglio 2026`,
+    effectiveDate: `Data di entrata in vigore: 5 ottobre 2026`,
     intro: `NikiBStudio («noi», «nostro») ha sviluppato <strong>Bookpather</strong> («l'App») come applicazione commerciale. Questa informativa spiega quali dati l'App gestisce, dove sono conservati e cosa lascia il tuo dispositivo — e cosa non lo lascia mai.`,
     sections: [
       {
@@ -331,11 +331,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Funzioni IA e cosa inviano`,
         content: `<p>Le sintesi IA e le catene di lettura IA sono facoltative e funzionano solo dopo il tuo consenso esplicito. Alla richiesta, l'App invia al nostro server (un proxy IA che gestiamo su Cloudflare):</p>
 <ul><li>Metadati del libro: titolo, autore e, se disponibile, una descrizione pubblica del libro.</li><li>La lingua della tua interfaccia, così la risposta è scritta in essa.</li><li>Un identificatore di installazione casuale e dati tecnici per la gestione delle quote e la prevenzione degli abusi.</li></ul>
-<p>Il nostro server inoltra i metadati del libro a un fornitore di IA (attualmente DeepSeek). <strong>Le tue note personali, le tue foto, il tuo nome e i tuoi contatti non vengono mai inviati, né a noi né al fornitore di IA.</strong> Le richieste IA non servono a profilarti e non vendiamo né condividiamo questi dati.</p>`,
+<p>Il nostro server inoltra i metadati del libro a un fornitore di IA (attualmente DeepSeek). <strong>Le tue note personali, le tue foto, il tuo nome e i tuoi contatti non vengono mai inviati, né a noi né al fornitore di IA.</strong> Le richieste IA non servono a profilarti e non vendiamo né condividiamo questi dati. DeepSeek elabora queste richieste su server situati nella Repubblica Popolare Cinese.</p>`,
       },
       {
-        heading: `Ricerca libri (Google Books)`,
-        content: `<p>Quando cerchi un libro per titolo, autore o ISBN, l'App interroga l'API di Google Books per trovare edizioni, copertine e descrizioni. Viene inviata solo la query di ricerca. Il trattamento da parte di Google è regolato dalla sua informativa sulla privacy (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
+        heading: `Ricerca libri (Open Library e Google Books)`,
+        content: `<p>Quando cerchi un libro per titolo, autore o ISBN, l'App interroga l'API di Open Library (gestita da Internet Archive) e, se lì non trova nulla, l'API di Google Books, per trovare edizioni, copertine e descrizioni. Viene inviata solo la query di ricerca. Le richieste a Open Library sono regolate dai termini e dall'informativa sulla privacy di Internet Archive (<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>), quelle a Google Books dall'informativa sulla privacy di Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
       },
       {
         heading: `Abbonamenti e acquisti`,
@@ -371,7 +371,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   pt: {
     title: `Política de Privacidade`,
-    effectiveDate: `Data de vigência: 12 de julho de 2026`,
+    effectiveDate: `Data de vigência: 5 de outubro de 2026`,
     intro: `A NikiBStudio ("nós", "nosso") desenvolveu o <strong>Bookpather</strong> ("o App") como aplicativo comercial. Esta política explica quais dados o App processa, onde ficam armazenados e o que sai do seu dispositivo — e o que nunca sai.`,
     sections: [
       {
@@ -392,11 +392,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Recursos de IA e o que eles enviam`,
         content: `<p>Os resumos de IA e as sequências de leitura com IA são opcionais e só funcionam após sua concordância explícita. Ao solicitá-los, o App envia ao nosso servidor (um proxy de IA que operamos na Cloudflare):</p>
 <ul><li>Metadados do livro: título, autor e, quando disponível, uma descrição pública do livro.</li><li>Seu idioma de interface, para que a resposta seja escrita nele.</li><li>Um identificador de instalação aleatório e dados técnicos para gestão de cotas e prevenção de abusos.</li></ul>
-<p>Nosso servidor repassa os metadados do livro a um provedor de IA (atualmente DeepSeek). <strong>Suas notas pessoais, fotos, nome e contatos nunca são enviados, nem para nós nem para o provedor de IA.</strong> As solicitações de IA não são usadas para criar um perfil seu, e não vendemos nem compartilhamos esses dados.</p>`,
+<p>Nosso servidor repassa os metadados do livro a um provedor de IA (atualmente DeepSeek). <strong>Suas notas pessoais, fotos, nome e contatos nunca são enviados, nem para nós nem para o provedor de IA.</strong> As solicitações de IA não são usadas para criar um perfil seu, e não vendemos nem compartilhamos esses dados. A DeepSeek processa essas solicitações em servidores localizados na República Popular da China.</p>`,
       },
       {
-        heading: `Busca de livros (Google Books)`,
-        content: `<p>Ao buscar um livro por título, autor ou ISBN, o App consulta a API do Google Books para encontrar edições, capas e descrições. Apenas a consulta de busca é enviada. O tratamento pelo Google é regido pela política de privacidade do Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
+        heading: `Busca de livros (Open Library e Google Books)`,
+        content: `<p>Ao buscar um livro por título, autor ou ISBN, o App consulta a API do Open Library (mantido pelo Internet Archive) e, se nada for encontrado, a API do Google Books, para encontrar edições, capas e descrições. Apenas a consulta de busca é enviada. As consultas ao Open Library são regidas pelos termos e pela política de privacidade do Internet Archive (<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>); as consultas ao Google Books, pela política de privacidade do Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
       },
       {
         heading: `Assinaturas e compras`,
@@ -432,7 +432,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   ja: {
     title: `プライバシーポリシー`,
-    effectiveDate: `発効日：2026年7月12日`,
+    effectiveDate: `発効日：2026年10月5日`,
     intro: `NikiBStudio（「当社」）は、商用アプリケーションとして<strong>Bookpather</strong>（「本アプリ」）を開発しました。本ポリシーでは、本アプリが扱うデータ、その保存場所、端末の外に送信されるもの — そして決して送信されないもの — を説明します。`,
     sections: [
       {
@@ -453,11 +453,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `AI機能と送信内容`,
         content: `<p>AI書籍要約とAI読書チェーンは任意機能で、AI利用への明示的な同意後にのみ動作します。リクエスト時、本アプリは当社サーバー（Cloudflare上で運用するAIプロキシ）へ以下を送信します：</p>
 <ul><li>書籍メタデータ：タイトル、著者、入手可能な場合は書籍の公開説明文。</li><li>回答の言語となるインターフェース言語。</li><li>クォータ管理と不正利用防止のためのランダムなインストールIDと技術的リクエストデータ。</li></ul>
-<p>当社サーバーは書籍メタデータをAIプロバイダー（現在はDeepSeek）へ転送して結果を生成します。<strong>個人メモ、写真、氏名、連絡先が当社やAIプロバイダーに送信されることは決してありません。</strong>AIリクエストがプロフィール作成に使われることはなく、これらのデータを販売・共有することもありません。</p>`,
+<p>当社サーバーは書籍メタデータをAIプロバイダー（現在はDeepSeek）へ転送して結果を生成します。<strong>個人メモ、写真、氏名、連絡先が当社やAIプロバイダーに送信されることは決してありません。</strong>AIリクエストがプロフィール作成に使われることはなく、これらのデータを販売・共有することもありません。 DeepSeekはこれらのリクエストを中華人民共和国内のサーバーで処理します。</p>`,
       },
       {
-        heading: `書籍検索（Google Books）`,
-        content: `<p>タイトル・著者・ISBNで書籍を検索すると、本アプリはGoogle Books APIに問い合わせて版・表紙・説明を取得します。送信されるのは検索クエリのみです。Googleの処理はGoogleのプライバシーポリシー（<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>）に従います。</p>`,
+        heading: `書籍検索（Open Library・Google Books）`,
+        content: `<p>タイトル・著者・ISBNで書籍を検索すると、本アプリはOpen Library API（Internet Archiveが運営）に問い合わせ、見つからない場合はGoogle Books APIに問い合わせて、版・表紙・説明を取得します。送信されるのは検索クエリのみです。Open Libraryへのリクエストには Internet Archive の利用規約とプライバシーポリシー（<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>）が、Google Booksへのリクエストには Google のプライバシーポリシー（<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>）が適用されます。</p>`,
       },
       {
         heading: `サブスクリプションと購入`,
@@ -493,7 +493,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   ko: {
     title: `개인정보 처리방침`,
-    effectiveDate: `시행일: 2026년 7월 12일`,
+    effectiveDate: `시행일: 2026년 10월 5일`,
     intro: `NikiBStudio("당사")는 상용 애플리케이션으로 <strong>Bookpather</strong>("앱")를 개발했습니다. 본 방침은 앱이 어떤 데이터를 처리하고 어디에 저장하며, 무엇이 기기 밖으로 전송되는지 — 그리고 무엇이 절대 전송되지 않는지 설명합니다.`,
     sections: [
       {
@@ -514,11 +514,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `AI 기능과 전송 내용`,
         content: `<p>AI 도서 인사이트와 AI 독서 체인은 선택 기능이며 AI 사용에 명시적으로 동의한 후에만 작동합니다. 요청 시 앱은 당사 서버(Cloudflare에서 운영하는 AI 프록시)로 다음을 전송합니다:</p>
 <ul><li>도서 메타데이터: 제목, 저자, 가능한 경우 책의 공개 설명.</li><li>답변 언어가 되는 인터페이스 언어.</li><li>할당량 관리와 남용 방지를 위한 무작위 설치 식별자 및 기술적 요청 데이터.</li></ul>
-<p>당사 서버는 도서 메타데이터를 AI 제공업체(현재 DeepSeek)에 전달해 결과를 생성합니다. <strong>개인 메모, 사진, 이름, 연락처는 당사나 AI 제공업체로 절대 전송되지 않습니다.</strong> AI 요청은 프로필 작성에 사용되지 않으며, 당사는 이 데이터를 판매하거나 공유하지 않습니다.</p>`,
+<p>당사 서버는 도서 메타데이터를 AI 제공업체(현재 DeepSeek)에 전달해 결과를 생성합니다. <strong>개인 메모, 사진, 이름, 연락처는 당사나 AI 제공업체로 절대 전송되지 않습니다.</strong> AI 요청은 프로필 작성에 사용되지 않으며, 당사는 이 데이터를 판매하거나 공유하지 않습니다. DeepSeek은 이러한 요청을 중화인민공화국에 위치한 서버에서 처리합니다.</p>`,
       },
       {
-        heading: `도서 검색(Google Books)`,
-        content: `<p>제목, 저자, ISBN으로 책을 검색하면 앱은 Google Books API에 질의하여 판본, 표지, 설명을 찾습니다. 검색어만 전송됩니다. Google의 처리에는 Google 개인정보처리방침(<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>)이 적용됩니다.</p>`,
+        heading: `도서 검색(Open Library, Google Books)`,
+        content: `<p>제목, 저자, ISBN으로 책을 검색하면 앱은 Open Library API(Internet Archive 운영)에 질의하고, 결과가 없으면 Google Books API에 질의하여 판본, 표지, 설명을 찾습니다. 검색어만 전송됩니다. Open Library 요청에는 Internet Archive의 이용약관 및 개인정보처리방침(<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>)이, Google Books 요청에는 Google 개인정보처리방침(<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>)이 적용됩니다.</p>`,
       },
       {
         heading: `구독 및 구매`,
@@ -554,7 +554,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   zh: {
     title: `隐私政策`,
-    effectiveDate: `生效日期：2026年7月12日`,
+    effectiveDate: `生效日期：2026年10月5日`,
     intro: `NikiBStudio（"我们"）开发了商业应用<strong>Bookpather</strong>（"本应用"）。本隐私政策说明应用处理哪些数据、数据存储在哪里、哪些内容会离开您的设备——以及哪些永远不会。`,
     sections: [
       {
@@ -575,11 +575,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `AI 功能及其发送的内容`,
         content: `<p>AI 图书摘要和 AI 阅读链是可选功能，仅在您明确同意使用 AI 后运行。请求时，应用会向我们的服务器（我们在 Cloudflare 上运营的 AI 代理）发送：</p>
 <ul><li>图书元数据：书名、作者，以及（如有）该书的公开简介。</li><li>您的界面语言，以便用该语言撰写回复。</li><li>用于配额管理和防滥用的随机安装标识符及技术请求数据。</li></ul>
-<p>我们的服务器将图书元数据转发给 AI 服务商（目前为 DeepSeek）以生成结果。<strong>您的个人笔记、照片、姓名和联系方式绝不会发送给我们或 AI 服务商。</strong>AI 请求不会用于构建您的画像，我们也不会出售或共享这些数据。</p>`,
+<p>我们的服务器将图书元数据转发给 AI 服务商（目前为 DeepSeek）以生成结果。<strong>您的个人笔记、照片、姓名和联系方式绝不会发送给我们或 AI 服务商。</strong>AI 请求不会用于构建您的画像，我们也不会出售或共享这些数据。 DeepSeek 在位于中华人民共和国境内的服务器上处理这些请求。</p>`,
       },
       {
-        heading: `图书搜索（Google Books）`,
-        content: `<p>当您按书名、作者或 ISBN 搜索图书时，应用会查询 Google Books API 以获取版本、封面和简介。仅发送搜索词本身。Google 的处理受其隐私政策约束（<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>）。</p>`,
+        heading: `图书搜索（Open Library、Google Books）`,
+        content: `<p>当您按书名、作者或 ISBN 搜索图书时，应用会查询 Open Library API（由 Internet Archive 运营），若未找到结果，再查询 Google Books API，以获取版本、封面和简介。仅发送搜索词本身。对 Open Library 的请求受 Internet Archive 的条款和隐私政策约束（<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>），对 Google Books 的请求受 Google 隐私政策约束（<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>）。</p>`,
       },
       {
         heading: `订阅与购买`,
@@ -615,7 +615,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   ar: {
     title: `سياسة الخصوصية`,
-    effectiveDate: `تاريخ السريان: 12 يوليو 2026`,
+    effectiveDate: `تاريخ السريان: 5 أكتوبر 2026`,
     intro: `طوّرت NikiBStudio («نحن») تطبيق <strong>Bookpather</strong> («التطبيق») كتطبيق تجاري. توضح هذه السياسة البيانات التي يعالجها التطبيق، وأين تُخزَّن، وما الذي يغادر جهازك — وما الذي لا يغادره أبداً.`,
     sections: [
       {
@@ -636,11 +636,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `ميزات الذكاء الاصطناعي وما ترسله`,
         content: `<p>ملخصات الكتب وسلاسل القراءة بالذكاء الاصطناعي ميزات اختيارية لا تعمل إلا بعد موافقتك الصريحة. عند الطلب، يرسل التطبيق إلى خادمنا (وسيط ذكاء اصطناعي نُشغّله على Cloudflare):</p>
 <ul><li>البيانات الوصفية للكتاب: العنوان والمؤلف، وعند التوفر وصفاً عاماً للكتاب.</li><li>لغة الواجهة لديك، لتُكتب الإجابة بها.</li><li>معرّف تثبيت عشوائي وبيانات تقنية لإدارة الحصص ومنع إساءة الاستخدام.</li></ul>
-<p>يمرر خادمنا البيانات الوصفية للكتاب إلى مزود ذكاء اصطناعي (حالياً DeepSeek) لتوليد النتيجة. <strong>ملاحظاتك الشخصية وصورك واسمك وبيانات الاتصال بك لا تُرسل أبداً إلينا أو إلى مزود الذكاء الاصطناعي.</strong> لا تُستخدم طلبات الذكاء الاصطناعي لبناء ملف عنك، ولا نبيع هذه البيانات أو نشاركها.</p>`,
+<p>يمرر خادمنا البيانات الوصفية للكتاب إلى مزود ذكاء اصطناعي (حالياً DeepSeek) لتوليد النتيجة. <strong>ملاحظاتك الشخصية وصورك واسمك وبيانات الاتصال بك لا تُرسل أبداً إلينا أو إلى مزود الذكاء الاصطناعي.</strong> لا تُستخدم طلبات الذكاء الاصطناعي لبناء ملف عنك، ولا نبيع هذه البيانات أو نشاركها. تعالج DeepSeek هذه الطلبات على خوادم موجودة في جمهورية الصين الشعبية.</p>`,
       },
       {
-        heading: `البحث عن الكتب (Google Books)`,
-        content: `<p>عند البحث عن كتاب بالعنوان أو المؤلف أو ISBN، يستعلم التطبيق من واجهة Google Books للعثور على الإصدارات والأغلفة والأوصاف. يُرسل استعلام البحث فقط. تخضع معالجة Google لسياسة خصوصية Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
+        heading: `البحث عن الكتب (Open Library وGoogle Books)`,
+        content: `<p>عند البحث عن كتاب بالعنوان أو المؤلف أو ISBN، يستعلم التطبيق من واجهة Open Library (التي يديرها Internet Archive)، وإذا لم يجد نتيجة يستعلم من واجهة Google Books، للعثور على الإصدارات والأغلفة والأوصاف. يُرسل استعلام البحث فقط. تخضع الطلبات إلى Open Library لشروط Internet Archive وسياسة الخصوصية الخاصة به (<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>)، وتخضع الطلبات إلى Google Books لسياسة خصوصية Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
       },
       {
         heading: `الاشتراكات والمشتريات`,
@@ -676,7 +676,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   he: {
     title: `מדיניות פרטיות`,
-    effectiveDate: `תאריך כניסה לתוקף: 12 ביולי 2026`,
+    effectiveDate: `תאריך כניסה לתוקף: 5 באוקטובר 2026`,
     intro: `NikiBStudio («אנחנו») פיתחה את <strong>Bookpather</strong> («האפליקציה») כאפליקציה מסחרית. מדיניות זו מסבירה אילו נתונים האפליקציה מעבדת, היכן הם נשמרים ומה יוצא מהמכשיר שלכם — ומה לעולם לא.`,
     sections: [
       {
@@ -697,11 +697,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `תכונות AI ומה הן שולחות`,
         content: `<p>תקצירי AI ושרשראות קריאה עם AI הן תכונות אופציונליות הפועלות רק לאחר הסכמה מפורשת. בעת בקשה, האפליקציה שולחת לשרת שלנו (פרוקסי AI שאנו מפעילים ב-Cloudflare):</p>
 <ul><li>מטא-נתונים של הספר: כותר, מחבר, ובמידת הזמינות תיאור פומבי של הספר.</li><li>שפת הממשק שלכם, כדי שהתשובה תיכתב בה.</li><li>מזהה התקנה אקראי ונתוני בקשה טכניים לניהול מכסות ומניעת שימוש לרעה.</li></ul>
-<p>השרת שלנו מעביר את מטא-הנתונים לספק AI (כיום DeepSeek) ליצירת התוצאה. <strong>ההערות האישיות, התמונות, השם ופרטי הקשר שלכם לעולם אינם נשלחים אלינו או לספק ה-AI.</strong> בקשות AI אינן משמשות לבניית פרופיל עליכם, ואיננו מוכרים או משתפים נתונים אלה.</p>`,
+<p>השרת שלנו מעביר את מטא-הנתונים לספק AI (כיום DeepSeek) ליצירת התוצאה. <strong>ההערות האישיות, התמונות, השם ופרטי הקשר שלכם לעולם אינם נשלחים אלינו או לספק ה-AI.</strong> בקשות AI אינן משמשות לבניית פרופיל עליכם, ואיננו מוכרים או משתפים נתונים אלה. DeepSeek מעבדת בקשות אלה בשרתים הממוקמים ברפובליקה העממית של סין.</p>`,
       },
       {
-        heading: `חיפוש ספרים (Google Books)`,
-        content: `<p>בחיפוש ספר לפי כותר, מחבר או ISBN, האפליקציה שולחת שאילתה ל-Google Books API למציאת מהדורות, כריכות ותיאורים. נשלחת רק שאילתת החיפוש עצמה. עיבוד הנתונים על ידי Google כפוף למדיניות הפרטיות של Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
+        heading: `חיפוש ספרים (Open Library ו-Google Books)`,
+        content: `<p>בחיפוש ספר לפי כותר, מחבר או ISBN, האפליקציה שולחת שאילתה ל-Open Library API (שמופעל על ידי Internet Archive), ואם לא נמצאה התאמה — ל-Google Books API, כדי למצוא מהדורות, כריכות ותיאורים. נשלחת רק שאילתת החיפוש עצמה. בקשות ל-Open Library כפופות לתנאים ולמדיניות הפרטיות של Internet Archive (<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>), ובקשות ל-Google Books כפופות למדיניות הפרטיות של Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>).</p>`,
       },
       {
         heading: `מינויים ורכישות`,
@@ -737,7 +737,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   },
   hi: {
     title: `गोपनीयता नीति`,
-    effectiveDate: `प्रभावी तिथि: 12 जुलाई 2026`,
+    effectiveDate: `प्रभावी तिथि: 5 अक्टूबर 2026`,
     intro: `NikiBStudio («हम») ने <strong>Bookpather</strong> («ऐप») को एक वाणिज्यिक एप्लिकेशन के रूप में विकसित किया है। यह नीति बताती है कि ऐप कौन-सा डेटा संभालता है, वह कहाँ संग्रहीत होता है, आपके डिवाइस से क्या बाहर जाता है — और क्या कभी नहीं जाता।`,
     sections: [
       {
@@ -758,11 +758,11 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
         heading: `AI सुविधाएँ और वे क्या भेजती हैं`,
         content: `<p>AI पुस्तक सार और AI रीडिंग चेन वैकल्पिक हैं और केवल आपकी स्पष्ट सहमति के बाद चलती हैं। अनुरोध पर, ऐप हमारे सर्वर (Cloudflare पर हमारा AI प्रॉक्सी) को भेजता है:</p>
 <ul><li>पुस्तक मेटाडेटा: शीर्षक, लेखक और उपलब्ध होने पर पुस्तक का सार्वजनिक विवरण।</li><li>आपकी इंटरफ़ेस भाषा, ताकि उत्तर उसी में लिखा जाए।</li><li>कोटा प्रबंधन और दुरुपयोग रोकथाम के लिए एक यादृच्छिक इंस्टॉलेशन पहचानकर्ता और तकनीकी अनुरोध डेटा।</li></ul>
-<p>हमारा सर्वर पुस्तक मेटाडेटा को AI प्रदाता (वर्तमान में DeepSeek) को भेजता है। <strong>आपके व्यक्तिगत नोट्स, फ़ोटो, नाम और संपर्क विवरण कभी भी हमें या AI प्रदाता को नहीं भेजे जाते।</strong> AI अनुरोधों का उपयोग आपकी प्रोफ़ाइल बनाने के लिए नहीं होता, और हम यह डेटा न बेचते हैं न साझा करते हैं।</p>`,
+<p>हमारा सर्वर पुस्तक मेटाडेटा को AI प्रदाता (वर्तमान में DeepSeek) को भेजता है। <strong>आपके व्यक्तिगत नोट्स, फ़ोटो, नाम और संपर्क विवरण कभी भी हमें या AI प्रदाता को नहीं भेजे जाते।</strong> AI अनुरोधों का उपयोग आपकी प्रोफ़ाइल बनाने के लिए नहीं होता, और हम यह डेटा न बेचते हैं न साझा करते हैं। DeepSeek इन अनुरोधों को चीनी जनवादी गणराज्य में स्थित सर्वरों पर संसाधित करता है।</p>`,
       },
       {
-        heading: `पुस्तक खोज (Google Books)`,
-        content: `<p>जब आप शीर्षक, लेखक या ISBN से कोई किताब खोजते हैं, तो ऐप संस्करण, कवर और विवरण खोजने के लिए Google Books API से पूछताछ करता है। केवल खोज क्वेरी ही भेजी जाती है। Google का प्रसंस्करण Google की गोपनीयता नीति (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>) के अधीन है।</p>`,
+        heading: `पुस्तक खोज (Open Library और Google Books)`,
+        content: `<p>जब आप शीर्षक, लेखक या ISBN से कोई किताब खोजते हैं, तो ऐप संस्करण, कवर और विवरण खोजने के लिए Open Library API (Internet Archive द्वारा संचालित) से पूछताछ करता है, और वहाँ कुछ न मिलने पर Google Books API से। केवल खोज क्वेरी ही भेजी जाती है। Open Library के अनुरोध Internet Archive की शर्तों और गोपनीयता नीति (<a href="https://archive.org/about/terms.php" target="_blank" rel="noopener noreferrer">archive.org/about/terms.php</a>) के अधीन हैं, और Google Books के अनुरोध Google की गोपनीयता नीति (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>) के अधीन हैं।</p>`,
       },
       {
         heading: `सदस्यताएँ और खरीदारी`,
