@@ -11,6 +11,7 @@ import { alinePrivacy } from '@/data/aline-privacy'
 import { cozyballPrivacy } from '@/data/cozyball-privacy'
 import { swirlballPrivacy } from '@/data/swirlball-privacy'
 import { loansolverPrivacy } from '@/data/loansolver-privacy'
+import { wakeleaguePrivacy } from '@/data/wakeleague-privacy'
 import { bookpatherPrivacy } from '@/data/bookpather-privacy'
 
 const privacyData: Record<string, Record<string, PrivacyPolicy>> = {
@@ -21,6 +22,7 @@ const privacyData: Record<string, Record<string, PrivacyPolicy>> = {
   cozyball: cozyballPrivacy,
   swirlball: swirlballPrivacy,
   loansolver: loansolverPrivacy,
+  wakeleague: wakeleaguePrivacy,
   bookpather: bookpatherPrivacy,
 }
 
