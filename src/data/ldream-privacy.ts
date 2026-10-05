@@ -43,8 +43,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Third-Party Services`,
-        content: `<h3>Apple (App Store, StoreKit, and iCloud)</h3>
-<p>Purchases and subscriptions are processed entirely by Apple through the App Store. We do not receive your payment information, Apple Account details, or billing information. Apple's handling of your data is governed by Apple's Privacy Policy (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+        content: `<h3>Apple (App Store, StoreKit, iCloud, and speech recognition)</h3>
+<p>Purchases and subscriptions are processed entirely by Apple through the App Store. We do not receive your payment information, Apple Account details, or billing information. When you use voice input on a device or in a language without on-device speech recognition, Apple's speech service transcribes the audio; we never receive it. Apple's handling of your data is governed by Apple's Privacy Policy (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
 <h3>Cloudflare (our server)</h3>
 <p>Our server runs on Cloudflare Workers. Requests are encrypted in transit and processed on Cloudflare's global network, which may include data centers outside your country. Cloudflare's handling of data is governed by its Privacy Policy (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>).</p>
 <h3>DeepSeek (interpretations, scene descriptions, and Patterns)</h3>
@@ -69,7 +69,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `Data Sharing`,
         content: `<p>We share data only with the service providers described above, and only to provide the App's features:</p>
-<ul><li><strong>Cloudflare</strong> — hosts our server and processes requests to it.</li><li><strong>DeepSeek</strong> — receives the dream text (or, for Patterns, titles, symbols, and emotions) to create interpretations, scene descriptions, and Patterns summaries.</li><li><strong>fal.ai</strong> — receives a short scene description to create illustrations.</li><li><strong>Apple</strong> — processes purchases and, if you turn on sync, stores your journal in your private iCloud.</li></ul>
+<ul><li><strong>Cloudflare</strong> — hosts our server and processes requests to it.</li><li><strong>DeepSeek</strong> — receives the dream text (or, for Patterns, titles, symbols, and emotions) to create interpretations, scene descriptions, and Patterns summaries.</li><li><strong>fal.ai</strong> — receives a short scene description to create illustrations.</li><li><strong>Apple</strong> — processes purchases, transcribes voice input with its speech service when on-device recognition is not available, and, if you turn on sync, stores your journal in your private iCloud.</li></ul>
 <p>We do not sell, rent, or trade your data, and we do not share it for advertising or marketing. Because DeepSeek's servers are in the People's Republic of China and fal.ai is based in the United States, your data may be processed in countries whose data protection laws differ from those of your country. You agree to this transfer when you give your consent in the App.</p>`,
       },
       {
@@ -130,8 +130,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Сторонние сервисы`,
-        content: `<h3>Apple (App Store, StoreKit и iCloud)</h3>
-<p>Покупки и подписки полностью обрабатываются Apple через App Store. Мы не получаем ваши платёжные данные, сведения об Аккаунте Apple и платёжные реквизиты. Обработка ваших данных компанией Apple регулируется Политикой конфиденциальности Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+        content: `<h3>Apple (App Store, StoreKit, iCloud и распознавание речи)</h3>
+<p>Покупки и подписки полностью обрабатываются Apple через App Store. Мы не получаем ваши платёжные данные, сведения об Аккаунте Apple и платёжные реквизиты. Если вы пользуетесь голосовым вводом на устройстве или на языке без распознавания речи на устройстве, аудио расшифровывает речевой сервис Apple; мы его никогда не получаем. Обработка ваших данных компанией Apple регулируется Политикой конфиденциальности Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
 <h3>Cloudflare (наш сервер)</h3>
 <p>Наш сервер работает на Cloudflare Workers. Запросы передаются в зашифрованном виде и обрабатываются в глобальной сети Cloudflare, в том числе в дата-центрах за пределами вашей страны. Обработка данных компанией Cloudflare регулируется её Политикой конфиденциальности (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>).</p>
 <h3>DeepSeek (толкования, описания сцен и «Паттерны»)</h3>
@@ -156,7 +156,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `Передача данных`,
         content: `<p>Мы передаём данные только описанным выше поставщикам услуг и только для работы функций Приложения:</p>
-<ul><li><strong>Cloudflare</strong> — размещает наш сервер и обрабатывает запросы к нему.</li><li><strong>DeepSeek</strong> — получает текст сна (а для «Паттернов» — названия, символы и эмоции), чтобы создавать толкования, описания сцен и сводки «Паттернов».</li><li><strong>fal.ai</strong> — получает короткое описание сцены, чтобы создавать иллюстрации.</li><li><strong>Apple</strong> — обрабатывает покупки и, если вы включите синхронизацию, хранит дневник в вашем личном iCloud.</li></ul>
+<ul><li><strong>Cloudflare</strong> — размещает наш сервер и обрабатывает запросы к нему.</li><li><strong>DeepSeek</strong> — получает текст сна (а для «Паттернов» — названия, символы и эмоции), чтобы создавать толкования, описания сцен и сводки «Паттернов».</li><li><strong>fal.ai</strong> — получает короткое описание сцены, чтобы создавать иллюстрации.</li><li><strong>Apple</strong> — обрабатывает покупки, расшифровывает голосовой ввод своим речевым сервисом, если распознавание на устройстве недоступно, и, если вы включите синхронизацию, хранит дневник в вашем личном iCloud.</li></ul>
 <p>Мы не продаём, не сдаём в аренду и не обмениваем ваши данные и не передаём их в рекламных или маркетинговых целях. Поскольку серверы DeepSeek находятся в Китайской Народной Республике, а fal.ai — в США, ваши данные могут обрабатываться в странах, законы о защите данных которых отличаются от законов вашей страны. Вы соглашаетесь на такую передачу, давая согласие в Приложении.</p>`,
       },
       {
@@ -217,8 +217,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Drittanbieterdienste`,
-        content: `<h3>Apple (App Store, StoreKit und iCloud)</h3>
-<p>Käufe und Abonnements werden vollständig von Apple über den App Store abgewickelt. Wir erhalten weder Ihre Zahlungsdaten noch Angaben zu Ihrem Apple Account oder Rechnungsdaten. Apples Umgang mit Ihren Daten unterliegt der Datenschutzrichtlinie von Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+        content: `<h3>Apple (App Store, StoreKit, iCloud und Spracherkennung)</h3>
+<p>Käufe und Abonnements werden vollständig von Apple über den App Store abgewickelt. Wir erhalten weder Ihre Zahlungsdaten noch Angaben zu Ihrem Apple Account oder Rechnungsdaten. Wenn Sie die Spracheingabe auf einem Gerät oder in einer Sprache ohne Spracherkennung auf dem Gerät nutzen, wandelt der Sprachdienst von Apple die Audiodaten in Text um; wir erhalten sie nie. Apples Umgang mit Ihren Daten unterliegt der Datenschutzrichtlinie von Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
 <h3>Cloudflare (unser Server)</h3>
 <p>Unser Server läuft auf Cloudflare Workers. Anfragen werden verschlüsselt übertragen und im weltweiten Netzwerk von Cloudflare verarbeitet, auch in Rechenzentren außerhalb Ihres Landes. Cloudflares Umgang mit Daten unterliegt seiner Datenschutzrichtlinie (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>).</p>
 <h3>DeepSeek (Deutungen, Szenenbeschreibungen und Muster)</h3>
@@ -243,7 +243,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `Datenweitergabe`,
         content: `<p>Wir geben Daten nur an die oben beschriebenen Dienstleister weiter und nur, um die Funktionen der App bereitzustellen:</p>
-<ul><li><strong>Cloudflare</strong> – betreibt unseren Server und verarbeitet die Anfragen an ihn.</li><li><strong>DeepSeek</strong> – erhält den Traumtext (bei Mustern: Titel, Symbole und Gefühle), um Deutungen, Szenenbeschreibungen und Muster-Übersichten zu erstellen.</li><li><strong>fal.ai</strong> – erhält eine kurze Szenenbeschreibung, um Illustrationen zu erstellen.</li><li><strong>Apple</strong> – wickelt Käufe ab und speichert, wenn Sie die Synchronisierung aktivieren, Ihr Tagebuch in Ihrer privaten iCloud.</li></ul>
+<ul><li><strong>Cloudflare</strong> – betreibt unseren Server und verarbeitet die Anfragen an ihn.</li><li><strong>DeepSeek</strong> – erhält den Traumtext (bei Mustern: Titel, Symbole und Gefühle), um Deutungen, Szenenbeschreibungen und Muster-Übersichten zu erstellen.</li><li><strong>fal.ai</strong> – erhält eine kurze Szenenbeschreibung, um Illustrationen zu erstellen.</li><li><strong>Apple</strong> – wickelt Käufe ab, wandelt Spracheingaben mit seinem Sprachdienst in Text um, wenn keine Spracherkennung auf dem Gerät verfügbar ist, und speichert, wenn Sie die Synchronisierung aktivieren, Ihr Tagebuch in Ihrer privaten iCloud.</li></ul>
 <p>Wir verkaufen, vermieten oder tauschen Ihre Daten nicht und geben sie nicht für Werbung oder Marketing weiter. Da sich die Server von DeepSeek in der Volksrepublik China befinden und fal.ai in den USA ansässig ist, können Ihre Daten in Ländern verarbeitet werden, deren Datenschutzrecht sich von dem Ihres Landes unterscheidet. Dieser Übermittlung stimmen Sie mit Ihrer Einwilligung in der App zu.</p>`,
       },
       {
@@ -304,8 +304,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Services tiers`,
-        content: `<h3>Apple (App Store, StoreKit et iCloud)</h3>
-<p>Les achats et abonnements sont traités entièrement par Apple via l'App Store. Nous ne recevons ni vos informations de paiement, ni les détails de votre compte Apple, ni vos données de facturation. Le traitement de vos données par Apple est régi par la politique de confidentialité d'Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+        content: `<h3>Apple (App Store, StoreKit, iCloud et reconnaissance vocale)</h3>
+<p>Les achats et abonnements sont traités entièrement par Apple via l'App Store. Nous ne recevons ni vos informations de paiement, ni les détails de votre compte Apple, ni vos données de facturation. Si vous utilisez la saisie vocale sur un appareil ou dans une langue sans reconnaissance vocale sur l'appareil, le service vocal d'Apple transcrit l'audio ; nous ne le recevons jamais. Le traitement de vos données par Apple est régi par la politique de confidentialité d'Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
 <h3>Cloudflare (notre serveur)</h3>
 <p>Notre serveur fonctionne sur Cloudflare Workers. Les requêtes sont chiffrées pendant leur transfert et traitées sur le réseau mondial de Cloudflare, y compris dans des centres de données situés hors de votre pays. Le traitement des données par Cloudflare est régi par sa politique de confidentialité (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>).</p>
 <h3>DeepSeek (interprétations, descriptions de scène et Motifs)</h3>
@@ -330,7 +330,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `Partage de données`,
         content: `<p>Nous ne partageons des données qu'avec les prestataires décrits ci-dessus, et uniquement pour fournir les fonctions de l'Application :</p>
-<ul><li><strong>Cloudflare</strong> — héberge notre serveur et traite les requêtes qui lui sont adressées.</li><li><strong>DeepSeek</strong> — reçoit le texte du rêve (ou, pour les Motifs, les titres, symboles et émotions) pour créer les interprétations, les descriptions de scène et les bilans des Motifs.</li><li><strong>fal.ai</strong> — reçoit une courte description de scène pour créer les illustrations.</li><li><strong>Apple</strong> — traite les achats et, si vous activez la synchronisation, stocke votre journal dans votre iCloud privé.</li></ul>
+<ul><li><strong>Cloudflare</strong> — héberge notre serveur et traite les requêtes qui lui sont adressées.</li><li><strong>DeepSeek</strong> — reçoit le texte du rêve (ou, pour les Motifs, les titres, symboles et émotions) pour créer les interprétations, les descriptions de scène et les bilans des Motifs.</li><li><strong>fal.ai</strong> — reçoit une courte description de scène pour créer les illustrations.</li><li><strong>Apple</strong> — traite les achats, transcrit la saisie vocale avec son service vocal lorsque la reconnaissance sur l'appareil n'est pas disponible et, si vous activez la synchronisation, stocke votre journal dans votre iCloud privé.</li></ul>
 <p>Nous ne vendons, ne louons ni n'échangeons vos données, et nous ne les partageons pas à des fins publicitaires ou marketing. Comme les serveurs de DeepSeek se trouvent en République populaire de Chine et que fal.ai est établie aux États-Unis, vos données peuvent être traitées dans des pays dont les lois sur la protection des données diffèrent de celles de votre pays. Vous acceptez ce transfert en donnant votre consentement dans l'Application.</p>`,
       },
       {
@@ -391,8 +391,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Servicios de terceros`,
-        content: `<h3>Apple (App Store, StoreKit e iCloud)</h3>
-<p>Las compras y suscripciones las procesa íntegramente Apple a través del App Store. No recibimos su información de pago, los datos de su cuenta de Apple ni sus datos de facturación. El tratamiento de sus datos por parte de Apple se rige por la Política de privacidad de Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+        content: `<h3>Apple (App Store, StoreKit, iCloud y reconocimiento de voz)</h3>
+<p>Las compras y suscripciones las procesa íntegramente Apple a través del App Store. No recibimos su información de pago, los datos de su cuenta de Apple ni sus datos de facturación. Si usa la entrada por voz en un dispositivo o en un idioma sin reconocimiento de voz en el dispositivo, el servicio de voz de Apple transcribe el audio; nosotros nunca lo recibimos. El tratamiento de sus datos por parte de Apple se rige por la Política de privacidad de Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
 <h3>Cloudflare (nuestro servidor)</h3>
 <p>Nuestro servidor funciona en Cloudflare Workers. Las solicitudes viajan cifradas y se procesan en la red global de Cloudflare, incluidos centros de datos fuera de su país. El tratamiento de datos por parte de Cloudflare se rige por su política de privacidad (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>).</p>
 <h3>DeepSeek (interpretaciones, descripciones de escena y Patrones)</h3>
@@ -417,7 +417,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `Compartición de datos`,
         content: `<p>Solo compartimos datos con los proveedores descritos arriba y únicamente para ofrecer las funciones de la Aplicación:</p>
-<ul><li><strong>Cloudflare</strong> — aloja nuestro servidor y procesa las solicitudes que recibe.</li><li><strong>DeepSeek</strong> — recibe el texto del sueño (o, para Patrones, títulos, símbolos y emociones) para crear interpretaciones, descripciones de escena y resúmenes de Patrones.</li><li><strong>fal.ai</strong> — recibe una breve descripción de la escena para crear ilustraciones.</li><li><strong>Apple</strong> — procesa las compras y, si activa la sincronización, guarda su diario en su iCloud privado.</li></ul>
+<ul><li><strong>Cloudflare</strong> — aloja nuestro servidor y procesa las solicitudes que recibe.</li><li><strong>DeepSeek</strong> — recibe el texto del sueño (o, para Patrones, títulos, símbolos y emociones) para crear interpretaciones, descripciones de escena y resúmenes de Patrones.</li><li><strong>fal.ai</strong> — recibe una breve descripción de la escena para crear ilustraciones.</li><li><strong>Apple</strong> — procesa las compras, transcribe la entrada por voz con su servicio de voz cuando el reconocimiento en el dispositivo no está disponible y, si activa la sincronización, guarda su diario en su iCloud privado.</li></ul>
 <p>No vendemos, alquilamos ni intercambiamos sus datos, ni los compartimos con fines publicitarios o de marketing. Como los servidores de DeepSeek están en la República Popular China y fal.ai tiene su sede en Estados Unidos, sus datos pueden tratarse en países cuyas leyes de protección de datos difieren de las de su país. Usted acepta esta transferencia al dar su consentimiento en la Aplicación.</p>`,
       },
       {
@@ -478,8 +478,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Servizi di terze parti`,
-        content: `<h3>Apple (App Store, StoreKit e iCloud)</h3>
-<p>Acquisti e abbonamenti sono elaborati interamente da Apple tramite l'App Store. Non riceviamo i tuoi dati di pagamento, i dettagli del tuo account Apple né i dati di fatturazione. Il trattamento dei tuoi dati da parte di Apple è regolato dall'Informativa sulla privacy di Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+        content: `<h3>Apple (App Store, StoreKit, iCloud e riconoscimento vocale)</h3>
+<p>Acquisti e abbonamenti sono elaborati interamente da Apple tramite l'App Store. Non riceviamo i tuoi dati di pagamento, i dettagli del tuo account Apple né i dati di fatturazione. Se usi l'input vocale su un dispositivo o in una lingua senza riconoscimento vocale sul dispositivo, il servizio vocale di Apple trascrive l'audio; noi non lo riceviamo mai. Il trattamento dei tuoi dati da parte di Apple è regolato dall'Informativa sulla privacy di Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
 <h3>Cloudflare (il nostro server)</h3>
 <p>Il nostro server funziona su Cloudflare Workers. Le richieste viaggiano cifrate e vengono elaborate sulla rete globale di Cloudflare, anche in data center fuori dal tuo Paese. Il trattamento dei dati da parte di Cloudflare è regolato dalla sua informativa sulla privacy (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>).</p>
 <h3>DeepSeek (interpretazioni, descrizioni delle scene e Temi ricorrenti)</h3>
@@ -504,7 +504,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `Condivisione dei dati`,
         content: `<p>Condividiamo dati solo con i fornitori descritti sopra e solo per offrire le funzioni dell'App:</p>
-<ul><li><strong>Cloudflare</strong> — ospita il nostro server ed elabora le richieste che riceve.</li><li><strong>DeepSeek</strong> — riceve il testo del sogno (o, per i Temi ricorrenti, titoli, simboli ed emozioni) per creare interpretazioni, descrizioni delle scene e riepiloghi.</li><li><strong>fal.ai</strong> — riceve una breve descrizione della scena per creare le illustrazioni.</li><li><strong>Apple</strong> — elabora gli acquisti e, se attivi la sincronizzazione, memorizza il diario nel tuo iCloud privato.</li></ul>
+<ul><li><strong>Cloudflare</strong> — ospita il nostro server ed elabora le richieste che riceve.</li><li><strong>DeepSeek</strong> — riceve il testo del sogno (o, per i Temi ricorrenti, titoli, simboli ed emozioni) per creare interpretazioni, descrizioni delle scene e riepiloghi.</li><li><strong>fal.ai</strong> — riceve una breve descrizione della scena per creare le illustrazioni.</li><li><strong>Apple</strong> — elabora gli acquisti, trascrive l'input vocale con il suo servizio vocale quando il riconoscimento sul dispositivo non è disponibile e, se attivi la sincronizzazione, memorizza il diario nel tuo iCloud privato.</li></ul>
 <p>Non vendiamo, affittiamo né scambiamo i tuoi dati e non li condividiamo per pubblicità o marketing. Poiché i server di DeepSeek si trovano nella Repubblica Popolare Cinese e fal.ai ha sede negli Stati Uniti, i tuoi dati possono essere trattati in Paesi le cui leggi sulla protezione dei dati sono diverse da quelle del tuo Paese. Accetti questo trasferimento quando dai il consenso nell'App.</p>`,
       },
       {
@@ -565,8 +565,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Serviços de terceiros`,
-        content: `<h3>Apple (App Store, StoreKit e iCloud)</h3>
-<p>Compras e assinaturas são processadas integralmente pela Apple via App Store. Não recebemos suas informações de pagamento, os dados da sua Conta Apple nem seus dados de cobrança. O tratamento dos seus dados pela Apple é regido pela Política de Privacidade da Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+        content: `<h3>Apple (App Store, StoreKit, iCloud e reconhecimento de fala)</h3>
+<p>Compras e assinaturas são processadas integralmente pela Apple via App Store. Não recebemos suas informações de pagamento, os dados da sua Conta Apple nem seus dados de cobrança. Se você usar a entrada por voz em um dispositivo ou idioma sem reconhecimento de fala no dispositivo, o serviço de fala da Apple transcreve o áudio; nós nunca o recebemos. O tratamento dos seus dados pela Apple é regido pela Política de Privacidade da Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
 <h3>Cloudflare (nosso servidor)</h3>
 <p>Nosso servidor roda no Cloudflare Workers. As solicitações trafegam criptografadas e são processadas na rede global da Cloudflare, inclusive em data centers fora do seu país. O tratamento de dados pela Cloudflare é regido pela política de privacidade dela (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>).</p>
 <h3>DeepSeek (interpretações, descrições de cena e Padrões)</h3>
@@ -591,7 +591,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `Compartilhamento de dados`,
         content: `<p>Compartilhamos dados apenas com os provedores descritos acima e somente para oferecer os recursos do Aplicativo:</p>
-<ul><li><strong>Cloudflare</strong> — hospeda nosso servidor e processa as solicitações enviadas a ele.</li><li><strong>DeepSeek</strong> — recebe o texto do sonho (ou, para Padrões, títulos, símbolos e emoções) para criar interpretações, descrições de cena e resumos de Padrões.</li><li><strong>fal.ai</strong> — recebe uma breve descrição da cena para criar ilustrações.</li><li><strong>Apple</strong> — processa as compras e, se você ativar a sincronização, armazena seu diário no seu iCloud privado.</li></ul>
+<ul><li><strong>Cloudflare</strong> — hospeda nosso servidor e processa as solicitações enviadas a ele.</li><li><strong>DeepSeek</strong> — recebe o texto do sonho (ou, para Padrões, títulos, símbolos e emoções) para criar interpretações, descrições de cena e resumos de Padrões.</li><li><strong>fal.ai</strong> — recebe uma breve descrição da cena para criar ilustrações.</li><li><strong>Apple</strong> — processa as compras, transcreve a entrada por voz com o serviço de fala dela quando o reconhecimento no dispositivo não está disponível e, se você ativar a sincronização, armazena seu diário no seu iCloud privado.</li></ul>
 <p>Não vendemos, alugamos nem trocamos seus dados, e não os compartilhamos para publicidade ou marketing. Como os servidores da DeepSeek ficam na República Popular da China e a fal.ai tem sede nos Estados Unidos, seus dados podem ser tratados em países cujas leis de proteção de dados diferem das do seu país. Você concorda com essa transferência ao dar seu consentimento no Aplicativo.</p>`,
       },
       {
@@ -652,8 +652,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `サードパーティサービス`,
-        content: `<h3>Apple（App Store、StoreKit、iCloud）</h3>
-<p>購入とサブスクリプションは、App Storeを通じてAppleがすべて処理します。当社がお支払い情報、Appleアカウントの詳細、請求情報を受け取ることはありません。Appleによるデータの取り扱いは、Appleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に従います。</p>
+        content: `<h3>Apple（App Store、StoreKit、iCloud、音声認識）</h3>
+<p>購入とサブスクリプションは、App Storeを通じてAppleがすべて処理します。当社がお支払い情報、Appleアカウントの詳細、請求情報を受け取ることはありません。デバイス上の音声認識に対応していないデバイスや言語で音声入力を使う場合は、Appleの音声認識サービスが音声をテキストに変換します。当社がその音声を受け取ることはありません。Appleによるデータの取り扱いは、Appleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に従います。</p>
 <h3>Cloudflare（当社サーバー）</h3>
 <p>当社サーバーはCloudflare Workers上で稼働しています。リクエストは暗号化されて送信され、お客様の国外のデータセンターを含むCloudflareのグローバルネットワークで処理されます。Cloudflareによるデータの取り扱いは、同社のプライバシーポリシー（<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>）に従います。</p>
 <h3>DeepSeek（解釈、場面の説明、パターン）</h3>
@@ -678,7 +678,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `データの共有`,
         content: `<p>当社は、本アプリの機能を提供する目的に限り、上記のサービス提供者とのみデータを共有します：</p>
-<ul><li><strong>Cloudflare</strong> — 当社サーバーをホストし、サーバーへのリクエストを処理します。</li><li><strong>DeepSeek</strong> — 解釈、場面の説明、パターンのまとめを作成するため、夢のテキスト（パターンの場合はタイトル、シンボル、感情）を受け取ります。</li><li><strong>fal.ai</strong> — イラストを作成するため、短い場面の説明を受け取ります。</li><li><strong>Apple</strong> — 購入を処理し、同期をオンにした場合は日記をお客様のプライベートなiCloudに保存します。</li></ul>
+<ul><li><strong>Cloudflare</strong> — 当社サーバーをホストし、サーバーへのリクエストを処理します。</li><li><strong>DeepSeek</strong> — 解釈、場面の説明、パターンのまとめを作成するため、夢のテキスト（パターンの場合はタイトル、シンボル、感情）を受け取ります。</li><li><strong>fal.ai</strong> — イラストを作成するため、短い場面の説明を受け取ります。</li><li><strong>Apple</strong> — 購入を処理し、デバイス上の音声認識が使えない場合は音声認識サービスで音声入力をテキストに変換し、同期をオンにした場合は日記をお客様のプライベートなiCloudに保存します。</li></ul>
 <p>当社はお客様のデータを販売、貸与、交換せず、広告やマーケティングのために共有することもありません。DeepSeekのサーバーは中華人民共和国にあり、fal.aiは米国を拠点としているため、お客様のデータは、お住まいの国とはデータ保護法が異なる国で処理される場合があります。本アプリ内で同意することにより、お客様はこの移転に同意したことになります。</p>`,
       },
       {
@@ -739,8 +739,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `타사 서비스`,
-        content: `<h3>Apple(App Store, StoreKit, iCloud)</h3>
-<p>구매와 구독은 App Store를 통해 Apple이 전적으로 처리합니다. 당사는 귀하의 결제 정보, Apple 계정 세부 정보, 청구 정보를 받지 않습니다. Apple의 데이터 처리는 Apple 개인정보 처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)의 적용을 받습니다.</p>
+        content: `<h3>Apple(App Store, StoreKit, iCloud, 음성 인식)</h3>
+<p>구매와 구독은 App Store를 통해 Apple이 전적으로 처리합니다. 당사는 귀하의 결제 정보, Apple 계정 세부 정보, 청구 정보를 받지 않습니다. 기기 내 음성 인식을 지원하지 않는 기기나 언어에서 음성 입력을 사용하면 Apple의 음성 인식 서비스가 오디오를 텍스트로 변환하며, 당사는 그 오디오를 절대 받지 않습니다. Apple의 데이터 처리는 Apple 개인정보 처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)의 적용을 받습니다.</p>
 <h3>Cloudflare(당사 서버)</h3>
 <p>당사 서버는 Cloudflare Workers에서 실행됩니다. 요청은 암호화되어 전송되며, 귀하의 국가 밖에 있는 데이터 센터를 포함한 Cloudflare의 글로벌 네트워크에서 처리됩니다. Cloudflare의 데이터 처리는 Cloudflare 개인정보 처리방침(<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>)의 적용을 받습니다.</p>
 <h3>DeepSeek(해석, 장면 설명, 패턴)</h3>
@@ -765,7 +765,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `데이터 공유`,
         content: `<p>당사는 본 앱의 기능을 제공하기 위해서만, 위에 설명된 서비스 제공업체와만 데이터를 공유합니다:</p>
-<ul><li><strong>Cloudflare</strong> — 당사 서버를 호스팅하고 서버로 오는 요청을 처리합니다.</li><li><strong>DeepSeek</strong> — 해석, 장면 설명, 패턴 요약을 만들기 위해 꿈의 텍스트(패턴의 경우 제목, 상징, 감정)를 받습니다.</li><li><strong>fal.ai</strong> — 일러스트를 만들기 위해 짧은 장면 설명을 받습니다.</li><li><strong>Apple</strong> — 구매를 처리하고, 동기화를 켠 경우 일기를 귀하의 개인 iCloud에 저장합니다.</li></ul>
+<ul><li><strong>Cloudflare</strong> — 당사 서버를 호스팅하고 서버로 오는 요청을 처리합니다.</li><li><strong>DeepSeek</strong> — 해석, 장면 설명, 패턴 요약을 만들기 위해 꿈의 텍스트(패턴의 경우 제목, 상징, 감정)를 받습니다.</li><li><strong>fal.ai</strong> — 일러스트를 만들기 위해 짧은 장면 설명을 받습니다.</li><li><strong>Apple</strong> — 구매를 처리하고, 기기 내 음성 인식을 사용할 수 없을 때 음성 인식 서비스로 음성 입력을 텍스트로 변환하며, 동기화를 켠 경우 일기를 귀하의 개인 iCloud에 저장합니다.</li></ul>
 <p>당사는 귀하의 데이터를 판매, 대여, 교환하지 않으며 광고나 마케팅 목적으로 공유하지 않습니다. DeepSeek의 서버는 중화인민공화국에 있고 fal.ai는 미국에 기반을 두고 있으므로, 귀하의 데이터는 귀하의 국가와 데이터 보호법이 다른 국가에서 처리될 수 있습니다. 귀하는 본 앱에서 동의함으로써 이러한 이전에 동의하게 됩니다.</p>`,
       },
       {
@@ -826,8 +826,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `第三方服务`,
-        content: `<h3>Apple（App Store、StoreKit 和 iCloud）</h3>
-<p>购买和订阅完全由 Apple 通过 App Store 处理。我们不会收到您的付款信息、Apple 帐户详情或账单信息。Apple 对您数据的处理受 Apple 隐私政策约束（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）。</p>
+        content: `<h3>Apple（App Store、StoreKit、iCloud 和语音识别）</h3>
+<p>购买和订阅完全由 Apple 通过 App Store 处理。我们不会收到您的付款信息、Apple 帐户详情或账单信息。如果您在不支持设备端语音识别的设备或语言上使用语音输入，将由 Apple 的语音服务转写音频；我们绝不会收到这些音频。Apple 对您数据的处理受 Apple 隐私政策约束（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）。</p>
 <h3>Cloudflare（我们的服务器）</h3>
 <p>我们的服务器运行在 Cloudflare Workers 上。请求以加密方式传输，并在 Cloudflare 的全球网络中处理，其中包括您所在国家/地区以外的数据中心。Cloudflare 对数据的处理受其隐私政策约束（<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>）。</p>
 <h3>DeepSeek（解读、场景描述与"规律"）</h3>
@@ -852,7 +852,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `数据共享`,
         content: `<p>我们仅为提供本应用的功能，与上述服务提供商共享数据：</p>
-<ul><li><strong>Cloudflare</strong> — 托管我们的服务器并处理发往服务器的请求。</li><li><strong>DeepSeek</strong> — 接收梦境文本（生成"规律"时为标题、象征和情绪），用于生成解读、场景描述和"规律"汇总。</li><li><strong>fal.ai</strong> — 接收简短的场景描述，用于生成插画。</li><li><strong>Apple</strong> — 处理购买；如果您开启同步，还会将日记保存在您的私人 iCloud 中。</li></ul>
+<ul><li><strong>Cloudflare</strong> — 托管我们的服务器并处理发往服务器的请求。</li><li><strong>DeepSeek</strong> — 接收梦境文本（生成"规律"时为标题、象征和情绪），用于生成解读、场景描述和"规律"汇总。</li><li><strong>fal.ai</strong> — 接收简短的场景描述，用于生成插画。</li><li><strong>Apple</strong> — 处理购买；在设备端语音识别不可用时，用其语音服务转写语音输入；如果您开启同步，还会将日记保存在您的私人 iCloud 中。</li></ul>
 <p>我们不会出售、出租或交换您的数据，也不会为广告或营销目的共享这些数据。由于 DeepSeek 的服务器位于中华人民共和国、fal.ai 位于美国，您的数据可能会在数据保护法律与您所在国家/地区不同的国家/地区处理。您在本应用中表示同意，即表示同意此类传输。</p>`,
       },
       {
@@ -913,8 +913,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `خدمات الطرف الثالث`,
-        content: `<h3>Apple (App Store وStoreKit وiCloud)</h3>
-<p>تُعالج المشتريات والاشتراكات بالكامل بواسطة Apple عبر App Store. لا نتلقى معلومات الدفع أو تفاصيل حساب Apple أو بيانات الفوترة الخاصة بك. يخضع تعامل Apple مع بياناتك لسياسة خصوصية Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+        content: `<h3>Apple (App Store وStoreKit وiCloud والتعرف على الكلام)</h3>
+<p>تُعالج المشتريات والاشتراكات بالكامل بواسطة Apple عبر App Store. لا نتلقى معلومات الدفع أو تفاصيل حساب Apple أو بيانات الفوترة الخاصة بك. وإذا استخدمت الإدخال الصوتي على جهاز أو بلغة لا يدعمان التعرف على الكلام على الجهاز، فإن خدمة الكلام من Apple تحوّل الصوت إلى نص؛ ولا نتلقى نحن هذا الصوت أبدًا. يخضع تعامل Apple مع بياناتك لسياسة خصوصية Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
 <h3>Cloudflare (خادمنا)</h3>
 <p>يعمل خادمنا على Cloudflare Workers. تُنقل الطلبات مشفّرة وتُعالج على شبكة Cloudflare العالمية، بما في ذلك مراكز بيانات خارج بلدك. يخضع تعامل Cloudflare مع البيانات لسياسة الخصوصية الخاصة بها (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>).</p>
 <h3>DeepSeek (التفسيرات وأوصاف المشاهد و«الأنماط»)</h3>
@@ -939,7 +939,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `مشاركة البيانات`,
         content: `<p>لا نشارك البيانات إلا مع مزوّدي الخدمات الموضحين أعلاه، ولغرض تقديم ميزات التطبيق فقط:</p>
-<ul><li><strong>Cloudflare</strong> — تستضيف خادمنا وتعالج الطلبات الواردة إليه.</li><li><strong>DeepSeek</strong> — تتلقى نص الحلم (أو العناوين والرموز والمشاعر في حالة «الأنماط») لإنشاء التفسيرات وأوصاف المشاهد وملخصات «الأنماط».</li><li><strong>fal.ai</strong> — تتلقى وصفًا قصيرًا للمشهد لإنشاء الرسوم التوضيحية.</li><li><strong>Apple</strong> — تعالج المشتريات، وتحفظ يومياتك في iCloud الخاص بك إذا فعّلت المزامنة.</li></ul>
+<ul><li><strong>Cloudflare</strong> — تستضيف خادمنا وتعالج الطلبات الواردة إليه.</li><li><strong>DeepSeek</strong> — تتلقى نص الحلم (أو العناوين والرموز والمشاعر في حالة «الأنماط») لإنشاء التفسيرات وأوصاف المشاهد وملخصات «الأنماط».</li><li><strong>fal.ai</strong> — تتلقى وصفًا قصيرًا للمشهد لإنشاء الرسوم التوضيحية.</li><li><strong>Apple</strong> — تعالج المشتريات، وتحوّل الإدخال الصوتي إلى نص عبر خدمة الكلام الخاصة بها عندما لا يتوفر التعرف على الكلام على الجهاز، وتحفظ يومياتك في iCloud الخاص بك إذا فعّلت المزامنة.</li></ul>
 <p>لا نبيع بياناتك ولا نؤجرها ولا نتاجر بها، ولا نشاركها لأغراض الإعلان أو التسويق. ولأن خوادم DeepSeek موجودة في جمهورية الصين الشعبية ومقر fal.ai في الولايات المتحدة، فقد تُعالج بياناتك في بلدان تختلف قوانين حماية البيانات فيها عن قوانين بلدك. وأنت توافق على هذا النقل عندما تمنح موافقتك داخل التطبيق.</p>`,
       },
       {
@@ -1000,8 +1000,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `तृतीय-पक्ष सेवाएँ`,
-        content: `<h3>Apple (App Store, StoreKit और iCloud)</h3>
-<p>खरीदारी और सदस्यताएँ पूरी तरह Apple द्वारा App Store के माध्यम से संसाधित की जाती हैं। हमें आपकी भुगतान जानकारी, Apple खाते का विवरण या बिलिंग जानकारी नहीं मिलती। Apple द्वारा आपके डेटा का प्रबंधन Apple की गोपनीयता नीति (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>) के अधीन है।</p>
+        content: `<h3>Apple (App Store, StoreKit, iCloud और वाक् पहचान)</h3>
+<p>खरीदारी और सदस्यताएँ पूरी तरह Apple द्वारा App Store के माध्यम से संसाधित की जाती हैं। हमें आपकी भुगतान जानकारी, Apple खाते का विवरण या बिलिंग जानकारी नहीं मिलती। यदि आप ऐसे डिवाइस या भाषा में वॉइस इनपुट का उपयोग करते हैं जो डिवाइस पर वाक् पहचान का समर्थन नहीं करती, तो Apple की वाक् सेवा ऑडियो को टेक्स्ट में बदलती है; वह ऑडियो हमें कभी नहीं मिलता। Apple द्वारा आपके डेटा का प्रबंधन Apple की गोपनीयता नीति (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>) के अधीन है।</p>
 <h3>Cloudflare (हमारा सर्वर)</h3>
 <p>हमारा सर्वर Cloudflare Workers पर चलता है। अनुरोध एन्क्रिप्टेड रूप में भेजे जाते हैं और Cloudflare के वैश्विक नेटवर्क पर संसाधित होते हैं, जिसमें आपके देश के बाहर के डेटा सेंटर भी शामिल हो सकते हैं। Cloudflare द्वारा डेटा का प्रबंधन उसकी गोपनीयता नीति (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>) के अधीन है।</p>
 <h3>DeepSeek (व्याख्याएँ, दृश्य विवरण और पैटर्न)</h3>
@@ -1026,7 +1026,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `डेटा साझाकरण`,
         content: `<p>हम डेटा केवल ऊपर बताए गए सेवा प्रदाताओं के साथ और केवल ऐप की सुविधाएँ देने के लिए साझा करते हैं:</p>
-<ul><li><strong>Cloudflare</strong> — हमारे सर्वर को होस्ट करता है और उस तक आने वाले अनुरोधों को संसाधित करता है।</li><li><strong>DeepSeek</strong> — व्याख्याएँ, दृश्य विवरण और पैटर्न सारांश बनाने के लिए सपने का टेक्स्ट (पैटर्न के लिए शीर्षक, प्रतीक और भावनाएँ) प्राप्त करता है।</li><li><strong>fal.ai</strong> — चित्र बनाने के लिए दृश्य का छोटा विवरण प्राप्त करता है।</li><li><strong>Apple</strong> — खरीदारी संसाधित करता है और, यदि आप सिंक चालू करते हैं, तो आपकी डायरी आपके निजी iCloud में संग्रहीत करता है।</li></ul>
+<ul><li><strong>Cloudflare</strong> — हमारे सर्वर को होस्ट करता है और उस तक आने वाले अनुरोधों को संसाधित करता है।</li><li><strong>DeepSeek</strong> — व्याख्याएँ, दृश्य विवरण और पैटर्न सारांश बनाने के लिए सपने का टेक्स्ट (पैटर्न के लिए शीर्षक, प्रतीक और भावनाएँ) प्राप्त करता है।</li><li><strong>fal.ai</strong> — चित्र बनाने के लिए दृश्य का छोटा विवरण प्राप्त करता है।</li><li><strong>Apple</strong> — खरीदारी संसाधित करता है, डिवाइस पर वाक् पहचान उपलब्ध न होने पर अपनी वाक् सेवा से वॉइस इनपुट को टेक्स्ट में बदलता है, और यदि आप सिंक चालू करते हैं, तो आपकी डायरी आपके निजी iCloud में संग्रहीत करता है।</li></ul>
 <p>हम आपका डेटा न बेचते हैं, न किराए पर देते हैं, न उसका आदान-प्रदान करते हैं, और न ही उसे विज्ञापन या मार्केटिंग के लिए साझा करते हैं। चूँकि DeepSeek के सर्वर चीनी जनवादी गणराज्य में हैं और fal.ai संयुक्त राज्य अमेरिका में स्थित है, इसलिए आपका डेटा ऐसे देशों में संसाधित हो सकता है जिनके डेटा संरक्षण कानून आपके देश से भिन्न हैं। ऐप में सहमति देकर आप इस हस्तांतरण के लिए सहमति देते हैं।</p>`,
       },
       {
@@ -1087,8 +1087,8 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `שירותי צד שלישי`,
-        content: `<h3>Apple (App Store, StoreKit ו-iCloud)</h3>
-<p>רכישות ומנויים מעובדים במלואם על ידי Apple דרך ה-App Store. איננו מקבלים את פרטי התשלום, פרטי חשבון Apple או נתוני החיוב שלכם. הטיפול של Apple בנתונים שלכם כפוף למדיניות הפרטיות של Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
+        content: `<h3>Apple (App Store, StoreKit, iCloud וזיהוי דיבור)</h3>
+<p>רכישות ומנויים מעובדים במלואם על ידי Apple דרך ה-App Store. איננו מקבלים את פרטי התשלום, פרטי חשבון Apple או נתוני החיוב שלכם. אם אתם משתמשים בקלט קולי במכשיר או בשפה שאין בהם זיהוי דיבור במכשיר, שירות הדיבור של Apple ממיר את השמע לטקסט; אנחנו לעולם לא מקבלים אותו. הטיפול של Apple בנתונים שלכם כפוף למדיניות הפרטיות של Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>
 <h3>Cloudflare (השרת שלנו)</h3>
 <p>השרת שלנו פועל על Cloudflare Workers. הבקשות מועברות בהצפנה ומעובדות ברשת הגלובלית של Cloudflare, כולל במרכזי נתונים מחוץ למדינה שלכם. הטיפול של Cloudflare בנתונים כפוף למדיניות הפרטיות שלה (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">www.cloudflare.com/privacypolicy</a>).</p>
 <h3>DeepSeek (פירושים, תיאורי סצנות ו"דפוסים")</h3>
@@ -1113,7 +1113,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
       {
         heading: `שיתוף נתונים`,
         content: `<p>אנו משתפים נתונים רק עם נותני השירות המתוארים לעיל, ורק כדי לספק את תכונות האפליקציה:</p>
-<ul><li><strong>Cloudflare</strong> — מארחת את השרת שלנו ומעבדת את הבקשות אליו.</li><li><strong>DeepSeek</strong> — מקבלת את טקסט החלום (או, עבור "דפוסים", כותרות, סמלים ורגשות) כדי ליצור פירושים, תיאורי סצנות וסיכומי "דפוסים".</li><li><strong>fal.ai</strong> — מקבלת תיאור קצר של הסצנה כדי ליצור איורים.</li><li><strong>Apple</strong> — מעבדת רכישות, ואם תפעילו סנכרון — שומרת את היומן ב-iCloud הפרטי שלכם.</li></ul>
+<ul><li><strong>Cloudflare</strong> — מארחת את השרת שלנו ומעבדת את הבקשות אליו.</li><li><strong>DeepSeek</strong> — מקבלת את טקסט החלום (או, עבור "דפוסים", כותרות, סמלים ורגשות) כדי ליצור פירושים, תיאורי סצנות וסיכומי "דפוסים".</li><li><strong>fal.ai</strong> — מקבלת תיאור קצר של הסצנה כדי ליצור איורים.</li><li><strong>Apple</strong> — מעבדת רכישות, ממירה קלט קולי לטקסט בשירות הדיבור שלה כשזיהוי דיבור במכשיר אינו זמין, ואם תפעילו סנכרון — שומרת את היומן ב-iCloud הפרטי שלכם.</li></ul>
 <p>איננו מוכרים, משכירים או סוחרים בנתונים שלכם, ואיננו משתפים אותם לצורכי פרסום או שיווק. מאחר שהשרתים של DeepSeek נמצאים ברפובליקה העממית של סין ו-fal.ai ממוקמת בארצות הברית, הנתונים שלכם עשויים להיות מעובדים במדינות שדיני הגנת המידע בהן שונים מאלה שבמדינה שלכם. אתם מסכימים להעברה זו כשאתם נותנים את הסכמתכם באפליקציה.</p>`,
       },
       {
