@@ -5,7 +5,7 @@ export type { PrivacySection, PrivacyPolicy }
 export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   en: {
     title: `Privacy Policy`,
-    effectiveDate: `Effective Date: July 9, 2026`,
+    effectiveDate: `Effective Date: October 5, 2026`,
     intro: `NikiBStudio ("we", "our", or "us") built <strong>Cozy Ball</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
     sections: [
       {
@@ -29,7 +29,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `In-App Purchases`,
-        content: `<p>The App offers optional in-app purchases (such as revive and score doubler packs). All transactions are processed entirely by Apple through the App Store using StoreKit. We do not have access to your payment information, Apple ID, or billing details. Purchases can be restored on a new device using the "Restore Purchases" button. Apple's handling of your data is governed by Apple's Privacy Policy (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>The App offers optional in-app purchases (such as the Cozy Supporter Pack, revive packs, or a thank-you tip). All transactions are processed entirely by Apple through the App Store using StoreKit. We do not have access to your payment information, Apple ID, or billing details. Purchases can be restored on a new device using the "Restore Purchases" button. Apple's handling of your data is governed by Apple's Privacy Policy (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `No Third-Party Services`,
@@ -62,7 +62,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   ru: {
     title: `Политика конфиденциальности`,
-    effectiveDate: `Дата вступления в силу: 9 июля 2026 г.`,
+    effectiveDate: `Дата вступления в силу: 5 октября 2026 г.`,
     intro: `NikiBStudio («мы», «наш» или «нас») разработала приложение <strong>Cozy Ball</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
     sections: [
       {
@@ -86,7 +86,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Встроенные покупки`,
-        content: `<p>Приложение предлагает необязательные встроенные покупки (например, наборы возрождений и удвоителей очков). Все транзакции полностью обрабатываются Apple через App Store с использованием StoreKit. Мы не имеем доступа к вашей платёжной информации, Apple ID или платёжным реквизитам. Покупки можно восстановить на новом устройстве кнопкой «Восстановить покупки». Обработка ваших данных компанией Apple регулируется Политикой конфиденциальности Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>Приложение предлагает необязательные встроенные покупки (например, «Набор поддержки Cozy», наборы воскрешений или чаевые разработчику). Все транзакции полностью обрабатываются Apple через App Store с использованием StoreKit. Мы не имеем доступа к вашей платёжной информации, Apple ID или платёжным реквизитам. Покупки можно восстановить на новом устройстве кнопкой «Восстановить покупки». Обработка ваших данных компанией Apple регулируется Политикой конфиденциальности Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Отсутствие сторонних сервисов`,
@@ -119,7 +119,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   de: {
     title: `Datenschutzrichtlinie`,
-    effectiveDate: `Gültig ab: 9. Juli 2026`,
+    effectiveDate: `Gültig ab: 5. Oktober 2026`,
     intro: `NikiBStudio („wir", „unser" oder „uns") hat <strong>Cozy Ball</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzrichtlinie erklärt, wie wir mit Informationen umgehen, wenn Sie unsere App nutzen.`,
     sections: [
       {
@@ -143,7 +143,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `In-App-Käufe`,
-        content: `<p>Die App bietet optionale In-App-Käufe (z. B. Wiederbelebungs- und Punkteverdoppler-Pakete). Alle Transaktionen werden vollständig von Apple über den App Store mit StoreKit abgewickelt. Wir haben keinen Zugriff auf Ihre Zahlungsinformationen, Ihre Apple-ID oder Rechnungsdetails. Käufe können auf einem neuen Gerät über die Schaltfläche „Käufe wiederherstellen" wiederhergestellt werden. Apples Umgang mit Ihren Daten unterliegt der Datenschutzrichtlinie von Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>Die App bietet optionale In-App-Käufe (z. B. das Cozy Unterstützer-Paket, Wiederbelebungs-Pakete oder ein Dankeschön-Trinkgeld). Alle Transaktionen werden vollständig von Apple über den App Store mit StoreKit abgewickelt. Wir haben keinen Zugriff auf Ihre Zahlungsinformationen, Ihre Apple-ID oder Rechnungsdetails. Käufe können auf einem neuen Gerät über die Schaltfläche „Käufe wiederherstellen" wiederhergestellt werden. Apples Umgang mit Ihren Daten unterliegt der Datenschutzrichtlinie von Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Keine Drittanbieter-Dienste`,
@@ -176,7 +176,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   fr: {
     title: `Politique de confidentialité`,
-    effectiveDate: `Date d'entrée en vigueur : 9 juillet 2026`,
+    effectiveDate: `Date d'entrée en vigueur : 5 octobre 2026`,
     intro: `NikiBStudio (« nous », « notre » ou « nos ») a développé <strong>Cozy Ball</strong> (« l'Application ») en tant qu'application commerciale. La présente Politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez notre Application.`,
     sections: [
       {
@@ -200,7 +200,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Achats intégrés`,
-        content: `<p>L'Application propose des achats intégrés facultatifs (comme des packs de résurrection et de doubleur de score). Toutes les transactions sont entièrement traitées par Apple via l'App Store à l'aide de StoreKit. Nous n'avons pas accès à vos informations de paiement, votre identifiant Apple ou vos détails de facturation. Les achats peuvent être restaurés sur un nouvel appareil via le bouton « Restaurer les achats ». Le traitement de vos données par Apple est régi par la Politique de confidentialité d'Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>L'Application propose des achats intégrés facultatifs (comme le Pack de soutien Cozy, des packs de résurrection ou un pourboire de remerciement). Toutes les transactions sont entièrement traitées par Apple via l'App Store à l'aide de StoreKit. Nous n'avons pas accès à vos informations de paiement, votre identifiant Apple ou vos détails de facturation. Les achats peuvent être restaurés sur un nouvel appareil via le bouton « Restaurer les achats ». Le traitement de vos données par Apple est régi par la Politique de confidentialité d'Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Aucun service tiers`,
@@ -233,7 +233,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   es: {
     title: `Política de privacidad`,
-    effectiveDate: `Fecha de vigencia: 9 de julio de 2026`,
+    effectiveDate: `Fecha de vigencia: 5 de octubre de 2026`,
     intro: `NikiBStudio ("nosotros", "nuestro" o "nos") ha desarrollado <strong>Cozy Ball</strong> ("la Aplicación") como una aplicación comercial. Esta Política de privacidad explica cómo manejamos la información cuando utiliza nuestra Aplicación.`,
     sections: [
       {
@@ -257,7 +257,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Compras dentro de la aplicación`,
-        content: `<p>La Aplicación ofrece compras opcionales dentro de la aplicación (como packs de reanimación y duplicadores de puntuación). Todas las transacciones son procesadas completamente por Apple a través del App Store mediante StoreKit. No tenemos acceso a su información de pago, Apple ID ni detalles de facturación. Las compras pueden restaurarse en un nuevo dispositivo con el botón "Restaurar compras". El manejo de sus datos por parte de Apple se rige por la Política de privacidad de Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>La Aplicación ofrece compras opcionales dentro de la aplicación (como el Pack de apoyo Cozy, packs de reanimación o una propina de agradecimiento). Todas las transacciones son procesadas completamente por Apple a través del App Store mediante StoreKit. No tenemos acceso a su información de pago, Apple ID ni detalles de facturación. Las compras pueden restaurarse en un nuevo dispositivo con el botón "Restaurar compras". El manejo de sus datos por parte de Apple se rige por la Política de privacidad de Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Sin servicios de terceros`,
@@ -290,7 +290,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   it: {
     title: `Informativa sulla privacy`,
-    effectiveDate: `Data di entrata in vigore: 9 luglio 2026`,
+    effectiveDate: `Data di entrata in vigore: 5 ottobre 2026`,
     intro: `NikiBStudio ("noi", "nostro" o "ci") ha sviluppato <strong>Cozy Ball</strong> ("l'App") come applicazione commerciale. La presente Informativa sulla privacy spiega come trattiamo le informazioni quando utilizzi la nostra App.`,
     sections: [
       {
@@ -314,7 +314,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Acquisti in-app`,
-        content: `<p>L'App offre acquisti in-app facoltativi (come pacchetti di resurrezione e raddoppiatori di punteggio). Tutte le transazioni sono elaborate interamente da Apple tramite l'App Store utilizzando StoreKit. Non abbiamo accesso alle tue informazioni di pagamento, al tuo ID Apple o ai dettagli di fatturazione. Gli acquisti possono essere ripristinati su un nuovo dispositivo con il pulsante "Ripristina acquisti". Il trattamento dei tuoi dati da parte di Apple è regolato dall'Informativa sulla privacy di Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>L'App offre acquisti in-app facoltativi (come il Pacchetto sostenitore Cozy, pacchetti di resurrezione o una mancia di ringraziamento). Tutte le transazioni sono elaborate interamente da Apple tramite l'App Store utilizzando StoreKit. Non abbiamo accesso alle tue informazioni di pagamento, al tuo ID Apple o ai dettagli di fatturazione. Gli acquisti possono essere ripristinati su un nuovo dispositivo con il pulsante "Ripristina acquisti". Il trattamento dei tuoi dati da parte di Apple è regolato dall'Informativa sulla privacy di Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Nessun servizio di terze parti`,
@@ -347,7 +347,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   pt: {
     title: `Política de privacidade`,
-    effectiveDate: `Data de vigência: 9 de julho de 2026`,
+    effectiveDate: `Data de vigência: 5 de outubro de 2026`,
     intro: `A NikiBStudio ("nós", "nosso" ou "nos") desenvolveu o <strong>Cozy Ball</strong> ("o App") como um aplicativo comercial. Esta Política de privacidade explica como tratamos as informações quando você usa nosso App.`,
     sections: [
       {
@@ -371,7 +371,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Compras no aplicativo`,
-        content: `<p>O App oferece compras opcionais no aplicativo (como pacotes de reviver e duplicadores de pontuação). Todas as transações são processadas inteiramente pela Apple através da App Store usando o StoreKit. Não temos acesso às suas informações de pagamento, Apple ID ou detalhes de cobrança. As compras podem ser restauradas em um novo dispositivo com o botão "Restaurar compras". O tratamento dos seus dados pela Apple é regido pela Política de privacidade da Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>O App oferece compras opcionais no aplicativo (como o Pacote de apoiador Cozy, pacotes de reviver ou uma gorjeta de agradecimento). Todas as transações são processadas inteiramente pela Apple através da App Store usando o StoreKit. Não temos acesso às suas informações de pagamento, Apple ID ou detalhes de cobrança. As compras podem ser restauradas em um novo dispositivo com o botão "Restaurar compras". O tratamento dos seus dados pela Apple é regido pela Política de privacidade da Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Sem serviços de terceiros`,
@@ -404,7 +404,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   ja: {
     title: `プライバシーポリシー`,
-    effectiveDate: `発効日：2026年7月9日`,
+    effectiveDate: `発効日：2026年10月5日`,
     intro: `NikiBStudio（「当社」）は、商用アプリケーションとして<strong>Cozy Ball</strong>（「本アプリ」）を開発しました。本プライバシーポリシーは、お客様が本アプリを使用する際の情報の取り扱いについて説明します。`,
     sections: [
       {
@@ -428,7 +428,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `アプリ内購入`,
-        content: `<p>本アプリはオプションのアプリ内購入（リバイブパックやスコア倍増パックなど）を提供します。すべての取引はStoreKitを使用してApp Store経由でAppleにより完全に処理されます。当社はお客様の支払い情報、Apple ID、請求詳細にアクセスできません。購入は「購入を復元」ボタンで新しいデバイスに復元できます。Appleによるデータの取り扱いは、Appleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に準拠します。</p>`,
+        content: `<p>本アプリはオプションのアプリ内購入（「Cozy サポーターパック」、リバイブパック、開発者へのお礼のチップなど）を提供します。すべての取引はStoreKitを使用してApp Store経由でAppleにより完全に処理されます。当社はお客様の支払い情報、Apple ID、請求詳細にアクセスできません。購入は「購入を復元」ボタンで新しいデバイスに復元できます。Appleによるデータの取り扱いは、Appleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に準拠します。</p>`,
       },
       {
         heading: `サードパーティサービスなし`,
@@ -461,7 +461,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   ko: {
     title: `개인정보 처리방침`,
-    effectiveDate: `시행일: 2026년 7월 9일`,
+    effectiveDate: `시행일: 2026년 10월 5일`,
     intro: `NikiBStudio("당사")는 상업용 애플리케이션으로 <strong>Cozy Ball</strong>("본 앱")을 개발했습니다. 본 개인정보 처리방침은 귀하가 본 앱을 사용할 때 당사가 정보를 처리하는 방식을 설명합니다.`,
     sections: [
       {
@@ -485,7 +485,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `인앱 구매`,
-        content: `<p>본 앱은 선택적 인앱 구매(부활 팩, 점수 2배 팩 등)를 제공합니다. 모든 거래는 StoreKit을 사용하여 App Store를 통해 Apple이 전적으로 처리합니다. 당사는 귀하의 결제 정보, Apple ID 또는 청구 세부 정보에 접근할 수 없습니다. 구매는 "구매 복원" 버튼으로 새 기기에서 복원할 수 있습니다. Apple의 데이터 처리는 Apple 개인정보 처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)의 적용을 받습니다.</p>`,
+        content: `<p>본 앱은 선택적 인앱 구매(‘Cozy 서포터 팩’, 부활 팩, 개발자에게 보내는 감사 팁 등)를 제공합니다. 모든 거래는 StoreKit을 사용하여 App Store를 통해 Apple이 전적으로 처리합니다. 당사는 귀하의 결제 정보, Apple ID 또는 청구 세부 정보에 접근할 수 없습니다. 구매는 "구매 복원" 버튼으로 새 기기에서 복원할 수 있습니다. Apple의 데이터 처리는 Apple 개인정보 처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)의 적용을 받습니다.</p>`,
       },
       {
         heading: `제3자 서비스 없음`,
@@ -518,7 +518,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   zh: {
     title: `隐私政策`,
-    effectiveDate: `生效日期：2026年7月9日`,
+    effectiveDate: `生效日期：2026年10月5日`,
     intro: `NikiBStudio（"我们"）开发了 <strong>Cozy Ball</strong>（"本应用"）作为商业应用程序。本隐私政策说明了您使用本应用时我们如何处理信息。`,
     sections: [
       {
@@ -542,7 +542,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `应用内购买`,
-        content: `<p>本应用提供可选的应用内购买（如复活包和分数翻倍包）。所有交易均由 Apple 通过 App Store 使用 StoreKit 完全处理。我们无法访问您的付款信息、Apple ID 或账单详情。购买可通过"恢复购买"按钮在新设备上恢复。Apple 对您数据的处理受 Apple 隐私政策（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）管辖。</p>`,
+        content: `<p>本应用提供可选的应用内购买（如“Cozy 支持者礼包”、复活包或给开发者的感谢打赏）。所有交易均由 Apple 通过 App Store 使用 StoreKit 完全处理。我们无法访问您的付款信息、Apple ID 或账单详情。购买可通过"恢复购买"按钮在新设备上恢复。Apple 对您数据的处理受 Apple 隐私政策（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）管辖。</p>`,
       },
       {
         heading: `无第三方服务`,
@@ -575,7 +575,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   ar: {
     title: `سياسة الخصوصية`,
-    effectiveDate: `تاريخ السريان: 9 يوليو 2026`,
+    effectiveDate: `تاريخ السريان: 5 أكتوبر 2026`,
     intro: `قامت NikiBStudio ("نحن" أو "لنا") بتطوير <strong>Cozy Ball</strong> ("التطبيق") كتطبيق تجاري. توضح سياسة الخصوصية هذه كيفية تعاملنا مع المعلومات عند استخدامك لتطبيقنا.`,
     sections: [
       {
@@ -599,7 +599,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `المشتريات داخل التطبيق`,
-        content: `<p>يوفر التطبيق مشتريات اختيارية داخل التطبيق (مثل حزم الإحياء ومضاعفات النقاط). تتم معالجة جميع المعاملات بالكامل بواسطة Apple عبر App Store باستخدام StoreKit. لا يمكننا الوصول إلى معلومات الدفع الخاصة بك أو Apple ID أو تفاصيل الفوترة. يمكن استعادة المشتريات على جهاز جديد باستخدام زر "استعادة المشتريات". يخضع تعامل Apple مع بياناتك لسياسة خصوصية Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>يوفر التطبيق مشتريات اختيارية داخل التطبيق (مثل «حزمة داعمي Cozy» وحزم الإحياء أو إكرامية شكر للمطوّر). تتم معالجة جميع المعاملات بالكامل بواسطة Apple عبر App Store باستخدام StoreKit. لا يمكننا الوصول إلى معلومات الدفع الخاصة بك أو Apple ID أو تفاصيل الفوترة. يمكن استعادة المشتريات على جهاز جديد باستخدام زر "استعادة المشتريات". يخضع تعامل Apple مع بياناتك لسياسة خصوصية Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `لا خدمات من أطراف ثالثة`,
@@ -632,7 +632,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   hi: {
     title: `गोपनीयता नीति`,
-    effectiveDate: `प्रभावी तिथि: 9 जुलाई 2026`,
+    effectiveDate: `प्रभावी तिथि: 5 अक्टूबर 2026`,
     intro: `NikiBStudio ("हम", "हमारा") ने <strong>Cozy Ball</strong> ("ऐप") को एक व्यावसायिक एप्लिकेशन के रूप में विकसित किया है। यह गोपनीयता नीति बताती है कि जब आप हमारे ऐप का उपयोग करते हैं तो हम जानकारी को कैसे संभालते हैं।`,
     sections: [
       {
@@ -656,7 +656,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `इन-ऐप खरीदारी`,
-        content: `<p>ऐप वैकल्पिक इन-ऐप खरीदारी प्रदान करता है (जैसे रिवाइव और स्कोर डबलर पैक)। सभी लेनदेन StoreKit का उपयोग करके App Store के माध्यम से पूरी तरह Apple द्वारा संसाधित किए जाते हैं। हमारे पास आपकी भुगतान जानकारी, Apple ID या बिलिंग विवरण तक पहुँच नहीं है। "खरीदारी पुनर्स्थापित करें" बटन से नई डिवाइस पर खरीदारी बहाल की जा सकती है। Apple द्वारा आपके डेटा का प्रबंधन Apple की गोपनीयता नीति (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>) द्वारा शासित है।</p>`,
+        content: `<p>ऐप वैकल्पिक इन-ऐप खरीदारी प्रदान करता है (जैसे Cozy सपोर्टर पैक, रिवाइव पैक या डेवलपर को धन्यवाद टिप)। सभी लेनदेन StoreKit का उपयोग करके App Store के माध्यम से पूरी तरह Apple द्वारा संसाधित किए जाते हैं। हमारे पास आपकी भुगतान जानकारी, Apple ID या बिलिंग विवरण तक पहुँच नहीं है। "खरीदारी पुनर्स्थापित करें" बटन से नई डिवाइस पर खरीदारी बहाल की जा सकती है। Apple द्वारा आपके डेटा का प्रबंधन Apple की गोपनीयता नीति (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>) द्वारा शासित है।</p>`,
       },
       {
         heading: `कोई तृतीय-पक्ष सेवाएँ नहीं`,
@@ -689,7 +689,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   },
   he: {
     title: `מדיניות פרטיות`,
-    effectiveDate: `תאריך כניסה לתוקף: 9 ביולי 2026`,
+    effectiveDate: `תאריך כניסה לתוקף: 5 באוקטובר 2026`,
     intro: `NikiBStudio ("אנחנו" או "שלנו") פיתחה את <strong>Cozy Ball</strong> ("האפליקציה") כאפליקציה מסחרית. מדיניות פרטיות זו מסבירה כיצד אנו מטפלים במידע כאשר אתם משתמשים באפליקציה שלנו.`,
     sections: [
       {
@@ -713,7 +713,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `רכישות בתוך האפליקציה`,
-        content: `<p>האפליקציה מציעה רכישות אופציונליות בתוך האפליקציה (כגון חבילות החייאה ומכפילי ניקוד). כל העסקאות מעובדות במלואן על ידי Apple דרך ה-App Store באמצעות StoreKit. אין לנו גישה לפרטי התשלום שלכם, ל-Apple ID או לפרטי החיוב. ניתן לשחזר רכישות במכשיר חדש באמצעות כפתור "שחזור רכישות". הטיפול של Apple בנתונים שלכם כפוף למדיניות הפרטיות של Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>האפליקציה מציעה רכישות אופציונליות בתוך האפליקציה (כגון חבילת התומכים של Cozy, חבילות החייאה או טיפ תודה למפתח). כל העסקאות מעובדות במלואן על ידי Apple דרך ה-App Store באמצעות StoreKit. אין לנו גישה לפרטי התשלום שלכם, ל-Apple ID או לפרטי החיוב. ניתן לשחזר רכישות במכשיר חדש באמצעות כפתור "שחזור רכישות". הטיפול של Apple בנתונים שלכם כפוף למדיניות הפרטיות של Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `ללא שירותי צד שלישי`,
