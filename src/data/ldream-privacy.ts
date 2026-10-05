@@ -24,7 +24,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Data Stored on Your Device`,
         content: `<p>The App stores the following data locally on your device:</p>
 <ul><li><strong>Dream journal entries</strong> — the text of your dreams, their titles and dates, and the interpretations, symbols, and emotions saved with them.</li><li><strong>Illustrations and Patterns summaries</strong> that you have created.</li><li><strong>App preferences</strong> — such as reminders, the Face ID lock, and iCloud sync.</li><li><strong>Subscription status</strong> — a cached indicator of your Premium access.</li></ul>
-<p><strong>Voice input</strong> is transcribed into text on your device by Apple's speech recognition. Audio recordings are never uploaded to us or to any AI provider, and the App does not keep them.</p>
+<p><strong>Voice input</strong> is transcribed into text by Apple's speech recognition: on your device where your device and language support it, otherwise by Apple's speech service. The audio is never sent to us or to our AI providers, and the App does not store recordings.</p>
 <p>This data is not transmitted to us, except as described in the next section. You can delete entries in the App at any time; deleting the App removes all data stored on the device.</p>`,
       },
       {
@@ -111,7 +111,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Данные, хранящиеся на вашем устройстве`,
         content: `<p>Приложение хранит на вашем устройстве следующие данные:</p>
 <ul><li><strong>Записи дневника снов</strong> — тексты снов, их названия и даты, а также сохранённые вместе с ними толкования, символы и эмоции.</li><li><strong>Иллюстрации и сводки «Паттернов»</strong>, которые вы создали.</li><li><strong>Настройки приложения</strong> — например, напоминания, блокировка Face ID и синхронизация iCloud.</li><li><strong>Статус подписки</strong> — кешированный признак доступа к Премиуму.</li></ul>
-<p><strong>Голосовой ввод</strong> превращается в текст на вашем устройстве с помощью распознавания речи Apple. Аудиозаписи никогда не загружаются ни к нам, ни к поставщикам ИИ, и Приложение их не хранит.</p>
+<p><strong>Голосовой ввод</strong> превращается в текст с помощью распознавания речи Apple: на вашем устройстве, если устройство и язык это поддерживают, а иначе — речевым сервисом Apple. Аудио никогда не отправляется ни нам, ни нашим поставщикам ИИ, и Приложение не хранит записи.</p>
 <p>Эти данные не передаются нам, за исключением случаев, описанных в следующем разделе. Вы можете удалять записи в Приложении в любой момент; удаление Приложения стирает все данные на устройстве.</p>`,
       },
       {
@@ -198,7 +198,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Auf Ihrem Gerät gespeicherte Daten`,
         content: `<p>Die App speichert folgende Daten lokal auf Ihrem Gerät:</p>
 <ul><li><strong>Traumtagebuch-Einträge</strong> – die Texte Ihrer Träume, ihre Titel und Daten sowie die damit gespeicherten Deutungen, Symbole und Gefühle.</li><li><strong>Illustrationen und Muster-Übersichten</strong>, die Sie erstellt haben.</li><li><strong>App-Einstellungen</strong> – etwa Erinnerungen, die Face-ID-Sperre und die iCloud-Synchronisierung.</li><li><strong>Abo-Status</strong> – ein zwischengespeicherter Hinweis auf Ihren Premium-Zugang.</li></ul>
-<p><strong>Spracheingaben</strong> werden auf Ihrem Gerät durch die Spracherkennung von Apple in Text umgewandelt. Audioaufnahmen werden niemals an uns oder an KI-Anbieter hochgeladen, und die App bewahrt sie nicht auf.</p>
+<p><strong>Spracheingaben</strong> werden von der Spracherkennung von Apple in Text umgewandelt: auf Ihrem Gerät, wenn Gerät und Sprache dies unterstützen, andernfalls durch den Sprachdienst von Apple. Die Audiodaten werden niemals an uns oder an unsere KI-Anbieter gesendet, und die App speichert keine Aufnahmen.</p>
 <p>Diese Daten werden nicht an uns übertragen, außer wie im nächsten Abschnitt beschrieben. Sie können Einträge jederzeit in der App löschen; beim Löschen der App werden alle auf dem Gerät gespeicherten Daten entfernt.</p>`,
       },
       {
@@ -285,7 +285,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Données stockées sur votre appareil`,
         content: `<p>L'Application stocke localement sur votre appareil les données suivantes :</p>
 <ul><li><strong>Entrées du journal</strong> — le texte de vos rêves, leurs titres et dates, ainsi que les interprétations, symboles et émotions enregistrés avec eux.</li><li><strong>Illustrations et bilans des Motifs</strong> que vous avez créés.</li><li><strong>Préférences</strong> — par exemple les rappels, le verrouillage Face ID et la synchronisation iCloud.</li><li><strong>Statut d'abonnement</strong> — un indicateur en cache de votre accès Premium.</li></ul>
-<p>La <strong>saisie vocale</strong> est transcrite en texte sur votre appareil par la reconnaissance vocale d'Apple. Les enregistrements audio ne sont jamais envoyés, ni à nous ni à un fournisseur d'IA, et l'Application ne les conserve pas.</p>
+<p>La <strong>saisie vocale</strong> est transcrite en texte par la reconnaissance vocale d'Apple : sur votre appareil lorsque l'appareil et la langue le permettent, sinon par le service vocal d'Apple. L'audio n'est jamais envoyé, ni à nous ni à nos fournisseurs d'IA, et l'Application ne conserve pas les enregistrements.</p>
 <p>Ces données ne nous sont pas transmises, sauf dans les cas décrits dans la section suivante. Vous pouvez supprimer des entrées dans l'Application à tout moment ; supprimer l'Application efface toutes les données stockées sur l'appareil.</p>`,
       },
       {
@@ -372,7 +372,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Datos almacenados en su dispositivo`,
         content: `<p>La Aplicación guarda localmente en su dispositivo los siguientes datos:</p>
 <ul><li><strong>Entradas del diario</strong> — el texto de sus sueños, sus títulos y fechas, y las interpretaciones, símbolos y emociones guardados con ellos.</li><li><strong>Ilustraciones y resúmenes de Patrones</strong> que haya creado.</li><li><strong>Preferencias</strong> — por ejemplo, recordatorios, el bloqueo con Face ID y la sincronización con iCloud.</li><li><strong>Estado de la suscripción</strong> — un indicador en caché de su acceso Premium.</li></ul>
-<p>La <strong>entrada por voz</strong> se transcribe a texto en su dispositivo mediante el reconocimiento de voz de Apple. Las grabaciones de audio nunca se envían a nosotros ni a ningún proveedor de IA, y la Aplicación no las conserva.</p>
+<p>La <strong>entrada por voz</strong> se transcribe a texto mediante el reconocimiento de voz de Apple: en su dispositivo cuando el dispositivo y el idioma lo admiten y, si no, mediante el servicio de voz de Apple. El audio nunca se envía a nosotros ni a nuestros proveedores de IA, y la Aplicación no guarda las grabaciones.</p>
 <p>Estos datos no se nos transmiten, salvo en los casos descritos en la sección siguiente. Puede eliminar entradas en la Aplicación en cualquier momento; al eliminar la Aplicación se borran todos los datos guardados en el dispositivo.</p>`,
       },
       {
@@ -459,7 +459,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Dati memorizzati sul tuo dispositivo`,
         content: `<p>L'App memorizza localmente sul tuo dispositivo i seguenti dati:</p>
 <ul><li><strong>Voci del diario</strong> — il testo dei tuoi sogni, i titoli e le date, e le interpretazioni, i simboli e le emozioni salvati con essi.</li><li><strong>Illustrazioni e riepiloghi dei Temi ricorrenti</strong> che hai creato.</li><li><strong>Preferenze</strong> — ad esempio promemoria, blocco con Face ID e sincronizzazione iCloud.</li><li><strong>Stato dell'abbonamento</strong> — un indicatore in cache del tuo accesso Premium.</li></ul>
-<p>L'<strong>input vocale</strong> viene trascritto in testo sul tuo dispositivo dal riconoscimento vocale di Apple. Le registrazioni audio non vengono mai inviate né a noi né a fornitori di IA, e l'App non le conserva.</p>
+<p>L'<strong>input vocale</strong> viene trascritto in testo dal riconoscimento vocale di Apple: sul tuo dispositivo quando il dispositivo e la lingua lo supportano, altrimenti dal servizio vocale di Apple. L'audio non viene mai inviato né a noi né ai nostri fornitori di IA, e l'App non conserva le registrazioni.</p>
 <p>Questi dati non ci vengono trasmessi, salvo quanto descritto nella sezione successiva. Puoi eliminare le voci nell'App in qualsiasi momento; eliminando l'App vengono cancellati tutti i dati memorizzati sul dispositivo.</p>`,
       },
       {
@@ -546,7 +546,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `Dados armazenados em seu dispositivo`,
         content: `<p>O Aplicativo armazena localmente no seu dispositivo os seguintes dados:</p>
 <ul><li><strong>Registros do diário</strong> — o texto dos seus sonhos, títulos e datas, além das interpretações, símbolos e emoções salvos com eles.</li><li><strong>Ilustrações e resumos de Padrões</strong> que você criou.</li><li><strong>Preferências</strong> — por exemplo, lembretes, bloqueio com Face ID e sincronização com o iCloud.</li><li><strong>Status da assinatura</strong> — um indicador em cache do seu acesso Premium.</li></ul>
-<p>A <strong>entrada por voz</strong> é transcrita em texto no seu dispositivo pelo reconhecimento de fala da Apple. As gravações de áudio nunca são enviadas para nós nem para provedores de IA, e o Aplicativo não as guarda.</p>
+<p>A <strong>entrada por voz</strong> é transcrita em texto pelo reconhecimento de fala da Apple: no seu dispositivo, quando o dispositivo e o idioma permitem; caso contrário, pelo serviço de fala da Apple. O áudio nunca é enviado para nós nem para nossos provedores de IA, e o Aplicativo não guarda as gravações.</p>
 <p>Esses dados não são transmitidos a nós, exceto conforme descrito na próxima seção. Você pode excluir registros no Aplicativo a qualquer momento; excluir o Aplicativo apaga todos os dados armazenados no dispositivo.</p>`,
       },
       {
@@ -633,7 +633,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `デバイスに保存されるデータ`,
         content: `<p>本アプリは以下のデータをお客様のデバイスにローカル保存します：</p>
 <ul><li><strong>夢日記の記録</strong> — 夢のテキスト、タイトル、日付、およびそれとともに保存された解釈、シンボル、感情。</li><li><strong>作成したイラストとパターンのまとめ</strong>。</li><li><strong>アプリの設定</strong> — リマインダー、Face IDロック、iCloud同期など。</li><li><strong>サブスクリプションの状態</strong> — プレミアムの利用状況のキャッシュ。</li></ul>
-<p><strong>音声入力</strong>は、Appleの音声認識によりお客様のデバイス上でテキストに変換されます。録音された音声が当社やAIプロバイダーにアップロードされることはなく、本アプリが音声を保存することもありません。</p>
+<p><strong>音声入力</strong>は、Appleの音声認識によってテキストに変換されます。デバイスと言語が対応している場合はお客様のデバイス上で、それ以外の場合はAppleの音声認識サービスで処理されます。音声が当社や当社のAIプロバイダーに送信されることはなく、本アプリが録音を保存することもありません。</p>
 <p>これらのデータは、次のセクションに記載する場合を除き、当社に送信されることはありません。記録は本アプリ内でいつでも削除でき、本アプリを削除するとデバイス上のすべてのデータが消去されます。</p>`,
       },
       {
@@ -720,7 +720,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `기기에 저장되는 데이터`,
         content: `<p>본 앱은 다음 데이터를 귀하의 기기에 로컬로 저장합니다:</p>
 <ul><li><strong>꿈 일기 기록</strong> — 꿈의 텍스트, 제목과 날짜, 그리고 함께 저장된 해석, 상징, 감정.</li><li><strong>귀하가 만든 일러스트와 패턴 요약</strong>.</li><li><strong>앱 설정</strong> — 알림, Face ID 잠금, iCloud 동기화 등.</li><li><strong>구독 상태</strong> — 프리미엄 이용 여부의 캐시.</li></ul>
-<p><strong>음성 입력</strong>은 Apple의 음성 인식을 통해 귀하의 기기에서 텍스트로 변환됩니다. 오디오 녹음은 당사나 AI 제공업체로 절대 업로드되지 않으며, 본 앱은 이를 보관하지 않습니다.</p>
+<p><strong>음성 입력</strong>은 Apple의 음성 인식을 통해 텍스트로 변환됩니다. 기기와 언어가 지원하는 경우 귀하의 기기에서, 그렇지 않은 경우 Apple의 음성 인식 서비스에서 처리됩니다. 오디오는 당사나 당사의 AI 제공업체로 절대 전송되지 않으며, 본 앱은 녹음을 저장하지 않습니다.</p>
 <p>이 데이터는 다음 섹션에 설명된 경우를 제외하고 당사로 전송되지 않습니다. 기록은 본 앱에서 언제든지 삭제할 수 있으며, 본 앱을 삭제하면 기기에 저장된 모든 데이터가 삭제됩니다.</p>`,
       },
       {
@@ -807,7 +807,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `存储在您设备上的数据`,
         content: `<p>本应用在您的设备上本地存储以下数据：</p>
 <ul><li><strong>梦日记记录</strong> — 梦境文本、标题和日期，以及随之保存的解读、象征和情绪。</li><li><strong>您创建的插画和"规律"汇总</strong>。</li><li><strong>应用偏好设置</strong> — 例如提醒、Face ID 锁和 iCloud 同步。</li><li><strong>订阅状态</strong> — 高级版使用权限的缓存标记。</li></ul>
-<p><strong>语音输入</strong>由 Apple 的语音识别在您的设备上转换为文字。录音绝不会上传给我们或任何 AI 服务商，本应用也不会保留录音。</p>
+<p><strong>语音输入</strong>由 Apple 的语音识别转换为文字：在设备和语言支持的情况下在您的设备上完成，否则由 Apple 的语音服务完成。音频绝不会发送给我们或我们的 AI 服务商，本应用也不会保存录音。</p>
 <p>除下一节所述情况外，这些数据不会传输给我们。您可以随时在本应用中删除记录；删除本应用会清除设备上存储的所有数据。</p>`,
       },
       {
@@ -894,7 +894,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `البيانات المخزنة على جهازك`,
         content: `<p>يخزن التطبيق البيانات التالية محليًا على جهازك:</p>
 <ul><li><strong>مدوّنات يوميات الأحلام</strong> — نصوص أحلامك وعناوينها وتواريخها، والتفسيرات والرموز والمشاعر المحفوظة معها.</li><li><strong>الرسوم التوضيحية وملخصات «الأنماط»</strong> التي أنشأتها.</li><li><strong>تفضيلات التطبيق</strong> — مثل التذكيرات وقفل Face ID ومزامنة iCloud.</li><li><strong>حالة الاشتراك</strong> — مؤشر مخزّن مؤقتًا لوصولك إلى بريميوم.</li></ul>
-<p>يُحوَّل <strong>الإدخال الصوتي</strong> إلى نص على جهازك بواسطة ميزة التعرف على الكلام من Apple. لا تُرفع التسجيلات الصوتية أبدًا إلينا أو إلى أي مزوّد ذكاء اصطناعي، ولا يحتفظ بها التطبيق.</p>
+<p>يُحوَّل <strong>الإدخال الصوتي</strong> إلى نص بواسطة ميزة التعرف على الكلام من Apple: على جهازك إذا كان جهازك ولغتك يدعمان ذلك، وإلا فبواسطة خدمة الكلام من Apple. لا يُرسل الصوت أبدًا إلينا أو إلى مزوّدي الذكاء الاصطناعي لدينا، ولا يحتفظ التطبيق بالتسجيلات.</p>
 <p>لا تُنقل هذه البيانات إلينا إلا كما هو موضح في القسم التالي. يمكنك حذف المدوّنات من التطبيق في أي وقت، ويؤدي حذف التطبيق إلى إزالة جميع البيانات المخزنة على الجهاز.</p>`,
       },
       {
@@ -981,7 +981,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `आपके डिवाइस पर संग्रहीत डेटा`,
         content: `<p>ऐप निम्नलिखित डेटा आपके डिवाइस पर स्थानीय रूप से संग्रहीत करता है:</p>
 <ul><li><strong>ड्रीम डायरी की प्रविष्टियाँ</strong> — आपके सपनों का टेक्स्ट, उनके शीर्षक और तारीखें, और उनके साथ सहेजी गई व्याख्याएँ, प्रतीक और भावनाएँ।</li><li><strong>आपके बनाए चित्र और पैटर्न सारांश</strong>।</li><li><strong>ऐप प्राथमिकताएँ</strong> — जैसे रिमाइंडर, Face ID लॉक और iCloud सिंक।</li><li><strong>सदस्यता स्थिति</strong> — आपकी प्रीमियम पहुँच का कैश्ड संकेतक।</li></ul>
-<p><strong>वॉइस इनपुट</strong> को Apple की वाक् पहचान आपके डिवाइस पर ही टेक्स्ट में बदलती है। ऑडियो रिकॉर्डिंग कभी भी हमें या किसी AI प्रदाता को अपलोड नहीं की जाती, और ऐप उन्हें सहेजकर नहीं रखता।</p>
+<p><strong>वॉइस इनपुट</strong> को Apple की वाक् पहचान टेक्स्ट में बदलती है: यदि आपका डिवाइस और भाषा इसका समर्थन करते हैं तो आपके डिवाइस पर, अन्यथा Apple की वाक् सेवा द्वारा। ऑडियो कभी भी हमें या हमारे AI प्रदाताओं को नहीं भेजा जाता, और ऐप रिकॉर्डिंग संग्रहीत नहीं करता।</p>
 <p>अगले अनुभाग में बताई गई स्थितियों को छोड़कर यह डेटा हमें नहीं भेजा जाता। आप कभी भी ऐप में प्रविष्टियाँ हटा सकते हैं; ऐप हटाने से डिवाइस पर संग्रहीत सारा डेटा मिट जाता है।</p>`,
       },
       {
@@ -1068,7 +1068,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
         heading: `נתונים המאוחסנים במכשיר שלכם`,
         content: `<p>האפליקציה שומרת את הנתונים הבאים באופן מקומי במכשיר שלכם:</p>
 <ul><li><strong>רשומות יומן החלומות</strong> — טקסט החלומות, הכותרות והתאריכים שלהם, והפירושים, הסמלים והרגשות שנשמרו איתם.</li><li><strong>איורים וסיכומי "דפוסים"</strong> שיצרתם.</li><li><strong>העדפות האפליקציה</strong> — כגון תזכורות, נעילת Face ID וסנכרון iCloud.</li><li><strong>מצב המנוי</strong> — מחוון שמור של הגישה שלכם לפרימיום.</li></ul>
-<p><strong>קלט קולי</strong> מומר לטקסט במכשיר שלכם באמצעות זיהוי הדיבור של Apple. הקלטות שמע לעולם אינן מועלות אלינו או לספק בינה מלאכותית כלשהו, והאפליקציה אינה שומרת אותן.</p>
+<p><strong>קלט קולי</strong> מומר לטקסט באמצעות זיהוי הדיבור של Apple: במכשיר שלכם כשהמכשיר והשפה תומכים בכך, ואחרת באמצעות שירות הדיבור של Apple. השמע לעולם אינו נשלח אלינו או לספקי הבינה המלאכותית שלנו, והאפליקציה אינה שומרת הקלטות.</p>
 <p>נתונים אלה אינם מועברים אלינו, למעט כמתואר בסעיף הבא. אפשר למחוק רשומות באפליקציה בכל עת; מחיקת האפליקציה מוחקת את כל הנתונים השמורים במכשיר.</p>`,
       },
       {
