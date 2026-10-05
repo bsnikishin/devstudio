@@ -10,13 +10,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `Overview`,
-        content: `<p>Bookpather is designed to be private by default. The App requires no account, login, or registration, and contains no advertising and no third-party analytics or tracking SDKs. Your library — books, covers, notes, reading statuses, insights, and reading chains — is stored on your device and, if available, in your personal iCloud. Optional AI features send only limited book metadata to our server, and only after your explicit consent.</p>`,
+        content: `<p>Bookpather is designed to be private by default. The App requires no account, login, or registration, and contains no advertising and no third-party analytics or tracking SDKs. Your library — books, covers, notes, reading statuses, reading sessions, Key ideas, and Paths — is stored on your device and, if available, in your personal iCloud. Optional AI features send only the limited data described below to our server, and only after your explicit consent.</p>`,
       },
       {
         heading: `Data Stored on Your Device and in Your iCloud`,
         content: `<p>The App stores the following data locally on your device:</p>
-<ul><li><strong>Your library</strong> — titles, authors, covers, topics, ISBNs, and reading statuses (Want to Read, Reading, Finished, Dropped).</li><li><strong>Personal notes</strong> you attach to books.</li><li><strong>AI insights and reading chains</strong> you have created and saved.</li><li><strong>App preferences</strong> and a cached indicator of your subscription status.</li></ul>
-<p>If iCloud is available on your device, this data syncs through your personal iCloud account (Apple CloudKit private database) so it is available on your other devices. We do not operate our own user database and have no access to your iCloud data. You can export your books, notes, insights, and chains as a JSON file at any time, and delete everything by removing the App and its iCloud data.</p>`,
+<ul><li><strong>Your library</strong> — titles, authors, covers, topics, ISBNs, and reading statuses (Want to Read, Reading, Finished, Dropped).</li><li><strong>Personal notes</strong> you attach to books.</li><li><strong>Key ideas and Paths</strong> you have created and saved, and your reading sessions and streak.</li><li><strong>App preferences</strong> and a cached indicator of your subscription status.</li></ul>
+<p>If iCloud is available on your device, this data syncs through your personal iCloud account (Apple CloudKit private database) so it is available on your other devices. We do not operate our own user database and have no access to your iCloud data. You can export your books, notes, Key ideas, and Paths as a JSON file at any time, and delete everything by removing the App and its iCloud data.</p>`,
       },
       {
         heading: `Camera and Photos`,
@@ -24,9 +24,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI Features and What They Send`,
-        content: `<p>AI book insights and AI reading chains are optional and run only after you explicitly agree to use AI features. When you request them, the App sends the following to our server (an AI proxy we operate on Cloudflare):</p>
-<ul><li>Book metadata: title, author, and, where available, a public description of the book.</li><li>Your interface language, so the answer is written in it.</li><li>A random installation identifier and technical request data used for quota management and abuse prevention.</li></ul>
-<p>Our server forwards the book metadata to an AI provider (currently DeepSeek) to generate the result. <strong>Your personal notes, your photos, your name, and your contact details are never sent to us or to the AI provider.</strong> AI requests are not used to build a profile of you, and we do not sell or share this data. DeepSeek processes these requests on servers located in the People's Republic of China.</p>`,
+        content: `<p>Key ideas and suggested Paths are optional AI features and run only after you explicitly agree to use AI features. When you request them, the App sends the following to our server (an AI proxy we operate on Cloudflare):</p>
+<ul><li>For Key ideas: the book's title, author, and, where available, a public description of the book.</li><li>For Paths: the title, author, topics, and difficulty of up to 120 books from your library, whether you have read them, and the skill or goal you choose.</li><li>Your interface language, so the answer is written in it.</li><li>A random installation identifier and technical request data used for quota management and abuse prevention.</li></ul>
+<p>Our server forwards this data to an AI provider (currently DeepSeek) to generate the result. <strong>Your personal notes, your photos, your name, and your contact details are never sent to us or to the AI provider.</strong> AI requests are not used to build a profile of you, and we do not sell or share this data. DeepSeek processes these requests on servers located in the People's Republic of China.</p>`,
       },
       {
         heading: `Book Search (Open Library and Google Books)`,
@@ -34,7 +34,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Subscriptions and Purchases`,
-        content: `<p>Bookpather Pro is an optional auto-renewable subscription. All transactions are processed entirely by Apple through the App Store using StoreKit. We do not receive or store your payment information, Apple ID, or billing details. To verify your subscription and enforce fair-use limits, our server may validate an App Store transaction signature; this does not include any personal or payment information beyond what Apple includes in the signed transaction. Apple's handling of your data is governed by Apple's Privacy Policy (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>Bookpather Pro is optional: an auto-renewable subscription (monthly or annual) or Lifetime, a one-time purchase. All transactions are processed entirely by Apple through the App Store using StoreKit. We do not receive or store your payment information, Apple ID, or billing details. To verify your subscription and enforce fair-use limits, our server may validate an App Store transaction signature; this does not include any personal or payment information beyond what Apple includes in the signed transaction. Apple's handling of your data is governed by Apple's Privacy Policy (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `No Advertising, No Tracking`,
@@ -71,13 +71,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `Обзор`,
-        content: `<p>Bookpather устроен так, чтобы быть приватным по умолчанию. Приложению не нужны аккаунт, вход или регистрация; в нём нет рекламы, сторонней аналитики и трекинговых SDK. Ваша библиотека — книги, обложки, заметки, статусы чтения, справки и цепочки чтения — хранится на вашем устройстве и, при доступности, в вашем личном iCloud. Необязательные AI-функции отправляют на наш сервер только ограниченные метаданные книг и только после вашего явного согласия.</p>`,
+        content: `<p>Bookpather устроен так, чтобы быть приватным по умолчанию. Приложению не нужны аккаунт, вход или регистрация; в нём нет рекламы, сторонней аналитики и трекинговых SDK. Ваша библиотека — книги, обложки, заметки, статусы чтения, сессии чтения, ключевые идеи и маршруты — хранится на вашем устройстве и, при доступности, в вашем личном iCloud. Необязательные AI-функции отправляют на наш сервер только ограниченный набор данных, описанный ниже, и только после вашего явного согласия.</p>`,
       },
       {
         heading: `Данные на вашем устройстве и в вашем iCloud`,
         content: `<p>Приложение хранит локально на устройстве следующие данные:</p>
-<ul><li><strong>Ваша библиотека</strong> — названия, авторы, обложки, темы, ISBN и статусы чтения («Хочу прочитать», «Читаю», «Прочитал», «Бросил»).</li><li><strong>Личные заметки</strong>, прикреплённые к книгам.</li><li><strong>AI-справки и цепочки чтения</strong>, которые вы создали и сохранили.</li><li><strong>Настройки приложения</strong> и кешированный индикатор статуса подписки.</li></ul>
-<p>Если на устройстве доступен iCloud, эти данные синхронизируются через ваш личный аккаунт iCloud (приватная база Apple CloudKit) и появляются на других ваших устройствах. У нас нет собственной базы пользователей и нет доступа к вашим данным в iCloud. Вы можете в любой момент экспортировать книги, заметки, справки и цепочки в JSON-файл, а также удалить всё, удалив Приложение и его данные iCloud.</p>`,
+<ul><li><strong>Ваша библиотека</strong> — названия, авторы, обложки, темы, ISBN и статусы чтения («Хочу прочитать», «Читаю», «Прочитал», «Бросил»).</li><li><strong>Личные заметки</strong>, прикреплённые к книгам.</li><li><strong>Ключевые идеи и маршруты</strong>, которые вы создали и сохранили, а также сессии чтения и серия дней.</li><li><strong>Настройки приложения</strong> и кешированный индикатор статуса подписки.</li></ul>
+<p>Если на устройстве доступен iCloud, эти данные синхронизируются через ваш личный аккаунт iCloud (приватная база Apple CloudKit) и появляются на других ваших устройствах. У нас нет собственной базы пользователей и нет доступа к вашим данным в iCloud. Вы можете в любой момент экспортировать книги, заметки, ключевые идеи и маршруты в JSON-файл, а также удалить всё, удалив Приложение и его данные iCloud.</p>`,
       },
       {
         heading: `Камера и фотографии`,
@@ -85,9 +85,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI-функции и что они отправляют`,
-        content: `<p>AI-справки о книгах и AI-цепочки чтения — необязательные функции, которые работают только после вашего явного согласия на использование AI. При запросе Приложение отправляет на наш сервер (AI-прокси, размещённый нами в Cloudflare):</p>
-<ul><li>Метаданные книги: название, автора и, если доступно, публичное описание книги.</li><li>Язык вашего интерфейса, чтобы ответ был написан на нём.</li><li>Случайный идентификатор установки и технические данные запроса — для учёта квот и защиты от злоупотреблений.</li></ul>
-<p>Наш сервер передаёт метаданные книги AI-провайдеру (в настоящее время DeepSeek) для генерации результата. <strong>Ваши личные заметки, фотографии, имя и контактные данные никогда не отправляются ни нам, ни AI-провайдеру.</strong> AI-запросы не используются для составления вашего профиля; мы не продаём и не передаём эти данные. DeepSeek обрабатывает эти запросы на серверах, расположенных в Китайской Народной Республике.</p>`,
+        content: `<p>Ключевые идеи и предложенные маршруты — необязательные AI-функции, которые работают только после вашего явного согласия на использование AI. При запросе Приложение отправляет на наш сервер (AI-прокси, размещённый нами в Cloudflare):</p>
+<ul><li>Для ключевых идей: название, автора и, если доступно, публичное описание книги.</li><li>Для маршрутов: названия, авторов, темы и уровень сложности до 120 книг из вашей библиотеки, отметку о том, прочитаны ли они, и выбранный вами навык или цель.</li><li>Язык вашего интерфейса, чтобы ответ был написан на нём.</li><li>Случайный идентификатор установки и технические данные запроса — для учёта квот и защиты от злоупотреблений.</li></ul>
+<p>Наш сервер передаёт эти данные AI-провайдеру (в настоящее время DeepSeek) для генерации результата. <strong>Ваши личные заметки, фотографии, имя и контактные данные никогда не отправляются ни нам, ни AI-провайдеру.</strong> AI-запросы не используются для составления вашего профиля; мы не продаём и не передаём эти данные. DeepSeek обрабатывает эти запросы на серверах, расположенных в Китайской Народной Республике.</p>`,
       },
       {
         heading: `Поиск книг (Open Library и Google Books)`,
@@ -95,7 +95,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Подписки и покупки`,
-        content: `<p>Bookpather Pro — необязательная автопродлеваемая подписка. Все транзакции полностью обрабатываются Apple через App Store с использованием StoreKit. Мы не получаем и не храним ваши платёжные данные, Apple ID или сведения о счетах. Для проверки подписки и соблюдения лимитов честного использования наш сервер может валидировать подпись транзакции App Store; она не содержит персональных или платёжных данных сверх того, что Apple включает в подписанную транзакцию. Обработка данных Apple регулируется Политикой конфиденциальности Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>Bookpather Pro необязателен: это автопродлеваемая подписка (месячная или годовая) или Pro навсегда — разовая покупка. Все транзакции полностью обрабатываются Apple через App Store с использованием StoreKit. Мы не получаем и не храним ваши платёжные данные, Apple ID или сведения о счетах. Для проверки подписки и соблюдения лимитов честного использования наш сервер может валидировать подпись транзакции App Store; она не содержит персональных или платёжных данных сверх того, что Apple включает в подписанную транзакцию. Обработка данных Apple регулируется Политикой конфиденциальности Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Без рекламы и трекинга`,
@@ -132,13 +132,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `Überblick`,
-        content: `<p>Bookpather ist standardmäßig privat. Die App benötigt kein Konto, keinen Login und keine Registrierung; sie enthält keine Werbung und keine Analyse- oder Tracking-SDKs von Drittanbietern. Ihre Bibliothek — Bücher, Cover, Notizen, Lesestatus, Einblicke und Leseketten — wird auf Ihrem Gerät und, sofern verfügbar, in Ihrer persönlichen iCloud gespeichert. Optionale KI-Funktionen senden nur begrenzte Buchmetadaten an unseren Server, und nur nach Ihrer ausdrücklichen Zustimmung.</p>`,
+        content: `<p>Bookpather ist standardmäßig privat. Die App benötigt kein Konto, keinen Login und keine Registrierung; sie enthält keine Werbung und keine Analyse- oder Tracking-SDKs von Drittanbietern. Ihre Bibliothek — Bücher, Cover, Notizen, Lesestatus, Lese-Sessions, Kernideen und Lesepfade — wird auf Ihrem Gerät und, sofern verfügbar, in Ihrer persönlichen iCloud gespeichert. Optionale KI-Funktionen senden nur die unten beschriebenen, begrenzten Daten an unseren Server, und nur nach Ihrer ausdrücklichen Zustimmung.</p>`,
       },
       {
         heading: `Daten auf Ihrem Gerät und in Ihrer iCloud`,
         content: `<p>Die App speichert lokal auf Ihrem Gerät:</p>
-<ul><li><strong>Ihre Bibliothek</strong> — Titel, Autoren, Cover, Themen, ISBNs und Lesestatus.</li><li><strong>Persönliche Notizen</strong>, die Sie Büchern hinzufügen.</li><li><strong>KI-Einblicke und Leseketten</strong>, die Sie erstellt und gespeichert haben.</li><li><strong>App-Einstellungen</strong> und einen zwischengespeicherten Indikator Ihres Abo-Status.</li></ul>
-<p>Wenn iCloud verfügbar ist, synchronisieren sich diese Daten über Ihr persönliches iCloud-Konto (private Apple-CloudKit-Datenbank). Wir betreiben keine eigene Nutzerdatenbank und haben keinen Zugriff auf Ihre iCloud-Daten. Sie können Ihre Bücher, Notizen, Einblicke und Ketten jederzeit als JSON exportieren und alles löschen, indem Sie die App und ihre iCloud-Daten entfernen.</p>`,
+<ul><li><strong>Ihre Bibliothek</strong> — Titel, Autoren, Cover, Themen, ISBNs und Lesestatus.</li><li><strong>Persönliche Notizen</strong>, die Sie Büchern hinzufügen.</li><li><strong>Kernideen und Lesepfade</strong>, die Sie erstellt und gespeichert haben, sowie Ihre Lese-Sessions und Ihre Tagesserie.</li><li><strong>App-Einstellungen</strong> und einen zwischengespeicherten Indikator Ihres Abo-Status.</li></ul>
+<p>Wenn iCloud verfügbar ist, synchronisieren sich diese Daten über Ihr persönliches iCloud-Konto (private Apple-CloudKit-Datenbank). Wir betreiben keine eigene Nutzerdatenbank und haben keinen Zugriff auf Ihre iCloud-Daten. Sie können Ihre Bücher, Notizen, Kernideen und Lesepfade jederzeit als JSON exportieren und alles löschen, indem Sie die App und ihre iCloud-Daten entfernen.</p>`,
       },
       {
         heading: `Kamera und Fotos`,
@@ -146,9 +146,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `KI-Funktionen und was sie senden`,
-        content: `<p>KI-Einblicke und KI-Leseketten sind optional und laufen erst, nachdem Sie der Nutzung von KI-Funktionen ausdrücklich zugestimmt haben. Bei einer Anfrage sendet die App an unseren Server (einen von uns bei Cloudflare betriebenen KI-Proxy):</p>
-<ul><li>Buchmetadaten: Titel, Autor und, sofern verfügbar, eine öffentliche Beschreibung des Buches.</li><li>Ihre Oberflächensprache, damit die Antwort darin verfasst wird.</li><li>Eine zufällige Installations-ID und technische Anfragedaten für Kontingentverwaltung und Missbrauchsschutz.</li></ul>
-<p>Unser Server leitet die Buchmetadaten an einen KI-Anbieter (derzeit DeepSeek) weiter. <strong>Ihre persönlichen Notizen, Fotos, Ihr Name und Ihre Kontaktdaten werden niemals an uns oder den KI-Anbieter gesendet.</strong> KI-Anfragen werden nicht zur Profilbildung genutzt; wir verkaufen oder teilen diese Daten nicht. DeepSeek verarbeitet diese Anfragen auf Servern in der Volksrepublik China.</p>`,
+        content: `<p>Kernideen und vorgeschlagene Lesepfade sind optionale KI-Funktionen und laufen erst, nachdem Sie der Nutzung von KI-Funktionen ausdrücklich zugestimmt haben. Bei einer Anfrage sendet die App an unseren Server (einen von uns bei Cloudflare betriebenen KI-Proxy):</p>
+<ul><li>Für Kernideen: Titel, Autor und, sofern verfügbar, eine öffentliche Beschreibung des Buches.</li><li>Für Lesepfade: Titel, Autor, Themen und Schwierigkeitsgrad von bis zu 120 Büchern aus Ihrer Bibliothek, ob Sie sie gelesen haben, sowie die Fähigkeit oder das Ziel, das Sie wählen.</li><li>Ihre Oberflächensprache, damit die Antwort darin verfasst wird.</li><li>Eine zufällige Installations-ID und technische Anfragedaten für Kontingentverwaltung und Missbrauchsschutz.</li></ul>
+<p>Unser Server leitet diese Daten an einen KI-Anbieter (derzeit DeepSeek) weiter. <strong>Ihre persönlichen Notizen, Fotos, Ihr Name und Ihre Kontaktdaten werden niemals an uns oder den KI-Anbieter gesendet.</strong> KI-Anfragen werden nicht zur Profilbildung genutzt; wir verkaufen oder teilen diese Daten nicht. DeepSeek verarbeitet diese Anfragen auf Servern in der Volksrepublik China.</p>`,
       },
       {
         heading: `Buchsuche (Open Library und Google Books)`,
@@ -156,7 +156,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Abonnements und Käufe`,
-        content: `<p>Bookpather Pro ist ein optionales, automatisch verlängerndes Abonnement. Alle Transaktionen werden vollständig von Apple über den App Store (StoreKit) abgewickelt. Wir erhalten und speichern keine Zahlungsdaten, Apple-ID oder Rechnungsdetails. Zur Abo-Prüfung kann unser Server eine App-Store-Transaktionssignatur validieren; diese enthält keine persönlichen oder Zahlungsdaten über das hinaus, was Apple in die signierte Transaktion aufnimmt. Apples Umgang mit Ihren Daten unterliegt der Datenschutzerklärung von Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>Bookpather Pro ist optional: ein sich automatisch verlängerndes Abonnement (monatlich oder jährlich) oder Lifetime als einmaliger Kauf. Alle Transaktionen werden vollständig von Apple über den App Store (StoreKit) abgewickelt. Wir erhalten und speichern keine Zahlungsdaten, Apple-ID oder Rechnungsdetails. Zur Abo-Prüfung kann unser Server eine App-Store-Transaktionssignatur validieren; diese enthält keine persönlichen oder Zahlungsdaten über das hinaus, was Apple in die signierte Transaktion aufnimmt. Apples Umgang mit Ihren Daten unterliegt der Datenschutzerklärung von Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Keine Werbung, kein Tracking`,
@@ -193,13 +193,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `Aperçu`,
-        content: `<p>Bookpather est privé par défaut. L'App ne nécessite ni compte, ni connexion, ni inscription ; elle ne contient ni publicité ni SDK tiers d'analyse ou de suivi. Votre bibliothèque — livres, couvertures, notes, statuts de lecture, résumés et chaînes de lecture — est stockée sur votre appareil et, si disponible, dans votre iCloud personnel. Les fonctions IA, optionnelles, n'envoient à notre serveur que des métadonnées de livres limitées, et uniquement après votre consentement explicite.</p>`,
+        content: `<p>Bookpather est privé par défaut. L'App ne nécessite ni compte, ni connexion, ni inscription ; elle ne contient ni publicité ni SDK tiers d'analyse ou de suivi. Votre bibliothèque — livres, couvertures, notes, statuts de lecture, séances de lecture, idées clés et parcours — est stockée sur votre appareil et, si disponible, dans votre iCloud personnel. Les fonctions IA, optionnelles, n'envoient à notre serveur que les données limitées décrites ci-dessous, et uniquement après votre consentement explicite.</p>`,
       },
       {
         heading: `Données sur votre appareil et dans votre iCloud`,
         content: `<p>L'App stocke localement sur votre appareil :</p>
-<ul><li><strong>Votre bibliothèque</strong> — titres, auteurs, couvertures, thèmes, ISBN et statuts de lecture.</li><li><strong>Vos notes personnelles</strong> attachées aux livres.</li><li><strong>Les résumés IA et chaînes de lecture</strong> que vous avez créés et enregistrés.</li><li><strong>Les préférences de l'App</strong> et un indicateur mis en cache de votre statut d'abonnement.</li></ul>
-<p>Si iCloud est disponible, ces données se synchronisent via votre compte iCloud personnel (base privée Apple CloudKit). Nous n'exploitons aucune base d'utilisateurs et n'avons pas accès à vos données iCloud. Vous pouvez exporter vos livres, notes, résumés et chaînes en JSON à tout moment, et tout supprimer en retirant l'App et ses données iCloud.</p>`,
+<ul><li><strong>Votre bibliothèque</strong> — titres, auteurs, couvertures, thèmes, ISBN et statuts de lecture.</li><li><strong>Vos notes personnelles</strong> attachées aux livres.</li><li><strong>Les idées clés et les parcours</strong> que vous avez créés et enregistrés, ainsi que vos séances de lecture et votre série.</li><li><strong>Les préférences de l'App</strong> et un indicateur mis en cache de votre statut d'abonnement.</li></ul>
+<p>Si iCloud est disponible, ces données se synchronisent via votre compte iCloud personnel (base privée Apple CloudKit). Nous n'exploitons aucune base d'utilisateurs et n'avons pas accès à vos données iCloud. Vous pouvez exporter vos livres, notes, idées clés et parcours en JSON à tout moment, et tout supprimer en retirant l'App et ses données iCloud.</p>`,
       },
       {
         heading: `Caméra et photos`,
@@ -207,9 +207,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Fonctions IA : ce qui est envoyé`,
-        content: `<p>Les résumés IA et les chaînes de lecture IA sont optionnels et ne fonctionnent qu'après votre accord explicite. Lors d'une demande, l'App envoie à notre serveur (un proxy IA que nous exploitons chez Cloudflare) :</p>
-<ul><li>Les métadonnées du livre : titre, auteur et, si disponible, une description publique du livre.</li><li>Votre langue d'interface, afin que la réponse soit rédigée dans celle-ci.</li><li>Un identifiant d'installation aléatoire et des données techniques servant à la gestion des quotas et à la prévention des abus.</li></ul>
-<p>Notre serveur transmet les métadonnées du livre à un fournisseur d'IA (actuellement DeepSeek). <strong>Vos notes personnelles, vos photos, votre nom et vos coordonnées ne sont jamais envoyés, ni à nous ni au fournisseur d'IA.</strong> Les requêtes IA ne servent pas à établir un profil, et nous ne vendons ni ne partageons ces données. DeepSeek traite ces requêtes sur des serveurs situés en République populaire de Chine.</p>`,
+        content: `<p>Les idées clés et les parcours suggérés sont des fonctions IA optionnelles qui ne fonctionnent qu'après votre accord explicite. Lors d'une demande, l'App envoie à notre serveur (un proxy IA que nous exploitons chez Cloudflare) :</p>
+<ul><li>Pour les idées clés : le titre, l'auteur et, si disponible, une description publique du livre.</li><li>Pour les parcours : le titre, l'auteur, les thèmes et le niveau de difficulté de 120 livres de votre bibliothèque au maximum, le fait que vous les ayez lus ou non, ainsi que la compétence ou l'objectif que vous choisissez.</li><li>Votre langue d'interface, afin que la réponse soit rédigée dans celle-ci.</li><li>Un identifiant d'installation aléatoire et des données techniques servant à la gestion des quotas et à la prévention des abus.</li></ul>
+<p>Notre serveur transmet ces données à un fournisseur d'IA (actuellement DeepSeek). <strong>Vos notes personnelles, vos photos, votre nom et vos coordonnées ne sont jamais envoyés, ni à nous ni au fournisseur d'IA.</strong> Les requêtes IA ne servent pas à établir un profil, et nous ne vendons ni ne partageons ces données. DeepSeek traite ces requêtes sur des serveurs situés en République populaire de Chine.</p>`,
       },
       {
         heading: `Recherche de livres (Open Library et Google Books)`,
@@ -217,7 +217,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Abonnements et achats`,
-        content: `<p>Bookpather Pro est un abonnement optionnel à renouvellement automatique. Toutes les transactions sont traitées intégralement par Apple via l'App Store (StoreKit). Nous ne recevons ni ne stockons vos informations de paiement, votre identifiant Apple ou vos données de facturation. Pour vérifier l'abonnement, notre serveur peut valider une signature de transaction App Store ; elle ne contient aucune donnée personnelle ou de paiement au-delà de ce qu'Apple inclut dans la transaction signée. Le traitement de vos données par Apple est régi par sa politique de confidentialité (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>Bookpather Pro est optionnel : un abonnement à renouvellement automatique (mensuel ou annuel) ou Pro à vie, un achat unique. Toutes les transactions sont traitées intégralement par Apple via l'App Store (StoreKit). Nous ne recevons ni ne stockons vos informations de paiement, votre identifiant Apple ou vos données de facturation. Pour vérifier l'abonnement, notre serveur peut valider une signature de transaction App Store ; elle ne contient aucune donnée personnelle ou de paiement au-delà de ce qu'Apple inclut dans la transaction signée. Le traitement de vos données par Apple est régi par sa politique de confidentialité (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Ni publicité, ni suivi`,
@@ -254,13 +254,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `Resumen`,
-        content: `<p>Bookpather es privado por defecto. La App no requiere cuenta, inicio de sesión ni registro; no contiene publicidad ni SDK de análisis o rastreo de terceros. Tu biblioteca — libros, portadas, notas, estados de lectura, resúmenes y cadenas de lectura — se guarda en tu dispositivo y, si está disponible, en tu iCloud personal. Las funciones de IA, opcionales, envían a nuestro servidor solo metadatos limitados de los libros, y únicamente tras tu consentimiento explícito.</p>`,
+        content: `<p>Bookpather es privado por defecto. La App no requiere cuenta, inicio de sesión ni registro; no contiene publicidad ni SDK de análisis o rastreo de terceros. Tu biblioteca — libros, portadas, notas, estados de lectura, sesiones de lectura, ideas clave y rutas — se guarda en tu dispositivo y, si está disponible, en tu iCloud personal. Las funciones de IA, opcionales, envían a nuestro servidor solo los datos limitados que se describen abajo, y únicamente tras tu consentimiento explícito.</p>`,
       },
       {
         heading: `Datos en tu dispositivo y en tu iCloud`,
         content: `<p>La App almacena localmente en tu dispositivo:</p>
-<ul><li><strong>Tu biblioteca</strong> — títulos, autores, portadas, temas, ISBN y estados de lectura.</li><li><strong>Notas personales</strong> vinculadas a los libros.</li><li><strong>Resúmenes de IA y cadenas de lectura</strong> que hayas creado y guardado.</li><li><strong>Preferencias de la App</strong> y un indicador en caché de tu estado de suscripción.</li></ul>
-<p>Si iCloud está disponible, estos datos se sincronizan mediante tu cuenta personal de iCloud (base de datos privada de Apple CloudKit). No operamos ninguna base de datos de usuarios ni tenemos acceso a tus datos de iCloud. Puedes exportar tus libros, notas, resúmenes y cadenas como JSON en cualquier momento, y borrarlo todo eliminando la App y sus datos de iCloud.</p>`,
+<ul><li><strong>Tu biblioteca</strong> — títulos, autores, portadas, temas, ISBN y estados de lectura.</li><li><strong>Notas personales</strong> vinculadas a los libros.</li><li><strong>Ideas clave y rutas</strong> que hayas creado y guardado, además de tus sesiones de lectura y tu racha.</li><li><strong>Preferencias de la App</strong> y un indicador en caché de tu estado de suscripción.</li></ul>
+<p>Si iCloud está disponible, estos datos se sincronizan mediante tu cuenta personal de iCloud (base de datos privada de Apple CloudKit). No operamos ninguna base de datos de usuarios ni tenemos acceso a tus datos de iCloud. Puedes exportar tus libros, notas, ideas clave y rutas como JSON en cualquier momento, y borrarlo todo eliminando la App y sus datos de iCloud.</p>`,
       },
       {
         heading: `Cámara y fotos`,
@@ -268,9 +268,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Funciones de IA y qué envían`,
-        content: `<p>Los resúmenes de IA y las cadenas de lectura con IA son opcionales y solo funcionan tras tu acuerdo explícito. Al solicitarlos, la App envía a nuestro servidor (un proxy de IA que operamos en Cloudflare):</p>
-<ul><li>Metadatos del libro: título, autor y, si está disponible, una descripción pública del libro.</li><li>Tu idioma de interfaz, para que la respuesta se redacte en él.</li><li>Un identificador de instalación aleatorio y datos técnicos para la gestión de cuotas y la prevención de abusos.</li></ul>
-<p>Nuestro servidor reenvía los metadatos del libro a un proveedor de IA (actualmente DeepSeek). <strong>Tus notas personales, tus fotos, tu nombre y tus datos de contacto nunca se envían, ni a nosotros ni al proveedor de IA.</strong> Las solicitudes de IA no se usan para crear un perfil tuyo, y no vendemos ni compartimos estos datos. DeepSeek procesa estas solicitudes en servidores ubicados en la República Popular China.</p>`,
+        content: `<p>Las ideas clave y las rutas sugeridas son funciones de IA opcionales y solo funcionan tras tu acuerdo explícito. Al solicitarlos, la App envía a nuestro servidor (un proxy de IA que operamos en Cloudflare):</p>
+<ul><li>Para las ideas clave: el título, el autor y, si está disponible, una descripción pública del libro.</li><li>Para las rutas: el título, el autor, los temas y el nivel de dificultad de hasta 120 libros de tu biblioteca, si los has leído y la habilidad u objetivo que elijas.</li><li>Tu idioma de interfaz, para que la respuesta se redacte en él.</li><li>Un identificador de instalación aleatorio y datos técnicos para la gestión de cuotas y la prevención de abusos.</li></ul>
+<p>Nuestro servidor reenvía estos datos a un proveedor de IA (actualmente DeepSeek). <strong>Tus notas personales, tus fotos, tu nombre y tus datos de contacto nunca se envían, ni a nosotros ni al proveedor de IA.</strong> Las solicitudes de IA no se usan para crear un perfil tuyo, y no vendemos ni compartimos estos datos. DeepSeek procesa estas solicitudes en servidores ubicados en la República Popular China.</p>`,
       },
       {
         heading: `Búsqueda de libros (Open Library y Google Books)`,
@@ -278,7 +278,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Suscripciones y compras`,
-        content: `<p>Bookpather Pro es una suscripción opcional con renovación automática. Todas las transacciones las procesa íntegramente Apple a través del App Store (StoreKit). No recibimos ni almacenamos tu información de pago, Apple ID ni datos de facturación. Para verificar la suscripción, nuestro servidor puede validar una firma de transacción del App Store; no incluye datos personales ni de pago más allá de lo que Apple incorpora en la transacción firmada. El tratamiento de Apple se rige por su política de privacidad (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>Bookpather Pro es opcional: una suscripción con renovación automática (mensual o anual) o Pro de por vida, un pago único. Todas las transacciones las procesa íntegramente Apple a través del App Store (StoreKit). No recibimos ni almacenamos tu información de pago, Apple ID ni datos de facturación. Para verificar la suscripción, nuestro servidor puede validar una firma de transacción del App Store; no incluye datos personales ni de pago más allá de lo que Apple incorpora en la transacción firmada. El tratamiento de Apple se rige por su política de privacidad (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Sin publicidad, sin rastreo`,
@@ -315,13 +315,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `Panoramica`,
-        content: `<p>Bookpather è privato per impostazione predefinita. L'App non richiede account, accesso o registrazione; non contiene pubblicità né SDK di analisi o tracciamento di terze parti. La tua biblioteca — libri, copertine, note, stati di lettura, sintesi e catene di lettura — è salvata sul tuo dispositivo e, se disponibile, nel tuo iCloud personale. Le funzioni IA, facoltative, inviano al nostro server solo metadati limitati dei libri, e solo dopo il tuo consenso esplicito.</p>`,
+        content: `<p>Bookpather è privato per impostazione predefinita. L'App non richiede account, accesso o registrazione; non contiene pubblicità né SDK di analisi o tracciamento di terze parti. La tua biblioteca — libri, copertine, note, stati di lettura, sessioni di lettura, idee chiave e percorsi — è salvata sul tuo dispositivo e, se disponibile, nel tuo iCloud personale. Le funzioni IA, facoltative, inviano al nostro server solo i dati limitati descritti più avanti, e solo dopo il tuo consenso esplicito.</p>`,
       },
       {
         heading: `Dati sul tuo dispositivo e nel tuo iCloud`,
         content: `<p>L'App memorizza localmente sul dispositivo:</p>
-<ul><li><strong>La tua biblioteca</strong> — titoli, autori, copertine, argomenti, ISBN e stati di lettura.</li><li><strong>Note personali</strong> allegate ai libri.</li><li><strong>Sintesi IA e catene di lettura</strong> che hai creato e salvato.</li><li><strong>Preferenze dell'App</strong> e un indicatore in cache dello stato dell'abbonamento.</li></ul>
-<p>Se iCloud è disponibile, questi dati si sincronizzano tramite il tuo account iCloud personale (database privato Apple CloudKit). Non gestiamo alcun database utenti e non abbiamo accesso ai tuoi dati iCloud. Puoi esportare libri, note, sintesi e catene in JSON in qualsiasi momento ed eliminare tutto rimuovendo l'App e i suoi dati iCloud.</p>`,
+<ul><li><strong>La tua biblioteca</strong> — titoli, autori, copertine, argomenti, ISBN e stati di lettura.</li><li><strong>Note personali</strong> allegate ai libri.</li><li><strong>Idee chiave e percorsi</strong> che hai creato e salvato, oltre alle tue sessioni di lettura e alla tua serie.</li><li><strong>Preferenze dell'App</strong> e un indicatore in cache dello stato dell'abbonamento.</li></ul>
+<p>Se iCloud è disponibile, questi dati si sincronizzano tramite il tuo account iCloud personale (database privato Apple CloudKit). Non gestiamo alcun database utenti e non abbiamo accesso ai tuoi dati iCloud. Puoi esportare libri, note, idee chiave e percorsi in JSON in qualsiasi momento ed eliminare tutto rimuovendo l'App e i suoi dati iCloud.</p>`,
       },
       {
         heading: `Fotocamera e foto`,
@@ -329,9 +329,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Funzioni IA e cosa inviano`,
-        content: `<p>Le sintesi IA e le catene di lettura IA sono facoltative e funzionano solo dopo il tuo consenso esplicito. Alla richiesta, l'App invia al nostro server (un proxy IA che gestiamo su Cloudflare):</p>
-<ul><li>Metadati del libro: titolo, autore e, se disponibile, una descrizione pubblica del libro.</li><li>La lingua della tua interfaccia, così la risposta è scritta in essa.</li><li>Un identificatore di installazione casuale e dati tecnici per la gestione delle quote e la prevenzione degli abusi.</li></ul>
-<p>Il nostro server inoltra i metadati del libro a un fornitore di IA (attualmente DeepSeek). <strong>Le tue note personali, le tue foto, il tuo nome e i tuoi contatti non vengono mai inviati, né a noi né al fornitore di IA.</strong> Le richieste IA non servono a profilarti e non vendiamo né condividiamo questi dati. DeepSeek elabora queste richieste su server situati nella Repubblica Popolare Cinese.</p>`,
+        content: `<p>Le idee chiave e i percorsi suggeriti sono funzioni IA facoltative e funzionano solo dopo il tuo consenso esplicito. Alla richiesta, l'App invia al nostro server (un proxy IA che gestiamo su Cloudflare):</p>
+<ul><li>Per le idee chiave: titolo, autore e, se disponibile, una descrizione pubblica del libro.</li><li>Per i percorsi: titolo, autore, argomenti e livello di difficoltà di un massimo di 120 libri della tua biblioteca, se li hai letti e l'abilità o l'obiettivo che scegli.</li><li>La lingua della tua interfaccia, così la risposta è scritta in essa.</li><li>Un identificatore di installazione casuale e dati tecnici per la gestione delle quote e la prevenzione degli abusi.</li></ul>
+<p>Il nostro server inoltra questi dati a un fornitore di IA (attualmente DeepSeek). <strong>Le tue note personali, le tue foto, il tuo nome e i tuoi contatti non vengono mai inviati, né a noi né al fornitore di IA.</strong> Le richieste IA non servono a profilarti e non vendiamo né condividiamo questi dati. DeepSeek elabora queste richieste su server situati nella Repubblica Popolare Cinese.</p>`,
       },
       {
         heading: `Ricerca libri (Open Library e Google Books)`,
@@ -339,7 +339,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Abbonamenti e acquisti`,
-        content: `<p>Bookpather Pro è un abbonamento facoltativo con rinnovo automatico. Tutte le transazioni sono elaborate interamente da Apple tramite l'App Store (StoreKit). Non riceviamo né conserviamo informazioni di pagamento, Apple ID o dati di fatturazione. Per verificare l'abbonamento, il nostro server può convalidare una firma di transazione dell'App Store; essa non include dati personali o di pagamento oltre a quanto Apple inserisce nella transazione firmata. Il trattamento di Apple è regolato dalla sua informativa sulla privacy (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>Bookpather Pro è facoltativo: un abbonamento con rinnovo automatico (mensile o annuale) oppure Pro a vita, un acquisto unico. Tutte le transazioni sono elaborate interamente da Apple tramite l'App Store (StoreKit). Non riceviamo né conserviamo informazioni di pagamento, Apple ID o dati di fatturazione. Per verificare l'abbonamento, il nostro server può convalidare una firma di transazione dell'App Store; essa non include dati personali o di pagamento oltre a quanto Apple inserisce nella transazione firmata. Il trattamento di Apple è regolato dalla sua informativa sulla privacy (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Niente pubblicità, niente tracciamento`,
@@ -376,13 +376,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `Visão geral`,
-        content: `<p>O Bookpather é privado por padrão. O App não exige conta, login nem cadastro; não contém publicidade nem SDKs de análise ou rastreamento de terceiros. Sua biblioteca — livros, capas, notas, status de leitura, resumos e sequências de leitura — fica no seu dispositivo e, quando disponível, no seu iCloud pessoal. Os recursos de IA, opcionais, enviam ao nosso servidor apenas metadados limitados dos livros, e somente após o seu consentimento explícito.</p>`,
+        content: `<p>O Bookpather é privado por padrão. O App não exige conta, login nem cadastro; não contém publicidade nem SDKs de análise ou rastreamento de terceiros. Sua biblioteca — livros, capas, notas, status de leitura, sessões de leitura, ideias-chave e trilhas — fica no seu dispositivo e, quando disponível, no seu iCloud pessoal. Os recursos de IA, opcionais, enviam ao nosso servidor apenas os dados limitados descritos abaixo, e somente após o seu consentimento explícito.</p>`,
       },
       {
         heading: `Dados no seu dispositivo e no seu iCloud`,
         content: `<p>O App armazena localmente no seu dispositivo:</p>
-<ul><li><strong>Sua biblioteca</strong> — títulos, autores, capas, temas, ISBNs e status de leitura.</li><li><strong>Notas pessoais</strong> anexadas aos livros.</li><li><strong>Resumos de IA e sequências de leitura</strong> que você criou e salvou.</li><li><strong>Preferências do App</strong> e um indicador em cache do status da assinatura.</li></ul>
-<p>Se o iCloud estiver disponível, esses dados sincronizam pela sua conta pessoal do iCloud (banco de dados privado do Apple CloudKit). Não operamos banco de dados de usuários e não temos acesso aos seus dados do iCloud. Você pode exportar livros, notas, resumos e sequências como JSON a qualquer momento e apagar tudo removendo o App e seus dados do iCloud.</p>`,
+<ul><li><strong>Sua biblioteca</strong> — títulos, autores, capas, temas, ISBNs e status de leitura.</li><li><strong>Notas pessoais</strong> anexadas aos livros.</li><li><strong>Ideias-chave e trilhas</strong> que você criou e salvou, além das suas sessões de leitura e da sua sequência.</li><li><strong>Preferências do App</strong> e um indicador em cache do status da assinatura.</li></ul>
+<p>Se o iCloud estiver disponível, esses dados sincronizam pela sua conta pessoal do iCloud (banco de dados privado do Apple CloudKit). Não operamos banco de dados de usuários e não temos acesso aos seus dados do iCloud. Você pode exportar livros, notas, ideias-chave e trilhas como JSON a qualquer momento e apagar tudo removendo o App e seus dados do iCloud.</p>`,
       },
       {
         heading: `Câmera e fotos`,
@@ -390,9 +390,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Recursos de IA e o que eles enviam`,
-        content: `<p>Os resumos de IA e as sequências de leitura com IA são opcionais e só funcionam após sua concordância explícita. Ao solicitá-los, o App envia ao nosso servidor (um proxy de IA que operamos na Cloudflare):</p>
-<ul><li>Metadados do livro: título, autor e, quando disponível, uma descrição pública do livro.</li><li>Seu idioma de interface, para que a resposta seja escrita nele.</li><li>Um identificador de instalação aleatório e dados técnicos para gestão de cotas e prevenção de abusos.</li></ul>
-<p>Nosso servidor repassa os metadados do livro a um provedor de IA (atualmente DeepSeek). <strong>Suas notas pessoais, fotos, nome e contatos nunca são enviados, nem para nós nem para o provedor de IA.</strong> As solicitações de IA não são usadas para criar um perfil seu, e não vendemos nem compartilhamos esses dados. A DeepSeek processa essas solicitações em servidores localizados na República Popular da China.</p>`,
+        content: `<p>As ideias-chave e as trilhas sugeridas são recursos de IA opcionais e só funcionam após sua concordância explícita. Ao solicitá-los, o App envia ao nosso servidor (um proxy de IA que operamos na Cloudflare):</p>
+<ul><li>Para ideias-chave: título, autor e, quando disponível, uma descrição pública do livro.</li><li>Para trilhas: título, autor, temas e nível de dificuldade de até 120 livros da sua biblioteca, se você já os leu e a habilidade ou o objetivo que você escolher.</li><li>Seu idioma de interface, para que a resposta seja escrita nele.</li><li>Um identificador de instalação aleatório e dados técnicos para gestão de cotas e prevenção de abusos.</li></ul>
+<p>Nosso servidor repassa esses dados a um provedor de IA (atualmente DeepSeek). <strong>Suas notas pessoais, fotos, nome e contatos nunca são enviados, nem para nós nem para o provedor de IA.</strong> As solicitações de IA não são usadas para criar um perfil seu, e não vendemos nem compartilhamos esses dados. A DeepSeek processa essas solicitações em servidores localizados na República Popular da China.</p>`,
       },
       {
         heading: `Busca de livros (Open Library e Google Books)`,
@@ -400,7 +400,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Assinaturas e compras`,
-        content: `<p>O Bookpather Pro é uma assinatura opcional com renovação automática. Todas as transações são processadas integralmente pela Apple via App Store (StoreKit). Não recebemos nem armazenamos suas informações de pagamento, Apple ID ou dados de cobrança. Para verificar a assinatura, nosso servidor pode validar uma assinatura de transação da App Store; ela não inclui dados pessoais ou de pagamento além do que a Apple incorpora na transação assinada. O tratamento pela Apple é regido pela política de privacidade da Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>O Bookpather Pro é opcional: uma assinatura com renovação automática (mensal ou anual) ou o Pro Vitalício, uma compra única. Todas as transações são processadas integralmente pela Apple via App Store (StoreKit). Não recebemos nem armazenamos suas informações de pagamento, Apple ID ou dados de cobrança. Para verificar a assinatura, nosso servidor pode validar uma assinatura de transação da App Store; ela não inclui dados pessoais ou de pagamento além do que a Apple incorpora na transação assinada. O tratamento pela Apple é regido pela política de privacidade da Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `Sem anúncios, sem rastreamento`,
@@ -437,13 +437,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `概要`,
-        content: `<p>Bookpatherは、初期状態からプライバシーを重視して設計されています。アカウント、ログイン、登録は不要で、広告やサードパーティの分析・トラッキングSDKも含まれていません。あなたの蔵書 — 書籍、表紙、メモ、読書ステータス、要約、読書チェーン — は端末上と、利用可能な場合はあなた個人のiCloudに保存されます。任意のAI機能は、明示的な同意の後にのみ、限られた書籍メタデータを当社サーバーへ送信します。</p>`,
+        content: `<p>Bookpatherは、初期状態からプライバシーを重視して設計されています。アカウント、ログイン、登録は不要で、広告やサードパーティの分析・トラッキングSDKも含まれていません。あなたの蔵書 — 書籍、表紙、メモ、読書ステータス、読書セッション、要点、読書ルート — は端末上と、利用可能な場合はあなた個人のiCloudに保存されます。任意のAI機能は、明示的な同意の後にのみ、以下に記載する限られたデータを当社サーバーへ送信します。</p>`,
       },
       {
         heading: `端末とiCloudに保存されるデータ`,
         content: `<p>本アプリは以下のデータを端末にローカル保存します：</p>
-<ul><li><strong>蔵書</strong> — タイトル、著者、表紙、テーマ、ISBN、読書ステータス。</li><li><strong>書籍に添付した個人メモ。</strong></li><li><strong>作成・保存したAI要約と読書チェーン。</strong></li><li><strong>アプリ設定</strong>とサブスクリプション状態のキャッシュ。</li></ul>
-<p>iCloudが利用可能な場合、これらのデータはあなた個人のiCloudアカウント（Apple CloudKitプライベートデータベース）経由で同期されます。当社は独自のユーザーデータベースを運営しておらず、あなたのiCloudデータにアクセスできません。書籍、メモ、要約、チェーンはいつでもJSONとしてエクスポートでき、アプリとそのiCloudデータを削除すればすべて消去されます。</p>`,
+<ul><li><strong>蔵書</strong> — タイトル、著者、表紙、テーマ、ISBN、読書ステータス。</li><li><strong>書籍に添付した個人メモ。</strong></li><li><strong>作成・保存した要点と読書ルート、読書セッションと連続記録。</strong></li><li><strong>アプリ設定</strong>とサブスクリプション状態のキャッシュ。</li></ul>
+<p>iCloudが利用可能な場合、これらのデータはあなた個人のiCloudアカウント（Apple CloudKitプライベートデータベース）経由で同期されます。当社は独自のユーザーデータベースを運営しておらず、あなたのiCloudデータにアクセスできません。書籍、メモ、要点、読書ルートはいつでもJSONとしてエクスポートでき、アプリとそのiCloudデータを削除すればすべて消去されます。</p>`,
       },
       {
         heading: `カメラと写真`,
@@ -451,9 +451,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI機能と送信内容`,
-        content: `<p>AI書籍要約とAI読書チェーンは任意機能で、AI利用への明示的な同意後にのみ動作します。リクエスト時、本アプリは当社サーバー（Cloudflare上で運用するAIプロキシ）へ以下を送信します：</p>
-<ul><li>書籍メタデータ：タイトル、著者、入手可能な場合は書籍の公開説明文。</li><li>回答の言語となるインターフェース言語。</li><li>クォータ管理と不正利用防止のためのランダムなインストールIDと技術的リクエストデータ。</li></ul>
-<p>当社サーバーは書籍メタデータをAIプロバイダー（現在はDeepSeek）へ転送して結果を生成します。<strong>個人メモ、写真、氏名、連絡先が当社やAIプロバイダーに送信されることは決してありません。</strong>AIリクエストがプロフィール作成に使われることはなく、これらのデータを販売・共有することもありません。 DeepSeekはこれらのリクエストを中華人民共和国内のサーバーで処理します。</p>`,
+        content: `<p>要点と提案される読書ルートは任意のAI機能で、AI利用への明示的な同意後にのみ動作します。リクエスト時、本アプリは当社サーバー（Cloudflare上で運用するAIプロキシ）へ以下を送信します：</p>
+<ul><li>要点の場合：書籍のタイトル、著者、入手可能な場合は書籍の公開説明文。</li><li>読書ルートの場合：ライブラリ内の最大120冊の書籍のタイトル、著者、テーマ、難易度、読了済みかどうか、そして選択したスキルまたは目標。</li><li>回答の言語となるインターフェース言語。</li><li>クォータ管理と不正利用防止のためのランダムなインストールIDと技術的リクエストデータ。</li></ul>
+<p>当社サーバーはこれらのデータをAIプロバイダー（現在はDeepSeek）へ転送して結果を生成します。<strong>個人メモ、写真、氏名、連絡先が当社やAIプロバイダーに送信されることは決してありません。</strong>AIリクエストがプロフィール作成に使われることはなく、これらのデータを販売・共有することもありません。 DeepSeekはこれらのリクエストを中華人民共和国内のサーバーで処理します。</p>`,
       },
       {
         heading: `書籍検索（Open Library・Google Books）`,
@@ -461,7 +461,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `サブスクリプションと購入`,
-        content: `<p>Bookpather Proは任意の自動更新サブスクリプションです。すべての取引はApp Store（StoreKit）を通じてAppleが完全に処理します。当社が支払い情報、Apple ID、請求情報を受け取ったり保存したりすることはありません。サブスクリプション確認のため、当社サーバーがApp Storeの取引署名を検証する場合がありますが、Appleが署名済み取引に含める以上の個人・支払い情報は含まれません。Appleによるデータの取り扱いはAppleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に従います。</p>`,
+        content: `<p>Bookpather Proは任意で、自動更新サブスクリプション（月額または年額）か、1回限りの購入である買い切りプランから選べます。すべての取引はApp Store（StoreKit）を通じてAppleが完全に処理します。当社が支払い情報、Apple ID、請求情報を受け取ったり保存したりすることはありません。サブスクリプション確認のため、当社サーバーがApp Storeの取引署名を検証する場合がありますが、Appleが署名済み取引に含める以上の個人・支払い情報は含まれません。Appleによるデータの取り扱いはAppleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に従います。</p>`,
       },
       {
         heading: `広告なし・トラッキングなし`,
@@ -498,13 +498,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `개요`,
-        content: `<p>Bookpather는 기본적으로 프라이버시를 보호하도록 설계되었습니다. 앱은 계정, 로그인, 가입이 필요 없으며 광고나 서드파티 분석·추적 SDK가 없습니다. 서재 — 책, 표지, 메모, 독서 상태, 인사이트, 독서 체인 — 는 기기와, 가능한 경우 개인 iCloud에 저장됩니다. 선택 사항인 AI 기능은 명시적 동의 후에만 제한된 도서 메타데이터를 당사 서버로 전송합니다.</p>`,
+        content: `<p>Bookpather는 기본적으로 프라이버시를 보호하도록 설계되었습니다. 앱은 계정, 로그인, 가입이 필요 없으며 광고나 서드파티 분석·추적 SDK가 없습니다. 서재 — 책, 표지, 메모, 독서 상태, 독서 세션, 핵심 아이디어, 독서 로드맵 — 는 기기와, 가능한 경우 개인 iCloud에 저장됩니다. 선택 사항인 AI 기능은 명시적 동의 후에만 아래에 설명된 제한된 데이터를 당사 서버로 전송합니다.</p>`,
       },
       {
         heading: `기기와 iCloud에 저장되는 데이터`,
         content: `<p>앱은 다음 데이터를 기기에 로컬로 저장합니다:</p>
-<ul><li><strong>서재</strong> — 제목, 저자, 표지, 주제, ISBN, 독서 상태.</li><li><strong>책에 첨부한 개인 메모.</strong></li><li><strong>생성하고 저장한 AI 인사이트와 독서 체인.</strong></li><li><strong>앱 설정</strong>과 구독 상태 캐시.</li></ul>
-<p>iCloud를 사용할 수 있으면 이 데이터는 개인 iCloud 계정(Apple CloudKit 비공개 데이터베이스)을 통해 동기화됩니다. 당사는 자체 사용자 데이터베이스를 운영하지 않으며 귀하의 iCloud 데이터에 접근할 수 없습니다. 책, 메모, 인사이트, 체인은 언제든 JSON으로 내보낼 수 있고, 앱과 iCloud 데이터를 삭제하면 모두 제거됩니다.</p>`,
+<ul><li><strong>서재</strong> — 제목, 저자, 표지, 주제, ISBN, 독서 상태.</li><li><strong>책에 첨부한 개인 메모.</strong></li><li><strong>생성하고 저장한 핵심 아이디어와 독서 로드맵, 독서 세션과 연속 기록.</strong></li><li><strong>앱 설정</strong>과 구독 상태 캐시.</li></ul>
+<p>iCloud를 사용할 수 있으면 이 데이터는 개인 iCloud 계정(Apple CloudKit 비공개 데이터베이스)을 통해 동기화됩니다. 당사는 자체 사용자 데이터베이스를 운영하지 않으며 귀하의 iCloud 데이터에 접근할 수 없습니다. 책, 메모, 핵심 아이디어, 독서 로드맵은 언제든 JSON으로 내보낼 수 있고, 앱과 iCloud 데이터를 삭제하면 모두 제거됩니다.</p>`,
       },
       {
         heading: `카메라와 사진`,
@@ -512,9 +512,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI 기능과 전송 내용`,
-        content: `<p>AI 도서 인사이트와 AI 독서 체인은 선택 기능이며 AI 사용에 명시적으로 동의한 후에만 작동합니다. 요청 시 앱은 당사 서버(Cloudflare에서 운영하는 AI 프록시)로 다음을 전송합니다:</p>
-<ul><li>도서 메타데이터: 제목, 저자, 가능한 경우 책의 공개 설명.</li><li>답변 언어가 되는 인터페이스 언어.</li><li>할당량 관리와 남용 방지를 위한 무작위 설치 식별자 및 기술적 요청 데이터.</li></ul>
-<p>당사 서버는 도서 메타데이터를 AI 제공업체(현재 DeepSeek)에 전달해 결과를 생성합니다. <strong>개인 메모, 사진, 이름, 연락처는 당사나 AI 제공업체로 절대 전송되지 않습니다.</strong> AI 요청은 프로필 작성에 사용되지 않으며, 당사는 이 데이터를 판매하거나 공유하지 않습니다. DeepSeek은 이러한 요청을 중화인민공화국에 위치한 서버에서 처리합니다.</p>`,
+        content: `<p>핵심 아이디어와 추천 독서 로드맵은 선택 사항인 AI 기능이며 AI 사용에 명시적으로 동의한 후에만 작동합니다. 요청 시 앱은 당사 서버(Cloudflare에서 운영하는 AI 프록시)로 다음을 전송합니다:</p>
+<ul><li>핵심 아이디어: 책의 제목, 저자, 가능한 경우 책의 공개 설명.</li><li>독서 로드맵: 서재에 있는 최대 120권의 제목, 저자, 주제, 난이도, 읽었는지 여부, 그리고 선택한 능력이나 목표.</li><li>답변 언어가 되는 인터페이스 언어.</li><li>할당량 관리와 남용 방지를 위한 무작위 설치 식별자 및 기술적 요청 데이터.</li></ul>
+<p>당사 서버는 이 데이터를 AI 제공업체(현재 DeepSeek)에 전달해 결과를 생성합니다. <strong>개인 메모, 사진, 이름, 연락처는 당사나 AI 제공업체로 절대 전송되지 않습니다.</strong> AI 요청은 프로필 작성에 사용되지 않으며, 당사는 이 데이터를 판매하거나 공유하지 않습니다. DeepSeek은 이러한 요청을 중화인민공화국에 위치한 서버에서 처리합니다.</p>`,
       },
       {
         heading: `도서 검색(Open Library, Google Books)`,
@@ -522,7 +522,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `구독 및 구매`,
-        content: `<p>Bookpather Pro는 선택 사항인 자동 갱신 구독입니다. 모든 거래는 App Store(StoreKit)를 통해 Apple이 전적으로 처리합니다. 당사는 결제 정보, Apple ID, 청구 정보를 받거나 저장하지 않습니다. 구독 확인을 위해 당사 서버가 App Store 거래 서명을 검증할 수 있으나, Apple이 서명된 거래에 포함하는 것 이상의 개인·결제 정보는 포함되지 않습니다. Apple의 데이터 처리에는 Apple 개인정보처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)이 적용됩니다.</p>`,
+        content: `<p>Bookpather Pro는 선택 사항이며, 자동 갱신 구독(월간 또는 연간) 또는 한 번 구매하는 평생 이용권으로 이용할 수 있습니다. 모든 거래는 App Store(StoreKit)를 통해 Apple이 전적으로 처리합니다. 당사는 결제 정보, Apple ID, 청구 정보를 받거나 저장하지 않습니다. 구독 확인을 위해 당사 서버가 App Store 거래 서명을 검증할 수 있으나, Apple이 서명된 거래에 포함하는 것 이상의 개인·결제 정보는 포함되지 않습니다. Apple의 데이터 처리에는 Apple 개인정보처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)이 적용됩니다.</p>`,
       },
       {
         heading: `광고 없음, 추적 없음`,
@@ -559,13 +559,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `概述`,
-        content: `<p>Bookpather 默认保护隐私。本应用无需账户、登录或注册，不含广告，也不含第三方分析或追踪 SDK。您的书库——图书、封面、笔记、阅读状态、摘要和阅读链——保存在您的设备上，并在可用时同步到您的个人 iCloud。可选的 AI 功能仅在您明确同意后，才向我们的服务器发送有限的图书元数据。</p>`,
+        content: `<p>Bookpather 默认保护隐私。本应用无需账户、登录或注册，不含广告，也不含第三方分析或追踪 SDK。您的书库——图书、封面、笔记、阅读状态、阅读计时记录、核心观点和阅读路线——保存在您的设备上，并在可用时同步到您的个人 iCloud。可选的 AI 功能仅在您明确同意后，才向我们的服务器发送下文所述的有限数据。</p>`,
       },
       {
         heading: `存储在设备和 iCloud 中的数据`,
         content: `<p>本应用在您的设备上本地存储以下数据：</p>
-<ul><li><strong>您的书库</strong>——书名、作者、封面、主题、ISBN 和阅读状态。</li><li><strong>附加在图书上的个人笔记。</strong></li><li><strong>您创建并保存的 AI 摘要和阅读链。</strong></li><li><strong>应用偏好设置</strong>及订阅状态缓存。</li></ul>
-<p>若 iCloud 可用，这些数据会通过您的个人 iCloud 账户（Apple CloudKit 私有数据库）同步。我们不运营自己的用户数据库，也无法访问您的 iCloud 数据。您可以随时将图书、笔记、摘要和阅读链导出为 JSON，并通过删除应用及其 iCloud 数据来清除全部内容。</p>`,
+<ul><li><strong>您的书库</strong>——书名、作者、封面、主题、ISBN 和阅读状态。</li><li><strong>附加在图书上的个人笔记。</strong></li><li><strong>您创建并保存的核心观点和阅读路线，以及阅读计时记录和连续打卡。</strong></li><li><strong>应用偏好设置</strong>及订阅状态缓存。</li></ul>
+<p>若 iCloud 可用，这些数据会通过您的个人 iCloud 账户（Apple CloudKit 私有数据库）同步。我们不运营自己的用户数据库，也无法访问您的 iCloud 数据。您可以随时将图书、笔记、核心观点和阅读路线导出为 JSON，并通过删除应用及其 iCloud 数据来清除全部内容。</p>`,
       },
       {
         heading: `相机与照片`,
@@ -573,9 +573,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI 功能及其发送的内容`,
-        content: `<p>AI 图书摘要和 AI 阅读链是可选功能，仅在您明确同意使用 AI 后运行。请求时，应用会向我们的服务器（我们在 Cloudflare 上运营的 AI 代理）发送：</p>
-<ul><li>图书元数据：书名、作者，以及（如有）该书的公开简介。</li><li>您的界面语言，以便用该语言撰写回复。</li><li>用于配额管理和防滥用的随机安装标识符及技术请求数据。</li></ul>
-<p>我们的服务器将图书元数据转发给 AI 服务商（目前为 DeepSeek）以生成结果。<strong>您的个人笔记、照片、姓名和联系方式绝不会发送给我们或 AI 服务商。</strong>AI 请求不会用于构建您的画像，我们也不会出售或共享这些数据。 DeepSeek 在位于中华人民共和国境内的服务器上处理这些请求。</p>`,
+        content: `<p>核心观点和推荐的阅读路线是可选的 AI 功能，仅在您明确同意使用 AI 后运行。请求时，应用会向我们的服务器（我们在 Cloudflare 上运营的 AI 代理）发送：</p>
+<ul><li>生成核心观点时：书名、作者，以及（如有）该书的公开简介。</li><li>生成阅读路线时：您书库中最多 120 本书的书名、作者、主题和难度、是否已读，以及您选择的技能或目标。</li><li>您的界面语言，以便用该语言撰写回复。</li><li>用于配额管理和防滥用的随机安装标识符及技术请求数据。</li></ul>
+<p>我们的服务器将这些数据转发给 AI 服务商（目前为 DeepSeek）以生成结果。<strong>您的个人笔记、照片、姓名和联系方式绝不会发送给我们或 AI 服务商。</strong>AI 请求不会用于构建您的画像，我们也不会出售或共享这些数据。 DeepSeek 在位于中华人民共和国境内的服务器上处理这些请求。</p>`,
       },
       {
         heading: `图书搜索（Open Library、Google Books）`,
@@ -583,7 +583,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `订阅与购买`,
-        content: `<p>Bookpather Pro 是可选的自动续订订阅。所有交易完全由 Apple 通过 App Store（StoreKit）处理。我们不会收到或存储您的付款信息、Apple ID 或账单信息。为验证订阅，我们的服务器可能校验 App Store 交易签名；其中不包含 Apple 签名交易之外的任何个人或付款信息。Apple 对数据的处理受 Apple 隐私政策约束（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）。</p>`,
+        content: `<p>Bookpather Pro 为可选项目：可选择自动续订订阅（月度或年度），或一次性购买的终身版。所有交易完全由 Apple 通过 App Store（StoreKit）处理。我们不会收到或存储您的付款信息、Apple ID 或账单信息。为验证订阅，我们的服务器可能校验 App Store 交易签名；其中不包含 Apple 签名交易之外的任何个人或付款信息。Apple 对数据的处理受 Apple 隐私政策约束（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）。</p>`,
       },
       {
         heading: `无广告、无追踪`,
@@ -620,13 +620,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `نظرة عامة`,
-        content: `<p>صُمم Bookpather ليكون خاصاً افتراضياً. لا يتطلب التطبيق حساباً أو تسجيل دخول، ولا يحتوي على إعلانات أو أدوات تحليلات وتتبع من أطراف ثالثة. مكتبتك — الكتب والأغلفة والملاحظات وحالات القراءة والملخصات وسلاسل القراءة — تُخزَّن على جهازك، وعند التوفر في iCloud الشخصي الخاص بك. ميزات الذكاء الاصطناعي اختيارية ولا ترسل إلى خادمنا سوى بيانات وصفية محدودة عن الكتب، وفقط بعد موافقتك الصريحة.</p>`,
+        content: `<p>صُمم Bookpather ليكون خاصاً افتراضياً. لا يتطلب التطبيق حساباً أو تسجيل دخول، ولا يحتوي على إعلانات أو أدوات تحليلات وتتبع من أطراف ثالثة. مكتبتك — الكتب والأغلفة والملاحظات وحالات القراءة وجلسات القراءة والأفكار الرئيسية والمسارات — تُخزَّن على جهازك، وعند التوفر في iCloud الشخصي الخاص بك. ميزات الذكاء الاصطناعي اختيارية ولا ترسل إلى خادمنا سوى البيانات المحدودة الموضحة أدناه، وفقط بعد موافقتك الصريحة.</p>`,
       },
       {
         heading: `البيانات على جهازك وفي iCloud الخاص بك`,
         content: `<p>يخزّن التطبيق محلياً على جهازك:</p>
-<ul><li><strong>مكتبتك</strong> — العناوين والمؤلفون والأغلفة والمواضيع وأرقام ISBN وحالات القراءة.</li><li><strong>الملاحظات الشخصية</strong> المرفقة بالكتب.</li><li><strong>ملخصات الذكاء الاصطناعي وسلاسل القراءة</strong> التي أنشأتها وحفظتها.</li><li><strong>تفضيلات التطبيق</strong> ومؤشر مخزَّن مؤقتاً لحالة الاشتراك.</li></ul>
-<p>عند توفر iCloud، تتزامن هذه البيانات عبر حسابك الشخصي في iCloud (قاعدة بيانات Apple CloudKit الخاصة). لا نُشغّل قاعدة بيانات مستخدمين ولا يمكننا الوصول إلى بيانات iCloud الخاصة بك. يمكنك تصدير الكتب والملاحظات والملخصات والسلاسل بصيغة JSON في أي وقت، وحذف كل شيء بإزالة التطبيق وبياناته في iCloud.</p>`,
+<ul><li><strong>مكتبتك</strong> — العناوين والمؤلفون والأغلفة والمواضيع وأرقام ISBN وحالات القراءة.</li><li><strong>الملاحظات الشخصية</strong> المرفقة بالكتب.</li><li><strong>الأفكار الرئيسية والمسارات</strong> التي أنشأتها وحفظتها، إضافة إلى جلسات القراءة وسلسلة الأيام.</li><li><strong>تفضيلات التطبيق</strong> ومؤشر مخزَّن مؤقتاً لحالة الاشتراك.</li></ul>
+<p>عند توفر iCloud، تتزامن هذه البيانات عبر حسابك الشخصي في iCloud (قاعدة بيانات Apple CloudKit الخاصة). لا نُشغّل قاعدة بيانات مستخدمين ولا يمكننا الوصول إلى بيانات iCloud الخاصة بك. يمكنك تصدير الكتب والملاحظات والأفكار الرئيسية والمسارات بصيغة JSON في أي وقت، وحذف كل شيء بإزالة التطبيق وبياناته في iCloud.</p>`,
       },
       {
         heading: `الكاميرا والصور`,
@@ -634,9 +634,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `ميزات الذكاء الاصطناعي وما ترسله`,
-        content: `<p>ملخصات الكتب وسلاسل القراءة بالذكاء الاصطناعي ميزات اختيارية لا تعمل إلا بعد موافقتك الصريحة. عند الطلب، يرسل التطبيق إلى خادمنا (وسيط ذكاء اصطناعي نُشغّله على Cloudflare):</p>
-<ul><li>البيانات الوصفية للكتاب: العنوان والمؤلف، وعند التوفر وصفاً عاماً للكتاب.</li><li>لغة الواجهة لديك، لتُكتب الإجابة بها.</li><li>معرّف تثبيت عشوائي وبيانات تقنية لإدارة الحصص ومنع إساءة الاستخدام.</li></ul>
-<p>يمرر خادمنا البيانات الوصفية للكتاب إلى مزود ذكاء اصطناعي (حالياً DeepSeek) لتوليد النتيجة. <strong>ملاحظاتك الشخصية وصورك واسمك وبيانات الاتصال بك لا تُرسل أبداً إلينا أو إلى مزود الذكاء الاصطناعي.</strong> لا تُستخدم طلبات الذكاء الاصطناعي لبناء ملف عنك، ولا نبيع هذه البيانات أو نشاركها. تعالج DeepSeek هذه الطلبات على خوادم موجودة في جمهورية الصين الشعبية.</p>`,
+        content: `<p>الأفكار الرئيسية والمسارات المقترحة ميزات ذكاء اصطناعي اختيارية لا تعمل إلا بعد موافقتك الصريحة. عند الطلب، يرسل التطبيق إلى خادمنا (وسيط ذكاء اصطناعي نُشغّله على Cloudflare):</p>
+<ul><li>للأفكار الرئيسية: عنوان الكتاب ومؤلفه، وعند التوفر وصفاً عاماً له.</li><li>للمسارات: عناوين ما يصل إلى 120 كتاباً من مكتبتك ومؤلفيها ومواضيعها ومستوى صعوبتها، وما إذا كنت قد قرأتها، والمهارة أو الهدف الذي تختاره.</li><li>لغة الواجهة لديك، لتُكتب الإجابة بها.</li><li>معرّف تثبيت عشوائي وبيانات تقنية لإدارة الحصص ومنع إساءة الاستخدام.</li></ul>
+<p>يمرر خادمنا هذه البيانات إلى مزود ذكاء اصطناعي (حالياً DeepSeek) لتوليد النتيجة. <strong>ملاحظاتك الشخصية وصورك واسمك وبيانات الاتصال بك لا تُرسل أبداً إلينا أو إلى مزود الذكاء الاصطناعي.</strong> لا تُستخدم طلبات الذكاء الاصطناعي لبناء ملف عنك، ولا نبيع هذه البيانات أو نشاركها. تعالج DeepSeek هذه الطلبات على خوادم موجودة في جمهورية الصين الشعبية.</p>`,
       },
       {
         heading: `البحث عن الكتب (Open Library وGoogle Books)`,
@@ -644,7 +644,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `الاشتراكات والمشتريات`,
-        content: `<p>Bookpather Pro اشتراك اختياري متجدد تلقائياً. تُعالج جميع المعاملات بالكامل بواسطة Apple عبر App Store باستخدام StoreKit. لا نتلقى أو نخزن معلومات الدفع أو Apple ID أو بيانات الفواتير. للتحقق من الاشتراك، قد يتحقق خادمنا من توقيع معاملة App Store؛ ولا يتضمن ذلك أي معلومات شخصية أو دفع تتجاوز ما تدرجه Apple في المعاملة الموقعة. تخضع معالجة Apple لبياناتك لسياسة خصوصية Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>Bookpather Pro اختياري: اشتراك متجدد تلقائياً (شهري أو سنوي) أو Pro مدى الحياة بشراء لمرة واحدة. تُعالج جميع المعاملات بالكامل بواسطة Apple عبر App Store باستخدام StoreKit. لا نتلقى أو نخزن معلومات الدفع أو Apple ID أو بيانات الفواتير. للتحقق من الاشتراك، قد يتحقق خادمنا من توقيع معاملة App Store؛ ولا يتضمن ذلك أي معلومات شخصية أو دفع تتجاوز ما تدرجه Apple في المعاملة الموقعة. تخضع معالجة Apple لبياناتك لسياسة خصوصية Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `لا إعلانات ولا تتبع`,
@@ -681,13 +681,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `סקירה`,
-        content: `<p>Bookpather פרטי כברירת מחדל. האפליקציה אינה דורשת חשבון, התחברות או הרשמה; אין בה פרסומות ואין SDK של אנליטיקה או מעקב מצד שלישי. הספרייה שלכם — ספרים, כריכות, הערות, סטטוסי קריאה, תקצירים ושרשראות קריאה — נשמרת במכשיר ובמידת הזמינות ב-iCloud האישי שלכם. תכונות ה-AI אופציונליות ושולחות לשרת שלנו רק מטא-נתונים מוגבלים של ספרים, ורק לאחר הסכמה מפורשת.</p>`,
+        content: `<p>Bookpather פרטי כברירת מחדל. האפליקציה אינה דורשת חשבון, התחברות או הרשמה; אין בה פרסומות ואין SDK של אנליטיקה או מעקב מצד שלישי. הספרייה שלכם — ספרים, כריכות, הערות, סטטוסי קריאה, סשנים של קריאה, רעיונות מרכזיים ומסלולים — נשמרת במכשיר ובמידת הזמינות ב-iCloud האישי שלכם. תכונות ה-AI אופציונליות ושולחות לשרת שלנו רק את הנתונים המוגבלים המתוארים להלן, ורק לאחר הסכמה מפורשת.</p>`,
       },
       {
         heading: `נתונים במכשיר וב-iCloud שלכם`,
         content: `<p>האפליקציה שומרת מקומית במכשיר:</p>
-<ul><li><strong>הספרייה שלכם</strong> — כותרים, מחברים, כריכות, נושאים, ISBN וסטטוסי קריאה.</li><li><strong>הערות אישיות</strong> המצורפות לספרים.</li><li><strong>תקצירי AI ושרשראות קריאה</strong> שיצרתם ושמרתם.</li><li><strong>העדפות האפליקציה</strong> ומחוון מטמון של סטטוס המינוי.</li></ul>
-<p>אם iCloud זמין, הנתונים מסתנכרנים דרך חשבון ה-iCloud האישי שלכם (מסד נתונים פרטי של Apple CloudKit). איננו מפעילים מסד נתוני משתמשים ואין לנו גישה לנתוני ה-iCloud שלכם. ניתן לייצא ספרים, הערות, תקצירים ושרשראות כ-JSON בכל עת, ולמחוק הכול על ידי הסרת האפליקציה ונתוני ה-iCloud שלה.</p>`,
+<ul><li><strong>הספרייה שלכם</strong> — כותרים, מחברים, כריכות, נושאים, ISBN וסטטוסי קריאה.</li><li><strong>הערות אישיות</strong> המצורפות לספרים.</li><li><strong>רעיונות מרכזיים ומסלולים</strong> שיצרתם ושמרתם, וגם סשני הקריאה ורצף הימים.</li><li><strong>העדפות האפליקציה</strong> ומחוון מטמון של סטטוס המינוי.</li></ul>
+<p>אם iCloud זמין, הנתונים מסתנכרנים דרך חשבון ה-iCloud האישי שלכם (מסד נתונים פרטי של Apple CloudKit). איננו מפעילים מסד נתוני משתמשים ואין לנו גישה לנתוני ה-iCloud שלכם. ניתן לייצא ספרים, הערות, רעיונות מרכזיים ומסלולים כ-JSON בכל עת, ולמחוק הכול על ידי הסרת האפליקציה ונתוני ה-iCloud שלה.</p>`,
       },
       {
         heading: `מצלמה ותמונות`,
@@ -695,9 +695,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `תכונות AI ומה הן שולחות`,
-        content: `<p>תקצירי AI ושרשראות קריאה עם AI הן תכונות אופציונליות הפועלות רק לאחר הסכמה מפורשת. בעת בקשה, האפליקציה שולחת לשרת שלנו (פרוקסי AI שאנו מפעילים ב-Cloudflare):</p>
-<ul><li>מטא-נתונים של הספר: כותר, מחבר, ובמידת הזמינות תיאור פומבי של הספר.</li><li>שפת הממשק שלכם, כדי שהתשובה תיכתב בה.</li><li>מזהה התקנה אקראי ונתוני בקשה טכניים לניהול מכסות ומניעת שימוש לרעה.</li></ul>
-<p>השרת שלנו מעביר את מטא-הנתונים לספק AI (כיום DeepSeek) ליצירת התוצאה. <strong>ההערות האישיות, התמונות, השם ופרטי הקשר שלכם לעולם אינם נשלחים אלינו או לספק ה-AI.</strong> בקשות AI אינן משמשות לבניית פרופיל עליכם, ואיננו מוכרים או משתפים נתונים אלה. DeepSeek מעבדת בקשות אלה בשרתים הממוקמים ברפובליקה העממית של סין.</p>`,
+        content: `<p>רעיונות מרכזיים ומסלולים מוצעים הם תכונות AI אופציונליות הפועלות רק לאחר הסכמה מפורשת. בעת בקשה, האפליקציה שולחת לשרת שלנו (פרוקסי AI שאנו מפעילים ב-Cloudflare):</p>
+<ul><li>עבור רעיונות מרכזיים: כותר, מחבר, ובמידת הזמינות תיאור פומבי של הספר.</li><li>עבור מסלולים: כותר, מחבר, נושאים ורמת קושי של עד 120 ספרים מהספרייה שלכם, האם קראתם אותם, והמיומנות או המטרה שבחרתם.</li><li>שפת הממשק שלכם, כדי שהתשובה תיכתב בה.</li><li>מזהה התקנה אקראי ונתוני בקשה טכניים לניהול מכסות ומניעת שימוש לרעה.</li></ul>
+<p>השרת שלנו מעביר נתונים אלה לספק AI (כיום DeepSeek) ליצירת התוצאה. <strong>ההערות האישיות, התמונות, השם ופרטי הקשר שלכם לעולם אינם נשלחים אלינו או לספק ה-AI.</strong> בקשות AI אינן משמשות לבניית פרופיל עליכם, ואיננו מוכרים או משתפים נתונים אלה. DeepSeek מעבדת בקשות אלה בשרתים הממוקמים ברפובליקה העממית של סין.</p>`,
       },
       {
         heading: `חיפוש ספרים (Open Library ו-Google Books)`,
@@ -705,7 +705,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `מינויים ורכישות`,
-        content: `<p>Bookpather Pro הוא מינוי אופציונלי בחידוש אוטומטי. כל העסקאות מעובדות במלואן על ידי Apple דרך ה-App Store באמצעות StoreKit. איננו מקבלים או שומרים פרטי תשלום, Apple ID או פרטי חיוב. לאימות המינוי, השרת שלנו עשוי לאמת חתימת עסקה של App Store; היא אינה כוללת מידע אישי או פרטי תשלום מעבר למה ש-Apple כוללת בעסקה החתומה. הטיפול של Apple בנתונים כפוף למדיניות הפרטיות של Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
+        content: `<p>Bookpather Pro הוא אופציונלי: מינוי בחידוש אוטומטי (חודשי או שנתי) או Pro לכל החיים ברכישה חד-פעמית. כל העסקאות מעובדות במלואן על ידי Apple דרך ה-App Store באמצעות StoreKit. איננו מקבלים או שומרים פרטי תשלום, Apple ID או פרטי חיוב. לאימות המינוי, השרת שלנו עשוי לאמת חתימת עסקה של App Store; היא אינה כוללת מידע אישי או פרטי תשלום מעבר למה ש-Apple כוללת בעסקה החתומה. הטיפול של Apple בנתונים כפוף למדיניות הפרטיות של Apple (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>).</p>`,
       },
       {
         heading: `בלי פרסומות, בלי מעקב`,
@@ -742,13 +742,13 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
     sections: [
       {
         heading: `अवलोकन`,
-        content: `<p>Bookpather डिफ़ॉल्ट रूप से निजी है। ऐप को खाते, लॉगिन या पंजीकरण की आवश्यकता नहीं है; इसमें कोई विज्ञापन नहीं है और न ही तृतीय-पक्ष विश्लेषण या ट्रैकिंग SDK। आपकी लाइब्रेरी — किताबें, कवर, नोट्स, पठन स्थितियाँ, सार और रीडिंग चेन — आपके डिवाइस पर और उपलब्ध होने पर आपके निजी iCloud में संग्रहीत होती है। वैकल्पिक AI सुविधाएँ केवल आपकी स्पष्ट सहमति के बाद, सीमित पुस्तक मेटाडेटा ही हमारे सर्वर को भेजती हैं।</p>`,
+        content: `<p>Bookpather डिफ़ॉल्ट रूप से निजी है। ऐप को खाते, लॉगिन या पंजीकरण की आवश्यकता नहीं है; इसमें कोई विज्ञापन नहीं है और न ही तृतीय-पक्ष विश्लेषण या ट्रैकिंग SDK। आपकी लाइब्रेरी — किताबें, कवर, नोट्स, पठन स्थितियाँ, रीडिंग सेशन, मुख्य विचार और पढ़ने के रास्ते — आपके डिवाइस पर और उपलब्ध होने पर आपके निजी iCloud में संग्रहीत होती है। वैकल्पिक AI सुविधाएँ केवल आपकी स्पष्ट सहमति के बाद, नीचे बताया गया सीमित डेटा ही हमारे सर्वर को भेजती हैं।</p>`,
       },
       {
         heading: `आपके डिवाइस और iCloud में डेटा`,
         content: `<p>ऐप आपके डिवाइस पर स्थानीय रूप से संग्रहीत करता है:</p>
-<ul><li><strong>आपकी लाइब्रेरी</strong> — शीर्षक, लेखक, कवर, विषय, ISBN और पठन स्थितियाँ।</li><li><strong>किताबों से जुड़े व्यक्तिगत नोट्स।</strong></li><li><strong>आपके बनाए और सहेजे गए AI सार और रीडिंग चेन।</strong></li><li><strong>ऐप प्राथमिकताएँ</strong> और सदस्यता स्थिति का कैश संकेतक।</li></ul>
-<p>iCloud उपलब्ध होने पर यह डेटा आपके निजी iCloud खाते (Apple CloudKit निजी डेटाबेस) से सिंक होता है। हम कोई उपयोगकर्ता डेटाबेस नहीं चलाते और आपके iCloud डेटा तक हमारी पहुँच नहीं है। आप कभी भी किताबें, नोट्स, सार और चेन JSON के रूप में निर्यात कर सकते हैं, और ऐप तथा उसके iCloud डेटा को हटाकर सब कुछ मिटा सकते हैं।</p>`,
+<ul><li><strong>आपकी लाइब्रेरी</strong> — शीर्षक, लेखक, कवर, विषय, ISBN और पठन स्थितियाँ।</li><li><strong>किताबों से जुड़े व्यक्तिगत नोट्स।</strong></li><li><strong>आपके बनाए और सहेजे गए मुख्य विचार और पढ़ने के रास्ते, साथ ही रीडिंग सेशन और स्ट्रीक।</strong></li><li><strong>ऐप प्राथमिकताएँ</strong> और सदस्यता स्थिति का कैश संकेतक।</li></ul>
+<p>iCloud उपलब्ध होने पर यह डेटा आपके निजी iCloud खाते (Apple CloudKit निजी डेटाबेस) से सिंक होता है। हम कोई उपयोगकर्ता डेटाबेस नहीं चलाते और आपके iCloud डेटा तक हमारी पहुँच नहीं है। आप कभी भी किताबें, नोट्स, मुख्य विचार और पढ़ने के रास्ते JSON के रूप में निर्यात कर सकते हैं, और ऐप तथा उसके iCloud डेटा को हटाकर सब कुछ मिटा सकते हैं।</p>`,
       },
       {
         heading: `कैमरा और फ़ोटो`,
@@ -756,9 +756,9 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `AI सुविधाएँ और वे क्या भेजती हैं`,
-        content: `<p>AI पुस्तक सार और AI रीडिंग चेन वैकल्पिक हैं और केवल आपकी स्पष्ट सहमति के बाद चलती हैं। अनुरोध पर, ऐप हमारे सर्वर (Cloudflare पर हमारा AI प्रॉक्सी) को भेजता है:</p>
-<ul><li>पुस्तक मेटाडेटा: शीर्षक, लेखक और उपलब्ध होने पर पुस्तक का सार्वजनिक विवरण।</li><li>आपकी इंटरफ़ेस भाषा, ताकि उत्तर उसी में लिखा जाए।</li><li>कोटा प्रबंधन और दुरुपयोग रोकथाम के लिए एक यादृच्छिक इंस्टॉलेशन पहचानकर्ता और तकनीकी अनुरोध डेटा।</li></ul>
-<p>हमारा सर्वर पुस्तक मेटाडेटा को AI प्रदाता (वर्तमान में DeepSeek) को भेजता है। <strong>आपके व्यक्तिगत नोट्स, फ़ोटो, नाम और संपर्क विवरण कभी भी हमें या AI प्रदाता को नहीं भेजे जाते।</strong> AI अनुरोधों का उपयोग आपकी प्रोफ़ाइल बनाने के लिए नहीं होता, और हम यह डेटा न बेचते हैं न साझा करते हैं। DeepSeek इन अनुरोधों को चीनी जनवादी गणराज्य में स्थित सर्वरों पर संसाधित करता है।</p>`,
+        content: `<p>मुख्य विचार और सुझाए गए पढ़ने के रास्ते वैकल्पिक AI सुविधाएँ हैं और केवल आपकी स्पष्ट सहमति के बाद चलती हैं। अनुरोध पर, ऐप हमारे सर्वर (Cloudflare पर हमारा AI प्रॉक्सी) को भेजता है:</p>
+<ul><li>मुख्य विचारों के लिए: पुस्तक का शीर्षक, लेखक और उपलब्ध होने पर उसका सार्वजनिक विवरण।</li><li>पढ़ने के रास्तों के लिए: आपकी लाइब्रेरी की अधिकतम 120 किताबों के शीर्षक, लेखक, विषय और कठिनाई स्तर, आपने उन्हें पढ़ा है या नहीं, और आपके चुने हुए कौशल या लक्ष्य।</li><li>आपकी इंटरफ़ेस भाषा, ताकि उत्तर उसी में लिखा जाए।</li><li>कोटा प्रबंधन और दुरुपयोग रोकथाम के लिए एक यादृच्छिक इंस्टॉलेशन पहचानकर्ता और तकनीकी अनुरोध डेटा।</li></ul>
+<p>हमारा सर्वर यह डेटा AI प्रदाता (वर्तमान में DeepSeek) को भेजता है। <strong>आपके व्यक्तिगत नोट्स, फ़ोटो, नाम और संपर्क विवरण कभी भी हमें या AI प्रदाता को नहीं भेजे जाते।</strong> AI अनुरोधों का उपयोग आपकी प्रोफ़ाइल बनाने के लिए नहीं होता, और हम यह डेटा न बेचते हैं न साझा करते हैं। DeepSeek इन अनुरोधों को चीनी जनवादी गणराज्य में स्थित सर्वरों पर संसाधित करता है।</p>`,
       },
       {
         heading: `पुस्तक खोज (Open Library और Google Books)`,
@@ -766,7 +766,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `सदस्यताएँ और खरीदारी`,
-        content: `<p>Bookpather Pro एक वैकल्पिक स्वतः-नवीनीकृत सदस्यता है। सभी लेन-देन पूरी तरह Apple द्वारा App Store (StoreKit) के माध्यम से संसाधित होते हैं। हम आपकी भुगतान जानकारी, Apple ID या बिलिंग विवरण प्राप्त या संग्रहीत नहीं करते। सदस्यता सत्यापन के लिए हमारा सर्वर App Store लेन-देन हस्ताक्षर की जाँच कर सकता है; इसमें Apple द्वारा हस्ताक्षरित लेन-देन में शामिल जानकारी से अधिक कोई व्यक्तिगत या भुगतान जानकारी नहीं होती। Apple का डेटा प्रबंधन Apple की गोपनीयता नीति (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>) के अधीन है।</p>`,
+        content: `<p>Bookpather Pro वैकल्पिक है: एक स्वतः-नवीनीकृत सदस्यता (मासिक या वार्षिक) या एक बार की खरीद वाला लाइफ़टाइम प्लान। सभी लेन-देन पूरी तरह Apple द्वारा App Store (StoreKit) के माध्यम से संसाधित होते हैं। हम आपकी भुगतान जानकारी, Apple ID या बिलिंग विवरण प्राप्त या संग्रहीत नहीं करते। सदस्यता सत्यापन के लिए हमारा सर्वर App Store लेन-देन हस्ताक्षर की जाँच कर सकता है; इसमें Apple द्वारा हस्ताक्षरित लेन-देन में शामिल जानकारी से अधिक कोई व्यक्तिगत या भुगतान जानकारी नहीं होती। Apple का डेटा प्रबंधन Apple की गोपनीयता नीति (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>) के अधीन है।</p>`,
       },
       {
         heading: `न विज्ञापन, न ट्रैकिंग`,
