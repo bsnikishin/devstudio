@@ -6,7 +6,7 @@ import { LocaleProvider } from '@/contexts/LocaleContext'
 
 export const metadata: Metadata = {
   title: 'NikiBStudio — iOS Apps',
-  description: 'iOS apps built with care. Ldream, Tarotaper, Colorbrain and more.',
+  description: 'iOS apps built with care. LDream, Tarotaper, Colorbrain and more.',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
