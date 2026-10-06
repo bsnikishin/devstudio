@@ -23,6 +23,7 @@ const config: Config = {
         sans: ['var(--font-sans)', 'var(--sans-fallback)', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
         mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
         unbounded: ['var(--font-unbounded)', 'var(--sans-fallback)', 'sans-serif'],
+        oldstandard: ['var(--font-oldstandard)', 'var(--serif-fallback)', 'Georgia', 'serif'],
       },
       maxWidth: {
         page: '1180px',

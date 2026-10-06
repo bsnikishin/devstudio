@@ -12,6 +12,7 @@ const DISPLAY: Record<AppTheme['display'], string> = {
   serif: 'font-serif font-semibold',
   'serif-italic': 'font-serif font-normal italic',
   unbounded: 'font-unbounded font-extrabold !tracking-[-0.01em]',
+  oldstandard: 'font-oldstandard font-bold !tracking-[-0.01em]',
   sans: 'font-sans font-bold',
 }
 

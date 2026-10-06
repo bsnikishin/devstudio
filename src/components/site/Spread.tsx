@@ -15,7 +15,11 @@ export default function Spread({ app }: { app: App }) {
   if (!m || !shots.length) return null
   const landscape = !!app.shots?.landscape
   const notes = m.features.slice(0, 4).map((f) => splitFeature(f).title)
-  const store = app.appStoreUrl
+  const store = app.telegramUrl
+    ? { href: app.telegramUrl, label: t('link.telegram') }
+    : app.appStoreUrl
+      ? { href: app.appStoreUrl, label: t('link.appStore') }
+      : null
 
   return (
     <section id={app.id} className="scroll-mt-6 border-t border-ink py-14 sm:py-20">
@@ -26,8 +30,8 @@ export default function Spread({ app }: { app: App }) {
           {m.headline && <span className="mt-1 block text-balance text-[22px] font-normal italic leading-[1.2] text-muted sm:text-[30px]">{m.headline}</span>}
         </h3>
         {store && (
-          <a href={store} target="_blank" rel="noopener noreferrer" className="label link-rule justify-self-start text-ink sm:justify-self-end">
-            {t('link.appStore')} ↗
+          <a href={store.href} target="_blank" rel="noopener noreferrer" className="label link-rule justify-self-start text-ink sm:justify-self-end">
+            {store.label} ↗
           </a>
         )}
       </div>

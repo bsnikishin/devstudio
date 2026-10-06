@@ -55,8 +55,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>The apps are licensed to you, not sold, under Apple’s <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Licensed Application End User License Agreement</a> (the Standard EULA) together with these terms. If the two differ, the Standard EULA prevails.</p>",
         },
         {
-          heading: "Purchases and subscriptions",
+          heading: "Purchases in the iOS apps",
           content: "<ul><li>Payments, renewals and refunds are handled by Apple. You can ask Apple for a refund at <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>.</li><li>A subscription renews automatically unless auto-renewal is turned off at least 24 hours before the end of the current period. Your Apple Account is charged for the next period within the 24 hours before the current one ends.</li><li>You can manage or cancel a subscription in your iPhone’s Settings → your name → Subscriptions.</li><li>If a subscription starts with a free trial, any unused part of the trial ends when you buy a subscription.</li><li>One-time purchases, such as Lifetime or supporter packs, can be restored on your devices with “Restore Purchases”.</li></ul>",
+        },
+        {
+          heading: "Purchases in TaroTaper (Telegram)",
+          content: "<ul><li>Readings and TaroTaper+ in the TaroTaper bot are paid with Telegram Stars. Payments are processed by Telegram, and <a href=\"https://telegram.org/tos/stars\">Telegram’s terms for Stars</a> apply.</li><li>A one-off purchase gives you one reading of the chosen kind. It is used up only when the reading has been written; if a reading fails, the purchase stays with you.</li><li>TaroTaper+ is a Telegram Stars subscription for 30 days at a time. It renews until you cancel it in your Telegram settings, in the Telegram Stars section; after that, it stays active until the end of the period you have paid for. Fair use: up to 20 readings a day.</li><li>For questions about a payment or a refund, send /paysupport in the bot’s chat. How the bot handles your data is explained in the <a href=\"/apps/tarotaper/privacy\">TaroTaper privacy policy</a>.</li></ul>",
         },
         {
           heading: "Acceptable use",
@@ -133,8 +137,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>Приложения не продаются, а предоставляются вам по лицензии — по <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Лицензионному соглашению с конечным пользователем Apple</a> (Standard EULA) вместе с этими условиями. Если они расходятся, действует Standard EULA.</p>",
         },
         {
-          heading: "Покупки и подписки",
+          heading: "Покупки в приложениях для iOS",
           content: "<ul><li>Оплату, продление и возврат денег проводит Apple. Попросить Apple о возврате можно на <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>.</li><li>Подписка продлевается автоматически, если автопродление не отключено как минимум за 24 часа до конца текущего периода. Плата за следующий период списывается с вашего Apple Account в течение 24 часов до окончания текущего.</li><li>Управлять подпиской и отменить её можно в Настройках iPhone → ваше имя → Подписки.</li><li>Если подписка начинается с бесплатного пробного периода, его неиспользованная часть сгорает при покупке подписки.</li><li>Разовые покупки, например «Навсегда» или наборы поддержки, восстанавливаются на ваших устройствах кнопкой «Восстановить покупки».</li></ul>",
+        },
+        {
+          heading: "Покупки в TaroTaper (Telegram)",
+          content: "<ul><li>Расклады и TaroTaper+ в боте TaroTaper оплачиваются звёздами Telegram. Платежи обрабатывает Telegram, и к ним применяются <a href=\"https://telegram.org/tos/stars\">условия Telegram для звёзд</a>.</li><li>Разовая покупка — это один расклад выбранного вида. Он списывается, только когда толкование готово; если толкование не получилось, покупка остаётся за вами.</li><li>TaroTaper+ — подписка за звёзды Telegram на 30 дней. Она продлевается, пока вы не отмените её в настройках Telegram, в разделе звёзд; после отмены TaroTaper+ действует до конца оплаченного периода. Честное использование: до 20 раскладов в день.</li><li>По вопросам оплаты и возврата отправьте /paysupport в чате бота. Как бот обращается с вашими данными, описано в <a href=\"/apps/tarotaper/privacy\">политике конфиденциальности TaroTaper</a>.</li></ul>",
         },
         {
           heading: "Допустимое использование",
@@ -211,8 +219,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>这些应用以许可方式提供给你，而非出售，适用 Apple 的<a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">许可应用程序最终用户许可协议</a>（“标准 EULA”）及本条款。两者不一致时，以标准 EULA 为准。</p>",
         },
         {
-          heading: "购买与订阅",
+          heading: "iOS 应用内购买",
           content: "<ul><li>付款、续订和退款由 Apple 处理。你可以在 <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a> 向 Apple 申请退款。</li><li>除非在当前周期结束前至少 24 小时关闭自动续订，否则订阅将自动续订。下一周期的费用会在当前周期结束前的 24 小时内从你的 Apple 账户中扣除。</li><li>你可以在 iPhone 的“设置”→ 你的姓名 →“订阅”中管理或取消订阅。</li><li>如果订阅以免费试用开始，购买订阅时，试用期中未使用的部分将作废。</li><li>一次性购买（如终身版或支持者礼包）可以通过“恢复购买”在你的设备上恢复。</li></ul>",
+        },
+        {
+          heading: "TaroTaper（Telegram）内购买",
+          content: "<ul><li>TaroTaper 机器人中的占卜和 TaroTaper+ 使用 Telegram Stars 付款。付款由 Telegram 处理，并适用 <a href=\"https://telegram.org/tos/stars\">Telegram 的 Stars 条款</a>。</li><li>单次购买可获得一次所选类型的占卜。只有在解读生成后才会扣除；如果解读失败，这次购买仍归您所有。</li><li>TaroTaper+ 是以 30 天为周期的 Telegram Stars 订阅。在您于 Telegram 设置的 Telegram Stars 部分取消之前，它会自动续订；取消后，TaroTaper+ 在已付费周期结束前仍然有效。合理使用：每天最多 20 次占卜。</li><li>关于付款或退款的问题，请在机器人聊天中发送 /paysupport。机器人如何处理您的数据，请参阅 <a href=\"/apps/tarotaper/privacy\">TaroTaper 隐私政策</a>。</li></ul>",
         },
         {
           heading: "合理使用",
@@ -289,8 +301,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>Las apps no se venden, sino que se te conceden bajo licencia conforme al <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Contrato de licencia de usuario final de aplicaciones con licencia</a> de Apple (el «EULA estándar») junto con estos términos. Si ambos difieren, prevalece el EULA estándar.</p>",
         },
         {
-          heading: "Compras y suscripciones",
+          heading: "Compras en las apps para iOS",
           content: "<ul><li>Apple gestiona los pagos, las renovaciones y los reembolsos. Puedes pedir un reembolso a Apple en <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>.</li><li>La suscripción se renueva automáticamente, salvo que la renovación automática se desactive al menos 24 horas antes del final del periodo actual. El importe del siguiente periodo se cobra en tu cuenta de Apple dentro de las 24 horas anteriores al final del periodo actual.</li><li>Puedes gestionar o cancelar una suscripción en tu iPhone, en Ajustes → tu nombre → Suscripciones.</li><li>Si una suscripción empieza con una prueba gratuita, la parte no utilizada de la prueba se pierde al comprar una suscripción.</li><li>Las compras únicas, como las opciones de por vida o los packs de apoyo, se pueden restaurar en tus dispositivos con «Restaurar compras».</li></ul>",
+        },
+        {
+          heading: "Compras en TaroTaper (Telegram)",
+          content: "<ul><li>Las lecturas y TaroTaper+ del bot TaroTaper se pagan con Telegram Stars. Los pagos los procesa Telegram y se aplican los <a href=\"https://telegram.org/tos/stars\">términos de Telegram para las Stars</a>.</li><li>Una compra suelta te da una lectura del tipo elegido. Solo se descuenta cuando la lectura está escrita; si una lectura falla, la compra sigue siendo tuya.</li><li>TaroTaper+ es una suscripción de Telegram Stars por periodos de 30 días. Se renueva hasta que la canceles en los ajustes de Telegram, en la sección de Telegram Stars; después sigue activa hasta el final del periodo pagado. Uso justo: hasta 20 lecturas al día.</li><li>Si tienes dudas sobre un pago o un reembolso, envía /paysupport en el chat del bot. Cómo trata el bot tus datos se explica en la <a href=\"/apps/tarotaper/privacy\">política de privacidad de TaroTaper</a>.</li></ul>",
         },
         {
           heading: "Uso aceptable",
@@ -367,8 +383,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>Les apps vous sont concédées sous licence, et non vendues, conformément au <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">contrat de licence utilisateur final des applications sous licence</a> d’Apple (le « CLUF standard ») ainsi qu’aux présentes conditions. En cas de divergence, le CLUF standard prévaut.</p>",
         },
         {
-          heading: "Achats et abonnements",
+          heading: "Achats dans les apps iOS",
           content: "<ul><li>Les paiements, renouvellements et remboursements sont gérés par Apple. Vous pouvez demander un remboursement à Apple sur <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>.</li><li>Un abonnement se renouvelle automatiquement, sauf si le renouvellement automatique est désactivé au moins 24 heures avant la fin de la période en cours. Votre compte Apple est débité pour la période suivante dans les 24 heures qui précèdent la fin de la période en cours.</li><li>Vous pouvez gérer ou annuler un abonnement sur votre iPhone dans Réglages → votre nom → Abonnements.</li><li>Si un abonnement commence par un essai gratuit, toute partie inutilisée de l’essai est perdue lorsque vous achetez un abonnement.</li><li>Les achats uniques, comme les offres à vie ou les packs de soutien, peuvent être restaurés sur vos appareils avec « Restaurer les achats ».</li></ul>",
+        },
+        {
+          heading: "Achats dans TaroTaper (Telegram)",
+          content: "<ul><li>Les tirages et TaroTaper+ du bot TaroTaper se paient en Telegram Stars. Les paiements sont traités par Telegram, et les <a href=\"https://telegram.org/tos/stars\">conditions de Telegram relatives aux Stars</a> s’appliquent.</li><li>Un achat à l’unité vous donne un tirage du type choisi. Il n’est décompté qu’une fois la lecture rédigée ; si une lecture échoue, l’achat vous reste acquis.</li><li>TaroTaper+ est un abonnement en Telegram Stars par périodes de 30 jours. Il se renouvelle jusqu’à ce que vous le résiliiez dans les réglages de Telegram, dans la section Telegram Stars ; il reste ensuite actif jusqu’à la fin de la période payée. Usage raisonnable : jusqu’à 20 tirages par jour.</li><li>Pour toute question sur un paiement ou un remboursement, envoyez /paysupport dans la conversation avec le bot. La façon dont le bot traite vos données est expliquée dans la <a href=\"/apps/tarotaper/privacy\">politique de confidentialité de TaroTaper</a>.</li></ul>",
         },
         {
           heading: "Utilisation acceptable",
@@ -445,8 +465,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>Die Apps werden dir nicht verkauft, sondern lizenziert, und zwar gemäß dem <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Endbenutzer-Lizenzvertrag für lizenzierte Anwendungen</a> von Apple („Standard-EULA“) sowie diesen Bedingungen. Weichen beide voneinander ab, hat die Standard-EULA Vorrang.</p>",
         },
         {
-          heading: "Käufe und Abonnements",
+          heading: "Käufe in den iOS-Apps",
           content: "<ul><li>Zahlungen, Verlängerungen und Rückerstattungen wickelt Apple ab. Eine Rückerstattung kannst du bei Apple unter <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a> beantragen.</li><li>Ein Abonnement verlängert sich automatisch, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums deaktiviert wird. Dein Apple Account wird innerhalb der 24 Stunden vor Ende des aktuellen Zeitraums für den nächsten Zeitraum belastet.</li><li>Du kannst ein Abonnement auf deinem iPhone unter Einstellungen → dein Name → Abonnements verwalten oder kündigen.</li><li>Beginnt ein Abonnement mit einer kostenlosen Testphase, verfällt der ungenutzte Teil der Testphase, sobald du ein Abonnement kaufst.</li><li>Einmalkäufe wie Lifetime oder Unterstützer-Pakete stellst du auf deinen Geräten mit „Käufe wiederherstellen“ wieder her.</li></ul>",
+        },
+        {
+          heading: "Käufe in TaroTaper (Telegram)",
+          content: "<ul><li>Legungen und TaroTaper+ im Bot TaroTaper werden mit Telegram Stars bezahlt. Die Zahlungen wickelt Telegram ab, und es gelten die <a href=\"https://telegram.org/tos/stars\">Bedingungen von Telegram für Stars</a>.</li><li>Ein Einzelkauf gibt dir eine Legung der gewählten Art. Sie wird erst verbraucht, wenn die Deutung geschrieben ist; klappt eine Deutung nicht, bleibt dir der Kauf erhalten.</li><li>TaroTaper+ ist ein Abo mit Telegram Stars für jeweils 30 Tage. Es verlängert sich, bis du es in den Telegram-Einstellungen im Bereich Telegram Stars kündigst; danach bleibt es bis zum Ende des bezahlten Zeitraums aktiv. Faire Nutzung: bis zu 20 Legungen pro Tag.</li><li>Bei Fragen zu einer Zahlung oder Erstattung schick /paysupport im Chat mit dem Bot. Wie der Bot mit deinen Daten umgeht, steht in der <a href=\"/apps/tarotaper/privacy\">Datenschutzrichtlinie von TaroTaper</a>.</li></ul>",
         },
         {
           heading: "Zulässige Nutzung",
@@ -523,8 +547,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>アプリは販売されるものではなく、Appleの<a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">ライセンス対象アプリケーションのエンドユーザ使用許諾契約</a>（以下「標準EULA」）および本規約に基づいて使用が許諾されます。両者の内容が異なる場合は、標準EULAが優先されます。</p>",
         },
         {
-          heading: "購入とサブスクリプション",
+          heading: "iOSアプリでの購入",
           content: "<ul><li>支払い、更新、返金はAppleが取り扱います。返金は <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a> からAppleに申請できます。</li><li>サブスクリプションは、現在の期間が終了する少なくとも24時間前までに自動更新をオフにしない限り、自動的に更新されます。次の期間の料金は、現在の期間が終了する前の24時間以内にAppleアカウントに請求されます。</li><li>サブスクリプションの管理や解約は、iPhoneの「設定」→ 自分の名前 →「サブスクリプション」で行えます。</li><li>サブスクリプションが無料トライアルから始まる場合、サブスクリプションを購入した時点で、トライアルの未使用期間は失効します。</li><li>買い切りプランやサポーターパックなどの1回限りの購入は、「購入を復元」でお使いのデバイスに復元できます。</li></ul>",
+        },
+        {
+          heading: "TaroTaper（Telegram）での購入",
+          content: "<ul><li>TaroTaperボットのリーディングとTaroTaper+の支払いにはTelegram Starsを使います。支払いはTelegramが処理し、<a href=\"https://telegram.org/tos/stars\">TelegramのStarsに関する規約</a>が適用されます。</li><li>単発の購入で、選んだ種類のリーディングを1回利用できます。消費されるのはリーディングが書き上がったときだけで、リーディングに失敗した場合、購入した回数はそのまま残ります。</li><li>TaroTaper+は30日ごとのTelegram Starsのサブスクリプションです。Telegramの設定のTelegram Starsの項目で解約するまで自動的に更新され、解約後も支払い済みの期間の終わりまで有効です。フェアユース：1日20回まで。</li><li>支払いや返金に関するお問い合わせは、ボットのチャットで /paysupport を送ってください。ボットによるデータの取り扱いについては、<a href=\"/apps/tarotaper/privacy\">TaroTaperのプライバシーポリシー</a>をご覧ください。</li></ul>",
         },
         {
           heading: "適切な利用",
@@ -601,8 +629,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>앱은 판매되는 것이 아니라 Apple의 <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">사용이 허가된 애플리케이션에 대한 최종 사용자 사용권 계약</a>(이하 ‘표준 EULA’)과 본 약관에 따라 사용이 허가됩니다. 둘의 내용이 다를 경우 표준 EULA가 우선합니다.</p>",
         },
         {
-          heading: "구입 및 구독",
+          heading: "iOS 앱 구입",
           content: "<ul><li>결제, 갱신, 환불은 Apple이 처리합니다. 환불은 <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>에서 Apple에 요청할 수 있습니다.</li><li>구독은 현재 기간이 끝나기 최소 24시간 전에 자동 갱신을 끄지 않으면 자동으로 갱신됩니다. 다음 기간의 요금은 현재 기간이 끝나기 전 24시간 이내에 Apple 계정으로 청구됩니다.</li><li>구독은 iPhone의 설정 → 내 이름 → 구독에서 관리하거나 취소할 수 있습니다.</li><li>구독이 무료 체험으로 시작되는 경우, 구독을 구입하면 체험 기간 중 사용하지 않은 부분은 소멸됩니다.</li><li>평생 이용권이나 서포터 팩 같은 일회성 구입 항목은 ‘구입 항목 복원’으로 기기에서 복원할 수 있습니다.</li></ul>",
+        },
+        {
+          heading: "TaroTaper(Telegram) 구입",
+          content: "<ul><li>TaroTaper 봇의 리딩과 TaroTaper+는 Telegram Stars로 결제합니다. 결제는 Telegram이 처리하며 <a href=\"https://telegram.org/tos/stars\">Telegram의 Stars 약관</a>이 적용됩니다.</li><li>단건 구매로 선택한 종류의 리딩을 한 번 이용할 수 있습니다. 리딩이 작성되었을 때만 차감되며, 리딩에 실패하면 구매한 횟수는 그대로 남습니다.</li><li>TaroTaper+는 30일 단위의 Telegram Stars 구독입니다. Telegram 설정의 Telegram Stars 항목에서 해지할 때까지 갱신되며, 해지한 뒤에도 결제한 기간이 끝날 때까지 이용할 수 있습니다. 공정 사용: 하루 최대 20회.</li><li>결제나 환불에 관한 문의는 봇 채팅에서 /paysupport를 보내 주세요. 봇이 데이터를 처리하는 방식은 <a href=\"/apps/tarotaper/privacy\">TaroTaper 개인정보 처리방침</a>에서 확인할 수 있습니다.</li></ul>",
         },
         {
           heading: "허용되는 이용",
@@ -679,8 +711,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>Os apps não são vendidos, e sim licenciados para você, nos termos do <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Contrato de Licença de Usuário Final de Aplicativo Licenciado</a> da Apple (o “EULA Padrão”) e destes termos. Se os dois divergirem, prevalece o EULA Padrão.</p>",
         },
         {
-          heading: "Compras e assinaturas",
+          heading: "Compras nos apps para iOS",
           content: "<ul><li>Pagamentos, renovações e reembolsos são feitos pela Apple. Você pode pedir reembolso à Apple em <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>.</li><li>A assinatura é renovada automaticamente, a menos que a renovação automática seja desativada pelo menos 24 horas antes do fim do período atual. A cobrança do próximo período é feita na sua Conta Apple nas 24 horas anteriores ao fim do período atual.</li><li>Você pode gerenciar ou cancelar uma assinatura no iPhone, em Ajustes → seu nome → Assinaturas.</li><li>Se uma assinatura começar com um teste gratuito, qualquer parte não utilizada do teste será perdida quando você comprar uma assinatura.</li><li>Compras únicas, como o acesso vitalício ou os pacotes de apoiador, podem ser restauradas nos seus dispositivos com “Restaurar Compras”.</li></ul>",
+        },
+        {
+          heading: "Compras no TaroTaper (Telegram)",
+          content: "<ul><li>As leituras e o TaroTaper+ no bot TaroTaper são pagos com Telegram Stars. Os pagamentos são processados pelo Telegram, e valem os <a href=\"https://telegram.org/tos/stars\">termos do Telegram para Stars</a>.</li><li>Uma compra avulsa dá direito a uma leitura do tipo escolhido. Ela só é descontada quando a leitura fica pronta; se uma leitura falhar, a compra continua sendo sua.</li><li>O TaroTaper+ é uma assinatura em Telegram Stars por períodos de 30 dias. Ela se renova até você cancelá-la nas configurações do Telegram, na seção Telegram Stars; depois disso, continua ativa até o fim do período pago. Uso justo: até 20 leituras por dia.</li><li>Para dúvidas sobre um pagamento ou reembolso, envie /paysupport no chat do bot. Como o bot trata os seus dados está explicado na <a href=\"/apps/tarotaper/privacy\">Política de Privacidade do TaroTaper</a>.</li></ul>",
         },
         {
           heading: "Uso aceitável",
@@ -757,8 +793,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>التطبيقات مرخّصة لك وليست مبيعة، بموجب <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">اتفاقية ترخيص المستخدم النهائي للتطبيقات المرخّصة</a> من Apple («اتفاقية EULA القياسية») إلى جانب هذه الشروط. وإذا اختلفت الاتفاقية عن هذه الشروط، تكون الأولوية لاتفاقية EULA القياسية.</p>",
         },
         {
-          heading: "المشتريات والاشتراكات",
+          heading: "المشتريات في تطبيقات iOS",
           content: "<ul><li>تتولى Apple المدفوعات والتجديدات والمبالغ المستردة. ويمكنك أن تطلب من Apple استرداد المبلغ عبر <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>.</li><li>يتجدد الاشتراك تلقائيًا ما لم يُوقَف التجديد التلقائي قبل 24 ساعة على الأقل من نهاية الفترة الحالية. وتُحصَّل رسوم الفترة التالية من حساب Apple الخاص بك خلال الساعات الـ24 السابقة لنهاية الفترة الحالية.</li><li>يمكنك إدارة الاشتراك أو إلغاؤه على iPhone من الإعدادات ← اسمك ← الاشتراكات.</li><li>إذا بدأ الاشتراك بفترة تجريبية مجانية، فإن أي جزء غير مستخدم من الفترة التجريبية يسقط عند شراء اشتراك.</li><li>يمكن استعادة عمليات الشراء لمرة واحدة، مثل خيار مدى الحياة أو حزم الداعمين، على أجهزتك باستخدام «استعادة المشتريات».</li></ul>",
+        },
+        {
+          heading: "المشتريات في TaroTaper على Telegram",
+          content: "<ul><li>تُدفع القراءات وTaroTaper+ في بوت TaroTaper بنجوم Telegram. يعالج Telegram المدفوعات، وتسري عليها <a href=\"https://telegram.org/tos/stars\">شروط Telegram الخاصة بالنجوم</a>.</li><li>تمنحك عملية الشراء الفردية قراءة واحدة من النوع الذي تختاره. لا تُحتسب إلا عند اكتمال التفسير، وإذا تعذّر التفسير تبقى عملية الشراء لك.</li><li>TaroTaper+ اشتراك بنجوم Telegram لمدة 30 يومًا في كل مرة. يتجدد إلى أن تلغيه من إعدادات Telegram في قسم نجوم Telegram، ويبقى بعد الإلغاء فعّالًا حتى نهاية الفترة المدفوعة. الاستخدام العادل: حتى 20 قراءة يوميًا.</li><li>للاستفسار عن دفعة أو استرداد، أرسل ‎/paysupport في محادثة البوت. وتوضح <a href=\"/apps/tarotaper/privacy\">سياسة الخصوصية لـ TaroTaper</a> كيف يتعامل البوت مع بياناتك.</li></ul>",
         },
         {
           heading: "الاستخدام المقبول",
@@ -835,8 +875,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>Le app non ti vengono vendute, ma concesse in licenza in base al <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Contratto di licenza con l’utente finale delle applicazioni concesse in licenza</a> di Apple (l’«EULA standard») e a questi termini. In caso di differenze, prevale l’EULA standard.</p>",
         },
         {
-          heading: "Acquisti e abbonamenti",
+          heading: "Acquisti nelle app iOS",
           content: "<ul><li>Pagamenti, rinnovi e rimborsi sono gestiti da Apple. Puoi chiedere un rimborso ad Apple su <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>.</li><li>L’abbonamento si rinnova automaticamente, a meno che il rinnovo automatico non venga disattivato almeno 24 ore prima della fine del periodo in corso. L’importo del periodo successivo viene addebitato sul tuo Account Apple nelle 24 ore che precedono la fine del periodo in corso.</li><li>Puoi gestire o annullare un abbonamento sul tuo iPhone in Impostazioni → il tuo nome → Abbonamenti.</li><li>Se un abbonamento inizia con una prova gratuita, l’eventuale parte non utilizzata della prova va persa quando acquisti un abbonamento.</li><li>Gli acquisti una tantum, come le versioni a vita o i pacchetti sostenitore, si possono ripristinare sui tuoi dispositivi con «Ripristina acquisti».</li></ul>",
+        },
+        {
+          heading: "Acquisti in TaroTaper (Telegram)",
+          content: "<ul><li>Le letture e TaroTaper+ del bot TaroTaper si pagano con le Telegram Stars. I pagamenti sono gestiti da Telegram e si applicano i <a href=\"https://telegram.org/tos/stars\">termini di Telegram per le Stars</a>.</li><li>Un acquisto singolo ti dà una lettura del tipo scelto. Viene scalato solo quando la lettura è stata scritta; se una lettura non riesce, l’acquisto resta tuo.</li><li>TaroTaper+ è un abbonamento in Telegram Stars per periodi di 30 giorni. Si rinnova finché non lo disdici nelle impostazioni di Telegram, nella sezione Telegram Stars; dopo la disdetta resta attivo fino alla fine del periodo pagato. Uso corretto: fino a 20 letture al giorno.</li><li>Per domande su un pagamento o un rimborso, invia /paysupport nella chat del bot. Come il bot tratta i tuoi dati è spiegato nell’<a href=\"/apps/tarotaper/privacy\">informativa sulla privacy di TaroTaper</a>.</li></ul>",
         },
         {
           heading: "Uso consentito",
@@ -913,8 +957,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>ऐप्स आपको बेचे नहीं जाते, बल्कि Apple के <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">लाइसेंस्ड एप्लिकेशन एंड यूज़र लाइसेंस एग्रीमेंट</a> (Standard EULA) और इन शर्तों के तहत लाइसेंस किए जाते हैं। अगर दोनों में कोई अंतर हो, तो Standard EULA को प्राथमिकता दी जाएगी।</p>",
         },
         {
-          heading: "ख़रीदारी और सब्सक्रिप्शन",
+          heading: "iOS ऐप्स में ख़रीदारी",
           content: "<ul><li>भुगतान, रिन्यूअल और रिफ़ंड Apple संभालता है। आप <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a> पर Apple से रिफ़ंड का अनुरोध कर सकते हैं।</li><li>सब्सक्रिप्शन अपने-आप रिन्यू हो जाता है, जब तक कि मौजूदा अवधि ख़त्म होने से कम से कम 24 घंटे पहले ऑटो-रिन्यूअल बंद न किया जाए। अगली अवधि का शुल्क मौजूदा अवधि ख़त्म होने से पहले के 24 घंटों के भीतर आपके Apple अकाउंट से लिया जाता है।</li><li>आप अपने iPhone पर सेटिंग्ज़ → आपका नाम → सब्सक्रिप्शन में जाकर सब्सक्रिप्शन मैनेज या कैंसल कर सकते हैं।</li><li>अगर कोई सब्सक्रिप्शन मुफ़्त ट्रायल से शुरू होता है, तो सब्सक्रिप्शन ख़रीदते ही ट्रायल का बचा हुआ हिस्सा ख़त्म हो जाता है।</li><li>एक बार की ख़रीदारी, जैसे लाइफ़टाइम या सपोर्टर पैक, को आप अपने डिवाइस पर “ख़रीदारी रीस्टोर करें” से रीस्टोर कर सकते हैं।</li></ul>",
+        },
+        {
+          heading: "TaroTaper (Telegram) में ख़रीदारी",
+          content: "<ul><li>TaroTaper बॉट में रीडिंग और TaroTaper+ का भुगतान Telegram Stars से होता है। भुगतान Telegram प्रोसेस करता है, और उन पर <a href=\"https://telegram.org/tos/stars\">Stars के लिए Telegram की शर्तें</a> लागू होती हैं।</li><li>एक बार की ख़रीदारी से आपको चुने हुए प्रकार की एक रीडिंग मिलती है। यह तभी कटती है, जब व्याख्या लिखी जा चुकी हो; अगर कोई रीडिंग नहीं बन पाती, तो ख़रीदारी आपके पास बनी रहती है।</li><li>TaroTaper+, 30-30 दिनों की Telegram Stars सदस्यता है। यह तब तक नवीनीकृत होती रहती है, जब तक आप Telegram की सेटिंग्स में Telegram Stars वाले हिस्से में इसे रद्द न करें; रद्द करने के बाद यह भुगतान की गई अवधि के अंत तक चालू रहती है। उचित उपयोग: दिन में 20 रीडिंग तक।</li><li>किसी भुगतान या रिफ़ंड के बारे में सवाल हो, तो बॉट की चैट में /paysupport भेजें। बॉट आपके डेटा को कैसे संभालता है, यह <a href=\"/apps/tarotaper/privacy\">TaroTaper की गोपनीयता नीति</a> में बताया गया है।</li></ul>",
         },
         {
           heading: "स्वीकार्य उपयोग",
@@ -991,8 +1039,12 @@ export const legal: Partial<Record<Locale, Record<LegalKind, LegalPage>>> = {
           content: "<p>האפליקציות אינן נמכרות לכם אלא ניתנות לכם ברישיון, בהתאם ל<a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">הסכם רישיון למשתמש קצה של יישומים מורשים</a> של Apple (להלן: \"Standard EULA\") ולתנאים אלה. אם יש סתירה בין השניים, ה-Standard EULA גובר.</p>",
         },
         {
-          heading: "רכישות ומינויים",
+          heading: "רכישות באפליקציות ל־iOS",
           content: "<ul><li>את התשלומים, החידושים וההחזרים מטפלת Apple. אפשר לבקש החזר מ-Apple בכתובת <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>.</li><li>מינוי מתחדש אוטומטית, אלא אם החידוש האוטומטי מבוטל לפחות 24 שעות לפני סוף התקופה הנוכחית. החיוב על התקופה הבאה מתבצע בחשבון Apple שלכם במהלך 24 השעות שלפני סוף התקופה הנוכחית.</li><li>אפשר לנהל או לבטל מינוי ב-iPhone, בהגדרות ← השם שלכם ← מינויים.</li><li>אם מינוי מתחיל בתקופת ניסיון בחינם, כל חלק שלא נוצל מתקופת הניסיון פוקע כשרוכשים מינוי.</li><li>רכישות חד-פעמיות, כמו גרסה לכל החיים או חבילות תומכים, אפשר לשחזר במכשירים שלכם באמצעות \"שחזור רכישות\".</li></ul>",
+        },
+        {
+          heading: "רכישות ב־TaroTaper ב־Telegram",
+          content: "<ul><li>קריאות ו־TaroTaper+ בבוט TaroTaper משולמים ב־Telegram Stars. את התשלומים מעבד Telegram, וחלים עליהם <a href=\"https://telegram.org/tos/stars\">התנאים של Telegram לכוכבים</a>.</li><li>רכישה בודדת מעניקה קריאה אחת מהסוג שנבחר. היא מנוכה רק כשהפירוש נכתב; אם קריאה לא מצליחה, הרכישה נשארת שלכם.</li><li>TaroTaper+ הוא מנוי ב־Telegram Stars לתקופות של 30 יום. הוא מתחדש עד שתבטלו אותו בהגדרות Telegram, בחלק של Telegram Stars; לאחר הביטול הוא נשאר פעיל עד סוף התקופה ששולמה. שימוש הוגן: עד 20 קריאות ביום.</li><li>לשאלות על תשלום או החזר, שלחו ‎/paysupport בצ׳אט של הבוט. האופן שבו הבוט מטפל בנתונים שלכם מוסבר ב<a href=\"/apps/tarotaper/privacy\">מדיניות הפרטיות של TaroTaper</a>.</li></ul>",
         },
         {
           heading: "שימוש מותר",

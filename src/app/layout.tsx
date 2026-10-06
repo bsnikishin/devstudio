@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Literata, Golos_Text, IBM_Plex_Mono, Unbounded } from 'next/font/google'
+import { Literata, Golos_Text, IBM_Plex_Mono, Unbounded, Old_Standard_TT } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/site/Header'
 import Footer from '@/components/site/Footer'
@@ -16,6 +16,8 @@ const sans = Golos_Text({ subsets: ['latin', 'cyrillic'], variable: '--font-sans
 const mono = IBM_Plex_Mono({ subsets: ['latin', 'cyrillic'], weight: ['400', '500'], variable: '--font-mono', display: 'swap' })
 // SwirlBall's own display face, used only on its page
 const unbounded = Unbounded({ subsets: ['latin', 'cyrillic'], weight: ['800'], variable: '--font-unbounded', display: 'swap', preload: false })
+// TaroTaper's own display face, as in its Mini App; used only on its page
+const oldStandard = Old_Standard_TT({ subsets: ['latin', 'cyrillic'], weight: ['700'], variable: '--font-oldstandard', display: 'swap', preload: false })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nikibstudio.site'),
@@ -47,7 +49,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable} ${unbounded.variable}`}>
+    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable} ${unbounded.variable} ${oldStandard.variable}`}>
       <body className="flex min-h-screen flex-col">
         <LocaleProvider>
           <Header />

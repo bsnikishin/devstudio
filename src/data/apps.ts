@@ -6,7 +6,7 @@ export interface AppTheme {
   ink: string
   muted: string
   accent: string
-  display: 'serif' | 'serif-italic' | 'unbounded' | 'sans'
+  display: 'serif' | 'serif-italic' | 'unbounded' | 'oldstandard' | 'sans'
 }
 
 export interface App {
@@ -220,9 +220,9 @@ export const apps: App[] = [
     id: 'tarotaper',
     title: 'TaroTaper',
     tagline: 'Tarot in Telegram',
-    description: 'Daily tarot readings, spreads, and AI interpretations — right in Telegram.',
+    description: 'A free card of the day, spreads from three to ten cards and a journal of your readings, right in Telegram. The 1909 Pamela Colman Smith deck in a two-colour print.',
     fullDescription:
-      'Tarotaper brings the ancient wisdom of tarot to Telegram. Draw daily cards, explore spreads, and dive deep into the meaning of each card with beautiful artwork and AI-powered interpretations. Whether you\'re a beginner or an experienced reader, Tarotaper grows with you — no installation needed, just open the bot.',
+      'TaroTaper is a tarot deck inside Telegram, with nothing to install. Draw a free card of the day, ask Yes or no, or lay out three, five or ten cards for a question that matters, and every reading stays in your journal. The cards are Pamela Colman Smith’s drawings from 1909 (public domain) in our own two-colour print, by day and by night. A language model writes each reading for your cards and your question, in 13 languages; tarot here is for reflection and fun, not advice. Pay for single readings with Telegram Stars or get TaroTaper+ for every reading without paying each time.',
     category: 'Entertainment',
     platform: 'Telegram',
     appStoreId: null,
@@ -231,17 +231,21 @@ export const apps: App[] = [
     supportEmail: 'B.S.NikishinG@gmail.com',
     iconPath: '/icons/tarotaper.png',
     features: [
-      'Daily card draw with interpretation',
-      'Classic and custom spreads',
-      'Full 78-card library with artwork',
-      'Guided reading sessions',
-      'Reading history and journal',
-      'Intuitive, beautiful interface',
+      'Card of the day, free every day; seven days in a row earn a Three cards reading',
+      'Three cards, Two of us and the Celtic Cross; the first Three cards is free',
+      'Yes or no: one card and a straight answer',
+      'The 1909 Pamela Colman Smith deck in a two-colour print, by day and by night',
+      'Journal with a calendar and a collection of the 78 cards',
+      'Readings in 13 languages, for reflection rather than advice',
+      'Optional daily reminder at the hour you choose',
+      'Telegram Stars: single readings from 15 ★ or TaroTaper+ for 299 ★ per 30 days',
     ],
     group: 'telegram',
     listed: true,
     devices: 'Telegram',
-    theme: { bg: '#1B1530', ink: '#F1E7D0', muted: '#B3A88F', accent: '#C9A45C', display: 'serif' },
+    // the Mini App's day theme, "a printed deck": paper, ink and vermilion
+    theme: { bg: '#F3EBDC', ink: '#1C1E34', muted: '#4A4C62', accent: '#D04E2E', display: 'oldstandard' },
+    shots: { scenes: ['home', 'daily', 'journal'] },
   },
   {
     id: 'wakeleague',
