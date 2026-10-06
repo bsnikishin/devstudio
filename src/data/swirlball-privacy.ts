@@ -405,30 +405,30 @@ export const swirlballPrivacy: Record<string, PrivacyPolicy> = {
   ja: {
     title: `プライバシーポリシー`,
     effectiveDate: `発効日：2026年10月5日`,
-    intro: `個人開発者のボグダン・ニキシン（以下「当社」）は、商用アプリケーションとして<strong>SwirlBall</strong>（以下「本アプリ」）を開発しました。本プライバシーポリシーは、本アプリのご利用時に当社が情報をどのように取り扱うかを説明するものです。`,
+    intro: `個人開発者のボグダン・ニキシン（以下「当方」）は、商用アプリケーションとして<strong>SwirlBall</strong>（以下「本アプリ」）を開発しました。本プライバシーポリシーは、本アプリのご利用時に当方が情報をどのように取り扱うかを説明するものです。`,
     sections: [
       {
         heading: `概要`,
-        content: `<p>SwirlBallはプライバシーに配慮して設計されています。当社は個人情報を一切収集・保存・共有しません。本アプリはアカウント作成、ログイン、いかなる登録も不要で、広告も含まれていません。</p>`,
+        content: `<p>SwirlBallはプライバシーに配慮して設計されています。当方は個人情報を一切収集・保存・共有しません。本アプリはアカウント作成、ログイン、いかなる登録も不要で、広告も含まれていません。</p>`,
       },
       {
         heading: `収集しない情報`,
-        content: `<p>当社は以下のいずれも収集しません：</p>
+        content: `<p>当方は以下のいずれも収集しません：</p>
 <ul><li>氏名、メールアドレス、連絡先情報</li><li>位置情報</li><li>デバイス識別子や広告ID</li><li>閲覧・検索履歴</li><li>連絡先、写真、その他の個人ファイル</li><li>健康・フィットネス・金融データ</li><li>利用分析や行動追跡データ</li></ul>`,
       },
       {
         heading: `デバイスに保存されるデータ`,
         content: `<p>本アプリは主要機能の提供のため、ゲームデータをお使いのデバイスにローカル保存します：</p>
 <ul><li><strong>ゲーム進行状況</strong> — クリアしたレベル、ベストスコア、無限の塔の最高深度、デイリータワーの結果と連続プレイ日数。</li><li><strong>スパークとスキン</strong> — ゲーム内通貨の残高と解放済みのボールスキン。</li><li><strong>購入情報</strong> — 購入済みアイテム（サポーターパックやスキンパックなど）のキャッシュ状態と、残りのリバイブ。</li><li><strong>アプリ設定</strong> — 操作、サウンド、音楽、触覚、演出軽減の設定。</li><li><strong>技術イベントログ</strong> — 「レベルクリア」などのゲームイベントを記録する容量制限付きの小さなログ。お客様が開始したサポート対応のためにデバイス内にのみ保存されます。個人情報は含まれず、自動送信されることはありません。</li></ul>
-<p>これらのデータはすべてお使いのデバイスにのみ保存され、当社や第三者に送信されることはありません。アプリを削除すればいつでもすべて消去できます。</p>`,
+<p>これらのデータはすべてお使いのデバイスにのみ保存され、当方や第三者に送信されることはありません。アプリを削除すればいつでもすべて消去できます。</p>`,
       },
       {
         heading: `Game Center`,
-        content: `<p>本アプリは、ランキングのためにApple Game Centerとのオプション統合を提供します。Game Centerにサインインすると、無限の塔の最高深度とデイリータワーのスコアが、Game CenterプレイヤープロフィールのもとでAppleのランキングサービスに送信されます。これは完全にAppleによって処理され、当社はお客様のGame Centerアカウントや関連する個人情報にアクセスできません。Game Centerにサインインしなくても本アプリを完全にプレイできます。AppleによるGame Centerデータの取り扱いは、Appleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に従います。</p>`,
+        content: `<p>本アプリは、ランキングのためにApple Game Centerとのオプション統合を提供します。Game Centerにサインインすると、無限の塔の最高深度とデイリータワーのスコアが、Game CenterプレイヤープロフィールのもとでAppleのランキングサービスに送信されます。これは完全にAppleによって処理され、当方はお客様のGame Centerアカウントや関連する個人情報にアクセスできません。Game Centerにサインインしなくても本アプリを完全にプレイできます。AppleによるGame Centerデータの取り扱いは、Appleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に従います。</p>`,
       },
       {
         heading: `アプリ内課金`,
-        content: `<p>本アプリには、サポーターパック、ラバランプスキンパック、何もアンロックせずゲーム上の優位性も与えない任意のチップなど、任意のアプリ内課金があります。 すべての取引はStoreKitを通じてAppleがApp Storeで完全に処理します。当社はお支払い情報、Apple ID、請求情報にアクセスできません。購入は「購入を復元」ボタンで新しいデバイスに復元できます。Appleによるデータの取り扱いはAppleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に従います。</p>`,
+        content: `<p>本アプリには、サポーターパック、ラバランプスキンパック、何もアンロックせずゲーム上の優位性も与えない任意のチップなど、任意のアプリ内課金があります。 すべての取引はStoreKitを通じてAppleがApp Storeで完全に処理します。当方はお支払い情報、Apple ID、請求情報にアクセスできません。購入は「購入を復元」ボタンで新しいデバイスに復元できます。Appleによるデータの取り扱いはAppleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に従います。</p>`,
       },
       {
         heading: `第三者サービスなし`,
@@ -440,12 +440,12 @@ export const swirlballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `データセキュリティ`,
-        content: `<p>すべてのゲームデータはお使いのデバイスに残ります。Appleのサービス（Game CenterとApp Store）との通信はAppleのフレームワークが処理し、Appleにより暗号化されます。当社はサーバー上に個人データを収集・保存しないため、当社側での情報漏えいのリスクはありません。</p>`,
+        content: `<p>すべてのゲームデータはお使いのデバイスに残ります。Appleのサービス（Game CenterとApp Store）との通信はAppleのフレームワークが処理し、Appleにより暗号化されます。当方はサーバー上に個人データを収集・保存しないため、当方側での情報漏えいのリスクはありません。</p>`,
       },
       {
         heading: `お客様の権利`,
         content: `<p>お客様はご自身のデータについて以下の権利を有します：</p>
-<ul><li>本アプリのデータはすべてデバイスにローカル保存されており、アプリの削除で消去できます。</li><li>Game Centerにサインインしないことも選べます。その場合、スコアはAppleのランキングサービスに送信されません。</li><li>当社のサーバーに個人データは保存されていないため、提供・修正・削除すべきデータは存在しません。</li></ul>
+<ul><li>本アプリのデータはすべてデバイスにローカル保存されており、アプリの削除で消去できます。</li><li>Game Centerにサインインしないことも選べます。その場合、スコアはAppleのランキングサービスに送信されません。</li><li>当方のサーバーに個人データは保存されていないため、提供・修正・削除すべきデータは存在しません。</li></ul>
 <p>データについてご不明な点があればお問い合わせください。</p>`,
       },
       {
@@ -462,30 +462,30 @@ export const swirlballPrivacy: Record<string, PrivacyPolicy> = {
   ko: {
     title: `개인정보 처리방침`,
     effectiveDate: `시행일: 2026년 10월 5일`,
-    intro: `독립 개발자 보그단 니키신(이하 "당사")은 상용 애플리케이션으로 <strong>SwirlBall</strong>(이하 "앱")을 개발했습니다. 본 개인정보 처리방침은 앱 사용 시 당사가 정보를 어떻게 처리하는지 설명합니다.`,
+    intro: `독립 개발자 보그단 니키신(이하 "개발자")은 상용 애플리케이션으로 <strong>SwirlBall</strong>(이하 "앱")을 개발했습니다. 본 개인정보 처리방침은 앱 사용 시 개발자가 정보를 어떻게 처리하는지 설명합니다.`,
     sections: [
       {
         heading: `개요`,
-        content: `<p>SwirlBall은 개인정보 보호를 염두에 두고 설계되었습니다. 당사는 어떠한 개인정보도 수집, 저장, 공유하지 않습니다. 앱은 계정 생성, 로그인, 어떤 형태의 등록도 요구하지 않으며 광고도 없습니다.</p>`,
+        content: `<p>SwirlBall은 개인정보 보호를 염두에 두고 설계되었습니다. 개발자는 어떠한 개인정보도 수집, 저장, 공유하지 않습니다. 앱은 계정 생성, 로그인, 어떤 형태의 등록도 요구하지 않으며 광고도 없습니다.</p>`,
       },
       {
         heading: `수집하지 않는 정보`,
-        content: `<p>당사는 다음 정보를 수집하지 않습니다:</p>
+        content: `<p>개발자는 다음 정보를 수집하지 않습니다:</p>
 <ul><li>이름, 이메일 주소, 연락처</li><li>위치 데이터</li><li>기기 식별자 또는 광고 ID</li><li>탐색 및 검색 기록</li><li>연락처, 사진 및 기타 개인 파일</li><li>건강, 운동, 금융 데이터</li><li>사용 분석 또는 행동 추적 데이터</li></ul>`,
       },
       {
         heading: `기기에 저장되는 데이터`,
         content: `<p>앱은 핵심 기능 제공을 위해 게임 데이터를 기기에 로컬로 저장합니다:</p>
 <ul><li><strong>게임 진행</strong> — 완료한 레벨, 최고 점수, 무한 타워 최고 깊이, 오늘의 타워 결과와 연속 플레이 기록.</li><li><strong>스파크와 스킨</strong> — 게임 내 화폐 잔액과 해금된 볼 스킨.</li><li><strong>구매 정보</strong> — 구매한 항목(서포터 팩, 스킨 팩 등)의 캐시 상태와 남은 부활.</li><li><strong>앱 설정</strong> — 조작, 소리, 음악, 햅틱, 효과 축소 설정.</li><li><strong>기술 이벤트 로그</strong> — "레벨 완료" 같은 게임 이벤트를 기록하는 크기 제한이 있는 작은 로그로, 사용자가 요청한 지원 처리를 돕기 위해 기기에만 보관됩니다. 개인정보를 포함하지 않으며 자동으로 전송되지 않습니다.</li></ul>
-<p>이 모든 데이터는 오직 사용자의 기기에만 저장되며 당사나 제3자에게 전송되지 않습니다. 앱을 삭제하면 언제든지 모든 데이터가 삭제됩니다.</p>`,
+<p>이 모든 데이터는 오직 사용자의 기기에만 저장되며 개발자나 제3자에게 전송되지 않습니다. 앱을 삭제하면 언제든지 모든 데이터가 삭제됩니다.</p>`,
       },
       {
         heading: `Game Center`,
-        content: `<p>앱은 리더보드를 위해 Apple Game Center와의 선택적 통합을 제공합니다. Game Center에 로그인하면 무한 타워 최고 깊이와 오늘의 타워 점수가 Game Center 플레이어 프로필로 Apple의 리더보드 서비스에 제출됩니다. 이는 전적으로 Apple이 처리하며, 당사는 사용자의 Game Center 계정이나 관련 개인정보에 접근할 수 없습니다. Game Center에 로그인하지 않고도 앱을 완전히 플레이할 수 있습니다. Apple의 Game Center 데이터 처리는 Apple 개인정보 보호정책(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)을 따릅니다.</p>`,
+        content: `<p>앱은 리더보드를 위해 Apple Game Center와의 선택적 통합을 제공합니다. Game Center에 로그인하면 무한 타워 최고 깊이와 오늘의 타워 점수가 Game Center 플레이어 프로필로 Apple의 리더보드 서비스에 제출됩니다. 이는 전적으로 Apple이 처리하며, 개발자는 사용자의 Game Center 계정이나 관련 개인정보에 접근할 수 없습니다. Game Center에 로그인하지 않고도 앱을 완전히 플레이할 수 있습니다. Apple의 Game Center 데이터 처리는 Apple 개인정보 보호정책(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)을 따릅니다.</p>`,
       },
       {
         heading: `인앱 구매`,
-        content: `<p>앱은 서포터 팩, 라바 램프 스킨 팩, 아무것도 해금하지 않고 게임상 이점도 주지 않는 자발적 팁 등 선택적 인앱 구매를 제공합니다. 모든 거래는 StoreKit을 통해 Apple이 App Store에서 전적으로 처리합니다. 당사는 결제 정보, Apple ID, 청구 정보에 접근할 수 없습니다. 구매는 "구매 복원" 버튼으로 새 기기에서 복원할 수 있습니다. Apple의 데이터 처리는 Apple 개인정보 보호정책(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)을 따릅니다.</p>`,
+        content: `<p>앱은 서포터 팩, 라바 램프 스킨 팩, 아무것도 해금하지 않고 게임상 이점도 주지 않는 자발적 팁 등 선택적 인앱 구매를 제공합니다. 모든 거래는 StoreKit을 통해 Apple이 App Store에서 전적으로 처리합니다. 개발자는 결제 정보, Apple ID, 청구 정보에 접근할 수 없습니다. 구매는 "구매 복원" 버튼으로 새 기기에서 복원할 수 있습니다. Apple의 데이터 처리는 Apple 개인정보 보호정책(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)을 따릅니다.</p>`,
       },
       {
         heading: `제3자 서비스 없음`,
@@ -497,12 +497,12 @@ export const swirlballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `데이터 보안`,
-        content: `<p>모든 게임 데이터는 사용자의 기기에 남아 있습니다. Apple 서비스(Game Center 및 App Store)와의 통신은 Apple 프레임워크가 처리하고 Apple이 암호화합니다. 당사는 서버에 개인 데이터를 수집·저장하지 않으므로 당사 측 유출 위험이 없습니다.</p>`,
+        content: `<p>모든 게임 데이터는 사용자의 기기에 남아 있습니다. Apple 서비스(Game Center 및 App Store)와의 통신은 Apple 프레임워크가 처리하고 Apple이 암호화합니다. 개발자는 서버에 개인 데이터를 수집·저장하지 않으므로 개발자 측 유출 위험이 없습니다.</p>`,
       },
       {
         heading: `사용자의 권리`,
         content: `<p>사용자는 자신의 데이터에 대해 다음 권리를 갖습니다:</p>
-<ul><li>앱의 모든 데이터는 기기에 로컬 저장되며 앱 삭제로 제거할 수 있습니다.</li><li>Game Center에 로그인하지 않을 수 있으며, 이 경우 점수가 Apple의 리더보드 서비스로 제출되지 않습니다.</li><li>당사 서버에 개인 데이터를 저장하지 않으므로 제공, 수정, 삭제할 데이터가 없습니다.</li></ul>
+<ul><li>앱의 모든 데이터는 기기에 로컬 저장되며 앱 삭제로 제거할 수 있습니다.</li><li>Game Center에 로그인하지 않을 수 있으며, 이 경우 점수가 Apple의 리더보드 서비스로 제출되지 않습니다.</li><li>개발자 서버에 개인 데이터를 저장하지 않으므로 제공, 수정, 삭제할 데이터가 없습니다.</li></ul>
 <p>데이터에 관한 문의는 아래로 연락해 주세요.</p>`,
       },
       {

@@ -405,30 +405,30 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   ja: {
     title: `プライバシーポリシー`,
     effectiveDate: `発効日：2026年10月5日`,
-    intro: `個人開発者のボグダン・ニキシン（「当社」）は、商用アプリケーションとして<strong>Cozy Ball</strong>（「本アプリ」）を開発しました。本プライバシーポリシーは、お客様が本アプリを使用する際の情報の取り扱いについて説明します。`,
+    intro: `個人開発者のボグダン・ニキシン（「当方」）は、商用アプリケーションとして<strong>Cozy Ball</strong>（「本アプリ」）を開発しました。本プライバシーポリシーは、お客様が本アプリを使用する際の情報の取り扱いについて説明します。`,
     sections: [
       {
         heading: `概要`,
-        content: `<p>Cozy Ballはお客様のプライバシーに配慮して設計されています。当社は個人情報を一切収集、保存、共有しません。本アプリはアカウント作成、ログイン、登録を必要とせず、広告も含まれていません。</p>`,
+        content: `<p>Cozy Ballはお客様のプライバシーに配慮して設計されています。当方は個人情報を一切収集、保存、共有しません。本アプリはアカウント作成、ログイン、登録を必要とせず、広告も含まれていません。</p>`,
       },
       {
-        heading: `当社が収集しない情報`,
-        content: `<p>当社は以下の情報を一切収集しません：</p>
+        heading: `当方が収集しない情報`,
+        content: `<p>当方は以下の情報を一切収集しません：</p>
 <ul><li>氏名、メールアドレス、連絡先情報</li><li>位置情報</li><li>デバイス識別子や広告ID</li><li>閲覧・検索履歴</li><li>連絡先、写真、その他の個人ファイル</li><li>健康、フィットネス、財務データ</li><li>使用状況分析や行動追跡データ</li></ul>`,
       },
       {
         heading: `デバイスに保存されるデータ`,
         content: `<p>本アプリは、主要機能を提供するためにゲームデータをデバイスにローカル保存します：</p>
 <ul><li><strong>ゲームの進行状況</strong> — ベストスコア、集めたパール、解放済み・選択中のボールスキン。</li><li><strong>デイリーミッション</strong> — 当日のミッションとその進捗。</li><li><strong>アプリ設定</strong> — サウンドオプションなどの設定。</li><li><strong>購入ステータス</strong> — アプリを高速に起動するためのアプリ内購入のキャッシュ。</li></ul>
-<p>これらのデータはすべてお客様のデバイスにのみ保存され、当社や第三者に送信されることはありません。本アプリをアンインストールすることで、保存されたすべてのデータをいつでも削除できます。</p>`,
+<p>これらのデータはすべてお客様のデバイスにのみ保存され、当方や第三者に送信されることはありません。本アプリをアンインストールすることで、保存されたすべてのデータをいつでも削除できます。</p>`,
       },
       {
         heading: `Game Center`,
-        content: `<p>本アプリは、ランキングのためにApple Game Centerとのオプション統合を提供します。Game Centerにサインインすると、走行距離がGame CenterプレイヤープロフィールのもとでAppleのランキングサービスに送信されます。これは完全にAppleによって処理され、当社はお客様のGame Centerアカウントや関連する個人情報にアクセスできません。Game Centerにサインインしなくても本アプリを完全にプレイできます。AppleによるGame Centerデータの取り扱いは、Appleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に準拠します。</p>`,
+        content: `<p>本アプリは、ランキングのためにApple Game Centerとのオプション統合を提供します。Game Centerにサインインすると、走行距離がGame CenterプレイヤープロフィールのもとでAppleのランキングサービスに送信されます。これは完全にAppleによって処理され、当方はお客様のGame Centerアカウントや関連する個人情報にアクセスできません。Game Centerにサインインしなくても本アプリを完全にプレイできます。AppleによるGame Centerデータの取り扱いは、Appleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に準拠します。</p>`,
       },
       {
         heading: `アプリ内購入`,
-        content: `<p>本アプリはオプションのアプリ内購入（「Cozy サポーターパック」、リバイブパック、開発者へのお礼のチップなど）を提供します。すべての取引はStoreKitを使用してApp Store経由でAppleにより完全に処理されます。当社はお客様の支払い情報、Apple ID、請求詳細にアクセスできません。購入は「購入を復元」ボタンで新しいデバイスに復元できます。Appleによるデータの取り扱いは、Appleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に準拠します。</p>`,
+        content: `<p>本アプリはオプションのアプリ内購入（「Cozy サポーターパック」、リバイブパック、開発者へのお礼のチップなど）を提供します。すべての取引はStoreKitを使用してApp Store経由でAppleにより完全に処理されます。当方はお客様の支払い情報、Apple ID、請求詳細にアクセスできません。購入は「購入を復元」ボタンで新しいデバイスに復元できます。Appleによるデータの取り扱いは、Appleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に準拠します。</p>`,
       },
       {
         heading: `サードパーティサービスなし`,
@@ -440,17 +440,17 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `データセキュリティ`,
-        content: `<p>すべてのゲームデータはお客様のデバイスに残ります。Appleサービス（Game CenterとApp Store）との通信はAppleのフレームワークによって処理され、Appleによって暗号化されます。当社はサーバー上で個人データを収集・保存しないため、当社側でのデータ漏洩のリスクはありません。</p>`,
+        content: `<p>すべてのゲームデータはお客様のデバイスに残ります。Appleサービス（Game CenterとApp Store）との通信はAppleのフレームワークによって処理され、Appleによって暗号化されます。当方はサーバー上で個人データを収集・保存しないため、当方側でのデータ漏洩のリスクはありません。</p>`,
       },
       {
         heading: `お客様の権利`,
         content: `<p>お客様はご自身のデータについて以下の権利を有します：</p>
-<ul><li>本アプリのすべてのデータはデバイスにローカル保存されており、本アプリをアンインストールすることで削除できます。</li><li>Game Centerにサインインしないことを選択できます。その場合、スコアはAppleのランキングサービスに送信されません。</li><li>当社はサーバー上で個人データを収集・保存しないため、当社が提供、変更、削除できる個人データは存在しません。</li></ul>
+<ul><li>本アプリのすべてのデータはデバイスにローカル保存されており、本アプリをアンインストールすることで削除できます。</li><li>Game Centerにサインインしないことを選択できます。その場合、スコアはAppleのランキングサービスに送信されません。</li><li>当方はサーバー上で個人データを収集・保存しないため、当方が提供、変更、削除できる個人データは存在しません。</li></ul>
 <p>データについてご質問がある場合は、お問い合わせください。</p>`,
       },
       {
         heading: `本ポリシーの変更`,
-        content: `<p>当社は本プライバシーポリシーを随時更新することがあります。変更はこのページに更新された発効日とともに反映されます。定期的にこのポリシーをご確認いただくことをお勧めします。</p>`,
+        content: `<p>当方は本プライバシーポリシーを随時更新することがあります。変更はこのページに更新された発効日とともに反映されます。定期的にこのポリシーをご確認いただくことをお勧めします。</p>`,
       },
       {
         heading: `お問い合わせ`,
@@ -462,34 +462,34 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   ko: {
     title: `개인정보 처리방침`,
     effectiveDate: `시행일: 2026년 10월 5일`,
-    intro: `독립 개발자 보그단 니키신("당사")은 상업용 애플리케이션으로 <strong>Cozy Ball</strong>("본 앱")을 개발했습니다. 본 개인정보 처리방침은 귀하가 본 앱을 사용할 때 당사가 정보를 처리하는 방식을 설명합니다.`,
+    intro: `독립 개발자 보그단 니키신("개발자")은 상업용 애플리케이션으로 <strong>Cozy Ball</strong>("본 앱")을 개발했습니다. 본 개인정보 처리방침은 귀하가 본 앱을 사용할 때 개발자가 정보를 처리하는 방식을 설명합니다.`,
     sections: [
       {
         heading: `개요`,
-        content: `<p>Cozy Ball은 귀하의 개인정보를 염두에 두고 설계되었습니다. 당사는 어떠한 개인정보도 수집, 저장 또는 공유하지 않습니다. 본 앱은 계정 생성, 로그인 또는 어떤 형태의 등록도 요구하지 않으며 광고를 포함하지 않습니다.</p>`,
+        content: `<p>Cozy Ball은 귀하의 개인정보를 염두에 두고 설계되었습니다. 개발자는 어떠한 개인정보도 수집, 저장 또는 공유하지 않습니다. 본 앱은 계정 생성, 로그인 또는 어떤 형태의 등록도 요구하지 않으며 광고를 포함하지 않습니다.</p>`,
       },
       {
-        heading: `당사가 수집하지 않는 정보`,
-        content: `<p>당사는 다음 정보를 일절 수집하지 않습니다:</p>
+        heading: `개발자가 수집하지 않는 정보`,
+        content: `<p>개발자는 다음 정보를 일절 수집하지 않습니다:</p>
 <ul><li>이름, 이메일 주소 또는 연락처 정보</li><li>위치 데이터</li><li>기기 식별자 또는 광고 ID</li><li>탐색 또는 검색 기록</li><li>연락처, 사진 또는 기타 개인 파일</li><li>건강, 피트니스 또는 금융 데이터</li><li>사용 분석 또는 행동 추적 데이터</li></ul>`,
       },
       {
         heading: `기기에 저장되는 데이터`,
         content: `<p>본 앱은 핵심 기능을 제공하기 위해 게임 데이터를 기기에 로컬로 저장합니다:</p>
 <ul><li><strong>게임 진행 상황</strong> — 최고 점수, 수집한 진주, 잠금 해제 및 선택된 볼 스킨.</li><li><strong>일일 미션</strong> — 당일의 미션과 진행 상황.</li><li><strong>앱 설정</strong> — 사운드 옵션 등의 설정.</li><li><strong>구매 상태</strong> — 빠른 앱 실행을 위한 인앱 구매의 캐시 표시기.</li></ul>
-<p>이 모든 데이터는 귀하의 기기에만 저장되며 당사나 제3자에게 전송되지 않습니다. 본 앱을 삭제하면 저장된 모든 데이터를 언제든지 삭제할 수 있습니다.</p>`,
+<p>이 모든 데이터는 귀하의 기기에만 저장되며 개발자나 제3자에게 전송되지 않습니다. 본 앱을 삭제하면 저장된 모든 데이터를 언제든지 삭제할 수 있습니다.</p>`,
       },
       {
         heading: `Game Center`,
-        content: `<p>본 앱은 리더보드를 위해 Apple Game Center와의 선택적 통합을 제공합니다. Game Center에 로그인하면 주행 거리가 Game Center 플레이어 프로필로 Apple의 리더보드 서비스에 제출됩니다. 이는 전적으로 Apple이 처리하며, 당사는 귀하의 Game Center 계정이나 관련 개인정보에 접근할 수 없습니다. Game Center에 로그인하지 않고도 본 앱을 완전히 플레이할 수 있습니다. Apple의 Game Center 데이터 처리는 Apple 개인정보 처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)의 적용을 받습니다.</p>`,
+        content: `<p>본 앱은 리더보드를 위해 Apple Game Center와의 선택적 통합을 제공합니다. Game Center에 로그인하면 주행 거리가 Game Center 플레이어 프로필로 Apple의 리더보드 서비스에 제출됩니다. 이는 전적으로 Apple이 처리하며, 개발자는 귀하의 Game Center 계정이나 관련 개인정보에 접근할 수 없습니다. Game Center에 로그인하지 않고도 본 앱을 완전히 플레이할 수 있습니다. Apple의 Game Center 데이터 처리는 Apple 개인정보 처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)의 적용을 받습니다.</p>`,
       },
       {
         heading: `인앱 구매`,
-        content: `<p>본 앱은 선택적 인앱 구매(‘Cozy 서포터 팩’, 부활 팩, 개발자에게 보내는 감사 팁 등)를 제공합니다. 모든 거래는 StoreKit을 사용하여 App Store를 통해 Apple이 전적으로 처리합니다. 당사는 귀하의 결제 정보, Apple ID 또는 청구 세부 정보에 접근할 수 없습니다. 구매는 "구매 복원" 버튼으로 새 기기에서 복원할 수 있습니다. Apple의 데이터 처리는 Apple 개인정보 처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)의 적용을 받습니다.</p>`,
+        content: `<p>본 앱은 선택적 인앱 구매(‘Cozy 서포터 팩’, 부활 팩, 개발자에게 보내는 감사 팁 등)를 제공합니다. 모든 거래는 StoreKit을 사용하여 App Store를 통해 Apple이 전적으로 처리합니다. 개발자는 귀하의 결제 정보, Apple ID 또는 청구 세부 정보에 접근할 수 없습니다. 구매는 "구매 복원" 버튼으로 새 기기에서 복원할 수 있습니다. Apple의 데이터 처리는 Apple 개인정보 처리방침(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)의 적용을 받습니다.</p>`,
       },
       {
         heading: `제3자 서비스 없음`,
-        content: `<p>본 앱은 제3자 분석, 광고, 충돌 보고 또는 소셜 미디어 SDK를 통합하지 않습니다. 당사는 Firebase, Google Analytics, Facebook SDK, 광고 네트워크 또는 유사한 서비스를 사용하지 않습니다. 본 앱은 자체 네트워크 요청을 하지 않으며, 유일한 네트워크 통신은 위에서 설명한 대로 Apple 자체 프레임워크(Game Center 및 App Store)에 의해 수행됩니다.</p>`,
+        content: `<p>본 앱은 제3자 분석, 광고, 충돌 보고 또는 소셜 미디어 SDK를 통합하지 않습니다. 개발자는 Firebase, Google Analytics, Facebook SDK, 광고 네트워크 또는 유사한 서비스를 사용하지 않습니다. 본 앱은 자체 네트워크 요청을 하지 않으며, 유일한 네트워크 통신은 위에서 설명한 대로 Apple 자체 프레임워크(Game Center 및 App Store)에 의해 수행됩니다.</p>`,
       },
       {
         heading: `아동의 개인정보`,
@@ -497,17 +497,17 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `데이터 보안`,
-        content: `<p>모든 게임 데이터는 귀하의 기기에 남아 있습니다. Apple 서비스(Game Center 및 App Store)와의 통신은 Apple의 프레임워크가 처리하며 Apple이 암호화합니다. 당사는 서버에서 개인 데이터를 수집하거나 저장하지 않으므로 당사 측에서 데이터 유출 위험이 없습니다.</p>`,
+        content: `<p>모든 게임 데이터는 귀하의 기기에 남아 있습니다. Apple 서비스(Game Center 및 App Store)와의 통신은 Apple의 프레임워크가 처리하며 Apple이 암호화합니다. 개발자는 서버에서 개인 데이터를 수집하거나 저장하지 않으므로 개발자 측에서 데이터 유출 위험이 없습니다.</p>`,
       },
       {
         heading: `귀하의 권리`,
         content: `<p>귀하는 데이터에 대해 다음과 같은 권리를 가집니다:</p>
-<ul><li>본 앱의 모든 데이터는 기기에 로컬로 저장되며 본 앱을 삭제하여 제거할 수 있습니다.</li><li>Game Center에 로그인하지 않기로 선택할 수 있으며, 이 경우 점수가 Apple의 리더보드 서비스에 제출되지 않습니다.</li><li>당사는 서버에서 개인 데이터를 수집하거나 저장하지 않으므로 당사가 제공, 수정 또는 삭제할 개인 데이터가 없습니다.</li></ul>
+<ul><li>본 앱의 모든 데이터는 기기에 로컬로 저장되며 본 앱을 삭제하여 제거할 수 있습니다.</li><li>Game Center에 로그인하지 않기로 선택할 수 있으며, 이 경우 점수가 Apple의 리더보드 서비스에 제출되지 않습니다.</li><li>개발자는 서버에서 개인 데이터를 수집하거나 저장하지 않으므로 개발자가 제공, 수정 또는 삭제할 개인 데이터가 없습니다.</li></ul>
 <p>데이터에 대해 질문이 있으시면 문의해 주세요.</p>`,
       },
       {
         heading: `본 방침의 변경`,
-        content: `<p>당사는 본 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 변경 사항은 업데이트된 시행일과 함께 이 페이지에 반영됩니다. 본 방침을 주기적으로 검토하시기 바랍니다.</p>`,
+        content: `<p>개발자는 본 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 변경 사항은 업데이트된 시행일과 함께 이 페이지에 반영됩니다. 본 방침을 주기적으로 검토하시기 바랍니다.</p>`,
       },
       {
         heading: `문의하기`,

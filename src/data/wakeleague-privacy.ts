@@ -503,15 +503,15 @@ export const wakeleaguePrivacy: Record<string, PrivacyPolicy> = {
   ja: {
     title: `プライバシーポリシー`,
     effectiveDate: `発効日：2026年10月5日`,
-    intro: `個人開発者のボグダン・ニキシン（以下「当社」）は、商用アプリケーションとして<strong>Wake League</strong>（以下「本アプリ」）を開発しました。本プライバシーポリシーは、本アプリのご利用時に当社が情報をどのように取り扱うかを説明するものです。`,
+    intro: `個人開発者のボグダン・ニキシン（以下「当方」）は、商用アプリケーションとして<strong>Wake League</strong>（以下「本アプリ」）を開発しました。本プライバシーポリシーは、本アプリのご利用時に当方が情報をどのように取り扱うかを説明するものです。`,
     sections: [
       {
         heading: `概要`,
-        content: `<p>Wake Leagueは、短いミッションをクリアするまで鳴り続ける目覚まし時計で、Game Centerで比べられるデイリーチャレンジを備えています。本アプリはプライバシーに配慮して設計されており、当社は個人情報を一切収集・保存・共有しません。本アプリはアカウントやいかなる登録も不要で、広告も分析ツールも含まず、アプリ内課金やサブスクリプションのない買い切り型です。アラーム、朝の記録、結果、設定はお使いの端末内に留まります。</p>`,
+        content: `<p>Wake Leagueは、短いミッションをクリアするまで鳴り続ける目覚まし時計で、Game Centerで比べられるデイリーチャレンジを備えています。本アプリはプライバシーに配慮して設計されており、当方は個人情報を一切収集・保存・共有しません。本アプリはアカウントやいかなる登録も不要で、広告も分析ツールも含まず、アプリ内課金やサブスクリプションのない買い切り型です。アラーム、朝の記録、結果、設定はお使いの端末内に留まります。</p>`,
       },
       {
         heading: `収集しない情報`,
-        content: `<p>当社は以下のいずれも収集しません：</p>
+        content: `<p>当方は以下のいずれも収集しません：</p>
 <ul><li>氏名、メールアドレス、連絡先情報</li><li>位置情報</li><li>デバイス識別子や広告ID</li><li>連絡先、写真ライブラリ、その他の個人ファイル</li><li>カメラの映像、音声の録音、文字起こし — これらはiPhone上で処理され、破棄されます</li><li>アラーム、起床までの時間、ミッションの結果 — Game Centerへの送信を選んだスコアを除き、端末の外に出ることはありません</li><li>利用分析や行動追跡データ</li></ul>`,
       },
       {
@@ -532,15 +532,15 @@ export const wakeleaguePrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Game Center`,
-        content: `<p>Game Centerの利用は任意です。Game Centerにサインインしている場合、本アプリはデイリーチャレンジのスコア、最長連続記録、累計XPをGame Centerのリーダーボードに送信し、獲得したトロフィーを報告するとともに、他のプレイヤーのGame Center上の名前とスコアを含む今日のランキングを表示します。Game CenterはAppleが運営しており、ニックネーム、スコア、達成項目はGame Centerの設定に応じて他のプレイヤーに公開されます。Appleによるこれらのデータの取り扱いはAppleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に従います。当社がGame Centerから個人データを受け取ることはありません。レベル、トロフィー、統計はGame Centerなしでも使えます。</p>`,
+        content: `<p>Game Centerの利用は任意です。Game Centerにサインインしている場合、本アプリはデイリーチャレンジのスコア、最長連続記録、累計XPをGame Centerのリーダーボードに送信し、獲得したトロフィーを報告するとともに、他のプレイヤーのGame Center上の名前とスコアを含む今日のランキングを表示します。Game CenterはAppleが運営しており、ニックネーム、スコア、達成項目はGame Centerの設定に応じて他のプレイヤーに公開されます。Appleによるこれらのデータの取り扱いはAppleのプライバシーポリシー（<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>）に従います。当方がGame Centerから個人データを受け取ることはありません。レベル、トロフィー、統計はGame Centerなしでも使えます。</p>`,
       },
       {
         heading: `結果の共有`,
-        content: `<p>「共有」をタップすると、本アプリは結果を載せた画像と短いテキストを作成し、iOSの共有シートに渡します。送り先はあなたが決めるもので、当社がそれらを受け取ることはありません。</p>`,
+        content: `<p>「共有」をタップすると、本アプリは結果を載せた画像と短いテキストを作成し、iOSの共有シートに渡します。送り先はあなたが決めるもので、当方がそれらを受け取ることはありません。</p>`,
       },
       {
         heading: `購入`,
-        content: `<p>Wake Leagueはアプリ内課金もサブスクリプションもない買い切り型です。購入はApp Storeを通じてAppleが完全に処理します。当社はお支払い情報、Apple ID、請求情報にアクセスできません。</p>`,
+        content: `<p>Wake Leagueはアプリ内課金もサブスクリプションもない買い切り型です。購入はApp Storeを通じてAppleが完全に処理します。当方はお支払い情報、Apple ID、請求情報にアクセスできません。</p>`,
       },
       {
         heading: `第三者サービスなし`,
@@ -552,12 +552,12 @@ export const wakeleaguePrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `データセキュリティ`,
-        content: `<p>データはiOSのデータ保護により守られた端末内に留まります。当社はサーバー上に個人データを収集・保存しないため、当社側での情報漏えいのリスクはありません。</p>`,
+        content: `<p>データはiOSのデータ保護により守られた端末内に留まります。当方はサーバー上に個人データを収集・保存しないため、当方側での情報漏えいのリスクはありません。</p>`,
       },
       {
         heading: `お客様の権利`,
         content: `<p>お客様はご自身のデータについて以下の権利を有します：</p>
-<ul><li>アラーム、朝の記録、トロフィー、統計はアプリ内で直接確認できます。</li><li>アラームを削除すると、その設定と場所の写真が削除されます。アプリを削除するとローカルデータはすべて消去されます。</li><li>Game Centerからサインアウトすればスコアの共有を停止でき、Game CenterのデータはAppleを通じて管理できます。</li><li>当社のサーバーに個人データは保存されていないため、提供・修正・削除すべきデータは存在しません。</li></ul>
+<ul><li>アラーム、朝の記録、トロフィー、統計はアプリ内で直接確認できます。</li><li>アラームを削除すると、その設定と場所の写真が削除されます。アプリを削除するとローカルデータはすべて消去されます。</li><li>Game Centerからサインアウトすればスコアの共有を停止でき、Game CenterのデータはAppleを通じて管理できます。</li><li>当方のサーバーに個人データは保存されていないため、提供・修正・削除すべきデータは存在しません。</li></ul>
 <p>データについてご不明な点があればお問い合わせください。</p>`,
       },
       {
@@ -574,15 +574,15 @@ export const wakeleaguePrivacy: Record<string, PrivacyPolicy> = {
   ko: {
     title: `개인정보 처리방침`,
     effectiveDate: `시행일: 2026년 10월 5일`,
-    intro: `독립 개발자 보그단 니키신(이하 "당사")은 상용 애플리케이션으로 <strong>Wake League</strong>(이하 "앱")를 개발했습니다. 본 개인정보 처리방침은 앱 사용 시 당사가 정보를 어떻게 처리하는지 설명합니다.`,
+    intro: `독립 개발자 보그단 니키신(이하 "개발자")은 상용 애플리케이션으로 <strong>Wake League</strong>(이하 "앱")를 개발했습니다. 본 개인정보 처리방침은 앱 사용 시 개발자가 정보를 어떻게 처리하는지 설명합니다.`,
     sections: [
       {
         heading: `개요`,
-        content: `<p>Wake League는 짧은 미션을 완료할 때까지 계속 울리는 알람 시계이며, Game Center에서 비교할 수 있는 데일리 챌린지를 제공합니다. 앱은 개인정보 보호를 염두에 두고 설계되었습니다. 당사는 어떠한 개인정보도 수집, 저장, 공유하지 않습니다. 앱은 계정이나 어떤 형태의 등록도 요구하지 않으며, 광고와 분석 도구가 없고, 인앱 구매나 구독이 없는 1회 구매 앱입니다. 알람, 아침 기록, 결과, 설정은 기기에 남습니다.</p>`,
+        content: `<p>Wake League는 짧은 미션을 완료할 때까지 계속 울리는 알람 시계이며, Game Center에서 비교할 수 있는 데일리 챌린지를 제공합니다. 앱은 개인정보 보호를 염두에 두고 설계되었습니다. 개발자는 어떠한 개인정보도 수집, 저장, 공유하지 않습니다. 앱은 계정이나 어떤 형태의 등록도 요구하지 않으며, 광고와 분석 도구가 없고, 인앱 구매나 구독이 없는 1회 구매 앱입니다. 알람, 아침 기록, 결과, 설정은 기기에 남습니다.</p>`,
       },
       {
         heading: `수집하지 않는 정보`,
-        content: `<p>당사는 다음 정보를 수집하지 않습니다:</p>
+        content: `<p>개발자는 다음 정보를 수집하지 않습니다:</p>
 <ul><li>이름, 이메일 주소, 연락처</li><li>위치 데이터</li><li>기기 식별자 또는 광고 ID</li><li>연락처, 사진 보관함 및 기타 개인 파일</li><li>카메라 영상, 음성 녹음, 변환된 텍스트 — iPhone에서 처리된 후 폐기됩니다</li><li>알람, 기상 시간, 미션 결과 — Game Center에 올리기로 선택한 점수를 제외하고는 기기 밖으로 나가지 않습니다</li><li>사용 분석 또는 행동 추적 데이터</li></ul>`,
       },
       {
@@ -603,15 +603,15 @@ export const wakeleaguePrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `Game Center`,
-        content: `<p>Game Center는 선택 사항입니다. Game Center에 로그인한 경우 앱은 데일리 챌린지 점수, 최고 연속 기록, 누적 XP를 Game Center 순위표에 제출하고 획득한 트로피를 보고하며, 다른 플레이어의 Game Center 이름과 점수가 담긴 오늘의 순위표를 보여 줍니다. Game Center는 Apple이 운영하며, 닉네임, 점수, 성취는 Game Center 설정에 따라 다른 플레이어에게 공개되고, Apple의 이 데이터 처리는 Apple 개인정보 보호정책(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)을 따릅니다. 당사는 Game Center로부터 어떠한 개인 데이터도 받지 않습니다. 레벨, 트로피, 통계는 Game Center 없이도 작동합니다.</p>`,
+        content: `<p>Game Center는 선택 사항입니다. Game Center에 로그인한 경우 앱은 데일리 챌린지 점수, 최고 연속 기록, 누적 XP를 Game Center 순위표에 제출하고 획득한 트로피를 보고하며, 다른 플레이어의 Game Center 이름과 점수가 담긴 오늘의 순위표를 보여 줍니다. Game Center는 Apple이 운영하며, 닉네임, 점수, 성취는 Game Center 설정에 따라 다른 플레이어에게 공개되고, Apple의 이 데이터 처리는 Apple 개인정보 보호정책(<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/privacy</a>)을 따릅니다. 개발자는 Game Center로부터 어떠한 개인 데이터도 받지 않습니다. 레벨, 트로피, 통계는 Game Center 없이도 작동합니다.</p>`,
       },
       {
         heading: `결과 공유`,
-        content: `<p>‘공유’를 탭하면 앱이 결과가 담긴 이미지와 짧은 텍스트를 만들어 iOS 공유 시트에 전달합니다. 어디로 보낼지는 사용자가 결정하며, 당사는 이를 받지 않습니다.</p>`,
+        content: `<p>‘공유’를 탭하면 앱이 결과가 담긴 이미지와 짧은 텍스트를 만들어 iOS 공유 시트에 전달합니다. 어디로 보낼지는 사용자가 결정하며, 개발자는 이를 받지 않습니다.</p>`,
       },
       {
         heading: `구매`,
-        content: `<p>Wake League는 인앱 구매와 구독이 없는 1회 구매 앱입니다. 구매는 App Store를 통해 Apple이 전적으로 처리합니다. 당사는 결제 정보, Apple ID, 청구 정보에 접근할 수 없습니다.</p>`,
+        content: `<p>Wake League는 인앱 구매와 구독이 없는 1회 구매 앱입니다. 구매는 App Store를 통해 Apple이 전적으로 처리합니다. 개발자는 결제 정보, Apple ID, 청구 정보에 접근할 수 없습니다.</p>`,
       },
       {
         heading: `제3자 서비스 없음`,
@@ -623,12 +623,12 @@ export const wakeleaguePrivacy: Record<string, PrivacyPolicy> = {
       },
       {
         heading: `데이터 보안`,
-        content: `<p>데이터는 iOS 데이터 보호로 지켜지는 기기에 남습니다. 당사는 서버에 개인 데이터를 수집·저장하지 않으므로 당사 측 유출 위험이 없습니다.</p>`,
+        content: `<p>데이터는 iOS 데이터 보호로 지켜지는 기기에 남습니다. 개발자는 서버에 개인 데이터를 수집·저장하지 않으므로 개발자 측 유출 위험이 없습니다.</p>`,
       },
       {
         heading: `사용자의 권리`,
         content: `<p>사용자는 자신의 데이터에 대해 다음 권리를 갖습니다:</p>
-<ul><li>알람, 아침 기록, 트로피, 통계를 앱 안에서 직접 볼 수 있습니다.</li><li>알람을 삭제하면 해당 알람의 설정과 장소 사진이 삭제되고, 앱을 삭제하면 모든 로컬 데이터가 제거됩니다.</li><li>Game Center에서 로그아웃하면 점수 공유를 중단할 수 있으며, Game Center 데이터는 Apple을 통해 관리할 수 있습니다.</li><li>당사 서버에 개인 데이터를 저장하지 않으므로 제공, 수정, 삭제할 데이터가 없습니다.</li></ul>
+<ul><li>알람, 아침 기록, 트로피, 통계를 앱 안에서 직접 볼 수 있습니다.</li><li>알람을 삭제하면 해당 알람의 설정과 장소 사진이 삭제되고, 앱을 삭제하면 모든 로컬 데이터가 제거됩니다.</li><li>Game Center에서 로그아웃하면 점수 공유를 중단할 수 있으며, Game Center 데이터는 Apple을 통해 관리할 수 있습니다.</li><li>개발자 서버에 개인 데이터를 저장하지 않으므로 제공, 수정, 삭제할 데이터가 없습니다.</li></ul>
 <p>데이터에 관한 문의는 아래로 연락해 주세요.</p>`,
       },
       {
