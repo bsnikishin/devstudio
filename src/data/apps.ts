@@ -229,7 +229,8 @@ export const apps: App[] = [
     appStoreUrl: null,
     telegramUrl: 'https://t.me/TaroTaper_bot',
     supportEmail: 'B.S.NikishinG@gmail.com',
-    iconPath: '/icons/tarotaper.png',
+    // ?v=2: browsers keep images for hours; bump it when the icon changes
+    iconPath: '/icons/tarotaper.png?v=2',
     features: [
       'Card of the day, free every day; seven days in a row earn a Three cards reading',
       'Three cards, Two of us and the Celtic Cross; the first Three cards is free',
