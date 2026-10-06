@@ -56,7 +56,7 @@ export default function AppPageClient({ app }: { app: App }) {
       <section style={{ background: th.bg, color: th.ink }}>
         <div className="page pb-16 pt-8 sm:pb-24 sm:pt-10">
           <Link href="/#apps" className="label opacity-70 hover:opacity-100">← {t('app.allApps')}</Link>
-          <div className={`mt-10 grid items-center gap-12 lg:gap-16 ${shots.length ? 'lg:grid-cols-[1fr_1.1fr]' : ''}`}>
+          <div className="mt-10 grid items-center gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
             <div>
               <div className="flex items-center gap-4">
                 <AppIcon app={app} size={68} />
@@ -79,6 +79,11 @@ export default function AppPageClient({ app }: { app: App }) {
                 <Link href={`/apps/${app.id}/privacy`} className="link-rule">{t('link.privacy')}</Link>
               </div>
             </div>
+            {shots.length === 0 && (
+              <div className="hidden justify-center lg:flex">
+                <AppIcon app={app} size={260} className="!shadow-[0_30px_60px_-30px_rgba(0,0,0,0.5)]" />
+              </div>
+            )}
             {shots.length > 0 && (
               <div className={`no-scrollbar -mx-[18px] flex snap-x gap-4 overflow-x-auto px-[18px] sm:mx-0 sm:px-0 lg:overflow-visible ${landscape ? 'lg:flex-col' : 'lg:justify-end lg:gap-5'}`}>
                 {shots.slice(0, landscape ? 2 : 3).map((s, i) => (

@@ -26,7 +26,7 @@ function Row({ app }: { app: App }) {
   return (
     <li className="group relative grid grid-cols-[52px_1fr] gap-x-4 gap-y-1.5 border-t border-rule py-5 first:border-t-0 sm:grid-cols-[36px_64px_200px_1fr_150px] sm:gap-x-6 sm:py-6 lg:grid-cols-[36px_64px_230px_1fr_170px]">
       <span className="label hidden pt-1.5 text-accent sm:block">{catalogueNumber(app)}</span>
-      <AppIcon app={app} size={64} className="max-sm:row-span-3 max-sm:!h-[52px] max-sm:!w-[52px] max-sm:!rounded-[12px]" />
+      <AppIcon app={app} size={64} dim={app.soon} className="max-sm:row-span-3 max-sm:!h-[52px] max-sm:!w-[52px] max-sm:!rounded-[12px]" />
       <div>
         <Link
           href={`/apps/${app.id}`}
