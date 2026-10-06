@@ -60,7 +60,18 @@ export const shotLocales: Record<string, string[]> = {
     'hi',
     'he'
   ],
-  'aline': [],
+  'aline': [
+    'en',
+    'ru',
+    'zh',
+    'es',
+    'fr',
+    'de',
+    'ja',
+    'ko',
+    'pt',
+    'it'
+  ],
   'cozyball': [
     'en',
     'ru',
