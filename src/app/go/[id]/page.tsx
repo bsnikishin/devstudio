@@ -1,9 +1,9 @@
 import { Metadata } from 'next'
-import { apps } from '@/data/apps'
+import { apps, listedApps } from '@/data/apps'
 import GoClient from './GoClient'
 
 export async function generateStaticParams() {
-  return apps.map((app) => ({ id: app.id }))
+  return listedApps.map((app) => ({ id: app.id }))
 }
 
 export async function generateMetadata({
@@ -14,7 +14,7 @@ export async function generateMetadata({
   const { id } = await params
   const app = apps.find((a) => a.id === id)
   return {
-    title: app ? `${app.title} on the App Store` : 'App Store — NikiBStudio',
+    title: app ? `${app.title} on the App Store` : 'App Store — Bogdan Nikishin',
     description: app?.tagline,
   }
 }

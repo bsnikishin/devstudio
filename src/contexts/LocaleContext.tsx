@@ -16,6 +16,12 @@ const STORAGE_KEY = 'nikibstudio_locale'
 
 function detectLocale(): Locale {
   if (typeof window === 'undefined') return 'en'
+  // ?lang=xx (links from the apps, shared links) wins and is remembered
+  const fromUrl = new URLSearchParams(window.location.search).get('lang') as Locale | null
+  if (fromUrl && LOCALES.find((l) => l.code === fromUrl)) {
+    localStorage.setItem(STORAGE_KEY, fromUrl)
+    return fromUrl
+  }
   const stored = localStorage.getItem(STORAGE_KEY) as Locale | null
   if (stored && LOCALES.find((l) => l.code === stored)) return stored
 

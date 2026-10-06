@@ -1,32 +1,49 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
+import { Literata, Golos_Text, IBM_Plex_Mono, Unbounded } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/ui/Header'
-import Footer from '@/components/ui/Footer'
+import Header from '@/components/site/Header'
+import Footer from '@/components/site/Footer'
 import { LocaleProvider } from '@/contexts/LocaleContext'
 
+const serif = Literata({
+  subsets: ['latin', 'cyrillic'],
+  style: ['normal', 'italic'],
+  axes: ['opsz'],
+  variable: '--font-serif',
+  display: 'swap',
+})
+const sans = Golos_Text({ subsets: ['latin', 'cyrillic'], variable: '--font-sans', display: 'swap' })
+const mono = IBM_Plex_Mono({ subsets: ['latin', 'cyrillic'], weight: ['400', '500'], variable: '--font-mono', display: 'swap' })
+// SwirlBall's own display face, used only on its page
+const unbounded = Unbounded({ subsets: ['latin', 'cyrillic'], weight: ['800'], variable: '--font-unbounded', display: 'swap', preload: false })
+
 export const metadata: Metadata = {
-  title: 'NikiBStudio — iOS Apps',
-  description: 'iOS apps built with care. LDream, Tarotaper, Colorbrain and more.',
-  icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
-    apple: '/favicon.svg',
+  metadataBase: new URL('https://nikibstudio.site'),
+  title: 'Bogdan Nikishin — iPhone apps',
+  description: 'Small iPhone apps and games by Bogdan Nikishin: Bookpather, LDream, Aliner, ColorBrain, SwirlBall and Cozy Ball. No ads, no accounts.',
+  icons: { icon: '/favicon.svg', shortcut: '/favicon.svg', apple: '/apple-touch-icon.png' },
+  openGraph: {
+    title: 'Bogdan Nikishin — iPhone apps',
+    description: 'Small iPhone apps and games I make myself. No ads, no accounts.',
+    url: 'https://nikibstudio.site',
+    siteName: 'Bogdan Nikishin',
+    images: [{ url: '/og.png', width: 1200, height: 630 }],
+    type: 'website',
   },
+  twitter: { card: 'summary_large_image', images: ['/og.png'] },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export const viewport: Viewport = {
+  themeColor: '#F2EEE5',
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="flex flex-col min-h-screen">
+    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable} ${unbounded.variable}`}>
+      <body className="flex min-h-screen flex-col">
         <LocaleProvider>
           <Header />
-          <main className="flex-1">
-            {children}
-          </main>
+          <main className="flex-1">{children}</main>
           <Footer />
         </LocaleProvider>
       </body>

@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects
+/blog            /                 301
+/cookies         /privacy          301
+/apps/loansolver /                 302
+/go/loansolver   /                 302

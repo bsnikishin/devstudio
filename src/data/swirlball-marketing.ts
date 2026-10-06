@@ -3,6 +3,8 @@ import type { AppMarketing } from './ldream-marketing'
 export const swirlballMarketing: Record<string, AppMarketing> = {
   en: {
     tagline: 'Spin the tower, drop the ball',
+    headline: "Spin the tower, drop the ball",
+    summary: "Hold either side of the screen to spin the tower. 100 levels, the Endless Tower and a new Daily Tower every day.",
     description:
       'Hold the left or right side of the screen to spin the tower and drop a bouncing ball through the gaps. 100 levels, the Endless Tower and a new Daily Tower every day. No ads, no Wi-Fi needed.',
     features: [
@@ -18,6 +20,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   ru: {
     tagline: 'Крутите башню, ведите шарик',
+    headline: "Крути башню, веди шарик",
+    summary: "Удерживайте левую или правую половину экрана — башня крутится. 100 уровней, Бесконечная башня и новая Башня дня каждый день.",
     description:
       'Удерживайте левую или правую половину экрана, чтобы крутить башню и проводить прыгающий шарик через проёмы. 100 уровней, Бесконечная башня и Башня дня — новая каждый день. Без рекламы и без интернета.',
     features: [

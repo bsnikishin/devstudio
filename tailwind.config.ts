@@ -1,34 +1,32 @@
 import type { Config } from 'tailwindcss'
 
+// Catalogue style: warm paper, ink, one vermilion accent. Per-app colours for the app pages
+// live in src/data/apps.ts and are applied with inline CSS variables, not Tailwind classes.
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    // Per-app gradient classes (feature checkmarks, /go pages) live here
-    './src/data/apps.ts',
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#7C3AED',
-        'primary-dark': '#6D28D9',
-        secondary: '#EDE9FE',
-        background: '#FFFFFF',
-        text: '#1E1B4B',
+        paper: '#F2EEE5',
+        'paper-deep': '#E9E3D6',
+        ink: '#171614',
+        'ink-soft': '#3B3833',
+        muted: '#6E695F',
+        rule: '#D8D1C2',
+        accent: '#C8462B',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-serif)', 'var(--serif-fallback)', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'var(--sans-fallback)', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
+        unbounded: ['var(--font-unbounded)', 'var(--sans-fallback)', 'sans-serif'],
       },
-      borderRadius: {
-        'xl': '1rem',
-        '2xl': '1.5rem',
-        '3xl': '2rem',
-      },
-      spacing: {
-        '18': '4.5rem',
-        '22': '5.5rem',
+      maxWidth: {
+        page: '1180px',
+        prose: '42rem',
       },
     },
   },

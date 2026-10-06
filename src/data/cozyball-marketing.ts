@@ -3,6 +3,8 @@ import type { AppMarketing } from './ldream-marketing'
 export const cozyballMarketing: Record<string, AppMarketing> = {
   en: {
     tagline: 'A calm ball run above the sea',
+    headline: "A calm run above the sea",
+    summary: "Roll a beach ball along a pier at sunset and dodge what is in the way. In Calm mode there is no game over.",
     description:
       'Roll a beach ball along a wooden pier above the sea, dodge obstacles, collect pearls and watch the ocean come alive around you. New Calm mode with no game over. No ads, ever, and it plays offline.',
     features: [
@@ -18,6 +20,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   ru: {
     tagline: 'Спокойный забег над морем',
+    headline: "Спокойный забег над морем",
+    summary: "Катите пляжный мяч по пирсу на закате и уворачивайтесь от препятствий. В спокойном режиме проиграть нельзя.",
     description:
       'Катите пляжный мяч по деревянному пирсу над морем, уворачивайтесь от препятствий, собирайте жемчужины и смотрите, как вокруг оживает океан. Новый спокойный режим без проигрыша. Без рекламы, играть можно без интернета.',
     features: [

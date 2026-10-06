@@ -1,57 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Scripts the web fonts don't cover fall back to the system's own faces,
+   serif headings to the matching Mincho / Song / Myeongjo where there is one. */
+:root {
+  --serif-fallback: 'Iowan Old Style', Georgia;
+  --sans-fallback: -apple-system;
+}
+:lang(ja) { --serif-fallback: 'Hiragino Mincho ProN', 'Yu Mincho'; --sans-fallback: 'Hiragino Sans', 'Yu Gothic'; }
+:lang(zh) { --serif-fallback: 'Songti SC', 'Noto Serif SC'; --sans-fallback: 'PingFang SC', 'Microsoft YaHei'; }
+:lang(ko) { --serif-fallback: 'AppleMyungjo', 'Nanum Myeongjo'; --sans-fallback: 'Apple SD Gothic Neo', 'Malgun Gothic'; }
+:lang(ar) { --serif-fallback: 'Geeza Pro', 'Noto Naskh Arabic'; --sans-fallback: 'SF Arabic', 'Geeza Pro'; }
+:lang(he) { --serif-fallback: 'New Peninim MT', 'Times New Roman'; --sans-fallback: 'SF Hebrew', 'Arial Hebrew'; }
+:lang(hi) { --serif-fallback: 'Kohinoor Devanagari', 'Noto Serif Devanagari'; --sans-fallback: 'Kohinoor Devanagari', 'Noto Sans Devanagari'; }
+
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-  }
-
-  body {
-    @apply bg-background text-text font-sans antialiased;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-semibold tracking-tight;
-  }
-
-  ::selection {
-    @apply bg-primary/15 text-primary-dark;
-  }
-
-  :focus-visible {
-    @apply outline-none ring-2 ring-primary/60 ring-offset-2 rounded-md;
-  }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { @apply bg-paper text-ink font-sans antialiased; font-size: 17px; line-height: 1.55; }
+  ::selection { background: rgba(200, 70, 43, 0.18); }
+  :focus-visible { outline: 2px solid #C8462B; outline-offset: 3px; border-radius: 2px; }
+  img { max-width: 100%; }
 }
 
 @layer components {
-  .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-
-  .section-padding {
-    @apply py-16 md:py-24 lg:py-32;
-  }
-
-  .gradient-primary {
-    @apply bg-gradient-to-r from-primary to-purple-700;
-  }
-
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-fuchsia-500;
-  }
+  .page { @apply mx-auto w-full max-w-page px-[18px] sm:px-8 lg:px-10; }
+  /* Small uppercase labels set in mono, like the index of a printed catalogue */
+  .label { @apply font-mono text-[12px] uppercase tracking-[0.07em]; }
+  .link-rule { @apply border-b border-current pb-px transition-colors hover:text-accent; }
+  .shot { @apply block w-full rounded-[22px] bg-white shadow-[0_0_0_1px_rgba(23,22,20,0.1)] sm:rounded-[26px]; }
+  /* Long-form text: privacy policies and terms */
+  .prose-catalogue { @apply text-ink-soft; }
+  .prose-catalogue p { @apply my-3 leading-relaxed; }
+  .prose-catalogue ul { @apply my-3 list-disc space-y-1.5 ps-5; }
+  .prose-catalogue h3 { @apply mt-6 mb-2 font-serif text-[19px] font-semibold text-ink; }
+  .prose-catalogue a { @apply border-b border-current text-ink hover:text-accent; }
+  .prose-catalogue strong { @apply font-semibold text-ink; }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
 }

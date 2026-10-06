@@ -1,47 +1,28 @@
-import { Metadata } from 'next'
-import { apps } from '@/data/apps'
+import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
+import { apps, listedApps } from '@/data/apps'
 import AppPageClient from './AppPageClient'
 
+// Only listed apps get a page; an unlisted app (LoanSolver) keeps just its privacy and support pages.
 export async function generateStaticParams() {
-  return apps.map((app) => ({ id: app.id }))
+  return listedApps.map((app) => ({ id: app.id }))
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ id: string }>
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params
   const app = apps.find((a) => a.id === id)
-
-  if (!app) return { title: 'App not found — NikiBStudio' }
-
+  if (!app) return { title: 'Bogdan Nikishin' }
+  const title = `${app.title} — ${app.tagline}`
   return {
-    title: `${app.title} — NikiBStudio`,
+    title,
     description: app.description,
-    openGraph: {
-      title: `${app.title} — NikiBStudio`,
-      description: app.description,
-      type: 'website',
-    },
+    openGraph: { title, description: app.description, type: 'website', images: [app.iconPath] },
   }
 }
 
-export default async function AppPage({
-  params,
-}: {
-  params: Promise<{ id: string }>
-}) {
+export default async function AppPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const app = apps.find((a) => a.id === id)
-
-  if (!app) {
-    return (
-      <div className="section-padding container-custom text-center">
-        <p className="text-gray-500">App not found.</p>
-      </div>
-    )
-  }
-
+  const app = listedApps.find((a) => a.id === id)
+  if (!app) notFound()
   return <AppPageClient app={app} />
 }

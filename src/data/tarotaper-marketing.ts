@@ -3,6 +3,8 @@ import type { AppMarketing } from './ldream-marketing'
 export const tarotaperMarketing: Record<string, AppMarketing> = {
   en: {
     tagline: 'Daily Tarot & AI Reading',
+    headline: "A card of the day in Telegram",
+    summary: "A card of the day, a three-card spread and the full 78-card deck with interpretations, right in Telegram.",
     description:
       'Discover what the cards reveal about your life. TaroTaper blends ancient tarot wisdom with powerful AI to deliver personalized readings every day.',
     features: [
@@ -17,6 +19,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   ru: {
     tagline: 'Ежедневное Таро и AI-толкование',
+    headline: "Карта дня в Telegram",
+    summary: "Карта дня, расклад на три карты и полная колода из 78 карт с толкованиями — прямо в Telegram.",
     description:
       'Узнайте, что карты говорят о вашей жизни. TaroTaper объединяет древнюю мудрость Таро с искусственным интеллектом для персональных раскладов каждый день.',
     features: [

@@ -3,6 +3,8 @@ import type { AppMarketing } from './ldream-marketing'
 export const alineMarketing: Record<string, AppMarketing> = {
   en: {
     tagline: 'Aligner Tracker & Timer',
+    headline: "A timer that simply works",
+    summary: "Aligner wear time, a calendar of trays and a photo diary of your smile, so you walk into every appointment prepared.",
     description:
       'Track your aligner wear time, keep a photo diary of your smile, and walk into every appointment prepared. Aliner is a calm, ad-free companion for your aligner journey — your data stays yours.',
     features: [
@@ -20,6 +22,8 @@ export const alineMarketing: Record<string, AppMarketing> = {
   },
   ru: {
     tagline: 'Трекер элайнеров',
+    headline: "Таймер, который просто работает",
+    summary: "Время ношения кап, календарь смены и фотодневник улыбки — чтобы приходить на приём подготовленными.",
     description:
       'Считайте время ношения кап, ведите фотодневник улыбки и приходите на каждый приём подготовленными. Aliner — спокойный помощник без рекламы, ваши данные остаются вашими.',
     features: [

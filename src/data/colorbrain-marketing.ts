@@ -6,6 +6,8 @@ import type { AppMarketing } from './ldream-marketing'
 export const colorbrainMarketing: Record<string, AppMarketing> = {
   en: {
     tagline: `Brain Training`,
+    headline: "Tap the color, not the word",
+    summary: "Two minutes a day: the Stroop test, the Eriksen flanker task and a daily challenge with a leaderboard.",
     description: `Sharpen your attention and reaction speed in just 2 minutes a day. ColorBrain uses scientifically validated neuropsychological tests — the Stroop Test and Eriksen Flanker Task — to train your brain.`,
     features: [
       `Two Game Modes — Color Mode (Stroop Test): read the color, not the word. Direction Mode (Flanker Task): find the center arrow among distractors`,
@@ -20,6 +22,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   ru: {
     tagline: `Тренировка мозга`,
+    headline: "Жми на цвет, а не на слово",
+    summary: "Две минуты в день: тест Струпа, задача Эриксена и ежедневный вызов с таблицей лидеров.",
     description: `Улучшите внимание и скорость реакции всего за 2 минуты в день. ColorBrain использует научно подтверждённые нейропсихологические тесты — тест Струпа и задачу Эриксена — для тренировки мозга.`,
     features: [
       `Два игровых режима — Цветовой режим (тест Струпа): назовите цвет, а не слово. Режим направления (задача Фланкера): найдите центральную стрелку среди отвлекающих`,

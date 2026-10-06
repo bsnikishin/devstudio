@@ -3,6 +3,8 @@ import type { AppMarketing } from './ldream-marketing'
 export const wakeleagueMarketing: Record<string, AppMarketing> = {
   en: {
     tagline: 'The alarm you have to beat',
+    headline: "The alarm you have to beat",
+    summary: "An alarm that keeps ringing until you finish a short mission, and a daily league of early risers.",
     description:
       'Wake League is an alarm clock that keeps ringing until you finish short missions. Every day everyone gets the same Daily Challenge, so your wake-up time lands in a league table. Points, levels, streaks and trophies turn getting up into a game. One-time purchase, no ads, no account.',
     features: [
@@ -18,6 +20,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   ru: {
     tagline: 'Будильник, который надо победить',
+    headline: "Будильник, который надо победить",
+    summary: "Будильник, который звенит, пока вы не пройдёте короткую миссию, и общая лига ранних подъёмов.",
     description:
       'Wake League — будильник, который звенит, пока вы не пройдёте короткие миссии. Каждый день у всех один и тот же челлендж дня, поэтому ваше время подъёма попадает в таблицу лиги. Очки, уровни, серии и трофеи превращают подъём в игру. Разовая покупка, без рекламы и аккаунта.',
     features: [

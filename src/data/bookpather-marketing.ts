@@ -3,6 +3,8 @@ import type { AppMarketing } from './ldream-marketing'
 export const bookpatherMarketing: Record<string, AppMarketing> = {
   en: {
     tagline: 'Book Tracker & TBR',
+    headline: "The books already on your shelf",
+    summary: "Scan your shelf and turn the books you own into a reading plan, with reading sessions, a daily streak and the key ideas of every book.",
     description:
       'Turn the books you already own into a reading plan you can follow. Scan your shelf, decide what to read next, time your reading and keep the key ideas of every book in one place.',
     features: [
@@ -18,6 +20,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   ru: {
     tagline: 'Трекер книг',
+    headline: "Книги, которые уже стоят на полке",
+    summary: "Сканируйте полку — книги, которые у вас уже есть, превратятся в план чтения. Сессии, серия дней и ключевые идеи каждой книги.",
     description:
       'Превратите книги, которые уже стоят у вас на полке, в понятный план чтения. Сканируйте полку, решайте, что читать дальше, засекайте время чтения и храните ключевые идеи каждой книги в одном месте.',
     features: [

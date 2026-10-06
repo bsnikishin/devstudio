@@ -14,7 +14,7 @@ export async function generateMetadata({
   const { id } = await params
   const app = apps.find((a) => a.id === id)
   return {
-    title: `Privacy Policy — ${app?.title ?? 'NikiBStudio'}`,
+    title: `Privacy Policy — ${app?.title ?? 'Bogdan Nikishin'}`,
   }
 }
 

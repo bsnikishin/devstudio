@@ -1,3 +1,14 @@
+export type AppGroup = 'apps' | 'games' | 'telegram'
+
+/** Colours and display face of the app's own page, taken from the app's design. */
+export interface AppTheme {
+  bg: string
+  ink: string
+  muted: string
+  accent: string
+  display: 'serif' | 'serif-italic' | 'unbounded' | 'sans'
+}
+
 export interface App {
   id: string
   title: string
@@ -10,10 +21,17 @@ export interface App {
   appStoreUrl: string | null
   telegramUrl?: string
   supportEmail: string
-  gradient: string
   features: string[]
-  color: string
   iconPath: string
+  group: AppGroup
+  /** false: not shown anywhere; only its privacy and support pages are published (App Store Connect links to them) */
+  listed: boolean
+  /** not in the App Store yet */
+  soon?: boolean
+  devices: string
+  theme: AppTheme
+  /** raw app screens in /public/shots/<id>/<locale>/<scene>.jpg */
+  shots?: { scenes: string[]; landscape?: boolean }
 }
 
 export const DOMAIN = 'nikibstudio.site'
@@ -40,8 +58,6 @@ export const apps: App[] = [
     appStoreId: '6790094219',
     appStoreUrl: 'https://apps.apple.com/app/id6790094219',
     supportEmail: 'B.S.NikishinG@gmail.com',
-    gradient: 'from-[#C9553F] via-[#B8432F] to-[#963322]',
-    color: '#B8432F',
     iconPath: '/icons/bookpather.png',
     features: [
       'Scan covers, barcodes and whole shelves',
@@ -53,110 +69,11 @@ export const apps: App[] = [
       'No account, no ads, no tracking; iCloud sync and JSON export',
       'Pro: annual with a free trial, monthly or Lifetime',
     ],
-  },
-  {
-    id: 'wakeleague',
-    title: 'Wake League',
-    tagline: 'The alarm you have to beat',
-    description: 'An alarm clock that keeps ringing until you finish short missions. One Daily Challenge for everyone, a Game Center league, points, levels and streaks.',
-    fullDescription:
-      'Wake League is an alarm clock that keeps ringing until you finish short missions: solve math, type or say a phrase, find an object with the camera, shake, walk, or snap the spot you photographed the night before. Every day everyone gets the same Daily Challenge, so your wake-up time lands in a Game Center league. Four wake-up difficulties, points, levels, streaks, 27 trophies, stats and widgets turn getting up into a game. No account, no ads, no tracking: camera, voice and motion are checked on your iPhone. One-time purchase, everything included.',
-    category: 'Lifestyle',
-    platform: 'iOS',
-    appStoreId: null,
-    appStoreUrl: null,
-    supportEmail: 'B.S.NikishinG@gmail.com',
-    gradient: 'from-purple-900 via-purple-700 to-amber-400',
-    color: '#3b1e4f',
-    iconPath: '/icons/wakeleague.png',
-    features: [
-      'Missions instead of a snooze button: math, memory, typing, voice, camera, shake, steps',
-      'One Daily Challenge for everyone and a Game Center league',
-      'Four wake-up difficulties, from Gentle to Hardcore with an awake check',
-      'Snap the spot: the alarm rings until you photograph the same place',
-      'Points, levels, streaks and 27 trophies; new sounds and icons as you level up',
-      'Stats: wake-up times, success by weekday, month calendar',
-      'Widgets for the Home Screen, the Lock Screen and StandBy',
-      'Private by design: no account, no ads, on-device checks; one-time purchase',
-    ],
-  },
-  {
-    id: 'loansolver',
-    title: 'LoanSolver',
-    tagline: 'Pay off loans faster',
-    description: 'Track annuity loans, see where every payment goes, and find out how much an extra payment really saves. No account, no ads.',
-    fullDescription:
-      'LoanSolver is a calm, private tracker for annuity loans: car loans, personal loans, student loans, mortgages. Every loan gets its own ring that closes when you pay it off. See the full payment schedule, the interest still to pay and the payoff date, try any extra payment with a slider to see the interest saved and months cut, and get local reminders before each due date. No account, no tracking, no ads: your data stays on your device and in your private iCloud. One-time purchase, everything included.',
-    category: 'Finance',
-    platform: 'iOS',
-    appStoreId: null,
-    appStoreUrl: null,
-    supportEmail: 'B.S.NikishinG@gmail.com',
-    gradient: 'from-emerald-400 via-green-600 to-green-800',
-    color: '#1f7a4a',
-    iconPath: '/icons/loansolver.png',
-    features: [
-      'Closing rings: one ring per loan, closed ring means closed loan',
-      'Full payment schedule: principal, interest and balance for every month',
-      'Extra-payment simulator: interest saved and months cut',
-      'Enter the rate or the remaining term, LoanSolver calculates the other',
-      'Local reminders before the due date, on the day and when overdue',
-      'Streaks and achievements for paying on time and paying extra',
-      'Private by design: no account, on-device data, private iCloud sync',
-      'Optional Face ID / Touch ID lock; one-time purchase, no subscriptions',
-    ],
-  },
-  {
-    id: 'swirlball',
-    title: 'SwirlBall',
-    tagline: 'Spin the tower, drop the ball',
-    description: 'Hold to spin the tower and drop a bouncing ball through the gaps. 100 levels, the Endless Tower and a new Daily Tower every day. No ads, no Wi-Fi needed.',
-    fullDescription:
-      'SwirlBall is a ball-drop arcade game. Hold the left or right side of the screen to spin the tower under a bouncing ball: line up the gaps, land on your color and never touch the sticky resin. Play 100 levels across 20 chapters, chase your deepest run in the Endless Tower, and take on the Daily Tower: a new tower every day, the same for everyone, with a daily Game Center leaderboard and a day streak. Earn Sparks for 18 ball skins. No ads, no energy timers, and no Wi-Fi needed; the Supporter Pack, the Skin Pack and tips are optional.',
-    category: 'Games',
-    platform: 'iOS',
-    appStoreId: '6790787588',
-    appStoreUrl: 'https://apps.apple.com/app/id6790787588',
-    supportEmail: 'B.S.NikishinG@gmail.com',
-    gradient: 'from-[#FF8A47] via-[#FF6A1A] to-[#E5530B]',
-    color: '#FF6A1A',
-    iconPath: '/icons/swirlball.png',
-    features: [
-      'Hold the left or right side of the screen to spin the tower',
-      'Daily Tower: a new tower every day, the same for everyone, with a daily Game Center leaderboard and a day streak',
-      '100 levels in 20 chapters',
-      'Endless Tower: send your best depth to Game Center',
-      'Combos up to ×5 and power-ups',
-      '18 ball skins earned with Sparks',
-      'No ads, no energy, no wait timers; no Wi-Fi needed',
-      'Optional Supporter Pack, Lava Lamp Skin Pack and tips',
-    ],
-  },
-  {
-    id: 'cozyball',
-    title: 'Cozy Ball',
-    tagline: 'A calm ball run above the sea',
-    description: 'Roll a beach ball along a pier above the sea, dodge obstacles and collect pearls. New Calm mode with no game over. No ads, ever.',
-    fullDescription:
-      'Cozy Ball is a calm ball run above the sea. Roll a beach ball along a wooden pier: hold the left or right half of the screen to steer, both halves to jump. Roll from a golden sunset into a bright lagoon, through a lighthouse night and on into the dawn, with dolphins, a whale and seagulls along the way. Collect pearls for ball skins, now cheaper, complete daily missions and compete for the longest classic run on Game Center, or switch to the new Calm mode, where a hit only slows you down. No ads, ever; the optional Cozy Supporter Pack is a single payment.',
-    category: 'Games',
-    platform: 'iOS',
-    appStoreId: '6479428845',
-    appStoreUrl: 'https://apps.apple.com/app/id6479428845',
-    supportEmail: 'B.S.NikishinG@gmail.com',
-    gradient: 'from-[#17767B] via-[#0F5E63] to-[#0B474B]',
-    color: '#0F5E63',
-    iconPath: '/icons/cozyball.png',
-    features: [
-      'New Calm mode: no game over, a hit only slows you down',
-      'Easy, forgiving controls: steer with screen halves, jump with both',
-      'Sunset, lagoon, night and dawn above the sea',
-      'Dolphins, a whale and a lighthouse in every run',
-      'Ball skins earned with pearls, now cheaper',
-      'Three daily missions with pearl rewards',
-      'Game Center leaderboard for the classic run',
-      'No ads, ever; optional one-time Cozy Supporter Pack',
-    ],
+    group: 'apps',
+    listed: true,
+    devices: 'iPhone · iPad',
+    theme: { bg: '#F3EEE2', ink: '#1E4D3A', muted: '#5C6A5F', accent: '#B8432F', display: 'serif' },
+    shots: { scenes: ['library', 'book', 'reading'] },
   },
   {
     id: 'ldream',
@@ -170,8 +87,6 @@ export const apps: App[] = [
     appStoreId: '6758800942',
     appStoreUrl: 'https://apps.apple.com/app/id6758800942',
     supportEmail: 'B.S.NikishinG@gmail.com',
-    gradient: 'from-[#2E3866] via-[#1D2440] to-[#151A30]',
-    color: '#1D2440',
     iconPath: '/icons/ldream.png',
     features: [
       'Record dreams by voice or text',
@@ -183,55 +98,11 @@ export const apps: App[] = [
       'Free: record as many dreams as you like, plus widgets, iCloud sync and 3 interpretations',
       'Premium: an interpretation and an illustration for every dream, all lenses and Patterns',
     ],
-  },
-  {
-    id: 'tarotaper',
-    title: 'Tarotaper',
-    tagline: 'Tarot in Telegram',
-    description: 'Daily tarot readings, spreads, and AI interpretations — right in Telegram.',
-    fullDescription:
-      'Tarotaper brings the ancient wisdom of tarot to Telegram. Draw daily cards, explore spreads, and dive deep into the meaning of each card with beautiful artwork and AI-powered interpretations. Whether you\'re a beginner or an experienced reader, Tarotaper grows with you — no installation needed, just open the bot.',
-    category: 'Entertainment',
-    platform: 'Telegram',
-    appStoreId: null,
-    appStoreUrl: null,
-    telegramUrl: 'https://t.me/TaroTaper_bot',
-    supportEmail: 'B.S.NikishinG@gmail.com',
-    gradient: 'from-purple-600 to-pink-600',
-    color: '#9333ea',
-    iconPath: '/icons/tarotaper.png',
-    features: [
-      'Daily card draw with interpretation',
-      'Classic and custom spreads',
-      'Full 78-card library with artwork',
-      'Guided reading sessions',
-      'Reading history and journal',
-      'Intuitive, beautiful interface',
-    ],
-  },
-  {
-    id: 'colorbrain',
-    title: 'Colorbrain',
-    tagline: 'Train your color sense',
-    description: 'Sharpen your color perception with daily puzzles and brain challenges.',
-    fullDescription:
-      'Colorbrain is a color training game that sharpens your visual perception and creative thinking. Complete daily color puzzles, master gradient challenges, and track how your color sense improves over time. Designed for artists, designers, and anyone who wants a beautifully different brain workout.',
-    category: 'Games',
-    platform: 'iOS',
-    appStoreId: '6758952446',
-    appStoreUrl: 'https://apps.apple.com/us/app/brain-training-colorbrain/id6758952446',
-    supportEmail: 'B.S.NikishinG@gmail.com',
-    gradient: 'from-pink-500 via-orange-400 to-yellow-400',
-    color: '#f97316',
-    iconPath: '/icons/colorbrain.png',
-    features: [
-      'Daily color challenges',
-      'Gradient and hue perception puzzles',
-      'Progress tracking and statistics',
-      'Multiple difficulty levels',
-      'Colorblind-friendly mode',
-      'Leaderboards and achievements',
-    ],
+    group: 'apps',
+    listed: true,
+    devices: 'iPhone · iPad',
+    theme: { bg: '#1D2440', ink: '#F4EFE6', muted: '#B4B3C4', accent: '#C8462B', display: 'serif-italic' },
+    shots: { scenes: ['journal', 'entry', 'patterns'] },
   },
   {
     id: 'aline',
@@ -245,8 +116,6 @@ export const apps: App[] = [
     appStoreId: '6779657332',
     appStoreUrl: 'https://apps.apple.com/app/id6779657332',
     supportEmail: 'B.S.NikishinG@gmail.com',
-    gradient: 'from-rose-300 to-rose-500',
-    color: '#B5837A',
     iconPath: '/icons/aline.png',
     features: [
       'Tray-out timer with daily wear progress ring',
@@ -256,5 +125,182 @@ export const apps: App[] = [
       'AI pre-appointment summary, widgets, Watch and Siri (Aliner+)',
       'SOS flow for a lost aligner',
     ],
+    group: 'apps',
+    listed: true,
+    devices: 'iPhone · Apple Watch',
+    theme: { bg: '#F7EFEB', ink: '#3E2F2B', muted: '#86716B', accent: '#B5857C', display: 'serif' },
+    shots: { scenes: ['timer', 'progress', 'diary'] },
+  },
+  {
+    id: 'colorbrain',
+    title: 'ColorBrain',
+    tagline: 'Train your color sense',
+    description: 'Sharpen your color perception with daily puzzles and brain challenges.',
+    fullDescription:
+      'Colorbrain is a color training game that sharpens your visual perception and creative thinking. Complete daily color puzzles, master gradient challenges, and track how your color sense improves over time. Designed for artists, designers, and anyone who wants a beautifully different brain workout.',
+    category: 'Games',
+    platform: 'iOS',
+    appStoreId: '6758952446',
+    appStoreUrl: 'https://apps.apple.com/us/app/brain-training-colorbrain/id6758952446',
+    supportEmail: 'B.S.NikishinG@gmail.com',
+    iconPath: '/icons/colorbrain.png',
+    features: [
+      'Daily color challenges',
+      'Gradient and hue perception puzzles',
+      'Progress tracking and statistics',
+      'Multiple difficulty levels',
+      'Colorblind-friendly mode',
+      'Leaderboards and achievements',
+    ],
+    group: 'games',
+    listed: true,
+    devices: 'iPhone · iPad',
+    theme: { bg: '#FFFFFF', ink: '#151515', muted: '#666666', accent: '#2A62D8', display: 'sans' },
+    shots: { scenes: ['stroop', 'progress', 'daily'] },
+  },
+  {
+    id: 'swirlball',
+    title: 'SwirlBall',
+    tagline: 'Spin the tower, drop the ball',
+    description: 'Hold to spin the tower and drop a bouncing ball through the gaps. 100 levels, the Endless Tower and a new Daily Tower every day. No ads, no Wi-Fi needed.',
+    fullDescription:
+      'SwirlBall is a ball-drop arcade game. Hold the left or right side of the screen to spin the tower under a bouncing ball: line up the gaps, land on your color and never touch the sticky resin. Play 100 levels across 20 chapters, chase your deepest run in the Endless Tower, and take on the Daily Tower: a new tower every day, the same for everyone, with a daily Game Center leaderboard and a day streak. Earn Sparks for 18 ball skins. No ads, no energy timers, and no Wi-Fi needed; the Supporter Pack, the Skin Pack and tips are optional.',
+    category: 'Games',
+    platform: 'iOS',
+    appStoreId: '6790787588',
+    appStoreUrl: 'https://apps.apple.com/app/id6790787588',
+    supportEmail: 'B.S.NikishinG@gmail.com',
+    iconPath: '/icons/swirlball.png',
+    features: [
+      'Hold the left or right side of the screen to spin the tower',
+      'Daily Tower: a new tower every day, the same for everyone, with a daily Game Center leaderboard and a day streak',
+      '100 levels in 20 chapters',
+      'Endless Tower: send your best depth to Game Center',
+      'Combos up to ×5 and power-ups',
+      '18 ball skins earned with Sparks',
+      'No ads, no energy, no wait timers; no Wi-Fi needed',
+      'Optional Supporter Pack, Lava Lamp Skin Pack and tips',
+    ],
+    group: 'games',
+    listed: true,
+    devices: 'iPhone · iPad',
+    theme: { bg: '#FF6A1A', ink: '#1D1B2B', muted: '#4B2414', accent: '#1D1B2B', display: 'unbounded' },
+    shots: { scenes: ['combo', 'daily', 'levels'] },
+  },
+  {
+    id: 'cozyball',
+    title: 'Cozy Ball',
+    tagline: 'A calm ball run above the sea',
+    description: 'Roll a beach ball along a pier above the sea, dodge obstacles and collect pearls. New Calm mode with no game over. No ads, ever.',
+    fullDescription:
+      'Cozy Ball is a calm ball run above the sea. Roll a beach ball along a wooden pier: hold the left or right half of the screen to steer, both halves to jump. Roll from a golden sunset into a bright lagoon, through a lighthouse night and on into the dawn, with dolphins, a whale and seagulls along the way. Collect pearls for ball skins, now cheaper, complete daily missions and compete for the longest classic run on Game Center, or switch to the new Calm mode, where a hit only slows you down. No ads, ever; the optional Cozy Supporter Pack is a single payment.',
+    category: 'Games',
+    platform: 'iOS',
+    appStoreId: '6479428845',
+    appStoreUrl: 'https://apps.apple.com/app/id6479428845',
+    supportEmail: 'B.S.NikishinG@gmail.com',
+    iconPath: '/icons/cozyball.png',
+    features: [
+      'New Calm mode: no game over, a hit only slows you down',
+      'Easy, forgiving controls: steer with screen halves, jump with both',
+      'Sunset, lagoon, night and dawn above the sea',
+      'Dolphins, a whale and a lighthouse in every run',
+      'Ball skins earned with pearls, now cheaper',
+      'Three daily missions with pearl rewards',
+      'Game Center leaderboard for the classic run',
+      'No ads, ever; optional one-time Cozy Supporter Pack',
+    ],
+    group: 'games',
+    listed: true,
+    devices: 'iPhone · iPad',
+    theme: { bg: '#F6E3D6', ink: '#1F4E4A', muted: '#5A7773', accent: '#E2553B', display: 'serif' },
+    shots: { scenes: ['pier', 'calm', 'sea'], landscape: true },
+  },
+  {
+    id: 'tarotaper',
+    title: 'TaroTaper',
+    tagline: 'Tarot in Telegram',
+    description: 'Daily tarot readings, spreads, and AI interpretations — right in Telegram.',
+    fullDescription:
+      'Tarotaper brings the ancient wisdom of tarot to Telegram. Draw daily cards, explore spreads, and dive deep into the meaning of each card with beautiful artwork and AI-powered interpretations. Whether you\'re a beginner or an experienced reader, Tarotaper grows with you — no installation needed, just open the bot.',
+    category: 'Entertainment',
+    platform: 'Telegram',
+    appStoreId: null,
+    appStoreUrl: null,
+    telegramUrl: 'https://t.me/TaroTaper_bot',
+    supportEmail: 'B.S.NikishinG@gmail.com',
+    iconPath: '/icons/tarotaper.png',
+    features: [
+      'Daily card draw with interpretation',
+      'Classic and custom spreads',
+      'Full 78-card library with artwork',
+      'Guided reading sessions',
+      'Reading history and journal',
+      'Intuitive, beautiful interface',
+    ],
+    group: 'telegram',
+    listed: true,
+    devices: 'Telegram',
+    theme: { bg: '#1B1530', ink: '#F1E7D0', muted: '#B3A88F', accent: '#C9A45C', display: 'serif' },
+  },
+  {
+    id: 'wakeleague',
+    title: 'Wake League',
+    tagline: 'The alarm you have to beat',
+    description: 'An alarm clock that keeps ringing until you finish short missions. One Daily Challenge for everyone, a Game Center league, points, levels and streaks.',
+    fullDescription:
+      'Wake League is an alarm clock that keeps ringing until you finish short missions: solve math, type or say a phrase, find an object with the camera, shake, walk, or snap the spot you photographed the night before. Every day everyone gets the same Daily Challenge, so your wake-up time lands in a Game Center league. Four wake-up difficulties, points, levels, streaks, 27 trophies, stats and widgets turn getting up into a game. No account, no ads, no tracking: camera, voice and motion are checked on your iPhone. One-time purchase, everything included.',
+    category: 'Lifestyle',
+    platform: 'iOS',
+    appStoreId: null,
+    appStoreUrl: null,
+    supportEmail: 'B.S.NikishinG@gmail.com',
+    iconPath: '/icons/wakeleague.png',
+    features: [
+      'Missions instead of a snooze button: math, memory, typing, voice, camera, shake, steps',
+      'One Daily Challenge for everyone and a Game Center league',
+      'Four wake-up difficulties, from Gentle to Hardcore with an awake check',
+      'Snap the spot: the alarm rings until you photograph the same place',
+      'Points, levels, streaks and 27 trophies; new sounds and icons as you level up',
+      'Stats: wake-up times, success by weekday, month calendar',
+      'Widgets for the Home Screen, the Lock Screen and StandBy',
+      'Private by design: no account, no ads, on-device checks; one-time purchase',
+    ],
+    group: 'apps',
+    listed: true,
+    soon: true,
+    devices: 'iPhone',
+    theme: { bg: '#24183A', ink: '#F6EEDC', muted: '#B8AFC4', accent: '#F2B544', display: 'sans' },
+  },
+  {
+    id: 'loansolver',
+    title: 'LoanSolver',
+    tagline: 'Pay off loans faster',
+    description: 'Track annuity loans, see where every payment goes, and find out how much an extra payment really saves. No account, no ads.',
+    fullDescription:
+      'LoanSolver is a calm, private tracker for annuity loans: car loans, personal loans, student loans, mortgages. Every loan gets its own ring that closes when you pay it off. See the full payment schedule, the interest still to pay and the payoff date, try any extra payment with a slider to see the interest saved and months cut, and get local reminders before each due date. No account, no tracking, no ads: your data stays on your device and in your private iCloud. One-time purchase, everything included.',
+    category: 'Finance',
+    platform: 'iOS',
+    appStoreId: null,
+    appStoreUrl: null,
+    supportEmail: 'B.S.NikishinG@gmail.com',
+    iconPath: '/icons/loansolver.png',
+    features: [
+      'Closing rings: one ring per loan, closed ring means closed loan',
+      'Full payment schedule: principal, interest and balance for every month',
+      'Extra-payment simulator: interest saved and months cut',
+      'Enter the rate or the remaining term, LoanSolver calculates the other',
+      'Local reminders before the due date, on the day and when overdue',
+      'Streaks and achievements for paying on time and paying extra',
+      'Private by design: no account, on-device data, private iCloud sync',
+      'Optional Face ID / Touch ID lock; one-time purchase, no subscriptions',
+    ],
+    group: 'apps',
+    listed: false,
+    devices: 'iPhone',
+    theme: { bg: '#F2EEE5', ink: '#171614', muted: '#6E695F', accent: '#1F7A4A', display: 'serif' },
   },
 ]
+
+/** Apps shown in the catalogue, in catalogue order. */
+export const listedApps = apps.filter((a) => a.listed)

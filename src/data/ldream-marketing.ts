@@ -1,12 +1,19 @@
 export interface AppMarketing {
   tagline: string
+  /** short line for the catalogue spread, e.g. "Write a dream down before it fades" */
+  headline?: string
+  /** one sentence for the catalogue row */
+  summary?: string
   description: string
+  /** "Title — explanation" */
   features: string[]
 }
 
 export const ldreamMarketing: Record<string, AppMarketing> = {
   en: {
     tagline: 'Dream journal for self-reflection',
+    headline: "Write a dream down before it fades",
+    summary: "Record a dream by voice or text and read an interpretation through the lens you choose. Patterns shows what keeps coming back.",
     description:
       'Write a dream down before it fades, by voice or text, and read a thoughtful interpretation through the lens you choose. Over time, Patterns shows what keeps coming back. A private journal for self-reflection.',
     features: [
@@ -22,6 +29,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   ru: {
     tagline: 'Дневник снов для саморефлексии',
+    headline: "Записать сон, пока он не забылся",
+    summary: "Запишите сон голосом или текстом и прочитайте толкование в выбранном подходе. «Паттерны» покажут, что возвращается.",
     description:
       'Запишите сон голосом или текстом, пока он не забылся, и прочитайте вдумчивое толкование в выбранном подходе. Со временем «Паттерны» покажут, что возвращается снова и снова. Личный дневник для саморефлексии.',
     features: [
