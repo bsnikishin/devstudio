@@ -38,7 +38,7 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   de: {
     tagline: `Gehirntraining`,
-    headline: "Tippe auf die Farbe, nicht auf das Wort",
+    headline: "Tippen Sie auf die Farbe, nicht auf das Wort",
     summary: "Zwei Minuten am Tag: der Stroop-Test, die Eriksen-Flanker-Aufgabe und eine Tages-Challenge mit Bestenliste.",
     description: `Schärfen Sie Ihre Aufmerksamkeit und Reaktionsgeschwindigkeit in nur 2 Minuten pro Tag. ColorBrain nutzt wissenschaftlich validierte neuropsychologische Tests — den Stroop-Test und die Eriksen-Flanker-Aufgabe — um Ihr Gehirn zu trainieren.`,
     features: [
@@ -182,7 +182,7 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   he: {
     tagline: `אימון המוח`,
-    headline: "לחצו על הצבע, לא על המילה",
+    headline: "לחץ על הצבע, לא על המילה",
     summary: "שתי דקות ביום: מבחן סטרופ, משימת פלנקר של אריקסן והאתגר היומי עם טבלת מובילים.",
     description: `חדד את הקשב ומהירות התגובה שלך ב-2 דקות בלבד ביום. ColorBrain משתמש במבחנים נוירופסיכולוגיים מאומתים מדעית — מבחן סטרופ ומשימת פלנקר של אריקסן — לאימון המוח.`,
     features: [

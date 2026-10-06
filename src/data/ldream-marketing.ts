@@ -64,7 +64,7 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   fr: {
     tagline: 'Journal de rêves pour l’introspection',
     headline: "Noter un rêve avant qu’il ne s’efface",
-    summary: "Notez un rêve à la voix ou par écrit, puis lisez son interprétation selon l’approche de votre choix. Les Motifs montrent ce qui revient.",
+    summary: "Note un rêve à la voix ou par écrit, puis lis son interprétation selon l’approche de ton choix. Les Motifs montrent ce qui revient.",
     description:
       'Note ton rêve à la voix ou par écrit avant qu’il ne s’efface, et lis une interprétation réfléchie selon l’approche de ton choix. Au fil du temps, les Motifs montrent ce qui revient. Un journal privé, pensé pour l’introspection.',
     features: [

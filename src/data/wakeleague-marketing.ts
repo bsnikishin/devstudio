@@ -37,8 +37,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   de: {
     tagline: 'Der Wecker, den Sie besiegen müssen',
-    headline: "Der Wecker, den du besiegen musst",
-    summary: "Ein Wecker, der so lange klingelt, bis du eine kurze Mission erledigt hast, und eine tägliche Liga der Frühaufsteher.",
+    headline: "Der Wecker, den Sie besiegen müssen",
+    summary: "Ein Wecker, der so lange klingelt, bis Sie eine kurze Mission erledigt haben, und eine tägliche Liga der Frühaufsteher.",
     description:
       'Wake League ist ein Wecker, der so lange klingelt, bis Sie kurze Missionen erledigt haben. Jeden Tag bekommen alle dieselbe Tages-Challenge, sodass Ihre Aufwachzeit in einer Ligatabelle landet. Punkte, Level, Serien und Trophäen machen das Aufstehen zum Spiel. Einmaliger Kauf, keine Werbung, kein Konto.',
     features: [
