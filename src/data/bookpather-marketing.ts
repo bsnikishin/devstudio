@@ -37,6 +37,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   de: {
     tagline: 'Lesetagebuch & SuB',
+    headline: "Die Bücher, die schon in deinem Regal stehen",
+    summary: "Scanne dein Regal und mach aus den Büchern, die du besitzt, einen Leseplan: mit Lese-Sessions, einer Tagesserie und den Kernideen jedes Buchs.",
     description:
       'Mach aus den Büchern, die du schon besitzt, einen Leseplan, dem du wirklich folgst. Scanne dein Regal, entscheide, was du als Nächstes liest, miss deine Lesezeit und behalte die Kernideen jedes Buchs an einem Ort.',
     features: [
@@ -52,6 +54,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   fr: {
     tagline: 'Suivi de lecture',
+    headline: "Les livres déjà sur votre étagère",
+    summary: "Scannez votre étagère et faites de vos livres un plan de lecture, avec séances de lecture, série quotidienne et idées clés de chaque livre.",
     description:
       'Transformez les livres que vous possédez déjà en un plan de lecture que vous suivrez vraiment. Scannez votre étagère, choisissez quoi lire ensuite, chronométrez vos lectures et gardez les idées clés de chaque livre au même endroit.',
     features: [
@@ -67,6 +71,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   es: {
     tagline: 'Diario de lectura',
+    headline: "Los libros que ya tienes en la estantería",
+    summary: "Escanea tu estantería y convierte tus libros en un plan de lectura, con sesiones de lectura, una racha diaria y las ideas clave de cada libro.",
     description:
       'Convierte los libros que ya tienes en un plan de lectura que de verdad vas a seguir. Escanea tu estantería, decide qué leer a continuación, cronometra tus lecturas y guarda las ideas clave de cada libro en un solo lugar.',
     features: [
@@ -82,6 +88,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   it: {
     tagline: 'Diario di lettura',
+    headline: "I libri che hai già sullo scaffale",
+    summary: "Scansiona lo scaffale e trasforma i libri che hai in un piano di lettura, con sessioni di lettura, serie giornaliera e idee chiave di ogni libro.",
     description:
       'Trasforma i libri che hai già in un piano di lettura che seguirai davvero. Scansiona la tua libreria, decidi cosa leggere dopo, cronometra le tue letture e tieni le idee chiave di ogni libro in un unico posto.',
     features: [
@@ -97,6 +105,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   pt: {
     tagline: 'Diário de leitura',
+    headline: "Os livros que já estão na sua estante",
+    summary: "Escaneie a estante e transforme seus livros em um plano de leitura, com sessões de leitura, sequência diária e as ideias-chave de cada livro.",
     description:
       'Transforme os livros que você já tem em um plano de leitura que você vai seguir de verdade. Escaneie sua estante, decida o que ler em seguida, cronometre suas leituras e guarde as ideias-chave de cada livro em um só lugar.',
     features: [
@@ -112,6 +122,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   ja: {
     tagline: '読書管理・本棚スキャン',
+    headline: "すでに本棚に並んでいる本",
+    summary: "本棚をスキャンして、手元の本を読書計画に。読書セッション、連続記録、一冊ごとの要点も。",
     description:
       '手元にある本を、無理なく続けられる読書計画に。本棚をスキャンして次に読む本を決め、読書時間を計り、一冊ごとの要点を一か所にまとめましょう。',
     features: [
@@ -127,6 +139,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   ko: {
     tagline: '독서기록 & 서재 관리',
+    headline: "이미 책장에 꽂혀 있는 책들",
+    summary: "책장을 스캔해 가지고 있는 책으로 독서 계획을 세워 보세요. 독서 세션, 연속 기록, 책마다 핵심 아이디어까지.",
     description:
       '이미 가지고 있는 책을 꾸준히 따라갈 수 있는 독서 계획으로 바꿔 보세요. 책장을 스캔하고, 다음에 읽을 책을 정하고, 독서 시간을 재고, 책마다 핵심 아이디어를 한곳에 모아 두세요.',
     features: [
@@ -142,6 +156,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   zh: {
     tagline: '读书记录与书架管理',
+    headline: "你书架上已有的那些书",
+    summary: "扫描书架，把你已有的书变成阅读计划，还有阅读计时、连续打卡和每本书的核心观点。",
     description:
       '把你已经拥有的书，变成一份真正能坚持下去的阅读计划。扫描书架，决定下一本读什么，为阅读计时，并把每本书的核心观点集中保存在一处。',
     features: [
@@ -157,6 +173,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   ar: {
     tagline: 'سجل قراءة الكتب',
+    headline: "الكتب الموجودة على رفّك بالفعل",
+    summary: "امسح رفّك وحوّل الكتب التي تملكها إلى خطة قراءة، مع جلسات القراءة وسلسلة الأيام والأفكار الرئيسية لكل كتاب.",
     description:
       'حوّل الكتب التي تملكها بالفعل إلى خطة قراءة يمكنك الالتزام بها. امسح رفّك، وقرّر ماذا تقرأ بعد ذلك، واحسب وقت قراءتك، واحتفظ بالأفكار الرئيسية لكل كتاب في مكان واحد.',
     features: [
@@ -172,6 +190,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   hi: {
     tagline: 'पढ़ने का ट्रैकर',
+    headline: "वे किताबें, जो पहले से आपकी शेल्फ पर हैं",
+    summary: "अपनी शेल्फ स्कैन करें और अपनी किताबों को रीडिंग प्लान में बदलें, रीडिंग सेशन, रोज़ की स्ट्रीक और हर किताब के मुख्य विचारों के साथ।",
     description:
       'अपनी किताबों को ऐसे रीडिंग प्लान में बदलें जिसे आप सच में निभा सकें। अपनी शेल्फ स्कैन करें, तय करें कि आगे क्या पढ़ना है, पढ़ने का समय मापें और हर किताब के मुख्य विचार एक ही जगह रखें।',
     features: [
@@ -187,6 +207,8 @@ export const bookpatherMarketing: Record<string, AppMarketing> = {
   },
   he: {
     tagline: 'מעקב קריאה',
+    headline: "הספרים שכבר עומדים על המדף שלכם",
+    summary: "סרקו את המדף והפכו את הספרים שיש לכם לתוכנית קריאה, עם סשנים של קריאה, רצף יומי ורעיונות מרכזיים לכל ספר.",
     description:
       'הפכו את הספרים שכבר יש לכם לתוכנית קריאה שבאמת אפשר לעמוד בה. סרקו את המדף, החליטו מה לקרוא עכשיו, מדדו את זמן הקריאה ושמרו את הרעיונות המרכזיים של כל ספר במקום אחד.',
     features: [

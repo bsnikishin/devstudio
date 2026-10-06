@@ -46,6 +46,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   de: {
     tagline: 'Traumtagebuch zur Selbstreflexion',
+    headline: "Halte einen Traum fest, bevor er verblasst",
+    summary: "Halte einen Traum per Sprache oder Text fest und lies eine Deutung aus der Perspektive, die du wählst. Die Muster zeigen dir, was wiederkehrt.",
     description:
       'Halte deinen Traum per Sprache oder Text fest, bevor er verblasst, und lies eine durchdachte Deutung aus der Perspektive, die du wählst. Mit der Zeit zeigen dir die Muster, was immer wiederkehrt. Ein privates Tagebuch zur Selbstreflexion.',
     features: [
@@ -61,6 +63,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   fr: {
     tagline: 'Journal de rêves pour l’introspection',
+    headline: "Noter un rêve avant qu’il ne s’efface",
+    summary: "Notez un rêve à la voix ou par écrit, puis lisez son interprétation selon l’approche de votre choix. Les Motifs montrent ce qui revient.",
     description:
       'Note ton rêve à la voix ou par écrit avant qu’il ne s’efface, et lis une interprétation réfléchie selon l’approche de ton choix. Au fil du temps, les Motifs montrent ce qui revient. Un journal privé, pensé pour l’introspection.',
     features: [
@@ -76,6 +80,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   es: {
     tagline: 'Diario de sueños para la reflexión',
+    headline: "Anota un sueño antes de que se desvanezca",
+    summary: "Anota un sueño con la voz o por escrito y lee una interpretación desde el enfoque que elijas. Patrones te muestra lo que se repite.",
     description:
       'Anota tu sueño con la voz o por escrito antes de que se desvanezca y lee una interpretación cuidada desde el enfoque que elijas. Con el tiempo, Patrones te muestra lo que se repite. Un diario privado para la reflexión personal.',
     features: [
@@ -91,6 +97,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   it: {
     tagline: 'Diario dei sogni per la riflessione',
+    headline: "Annota un sogno prima che svanisca",
+    summary: "Annota un sogno con la voce o per iscritto e leggi un’interpretazione secondo l’approccio che preferisci. Temi ricorrenti mostra ciò che ritorna.",
     description:
       'Annota il tuo sogno con la voce o per iscritto prima che svanisca e leggi un’interpretazione ponderata secondo l’approccio che preferisci. Col tempo, Temi ricorrenti ti mostra ciò che ritorna. Un diario privato per la riflessione personale.',
     features: [
@@ -106,6 +114,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   pt: {
     tagline: 'Diário de sonhos para autorreflexão',
+    headline: "Registre um sonho antes que ele desapareça",
+    summary: "Registre um sonho por voz ou por texto e leia uma interpretação na abordagem que você escolher. Padrões mostra o que se repete.",
     description:
       'Registre o sonho por voz ou por texto antes que ele desapareça e leia uma interpretação cuidadosa na abordagem que você escolher. Com o tempo, Padrões mostra o que se repete. Um diário privado para autorreflexão.',
     features: [
@@ -121,6 +131,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   ja: {
     tagline: '自分を見つめる夢日記',
+    headline: "消えてしまう前に、夢を書きとめる",
+    summary: "夢を声か文字で記録して、選んだ視点からの解釈を読めます。「パターン」が、繰り返し現れるものを教えてくれます。",
     description:
       '夢が消えてしまう前に、声か文字で記録。選んだ視点から、ていねいな解釈を読めます。続けるうちに「パターン」が、繰り返し現れるものを教えてくれます。自分を見つめるためのプライベートな夢日記です。',
     features: [
@@ -136,6 +148,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   ko: {
     tagline: '나를 돌아보는 꿈 일기',
+    headline: "꿈이 흐려지기 전에 적어 두기",
+    summary: "꿈을 목소리나 글로 기록하고, 고른 관점으로 해석을 읽어 보세요. ‘패턴’이 반복되는 것들을 보여 줘요.",
     description:
       '꿈이 흐려지기 전에 목소리나 글로 기록하고, 고른 관점으로 정성스러운 해석을 읽어 보세요. 시간이 지나면 ‘패턴’이 반복되는 것들을 보여 줍니다. 나를 돌아보기 위한 프라이빗 꿈 일기입니다.',
     features: [
@@ -151,6 +165,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   zh: {
     tagline: '用于自我反思的梦日记',
+    headline: "趁梦还没消散，把它记下来",
+    summary: "用语音或文字记录梦境，从你选择的视角阅读解读。“规律”会告诉你哪些内容反复出现。",
     description:
       '趁梦还没消散，用语音或文字记下来，并从你选择的视角阅读用心的解读。随着时间推移，“规律”会告诉你哪些内容反复出现。一本用于自我反思的私密梦日记。',
     features: [
@@ -166,6 +182,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   ar: {
     tagline: 'يوميات أحلام للتأمل في الذات',
+    headline: "دوّن حلمك قبل أن يتلاشى",
+    summary: "سجّل حلمك بالصوت أو بالكتابة، واقرأ تفسيره بالمنهج الذي تختاره. وتُظهر لك «الأنماط» ما يتكرر.",
     description:
       'دوّن حلمك بالصوت أو بالكتابة قبل أن يتلاشى، واقرأ تفسيرًا متأنيًا بالمنهج الذي تختاره. ومع الوقت تُظهر لك «الأنماط» ما يتكرر في أحلامك. يوميات خاصة للتأمل في الذات.',
     features: [
@@ -181,6 +199,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   hi: {
     tagline: 'आत्म-चिंतन के लिए ड्रीम डायरी',
+    headline: "सपना धुंधला होने से पहले उसे लिख लें",
+    summary: "सपने को आवाज़ से या लिखकर दर्ज करें और अपने चुने हुए दृष्टिकोण से उसकी व्याख्या पढ़ें। पैटर्न दिखाता है कि क्या बार-बार लौटता है।",
     description:
       'सपना धुंधला होने से पहले उसे आवाज़ से या लिखकर दर्ज करें, और अपने चुने हुए दृष्टिकोण से एक सोच-समझकर लिखी गई व्याख्या पढ़ें। समय के साथ पैटर्न दिखाता है कि क्या बार-बार लौटता है। आत्म-चिंतन के लिए एक निजी डायरी।',
     features: [
@@ -196,6 +216,8 @@ export const ldreamMarketing: Record<string, AppMarketing> = {
   },
   he: {
     tagline: 'יומן חלומות להתבוננות עצמית',
+    headline: "לתעד חלום לפני שהוא נמוג",
+    summary: "תעדו חלום בקול או בכתב וקראו פירוש בגישה שתבחרו. \"דפוסים\" מראה מה חוזר שוב ושוב.",
     description:
       'תעדו את החלום בקול או בכתב לפני שהוא נמוג, וקראו פירוש מעמיק בגישה שתבחרו. עם הזמן, "דפוסים" מראה לכם מה חוזר שוב ושוב. יומן פרטי להתבוננות עצמית.',
     features: [

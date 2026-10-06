@@ -38,6 +38,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   de: {
     tagline: `Gehirntraining`,
+    headline: "Tippe auf die Farbe, nicht auf das Wort",
+    summary: "Zwei Minuten am Tag: der Stroop-Test, die Eriksen-Flanker-Aufgabe und eine Tages-Challenge mit Bestenliste.",
     description: `Schärfen Sie Ihre Aufmerksamkeit und Reaktionsgeschwindigkeit in nur 2 Minuten pro Tag. ColorBrain nutzt wissenschaftlich validierte neuropsychologische Tests — den Stroop-Test und die Eriksen-Flanker-Aufgabe — um Ihr Gehirn zu trainieren.`,
     features: [
       `Zwei Spielmodi — Farbmodus (Stroop-Test): die Farbe lesen, nicht das Wort. Richtungsmodus (Flanker-Aufgabe): den zentralen Pfeil unter Ablenkungen finden`,
@@ -52,6 +54,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   fr: {
     tagline: `Entraînement cérébral`,
+    headline: "Touchez la couleur, pas le mot",
+    summary: "Deux minutes par jour : le test de Stroop, la tâche de Flanker d’Eriksen et un Défi du jour avec classement.",
     description: `Aiguisez votre attention et votre vitesse de réaction en seulement 2 minutes par jour. ColorBrain utilise des tests neuropsychologiques scientifiquement validés — le test de Stroop et la tâche de Flanker d'Eriksen — pour entraîner votre cerveau.`,
     features: [
       `Deux modes de jeu — Mode couleur (test de Stroop) : lisez la couleur, pas le mot. Mode direction (tâche Flanker) : trouvez la flèche centrale parmi les distracteurs`,
@@ -66,6 +70,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   es: {
     tagline: `Entrenamiento cerebral`,
+    headline: "Pulsa el color, no la palabra",
+    summary: "Dos minutos al día: el test de Stroop, la tarea Flanker de Eriksen y el Desafío diario con clasificación.",
     description: `Mejora tu atención y velocidad de reacción en solo 2 minutos al día. ColorBrain utiliza pruebas neuropsicológicas científicamente validadas — el Test de Stroop y la Tarea Flanker de Eriksen — para entrenar tu cerebro.`,
     features: [
       `Dos modos de juego — Modo color (Test de Stroop): lee el color, no la palabra. Modo dirección (Tarea Flanker): encuentra la flecha central entre distractores`,
@@ -80,6 +86,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   it: {
     tagline: `Allenamento del cervello`,
+    headline: "Tocca il colore, non la parola",
+    summary: "Due minuti al giorno: il test di Stroop, il compito Flanker di Eriksen e una Sfida del giorno con classifica.",
     description: `Affina la tua attenzione e velocità di reazione in soli 2 minuti al giorno. ColorBrain utilizza test neuropsicologici scientificamente validati — il Test di Stroop e il Compito Flanker di Eriksen — per allenare il tuo cervello.`,
     features: [
       `Due modalità di gioco — Modalità colore (Test di Stroop): leggi il colore, non la parola. Modalità direzione (Compito Flanker): trova la freccia centrale tra i distrattori`,
@@ -94,6 +102,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   pt: {
     tagline: `Treinamento cerebral`,
+    headline: "Toque na cor, não na palavra",
+    summary: "Dois minutos por dia: o teste de Stroop, a tarefa Flanker de Eriksen e o Desafio Diário com ranking.",
     description: `Aprimore sua atenção e velocidade de reação em apenas 2 minutos por dia. ColorBrain usa testes neuropsicológicos cientificamente validados — o Teste de Stroop e a Tarefa Flanker de Eriksen — para treinar seu cérebro.`,
     features: [
       `Dois modos de jogo — Modo cor (Teste de Stroop): leia a cor, não a palavra. Modo direção (Tarefa Flanker): encontre a seta central entre os distratores`,
@@ -108,6 +118,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   ja: {
     tagline: `脳トレーニング`,
+    headline: "言葉ではなく、色をタップ",
+    summary: "1日2分。ストループテスト、エリクセンのフランカー課題、そしてリーダーボード付きのデイリーチャレンジ。",
     description: `1日たった2分で注意力と反応速度を鍛えましょう。ColorBrainは科学的に検証された神経心理学テスト — ストループテストとエリクセンフランカー課題 — を使って脳をトレーニングします。`,
     features: [
       `2つのゲームモード — カラーモード（ストループテスト）：単語ではなく色を読む。方向モード（フランカー課題）：妨害刺激の中から中央の矢印を見つける`,
@@ -122,6 +134,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   ko: {
     tagline: `두뇌 훈련`,
+    headline: "단어가 아니라 색을 탭하세요",
+    summary: "하루 2분. 스트룹 테스트, 에릭슨 플랭커 과제, 그리고 리더보드가 있는 데일리 챌린지.",
     description: `하루 단 2분으로 주의력과 반응 속도를 향상시키세요. ColorBrain은 과학적으로 검증된 신경심리학 테스트 — 스트룹 테스트와 에릭슨 플랭커 과제 — 를 사용하여 두뇌를 훈련합니다.`,
     features: [
       `두 가지 게임 모드 — 색상 모드(스트룹 테스트): 단어가 아닌 색상을 읽기. 방향 모드(플랭커 과제): 방해 자극 속에서 중앙 화살표 찾기`,
@@ -136,6 +150,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   zh: {
     tagline: `大脑训练`,
+    headline: "点颜色，不要点文字",
+    summary: "每天两分钟：斯特鲁普测试、埃里克森侧翼任务，以及带排行榜的每日挑战。",
     description: `每天仅需2分钟，提升您的注意力和反应速度。ColorBrain使用经过科学验证的神经心理学测试 — 斯特鲁普测试和埃里克森侧翼任务 — 来训练您的大脑。`,
     features: [
       `两种游戏模式 — 颜色模式（斯特鲁普测试）：读颜色而非文字。方向模式（侧翼任务）：在干扰中找到中央箭头`,
@@ -150,6 +166,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   ar: {
     tagline: `تدريب الدماغ`,
+    headline: "اضغط على اللون لا على الكلمة",
+    summary: "دقيقتان يوميًا: اختبار ستروب، ومهمة فلانكر لإريكسن، وتحدي اليوم مع لوحة صدارة.",
     description: `اصقل انتباهك وسرعة ردة فعلك في دقيقتين فقط يومياً. يستخدم ColorBrain اختبارات نفسية عصبية مُثبتة علمياً — اختبار ستروب ومهمة فلانكر لإريكسن — لتدريب دماغك.`,
     features: [
       `وضعان للعب — وضع اللون (اختبار ستروب): اقرأ اللون وليس الكلمة. وضع الاتجاه (مهمة فلانكر): ابحث عن السهم المركزي بين المشتتات`,
@@ -164,6 +182,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   he: {
     tagline: `אימון המוח`,
+    headline: "לחצו על הצבע, לא על המילה",
+    summary: "שתי דקות ביום: מבחן סטרופ, משימת פלנקר של אריקסן והאתגר היומי עם טבלת מובילים.",
     description: `חדד את הקשב ומהירות התגובה שלך ב-2 דקות בלבד ביום. ColorBrain משתמש במבחנים נוירופסיכולוגיים מאומתים מדעית — מבחן סטרופ ומשימת פלנקר של אריקסן — לאימון המוח.`,
     features: [
       `שני מצבי משחק — מצב צבע (מבחן סטרופ): קרא את הצבע, לא את המילה. מצב כיוון (משימת פלנקר): מצא את החץ המרכזי בין המסיחים`,
@@ -178,6 +198,8 @@ export const colorbrainMarketing: Record<string, AppMarketing> = {
   },
   hi: {
     tagline: `ब्रेन ट्रेनिंग`,
+    headline: "शब्द पर नहीं, रंग पर टैप करें",
+    summary: "रोज़ दो मिनट: स्ट्रूप टेस्ट, एरिक्सन फ्लैंकर टास्क और लीडरबोर्ड वाला आज का चैलेंज।",
     description: `दिन में सिर्फ 2 मिनट में अपना ध्यान और प्रतिक्रिया गति तेज करें। ColorBrain वैज्ञानिक रूप से मान्य न्यूरोसाइकोलॉजिकल परीक्षणों — स्ट्रूप टेस्ट और एरिक्सन फ्लैंकर टास्क — का उपयोग करके आपके मस्तिष्क को प्रशिक्षित करता है।`,
     features: [
       `दो गेम मोड — कलर मोड (स्ट्रूप टेस्ट): शब्द नहीं, रंग पढ़ें। डायरेक्शन मोड (फ्लैंकर टास्क): विकर्षणों के बीच केंद्रीय तीर खोजें`,

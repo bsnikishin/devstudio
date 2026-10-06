@@ -37,6 +37,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   de: {
     tagline: 'Ein ruhiger Ball-Lauf über dem Meer',
+    headline: "Ein ruhiger Lauf über dem Meer",
+    summary: "Roll einen Strandball bei Sonnenuntergang über die Seebrücke und weich allem aus, was im Weg liegt. Im entspannten Modus gibt es kein Game Over.",
     description:
       'Roll einen Strandball über eine hölzerne Seebrücke, weich Hindernissen aus, sammle Perlen und sieh zu, wie der Ozean um dich herum lebendig wird. Neu: der entspannte Modus ohne Game Over. Ohne Werbung, für immer, und ohne Internet spielbar.',
     features: [
@@ -52,6 +54,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   fr: {
     tagline: 'Une course tout en douceur au-dessus de la mer',
+    headline: "Une course paisible au-dessus de la mer",
+    summary: "Faites rouler un ballon de plage sur un ponton au coucher du soleil et évitez ce qui vous barre la route. En mode Calme, pas de game over.",
     description:
       'Faites rouler un ballon de plage sur un ponton en bois, évitez les obstacles, ramassez des perles et regardez l’océan s’animer autour de vous. Nouveau : le mode Calme, sans game over. Sans pub, pour toujours, et jouable sans internet.',
     features: [
@@ -67,6 +71,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   es: {
     tagline: 'Una carrera tranquila sobre el mar',
+    headline: "Una carrera tranquila sobre el mar",
+    summary: "Haz rodar una pelota de playa por un muelle al atardecer y esquiva lo que se cruce en tu camino. En el modo Calma no hay game over.",
     description:
       'Haz rodar una pelota de playa por un muelle de madera, esquiva obstáculos, recoge perlas y mira cómo el océano cobra vida a tu alrededor. Nuevo modo Calma, sin game over. Sin anuncios, nunca, y se juega sin conexión.',
     features: [
@@ -82,6 +88,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   it: {
     tagline: 'Una corsa tranquilla sopra il mare',
+    headline: "Una corsa tranquilla sopra il mare",
+    summary: "Fai rotolare un pallone da spiaggia lungo un pontile al tramonto e schiva ciò che ti sbarra la strada. In modalità Calma non c’è game over.",
     description:
       'Fai rotolare un pallone da spiaggia su un pontile di legno, schiva gli ostacoli, raccogli perle e guarda l’oceano prendere vita intorno a te. Nuova modalità Calma, senza game over. Senza pubblicità, mai, e si gioca senza internet.',
     features: [
@@ -97,6 +105,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   pt: {
     tagline: 'Uma corrida tranquila sobre o mar',
+    headline: "Uma corrida tranquila sobre o mar",
+    summary: "Role uma bola de praia por um píer ao pôr do sol e desvie do que aparecer no caminho. No modo Calmo, não existe game over.",
     description:
       'Role uma bola de praia por um píer de madeira, desvie de obstáculos, colete pérolas e veja o oceano ganhar vida ao seu redor. Novo modo Calmo, sem game over. Sem anúncios, nunca, e dá para jogar sem internet.',
     features: [
@@ -112,6 +122,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   ja: {
     tagline: '海の上の、のんびりボールラン',
+    headline: "海の上の、のんびりラン",
+    summary: "夕焼けの桟橋でビーチボールを転がし、行く手をふさぐものをよけよう。のんびりモードならゲームオーバーなし。",
     description:
       '木の桟橋の上でビーチボールを転がし、障害物をよけ、パールを集めながら、生き生きと動く海を眺めよう。ゲームオーバーのない「のんびりモード」が新登場。広告は一切なし、オフラインで遊べます。',
     features: [
@@ -127,6 +139,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   ko: {
     tagline: '바다 위를 굴러가는 힐링 볼 런',
+    headline: "바다 위를 달리는 힐링 런",
+    summary: "노을 진 부두 위로 비치볼을 굴리며 길을 막는 것들을 피하세요. 힐링 모드에서는 게임 오버가 없어요.",
     description:
       '나무 부두 위로 비치볼을 굴리며 장애물을 피하고, 진주를 모으고, 살아 움직이는 바다를 감상하세요. 게임 오버가 없는 힐링 모드가 새로 나왔습니다. 광고는 영원히 없고, 오프라인에서도 즐길 수 있습니다.',
     features: [
@@ -142,6 +156,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   zh: {
     tagline: '海面上的惬意滚球之旅',
+    headline: "海面上的惬意之旅",
+    summary: "在日落时分的栈桥上滚动沙滩球，避开挡路的障碍。轻松模式下没有游戏结束。",
     description:
       '让沙滩球沿着木栈桥一路滚动，躲避障碍，收集珍珠，看海洋在你身边鲜活起来。全新轻松模式，没有游戏结束。永远没有广告，离线也能玩。',
     features: [
@@ -157,6 +173,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   ar: {
     tagline: 'جولة هادئة بالكرة فوق البحر',
+    headline: "جولة هادئة فوق البحر",
+    summary: "دحرج كرة الشاطئ على رصيف عند الغروب وتفادَ ما يعترض طريقك. في الوضع الهادئ لا تنتهي اللعبة.",
     description:
       'دحرج كرة الشاطئ على رصيف خشبي فوق البحر، وتفادَ العقبات، واجمع اللآلئ، وشاهد المحيط ينبض بالحياة من حولك. جديد: الوضع الهادئ بلا نهاية للعبة. بدون إعلانات أبدًا، وتعمل بدون إنترنت.',
     features: [
@@ -172,6 +190,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   hi: {
     tagline: 'समुद्र के ऊपर गेंद की शांत दौड़',
+    headline: "समुद्र के ऊपर एक शांत दौड़",
+    summary: "सूर्यास्त के समय घाट पर बीच बॉल लुढ़काएँ और रास्ते की बाधाओं से बचें। शांत मोड में गेम ओवर नहीं होता।",
     description:
       'लकड़ी के घाट पर बीच बॉल घुमाएँ, बाधाओं से बचें, मोती इकट्ठा करें और अपने चारों ओर समुद्र को जीवंत होते देखें। नया शांत मोड, जिसमें गेम ओवर नहीं होता। कभी कोई विज्ञापन नहीं, और बिना इंटरनेट के खेलें।',
     features: [
@@ -187,6 +207,8 @@ export const cozyballMarketing: Record<string, AppMarketing> = {
   },
   he: {
     tagline: 'ריצה רגועה עם כדור מעל הים',
+    headline: "ריצה רגועה מעל הים",
+    summary: "גלגלו כדור חוף על מזח בשקיעה והתחמקו ממה שעומד בדרך. במצב רגוע אין פסילה.",
     description:
       'גלגלו כדור חוף על מזח עץ מעל הים, התחמקו ממכשולים, אספו פנינים וצפו באוקיינוס מתעורר לחיים סביבכם. חדש: מצב רגוע בלי פסילה. בלי פרסומות, לעולם, ואפשר לשחק בלי אינטרנט.',
     features: [

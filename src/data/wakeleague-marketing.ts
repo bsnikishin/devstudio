@@ -37,6 +37,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   de: {
     tagline: 'Der Wecker, den Sie besiegen müssen',
+    headline: "Der Wecker, den du besiegen musst",
+    summary: "Ein Wecker, der so lange klingelt, bis du eine kurze Mission erledigt hast, und eine tägliche Liga der Frühaufsteher.",
     description:
       'Wake League ist ein Wecker, der so lange klingelt, bis Sie kurze Missionen erledigt haben. Jeden Tag bekommen alle dieselbe Tages-Challenge, sodass Ihre Aufwachzeit in einer Ligatabelle landet. Punkte, Level, Serien und Trophäen machen das Aufstehen zum Spiel. Einmaliger Kauf, keine Werbung, kein Konto.',
     features: [
@@ -52,6 +54,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   fr: {
     tagline: 'Le réveil qu’il faut battre',
+    headline: "Le réveil qu’il faut battre",
+    summary: "Un réveil qui sonne tant que vous n’avez pas terminé une courte mission, et une ligue quotidienne des lève-tôt.",
     description:
       'Wake League est un réveil qui continue de sonner jusqu’à ce que vous ayez terminé de courtes missions. Chaque jour, tout le monde reçoit le même Défi du jour, si bien que votre temps de réveil se retrouve dans un classement de ligue. Points, niveaux, séries et trophées font du lever un jeu. Achat unique, sans publicité, sans compte.',
     features: [
@@ -67,6 +71,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   es: {
     tagline: 'La alarma que tienes que vencer',
+    headline: "La alarma que tienes que vencer",
+    summary: "Una alarma que no deja de sonar hasta que completas una misión corta, y una liga diaria de madrugadores.",
     description:
       'Wake League es un despertador que sigue sonando hasta que completas misiones cortas. Cada día todos reciben el mismo Reto del día, así que tu tiempo de despertar acaba en la clasificación de una liga. Puntos, niveles, rachas y trofeos hacen que levantarse sea un juego. Compra única, sin anuncios, sin cuenta.',
     features: [
@@ -82,6 +88,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   it: {
     tagline: 'La sveglia che devi battere',
+    headline: "La sveglia che devi battere",
+    summary: "Una sveglia che continua a suonare finché non completi una breve missione, e una lega giornaliera di mattinieri.",
     description:
       'Wake League è una sveglia che continua a suonare finché non completi brevi missioni. Ogni giorno tutti ricevono la stessa Sfida del giorno, così il tuo tempo di risveglio finisce in una classifica di lega. Punti, livelli, serie e trofei trasformano l’alzarsi dal letto in un gioco. Acquisto unico, niente pubblicità, niente account.',
     features: [
@@ -97,6 +105,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   pt: {
     tagline: 'O alarme que você precisa vencer',
+    headline: "O alarme que você precisa vencer",
+    summary: "Um alarme que não para de tocar até você concluir uma missão curta, e uma liga diária de quem acorda cedo.",
     description:
       'O Wake League é um despertador que continua tocando até você concluir missões curtas. Todos os dias, todo mundo recebe o mesmo Desafio do dia, então seu tempo para acordar entra na tabela da liga. Pontos, níveis, sequências e troféus transformam a hora de levantar em um jogo. Compra única, sem anúncios, sem conta.',
     features: [
@@ -112,6 +122,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   ja: {
     tagline: '攻略しないと止まらないアラーム',
+    headline: "攻略しないと止まらないアラーム",
+    summary: "短いミッションをクリアするまで鳴り続けるアラームと、早起きする人たちのデイリーリーグ。",
     description:
       'Wake Leagueは、短いミッションをクリアするまで鳴り続ける目覚まし時計です。毎日全員に同じデイリーチャレンジが出るので、起床までの時間がリーグの順位表に載ります。ポイント、レベル、連続記録、トロフィーで、朝起きることがゲームになります。買い切り、広告なし、アカウント不要。',
     features: [
@@ -127,6 +139,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   ko: {
     tagline: '이겨야 꺼지는 알람',
+    headline: "이겨야 꺼지는 알람",
+    summary: "짧은 미션을 끝낼 때까지 계속 울리는 알람, 그리고 일찍 일어나는 사람들의 데일리 리그.",
     description:
       'Wake League는 짧은 미션을 완료할 때까지 계속 울리는 알람 시계입니다. 매일 모두가 같은 데일리 챌린지를 받기 때문에 내 기상 시간이 리그 순위표에 오릅니다. 포인트, 레벨, 연속 기록, 트로피가 기상을 게임으로 바꿔 줍니다. 1회 구매, 광고 없음, 계정 없음.',
     features: [
@@ -142,6 +156,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   zh: {
     tagline: '赢了才会停的闹钟',
+    headline: "赢了才会停的闹钟",
+    summary: "不完成一个简短任务就会一直响的闹钟，外加早起者的每日联赛。",
     description:
       'Wake League 是一款不完成简短任务就会一直响的闹钟。每天所有人都会收到相同的每日挑战，你的起床用时会计入联赛排行榜。积分、等级、连胜和奖杯，让起床变成一场游戏。一次性买断，无广告，无需账户。',
     features: [
@@ -157,6 +173,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   ar: {
     tagline: 'المنبّه الذي عليك أن تهزمه',
+    headline: "المنبّه الذي عليك أن تهزمه",
+    summary: "منبّه يظل يرنّ حتى تُنهي مهمة قصيرة، ودوري يومي لمن يستيقظون مبكرًا.",
     description:
       'منبّه Wake League لا يتوقف عن الرنين حتى تُكمل مهام قصيرة. كل يوم يحصل الجميع على تحدي اليوم نفسه، فيظهر وقت استيقاظك في جدول الدوري. النقاط والمستويات والسلاسل والكؤوس تحوّل الاستيقاظ إلى لعبة. شراء لمرة واحدة، بلا إعلانات، بلا حساب.',
     features: [
@@ -172,6 +190,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   hi: {
     tagline: 'वह अलार्म जिसे आपको हराना होगा',
+    headline: "वह अलार्म जिसे आपको हराना होगा",
+    summary: "एक अलार्म, जो तब तक बजता रहता है जब तक आप छोटा-सा मिशन पूरा न कर लें, और जल्दी उठने वालों की रोज़ की लीग।",
     description:
       'Wake League एक अलार्म घड़ी है जो तब तक बजती रहती है जब तक आप छोटे मिशन पूरे नहीं कर लेते। हर दिन सबके लिए आज का चैलेंज एक जैसा होता है, इसलिए आपके जागने का समय लीग तालिका में दर्ज होता है। पॉइंट, लेवल, स्ट्रीक और ट्रॉफ़ियाँ जागने को एक खेल बना देती हैं। एक बार की खरीद, न विज्ञापन, न खाता।',
     features: [
@@ -187,6 +207,8 @@ export const wakeleagueMarketing: Record<string, AppMarketing> = {
   },
   he: {
     tagline: 'השעון המעורר שתצטרכו לנצח',
+    headline: "השעון המעורר שתצטרכו לנצח",
+    summary: "שעון מעורר שממשיך לצלצל עד שמסיימים משימה קצרה, וליגה יומית של משכימי קום.",
     description:
       'השעון המעורר Wake League ממשיך לצלצל עד שמסיימים משימות קצרות. כל יום כולם מקבלים את אותו אתגר יומי, כך שזמן ההשכמה שלכם נכנס לטבלת הליגה. נקודות, שלבים, רצפים וגביעים הופכים את הקימה בבוקר למשחק. רכישה חד-פעמית, בלי פרסומות, בלי חשבון.',
     features: [

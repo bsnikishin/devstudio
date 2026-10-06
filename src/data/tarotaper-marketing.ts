@@ -35,6 +35,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   de: {
     tagline: 'Tägliches Tarot & KI-Deutung',
+    headline: "Eine Tageskarte in Telegram",
+    summary: "Eine Tageskarte, eine 3-Karten-Legung und das vollständige 78-Karten-Deck mit Deutungen, direkt in Telegram.",
     description:
       'Entdecken Sie, was die Karten über Ihr Leben verraten. TaroTaper verbindet uralte Tarot-Weisheit mit moderner KI für personalisierte Deutungen — jeden Tag.',
     features: [
@@ -49,6 +51,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   fr: {
     tagline: 'Tarot quotidien & Lecture IA',
+    headline: "Une carte du jour sur Telegram",
+    summary: "Une carte du jour, un tirage de trois cartes et le jeu complet de 78 cartes avec leurs interprétations, directement sur Telegram.",
     description:
       "Découvrez ce que les cartes révèlent sur votre vie. TaroTaper allie la sagesse ancestrale du Tarot à l'intelligence artificielle pour des lectures personnalisées chaque jour.",
     features: [
@@ -63,6 +67,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   es: {
     tagline: 'Tarot Diario y Lectura con IA',
+    headline: "Una carta del día en Telegram",
+    summary: "Una carta del día, una tirada de tres cartas y la baraja completa de 78 cartas con sus interpretaciones, directamente en Telegram.",
     description:
       'Descubre lo que las cartas revelan sobre tu vida. TaroTaper combina la sabiduría ancestral del Tarot con inteligencia artificial para lecturas personalizadas cada día.',
     features: [
@@ -77,6 +83,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   it: {
     tagline: 'Tarocchi Giornalieri e Lettura IA',
+    headline: "Una carta del giorno su Telegram",
+    summary: "Una carta del giorno, una stesa a tre carte e il mazzo completo di 78 carte con le interpretazioni, direttamente su Telegram.",
     description:
       "Scopri cosa rivelano le carte sulla tua vita. TaroTaper unisce l'antica saggezza dei Tarocchi all'intelligenza artificiale per letture personalizzate ogni giorno.",
     features: [
@@ -91,6 +99,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   pt: {
     tagline: 'Tarô Diário e Leitura com IA',
+    headline: "Uma carta do dia no Telegram",
+    summary: "Uma carta do dia, uma tiragem de três cartas e o baralho completo de 78 cartas com interpretações, direto no Telegram.",
     description:
       'Descubra o que as cartas revelam sobre sua vida. TaroTaper combina a sabedoria ancestral do Tarô com inteligência artificial para leituras personalizadas todos os dias.',
     features: [
@@ -105,6 +115,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   ja: {
     tagline: '毎日のタロット＆AI占い',
+    headline: "Telegramで、今日のカードを",
+    summary: "今日のカード、3枚スプレッド、解釈付きの78枚フルデッキ。すべてTelegramの中で使えます。",
     description:
       'カードがあなたの人生について何を語るか、発見しましょう。TaroTaperは古代タロットの知恵とAIを融合し、毎日パーソナライズされたリーディングをお届けします。',
     features: [
@@ -119,6 +131,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   ko: {
     tagline: '매일 타로 & AI 리딩',
+    headline: "Telegram에서 만나는 오늘의 카드",
+    summary: "오늘의 카드, 3장 스프레드, 해석이 담긴 78장 풀 덱을 Telegram에서 바로 만나 보세요.",
     description:
       '카드가 당신의 삶에 대해 무엇을 알려주는지 발견하세요. TaroTaper는 고대 타로의 지혜와 AI를 결합하여 매일 맞춤형 리딩을 제공합니다.',
     features: [
@@ -133,6 +147,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   zh: {
     tagline: '每日塔罗与AI解读',
+    headline: "在 Telegram 里抽每日一牌",
+    summary: "每日一牌、三牌阵和带解读的完整 78 张牌组，直接在 Telegram 中使用。",
     description:
       '探索牌面揭示的人生启示。TaroTaper将古老的塔罗智慧与AI相结合，每天为您提供个性化的占卜解读。',
     features: [
@@ -147,6 +163,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   ar: {
     tagline: 'تاروت يومي وقراءة بالذكاء الاصطناعي',
+    headline: "بطاقة اليوم على Telegram",
+    summary: "بطاقة اليوم، وفرش من ثلاث بطاقات، والمجموعة الكاملة من 78 بطاقة مع تفسيراتها، مباشرةً في Telegram.",
     description:
       'اكتشف ما تكشفه الأوراق عن حياتك. يجمع TaroTaper بين حكمة التاروت القديمة والذكاء الاصطناعي لتقديم قراءات مخصصة كل يوم.',
     features: [
@@ -161,6 +179,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   he: {
     tagline: 'טארוט יומי וקריאת AI',
+    headline: "קלף היום ב-Telegram",
+    summary: "קלף היום, פריסה של שלושה קלפים והחפיסה המלאה של 78 קלפים עם פירושים, ישר ב-Telegram.",
     description:
       'גלה מה הקלפים חושפים על חייך. TaroTaper משלב את חכמת הטארוט העתיקה עם בינה מלאכותית לקריאות מותאמות אישית בכל יום.',
     features: [
@@ -175,6 +195,8 @@ export const tarotaperMarketing: Record<string, AppMarketing> = {
   },
   hi: {
     tagline: 'दैनिक टैरो और AI रीडिंग',
+    headline: "Telegram में आज का पत्ता",
+    summary: "आज का पत्ता, तीन कार्ड का स्प्रेड और व्याख्याओं के साथ पूरा 78 कार्ड का डेक, सीधे Telegram में।",
     description:
       'जानिए कि पत्ते आपके जीवन के बारे में क्या बताते हैं। TaroTaper प्राचीन टैरो ज्ञान को AI के साथ जोड़कर हर दिन व्यक्तिगत रीडिंग प्रदान करता है।',
     features: [

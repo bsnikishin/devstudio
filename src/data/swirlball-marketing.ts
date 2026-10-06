@@ -37,6 +37,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   de: {
     tagline: 'Turm drehen, Ball fallen lassen',
+    headline: "Turm drehen, Ball fallen lassen",
+    summary: "Halte die linke oder rechte Bildschirmhälfte gedrückt, um den Turm zu drehen. 100 Level, der Endlosturm und jeden Tag ein neuer Tagesturm.",
     description:
       'Halte die linke oder rechte Bildschirmhälfte gedrückt, um den Turm zu drehen, und lass einen hüpfenden Ball durch die Lücken fallen. 100 Level, der Endlosturm und jeden Tag ein neuer Tagesturm. Keine Werbung, kein WLAN nötig.',
     features: [
@@ -52,6 +54,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   fr: {
     tagline: 'Faites tourner la tour, lâchez la balle',
+    headline: "Faites tourner la tour, lâchez la balle",
+    summary: "Maintenez le côté gauche ou droit de l’écran pour faire tourner la tour. 100 niveaux, la Tour infinie et une nouvelle Tour du jour chaque jour.",
     description:
       'Maintenez le côté gauche ou droit de l’écran pour faire tourner la tour et guider une balle qui rebondit à travers les trous. 100 niveaux, la Tour infinie et une nouvelle Tour du jour chaque jour. Sans pub, sans Wi-Fi.',
     features: [
@@ -67,6 +71,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   es: {
     tagline: 'Gira la torre, deja caer la bola',
+    headline: "Gira la torre, deja caer la bola",
+    summary: "Mantén pulsado un lado de la pantalla para girar la torre. 100 niveles, la Torre infinita y una nueva Torre del día cada día.",
     description:
       'Mantén pulsado el lado izquierdo o derecho de la pantalla para girar la torre y guiar una bola que rebota a través de los huecos. 100 niveles, la Torre infinita y una nueva Torre del día cada día. Sin anuncios y sin wifi.',
     features: [
@@ -82,6 +88,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   it: {
     tagline: 'Gira la torre, fai cadere la palla',
+    headline: "Gira la torre, fai cadere la palla",
+    summary: "Tieni premuto un lato dello schermo per far girare la torre. 100 livelli, la Torre infinita e una nuova Torre del giorno ogni giorno.",
     description:
       'Tieni premuto il lato sinistro o destro dello schermo per far girare la torre e guidare una palla che rimbalza attraverso i varchi. 100 livelli, la Torre infinita e una nuova Torre del giorno ogni giorno. Niente pubblicità, niente Wi-Fi.',
     features: [
@@ -97,6 +105,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   pt: {
     tagline: 'Gire a torre, solte a bola',
+    headline: "Gire a torre, solte a bola",
+    summary: "Segure um lado da tela para girar a torre. 100 níveis, a Torre infinita e uma nova Torre do Dia todo dia.",
     description:
       'Segure o lado esquerdo ou direito da tela para girar a torre e guiar uma bolinha que quica pelos buracos. 100 níveis, a Torre infinita e uma nova Torre do Dia todo dia. Sem anúncios e sem precisar de Wi-Fi.',
     features: [
@@ -112,6 +122,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   ja: {
     tagline: 'タワーを回して、ボールを落とそう',
+    headline: "タワーを回して、ボールを落とそう",
+    summary: "画面の左半分か右半分を長押しして、タワーを回転。100ステージ、エンドレスタワー、そして毎日新しいデイリータワー。",
     description:
       '画面の左半分か右半分を長押ししてタワーを回し、跳ねるボールをすき間から落としていこう。100ステージ、エンドレスタワー、そして毎日新しいデイリータワー。広告なし、ネット不要。',
     features: [
@@ -127,6 +139,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   ko: {
     tagline: '타워를 돌리고, 공을 떨어뜨리세요',
+    headline: "타워를 돌리고, 공을 떨어뜨리세요",
+    summary: "화면 왼쪽이나 오른쪽을 길게 눌러 타워를 돌리세요. 100개 레벨, 무한 타워, 그리고 매일 새로운 오늘의 타워.",
     description:
       '화면 왼쪽이나 오른쪽을 길게 눌러 타워를 돌리고, 통통 튀는 공을 틈 사이로 떨어뜨리세요. 100개 레벨, 무한 타워, 그리고 매일 새로운 오늘의 타워. 광고 없음, 와이파이 없이도 OK.',
     features: [
@@ -142,6 +156,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   zh: {
     tagline: '旋转高塔，让小球坠落',
+    headline: "旋转高塔，让小球坠落",
+    summary: "按住屏幕左侧或右侧旋转高塔。100 个关卡、无尽之塔，以及每天一座新的每日之塔。",
     description:
       '按住屏幕左侧或右侧旋转高塔，让弹跳的小球从缝隙中坠落。100 个关卡、无尽之塔，以及每天一座新的每日之塔。无广告，无需网络。',
     features: [
@@ -157,6 +173,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   ar: {
     tagline: 'أدِر البرج وأسقِط الكرة',
+    headline: "أدِر البرج وأسقِط الكرة",
+    summary: "اضغط مطولًا على أحد جانبي الشاشة لتدوير البرج. 100 مرحلة، والبرج اللانهائي، و«برج اليوم» الجديد كل يوم.",
     description:
       'اضغط مطولًا على الجانب الأيسر أو الأيمن من الشاشة لتدوير البرج وإسقاط كرة تقفز عبر الفجوات. 100 مرحلة، والبرج اللانهائي، و«برج اليوم»: برج جديد كل يوم. بلا إعلانات ودون الحاجة إلى الإنترنت.',
     features: [
@@ -172,6 +190,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   hi: {
     tagline: 'टावर घुमाएं, गेंद गिराएं',
+    headline: "टावर घुमाएं, गेंद गिराएं",
+    summary: "टावर घुमाने के लिए स्क्रीन का बायां या दायां हिस्सा दबाकर रखें। 100 लेवल, एंडलेस टावर और हर दिन नया \"आज का टावर\"।",
     description:
       'स्क्रीन का बायां या दायां हिस्सा दबाकर रखें, टावर घुमाएं और उछलती गेंद को खाली जगहों से नीचे गिराएं। 100 लेवल, एंडलेस टावर और "आज का टावर", जो हर दिन नया होता है। कोई विज्ञापन नहीं, इंटरनेट की ज़रूरत नहीं।',
     features: [
@@ -187,6 +207,8 @@ export const swirlballMarketing: Record<string, AppMarketing> = {
   },
   he: {
     tagline: 'מסובבים את המגדל, מפילים את הכדור',
+    headline: "מסובבים את המגדל, מפילים את הכדור",
+    summary: "לחצו לחיצה ארוכה על אחד מצדי המסך כדי לסובב את המגדל. 100 שלבים, המגדל האינסופי ו\"מגדל היום\" חדש בכל יום.",
     description:
       'לחצו לחיצה ארוכה על הצד השמאלי או הימני של המסך כדי לסובב את המגדל ולהפיל כדור קופץ דרך הפתחים. 100 שלבים, המגדל האינסופי ו"מגדל היום" — מגדל חדש בכל יום. בלי פרסומות ובלי צורך באינטרנט.',
     features: [
