@@ -44,5 +44,36 @@ export const shotLocales: Record<string, string[]> = {
     'it',
     'hi',
     'he'
+  ],
+  'colorbrain': [
+    'en',
+    'ru',
+    'zh',
+    'es',
+    'fr',
+    'de',
+    'ja',
+    'ko',
+    'pt',
+    'ar',
+    'it',
+    'hi',
+    'he'
+  ],
+  'aline': [],
+  'cozyball': [
+    'en',
+    'ru',
+    'zh',
+    'es',
+    'fr',
+    'de',
+    'ja',
+    'ko',
+    'pt',
+    'ar',
+    'it',
+    'hi',
+    'he'
   ]
 }

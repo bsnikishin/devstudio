@@ -14,6 +14,8 @@
 :lang(ar) { --serif-fallback: 'Geeza Pro', 'Noto Naskh Arabic'; --sans-fallback: 'SF Arabic', 'Geeza Pro'; }
 :lang(he) { --serif-fallback: 'New Peninim MT', 'Times New Roman'; --sans-fallback: 'SF Hebrew', 'Arial Hebrew'; }
 :lang(hi) { --serif-fallback: 'Kohinoor Devanagari', 'Noto Serif Devanagari'; --sans-fallback: 'Kohinoor Devanagari', 'Noto Sans Devanagari'; }
+/* Japanese headings: break between phrases, not inside a word (Chrome; others ignore it) */
+:lang(ja) :is(h1, h2, h3) { word-break: auto-phrase; }
 
 @layer base {
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }

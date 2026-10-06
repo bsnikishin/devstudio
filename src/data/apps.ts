@@ -129,7 +129,7 @@ export const apps: App[] = [
     listed: true,
     devices: 'iPhone · Apple Watch',
     theme: { bg: '#F7EFEB', ink: '#3E2F2B', muted: '#86716B', accent: '#B5857C', display: 'serif' },
-    shots: { scenes: ['timer', 'progress', 'diary'] },
+    shots: { scenes: ['timer', 'progress', 'notes'] },
   },
   {
     id: 'colorbrain',

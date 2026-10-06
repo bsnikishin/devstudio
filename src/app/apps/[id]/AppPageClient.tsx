@@ -89,7 +89,11 @@ export default function AppPageClient({ app }: { app: App }) {
                 {shots.slice(0, landscape ? 2 : 3).map((s, i) => (
                   <div
                     key={s.src}
-                    className={`shrink-0 snap-start ${landscape ? 'w-[86%] lg:w-full' : 'w-[58%] sm:w-[36%] lg:w-[31%]'} ${!landscape && i === 1 ? 'lg:mt-12' : ''} ${!landscape && i === 2 ? 'lg:mt-24' : ''} ${landscape && i === 1 ? 'lg:ms-[18%] lg:w-[82%]' : ''}`}
+                    className={`shrink-0 snap-start ${
+                      landscape
+                        ? `w-[86%] lg:w-[86%] ${i === 1 ? 'lg:ms-[14%]' : ''}`
+                        : `w-[58%] sm:w-[36%] lg:w-[31%] ${i === 1 ? 'lg:mt-12' : ''} ${i === 2 ? 'lg:mt-24' : ''}`
+                    }`}
                   >
                     <ShotImage src={s.src} alt={s.alt} landscape={landscape} className="!shadow-[0_1px_0_rgba(0,0,0,0.04),0_22px_44px_-26px_rgba(0,0,0,0.45)]" />
                   </div>
