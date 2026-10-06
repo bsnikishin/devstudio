@@ -6,7 +6,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   en: {
     title: `Privacy Policy`,
     effectiveDate: `Effective Date: October 5, 2026`,
-    intro: `NikiBStudio ("we", "our", or "us") built <strong>Cozy Ball</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
+    intro: `Bogdan Nikishin, an independent developer ("we", "our", or "us"), built <strong>Cozy Ball</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
     sections: [
       {
         heading: `Overview`,
@@ -63,7 +63,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   ru: {
     title: `Политика конфиденциальности`,
     effectiveDate: `Дата вступления в силу: 5 октября 2026 г.`,
-    intro: `NikiBStudio («мы», «наш» или «нас») разработала приложение <strong>Cozy Ball</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
+    intro: `Богдан Никишин, независимый разработчик («мы», «наш» или «нас»), разработал приложение <strong>Cozy Ball</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
     sections: [
       {
         heading: `Обзор`,
@@ -120,7 +120,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   de: {
     title: `Datenschutzrichtlinie`,
     effectiveDate: `Gültig ab: 5. Oktober 2026`,
-    intro: `NikiBStudio („wir", „unser" oder „uns") hat <strong>Cozy Ball</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzrichtlinie erklärt, wie wir mit Informationen umgehen, wenn Sie unsere App nutzen.`,
+    intro: `Bogdan Nikishin, ein unabhängiger Entwickler („wir", „unser" oder „uns"), hat <strong>Cozy Ball</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzrichtlinie erklärt, wie wir mit Informationen umgehen, wenn Sie unsere App nutzen.`,
     sections: [
       {
         heading: `Überblick`,
@@ -177,7 +177,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   fr: {
     title: `Politique de confidentialité`,
     effectiveDate: `Date d'entrée en vigueur : 5 octobre 2026`,
-    intro: `NikiBStudio (« nous », « notre » ou « nos ») a développé <strong>Cozy Ball</strong> (« l'Application ») en tant qu'application commerciale. La présente Politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez notre Application.`,
+    intro: `Bogdan Nikishin, développeur indépendant (« nous », « notre » ou « nos »), a développé <strong>Cozy Ball</strong> (« l'Application ») en tant qu'application commerciale. La présente Politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez notre Application.`,
     sections: [
       {
         heading: `Aperçu`,
@@ -234,7 +234,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   es: {
     title: `Política de privacidad`,
     effectiveDate: `Fecha de vigencia: 5 de octubre de 2026`,
-    intro: `NikiBStudio ("nosotros", "nuestro" o "nos") ha desarrollado <strong>Cozy Ball</strong> ("la Aplicación") como una aplicación comercial. Esta Política de privacidad explica cómo manejamos la información cuando utiliza nuestra Aplicación.`,
+    intro: `Bogdan Nikishin, desarrollador independiente ("nosotros", "nuestro" o "nos"), ha desarrollado <strong>Cozy Ball</strong> ("la Aplicación") como una aplicación comercial. Esta Política de privacidad explica cómo manejamos la información cuando utiliza nuestra Aplicación.`,
     sections: [
       {
         heading: `Descripción general`,
@@ -291,7 +291,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   it: {
     title: `Informativa sulla privacy`,
     effectiveDate: `Data di entrata in vigore: 5 ottobre 2026`,
-    intro: `NikiBStudio ("noi", "nostro" o "ci") ha sviluppato <strong>Cozy Ball</strong> ("l'App") come applicazione commerciale. La presente Informativa sulla privacy spiega come trattiamo le informazioni quando utilizzi la nostra App.`,
+    intro: `Bogdan Nikishin, sviluppatore indipendente ("noi", "nostro" o "ci"), ha sviluppato <strong>Cozy Ball</strong> ("l'App") come applicazione commerciale. La presente Informativa sulla privacy spiega come trattiamo le informazioni quando utilizzi la nostra App.`,
     sections: [
       {
         heading: `Panoramica`,
@@ -348,7 +348,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   pt: {
     title: `Política de privacidade`,
     effectiveDate: `Data de vigência: 5 de outubro de 2026`,
-    intro: `A NikiBStudio ("nós", "nosso" ou "nos") desenvolveu o <strong>Cozy Ball</strong> ("o App") como um aplicativo comercial. Esta Política de privacidade explica como tratamos as informações quando você usa nosso App.`,
+    intro: `Bogdan Nikishin, desenvolvedor independente ("nós", "nosso" ou "nos"), desenvolveu o <strong>Cozy Ball</strong> ("o App") como um aplicativo comercial. Esta Política de privacidade explica como tratamos as informações quando você usa nosso App.`,
     sections: [
       {
         heading: `Visão geral`,
@@ -405,7 +405,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   ja: {
     title: `プライバシーポリシー`,
     effectiveDate: `発効日：2026年10月5日`,
-    intro: `NikiBStudio（「当社」）は、商用アプリケーションとして<strong>Cozy Ball</strong>（「本アプリ」）を開発しました。本プライバシーポリシーは、お客様が本アプリを使用する際の情報の取り扱いについて説明します。`,
+    intro: `個人開発者のボグダン・ニキシン（「当社」）は、商用アプリケーションとして<strong>Cozy Ball</strong>（「本アプリ」）を開発しました。本プライバシーポリシーは、お客様が本アプリを使用する際の情報の取り扱いについて説明します。`,
     sections: [
       {
         heading: `概要`,
@@ -462,7 +462,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   ko: {
     title: `개인정보 처리방침`,
     effectiveDate: `시행일: 2026년 10월 5일`,
-    intro: `NikiBStudio("당사")는 상업용 애플리케이션으로 <strong>Cozy Ball</strong>("본 앱")을 개발했습니다. 본 개인정보 처리방침은 귀하가 본 앱을 사용할 때 당사가 정보를 처리하는 방식을 설명합니다.`,
+    intro: `독립 개발자 보그단 니키신("당사")은 상업용 애플리케이션으로 <strong>Cozy Ball</strong>("본 앱")을 개발했습니다. 본 개인정보 처리방침은 귀하가 본 앱을 사용할 때 당사가 정보를 처리하는 방식을 설명합니다.`,
     sections: [
       {
         heading: `개요`,
@@ -519,7 +519,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   zh: {
     title: `隐私政策`,
     effectiveDate: `生效日期：2026年10月5日`,
-    intro: `NikiBStudio（"我们"）开发了 <strong>Cozy Ball</strong>（"本应用"）作为商业应用程序。本隐私政策说明了您使用本应用时我们如何处理信息。`,
+    intro: `独立开发者波格丹·尼基申（"我们"）开发了 <strong>Cozy Ball</strong>（"本应用"）作为商业应用程序。本隐私政策说明了您使用本应用时我们如何处理信息。`,
     sections: [
       {
         heading: `概述`,
@@ -576,7 +576,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   ar: {
     title: `سياسة الخصوصية`,
     effectiveDate: `تاريخ السريان: 5 أكتوبر 2026`,
-    intro: `قامت NikiBStudio ("نحن" أو "لنا") بتطوير <strong>Cozy Ball</strong> ("التطبيق") كتطبيق تجاري. توضح سياسة الخصوصية هذه كيفية تعاملنا مع المعلومات عند استخدامك لتطبيقنا.`,
+    intro: `قام المطوّر المستقل بوغدان نيكيشين ("نحن" أو "لنا") بتطوير <strong>Cozy Ball</strong> ("التطبيق") كتطبيق تجاري. توضح سياسة الخصوصية هذه كيفية تعاملنا مع المعلومات عند استخدامك لتطبيقنا.`,
     sections: [
       {
         heading: `نظرة عامة`,
@@ -633,7 +633,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   hi: {
     title: `गोपनीयता नीति`,
     effectiveDate: `प्रभावी तिथि: 5 अक्टूबर 2026`,
-    intro: `NikiBStudio ("हम", "हमारा") ने <strong>Cozy Ball</strong> ("ऐप") को एक व्यावसायिक एप्लिकेशन के रूप में विकसित किया है। यह गोपनीयता नीति बताती है कि जब आप हमारे ऐप का उपयोग करते हैं तो हम जानकारी को कैसे संभालते हैं।`,
+    intro: `स्वतंत्र डेवलपर बोगदान निकिशिन ("हम", "हमारा") ने <strong>Cozy Ball</strong> ("ऐप") को एक व्यावसायिक एप्लिकेशन के रूप में विकसित किया है। यह गोपनीयता नीति बताती है कि जब आप हमारे ऐप का उपयोग करते हैं तो हम जानकारी को कैसे संभालते हैं।`,
     sections: [
       {
         heading: `अवलोकन`,
@@ -690,7 +690,7 @@ export const cozyballPrivacy: Record<string, PrivacyPolicy> = {
   he: {
     title: `מדיניות פרטיות`,
     effectiveDate: `תאריך כניסה לתוקף: 5 באוקטובר 2026`,
-    intro: `NikiBStudio ("אנחנו" או "שלנו") פיתחה את <strong>Cozy Ball</strong> ("האפליקציה") כאפליקציה מסחרית. מדיניות פרטיות זו מסבירה כיצד אנו מטפלים במידע כאשר אתם משתמשים באפליקציה שלנו.`,
+    intro: `בוגדן ניקישין, מפתח עצמאי ("אנחנו" או "שלנו"), פיתח את <strong>Cozy Ball</strong> ("האפליקציה") כאפליקציה מסחרית. מדיניות פרטיות זו מסבירה כיצד אנו מטפלים במידע כאשר אתם משתמשים באפליקציה שלנו.`,
     sections: [
       {
         heading: `סקירה כללית`,

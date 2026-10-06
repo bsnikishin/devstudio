@@ -6,7 +6,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   en: {
     title: `Privacy Policy`,
     effectiveDate: `Effective Date: October 5, 2026`,
-    intro: `NikiBStudio ("we", "our", or "us") built <strong>Bookpather</strong> ("the App") as a commercial application. This Privacy Policy explains what information the App handles, where it is stored, and what leaves your device — and what never does.`,
+    intro: `Bogdan Nikishin, an independent developer ("we", "our", or "us"), built <strong>Bookpather</strong> ("the App") as a commercial application. This Privacy Policy explains what information the App handles, where it is stored, and what leaves your device — and what never does.`,
     sections: [
       {
         heading: `Overview`,
@@ -67,7 +67,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   ru: {
     title: `Политика конфиденциальности`,
     effectiveDate: `Дата вступления в силу: 5 октября 2026 г.`,
-    intro: `NikiBStudio («мы», «наш», «нас») разработала <strong>Bookpather</strong> («Приложение») как коммерческое приложение. Эта Политика конфиденциальности объясняет, какие данные обрабатывает Приложение, где они хранятся, что покидает ваше устройство — а что не покидает его никогда.`,
+    intro: `Богдан Никишин, независимый разработчик («мы», «наш», «нас»), разработал <strong>Bookpather</strong> («Приложение») как коммерческое приложение. Эта Политика конфиденциальности объясняет, какие данные обрабатывает Приложение, где они хранятся, что покидает ваше устройство — а что не покидает его никогда.`,
     sections: [
       {
         heading: `Обзор`,
@@ -128,7 +128,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   de: {
     title: `Datenschutzerklärung`,
     effectiveDate: `Gültig ab: 5. Oktober 2026`,
-    intro: `NikiBStudio („wir", „unser" oder „uns") hat <strong>Bookpather</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzerklärung erläutert, welche Daten die App verarbeitet, wo sie gespeichert werden und was Ihr Gerät verlässt — und was niemals.`,
+    intro: `Bogdan Nikishin, ein unabhängiger Entwickler („wir", „unser" oder „uns"), hat <strong>Bookpather</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzerklärung erläutert, welche Daten die App verarbeitet, wo sie gespeichert werden und was Ihr Gerät verlässt — und was niemals.`,
     sections: [
       {
         heading: `Überblick`,
@@ -189,7 +189,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   fr: {
     title: `Politique de confidentialité`,
     effectiveDate: `Date d'entrée en vigueur : 5 octobre 2026`,
-    intro: `NikiBStudio (« nous », « notre ») a développé <strong>Bookpather</strong> (« l'App ») en tant qu'application commerciale. Cette politique explique quelles données l'App traite, où elles sont stockées et ce qui quitte votre appareil — et ce qui ne le quitte jamais.`,
+    intro: `Bogdan Nikishin, développeur indépendant (« nous », « notre »), a développé <strong>Bookpather</strong> (« l'App ») en tant qu'application commerciale. Cette politique explique quelles données l'App traite, où elles sont stockées et ce qui quitte votre appareil — et ce qui ne le quitte jamais.`,
     sections: [
       {
         heading: `Aperçu`,
@@ -250,7 +250,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   es: {
     title: `Política de privacidad`,
     effectiveDate: `Fecha de entrada en vigor: 5 de octubre de 2026`,
-    intro: `NikiBStudio («nosotros», «nuestro») desarrolló <strong>Bookpather</strong> («la App») como aplicación comercial. Esta política explica qué datos maneja la App, dónde se almacenan y qué sale de tu dispositivo — y qué no sale nunca.`,
+    intro: `Bogdan Nikishin, desarrollador independiente («nosotros», «nuestro»), desarrolló <strong>Bookpather</strong> («la App») como aplicación comercial. Esta política explica qué datos maneja la App, dónde se almacenan y qué sale de tu dispositivo — y qué no sale nunca.`,
     sections: [
       {
         heading: `Resumen`,
@@ -311,7 +311,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   it: {
     title: `Informativa sulla privacy`,
     effectiveDate: `Data di entrata in vigore: 5 ottobre 2026`,
-    intro: `NikiBStudio («noi», «nostro») ha sviluppato <strong>Bookpather</strong> («l'App») come applicazione commerciale. Questa informativa spiega quali dati l'App gestisce, dove sono conservati e cosa lascia il tuo dispositivo — e cosa non lo lascia mai.`,
+    intro: `Bogdan Nikishin, sviluppatore indipendente («noi», «nostro»), ha sviluppato <strong>Bookpather</strong> («l'App») come applicazione commerciale. Questa informativa spiega quali dati l'App gestisce, dove sono conservati e cosa lascia il tuo dispositivo — e cosa non lo lascia mai.`,
     sections: [
       {
         heading: `Panoramica`,
@@ -372,7 +372,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   pt: {
     title: `Política de Privacidade`,
     effectiveDate: `Data de vigência: 5 de outubro de 2026`,
-    intro: `A NikiBStudio ("nós", "nosso") desenvolveu o <strong>Bookpather</strong> ("o App") como aplicativo comercial. Esta política explica quais dados o App processa, onde ficam armazenados e o que sai do seu dispositivo — e o que nunca sai.`,
+    intro: `Bogdan Nikishin, desenvolvedor independente ("nós", "nosso"), desenvolveu o <strong>Bookpather</strong> ("o App") como aplicativo comercial. Esta política explica quais dados o App processa, onde ficam armazenados e o que sai do seu dispositivo — e o que nunca sai.`,
     sections: [
       {
         heading: `Visão geral`,
@@ -433,7 +433,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   ja: {
     title: `プライバシーポリシー`,
     effectiveDate: `発効日：2026年10月5日`,
-    intro: `NikiBStudio（「当社」）は、商用アプリケーションとして<strong>Bookpather</strong>（「本アプリ」）を開発しました。本ポリシーでは、本アプリが扱うデータ、その保存場所、端末の外に送信されるもの — そして決して送信されないもの — を説明します。`,
+    intro: `個人開発者のボグダン・ニキシン（「当社」）は、商用アプリケーションとして<strong>Bookpather</strong>（「本アプリ」）を開発しました。本ポリシーでは、本アプリが扱うデータ、その保存場所、端末の外に送信されるもの — そして決して送信されないもの — を説明します。`,
     sections: [
       {
         heading: `概要`,
@@ -494,7 +494,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   ko: {
     title: `개인정보 처리방침`,
     effectiveDate: `시행일: 2026년 10월 5일`,
-    intro: `NikiBStudio("당사")는 상용 애플리케이션으로 <strong>Bookpather</strong>("앱")를 개발했습니다. 본 방침은 앱이 어떤 데이터를 처리하고 어디에 저장하며, 무엇이 기기 밖으로 전송되는지 — 그리고 무엇이 절대 전송되지 않는지 설명합니다.`,
+    intro: `독립 개발자 보그단 니키신("당사")은 상용 애플리케이션으로 <strong>Bookpather</strong>("앱")를 개발했습니다. 본 방침은 앱이 어떤 데이터를 처리하고 어디에 저장하며, 무엇이 기기 밖으로 전송되는지 — 그리고 무엇이 절대 전송되지 않는지 설명합니다.`,
     sections: [
       {
         heading: `개요`,
@@ -555,7 +555,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   zh: {
     title: `隐私政策`,
     effectiveDate: `生效日期：2026年10月5日`,
-    intro: `NikiBStudio（"我们"）开发了商业应用<strong>Bookpather</strong>（"本应用"）。本隐私政策说明应用处理哪些数据、数据存储在哪里、哪些内容会离开您的设备——以及哪些永远不会。`,
+    intro: `独立开发者波格丹·尼基申（"我们"）开发了商业应用<strong>Bookpather</strong>（"本应用"）。本隐私政策说明应用处理哪些数据、数据存储在哪里、哪些内容会离开您的设备——以及哪些永远不会。`,
     sections: [
       {
         heading: `概述`,
@@ -616,7 +616,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   ar: {
     title: `سياسة الخصوصية`,
     effectiveDate: `تاريخ السريان: 5 أكتوبر 2026`,
-    intro: `طوّرت NikiBStudio («نحن») تطبيق <strong>Bookpather</strong> («التطبيق») كتطبيق تجاري. توضح هذه السياسة البيانات التي يعالجها التطبيق، وأين تُخزَّن، وما الذي يغادر جهازك — وما الذي لا يغادره أبداً.`,
+    intro: `طوّر المطوّر المستقل بوغدان نيكيشين («نحن») تطبيق <strong>Bookpather</strong> («التطبيق») كتطبيق تجاري. توضح هذه السياسة البيانات التي يعالجها التطبيق، وأين تُخزَّن، وما الذي يغادر جهازك — وما الذي لا يغادره أبداً.`,
     sections: [
       {
         heading: `نظرة عامة`,
@@ -677,7 +677,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   he: {
     title: `מדיניות פרטיות`,
     effectiveDate: `תאריך כניסה לתוקף: 5 באוקטובר 2026`,
-    intro: `NikiBStudio («אנחנו») פיתחה את <strong>Bookpather</strong> («האפליקציה») כאפליקציה מסחרית. מדיניות זו מסבירה אילו נתונים האפליקציה מעבדת, היכן הם נשמרים ומה יוצא מהמכשיר שלכם — ומה לעולם לא.`,
+    intro: `בוגדן ניקישין, מפתח עצמאי («אנחנו»), פיתח את <strong>Bookpather</strong> («האפליקציה») כאפליקציה מסחרית. מדיניות זו מסבירה אילו נתונים האפליקציה מעבדת, היכן הם נשמרים ומה יוצא מהמכשיר שלכם — ומה לעולם לא.`,
     sections: [
       {
         heading: `סקירה`,
@@ -738,7 +738,7 @@ export const bookpatherPrivacy: Record<string, PrivacyPolicy> = {
   hi: {
     title: `गोपनीयता नीति`,
     effectiveDate: `प्रभावी तिथि: 5 अक्टूबर 2026`,
-    intro: `NikiBStudio («हम») ने <strong>Bookpather</strong> («ऐप») को एक वाणिज्यिक एप्लिकेशन के रूप में विकसित किया है। यह नीति बताती है कि ऐप कौन-सा डेटा संभालता है, वह कहाँ संग्रहीत होता है, आपके डिवाइस से क्या बाहर जाता है — और क्या कभी नहीं जाता।`,
+    intro: `स्वतंत्र डेवलपर बोगदान निकिशिन («हम») ने <strong>Bookpather</strong> («ऐप») को एक वाणिज्यिक एप्लिकेशन के रूप में विकसित किया है। यह नीति बताती है कि ऐप कौन-सा डेटा संभालता है, वह कहाँ संग्रहीत होता है, आपके डिवाइस से क्या बाहर जाता है — और क्या कभी नहीं जाता।`,
     sections: [
       {
         heading: `अवलोकन`,

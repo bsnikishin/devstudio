@@ -6,7 +6,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   en: {
     title: `Privacy Policy`,
     effectiveDate: `Effective Date: September 9, 2026`,
-    intro: `NikiBStudio ("we", "our", or "us") built <strong>LoanSolver</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
+    intro: `Bogdan Nikishin, an independent developer ("we", "our", or "us"), built <strong>LoanSolver</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
     sections: [
       {
         heading: `Overview`,
@@ -67,7 +67,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   ru: {
     title: `Политика конфиденциальности`,
     effectiveDate: `Дата вступления в силу: 9 сентября 2026 г.`,
-    intro: `NikiBStudio («мы», «наш» или «нас») разработала приложение <strong>LoanSolver</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
+    intro: `Богдан Никишин, независимый разработчик («мы», «наш» или «нас»), разработал приложение <strong>LoanSolver</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
     sections: [
       {
         heading: `Обзор`,
@@ -128,7 +128,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   de: {
     title: `Datenschutzerklärung`,
     effectiveDate: `Gültig ab: 9. September 2026`,
-    intro: `NikiBStudio („wir", „unser" oder „uns") hat <strong>LoanSolver</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzerklärung erläutert, wie wir mit Informationen umgehen, wenn Sie unsere App nutzen.`,
+    intro: `Bogdan Nikishin, ein unabhängiger Entwickler („wir", „unser" oder „uns"), hat <strong>LoanSolver</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzerklärung erläutert, wie wir mit Informationen umgehen, wenn Sie unsere App nutzen.`,
     sections: [
       {
         heading: `Überblick`,
@@ -189,7 +189,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   fr: {
     title: `Politique de confidentialité`,
     effectiveDate: `Date d'entrée en vigueur : 9 septembre 2026`,
-    intro: `NikiBStudio (« nous », « notre » ou « nos ») a développé <strong>LoanSolver</strong> (« l'Application ») en tant qu'application commerciale. Cette politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez notre Application.`,
+    intro: `Bogdan Nikishin, développeur indépendant (« nous », « notre » ou « nos »), a développé <strong>LoanSolver</strong> (« l'Application ») en tant qu'application commerciale. Cette politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez notre Application.`,
     sections: [
       {
         heading: `Aperçu`,
@@ -250,7 +250,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   es: {
     title: `Política de privacidad`,
     effectiveDate: `Fecha de entrada en vigor: 9 de septiembre de 2026`,
-    intro: `NikiBStudio («nosotros» o «nuestro») desarrolló <strong>LoanSolver</strong> («la App») como aplicación comercial. Esta Política de privacidad explica cómo tratamos la información cuando usas nuestra App.`,
+    intro: `Bogdan Nikishin, desarrollador independiente («nosotros» o «nuestro»), desarrolló <strong>LoanSolver</strong> («la App») como aplicación comercial. Esta Política de privacidad explica cómo tratamos la información cuando usas nuestra App.`,
     sections: [
       {
         heading: `Resumen`,
@@ -311,7 +311,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   it: {
     title: `Informativa sulla privacy`,
     effectiveDate: `Data di entrata in vigore: 9 settembre 2026`,
-    intro: `NikiBStudio («noi» o «nostro») ha sviluppato <strong>LoanSolver</strong> («l'App») come applicazione commerciale. Questa informativa spiega come trattiamo le informazioni quando usi la nostra App.`,
+    intro: `Bogdan Nikishin, sviluppatore indipendente («noi» o «nostro»), ha sviluppato <strong>LoanSolver</strong> («l'App») come applicazione commerciale. Questa informativa spiega come trattiamo le informazioni quando usi la nostra App.`,
     sections: [
       {
         heading: `Panoramica`,
@@ -372,7 +372,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   pt: {
     title: `Política de Privacidade`,
     effectiveDate: `Data de vigência: 9 de setembro de 2026`,
-    intro: `A NikiBStudio («nós» ou «nosso») desenvolveu o <strong>LoanSolver</strong> («o App») como aplicativo comercial. Esta Política de Privacidade explica como tratamos informações quando você usa nosso App.`,
+    intro: `Bogdan Nikishin, desenvolvedor independente («nós» ou «nosso»), desenvolveu o <strong>LoanSolver</strong> («o App») como aplicativo comercial. Esta Política de Privacidade explica como tratamos informações quando você usa nosso App.`,
     sections: [
       {
         heading: `Visão geral`,
@@ -433,7 +433,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   ja: {
     title: `プライバシーポリシー`,
     effectiveDate: `発効日：2026年9月9日`,
-    intro: `NikiBStudio（以下「当社」）は、商用アプリケーションとして<strong>LoanSolver</strong>（以下「本アプリ」）を開発しました。本プライバシーポリシーは、本アプリのご利用時に当社が情報をどのように取り扱うかを説明するものです。`,
+    intro: `個人開発者のボグダン・ニキシン（以下「当社」）は、商用アプリケーションとして<strong>LoanSolver</strong>（以下「本アプリ」）を開発しました。本プライバシーポリシーは、本アプリのご利用時に当社が情報をどのように取り扱うかを説明するものです。`,
     sections: [
       {
         heading: `概要`,
@@ -494,7 +494,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   ko: {
     title: `개인정보 처리방침`,
     effectiveDate: `시행일: 2026년 9월 9일`,
-    intro: `NikiBStudio(이하 "당사")는 상용 애플리케이션으로 <strong>LoanSolver</strong>(이하 "앱")를 개발했습니다. 본 개인정보 처리방침은 앱 사용 시 당사가 정보를 어떻게 처리하는지 설명합니다.`,
+    intro: `독립 개발자 보그단 니키신(이하 "당사")은 상용 애플리케이션으로 <strong>LoanSolver</strong>(이하 "앱")를 개발했습니다. 본 개인정보 처리방침은 앱 사용 시 당사가 정보를 어떻게 처리하는지 설명합니다.`,
     sections: [
       {
         heading: `개요`,
@@ -555,7 +555,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   zh: {
     title: `隐私政策`,
     effectiveDate: `生效日期：2026年9月9日`,
-    intro: `NikiBStudio（"我们"）将<strong>LoanSolver</strong>（"本应用"）作为商业应用开发。本隐私政策说明您使用本应用时我们如何处理信息。`,
+    intro: `独立开发者波格丹·尼基申（"我们"）将<strong>LoanSolver</strong>（"本应用"）作为商业应用开发。本隐私政策说明您使用本应用时我们如何处理信息。`,
     sections: [
       {
         heading: `概述`,
@@ -616,7 +616,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   ar: {
     title: `سياسة الخصوصية`,
     effectiveDate: `تاريخ السريان: 9 سبتمبر 2026`,
-    intro: `طوّرت NikiBStudio («نحن») تطبيق <strong>LoanSolver</strong> («التطبيق») كتطبيق تجاري. توضح سياسة الخصوصية هذه كيفية تعاملنا مع المعلومات عند استخدامك لتطبيقنا.`,
+    intro: `طوّر المطوّر المستقل بوغدان نيكيشين («نحن») تطبيق <strong>LoanSolver</strong> («التطبيق») كتطبيق تجاري. توضح سياسة الخصوصية هذه كيفية تعاملنا مع المعلومات عند استخدامك لتطبيقنا.`,
     sections: [
       {
         heading: `نظرة عامة`,
@@ -677,7 +677,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   hi: {
     title: `गोपनीयता नीति`,
     effectiveDate: `प्रभावी तिथि: 9 सितंबर 2026`,
-    intro: `NikiBStudio («हम» या «हमारा») ने <strong>LoanSolver</strong> («ऐप») को एक व्यावसायिक एप्लिकेशन के रूप में बनाया है। यह गोपनीयता नीति बताती है कि ऐप के उपयोग के दौरान हम जानकारी को कैसे संभालते हैं।`,
+    intro: `स्वतंत्र डेवलपर बोगदान निकिशिन («हम» या «हमारा») ने <strong>LoanSolver</strong> («ऐप») को एक व्यावसायिक एप्लिकेशन के रूप में बनाया है। यह गोपनीयता नीति बताती है कि ऐप के उपयोग के दौरान हम जानकारी को कैसे संभालते हैं।`,
     sections: [
       {
         heading: `अवलोकन`,
@@ -738,7 +738,7 @@ export const loansolverPrivacy: Record<string, PrivacyPolicy> = {
   he: {
     title: `מדיניות פרטיות`,
     effectiveDate: `תאריך כניסה לתוקף: 9 בספטמבר 2026`,
-    intro: `NikiBStudio («אנחנו») פיתחה את <strong>LoanSolver</strong> («האפליקציה») כאפליקציה מסחרית. מדיניות פרטיות זו מסבירה כיצד אנו מטפלים במידע בעת השימוש באפליקציה.`,
+    intro: `בוגדן ניקישין, מפתח עצמאי («אנחנו»), פיתח את <strong>LoanSolver</strong> («האפליקציה») כאפליקציה מסחרית. מדיניות פרטיות זו מסבירה כיצד אנו מטפלים במידע בעת השימוש באפליקציה.`,
     sections: [
       {
         heading: `סקירה`,

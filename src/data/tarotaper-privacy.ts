@@ -17,7 +17,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   en: {
     title: `Privacy Policy`,
     effectiveDate: `Effective Date: February 27, 2026`,
-    intro: `NikiBStudio ("we", "our", or "us") built <strong>TaroTaper</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
+    intro: `Bogdan Nikishin, an independent developer ("we", "our", or "us"), built <strong>TaroTaper</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
     sections: [
       {
         heading: `Overview`,
@@ -81,7 +81,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   ru: {
     title: `Политика конфиденциальности`,
     effectiveDate: `Дата вступления в силу: 27 февраля 2026 г.`,
-    intro: `NikiBStudio («мы», «наш» или «нас») разработала приложение <strong>TaroTaper</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
+    intro: `Богдан Никишин, независимый разработчик («мы», «наш» или «нас»), разработал приложение <strong>TaroTaper</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
     sections: [
       {
         heading: `Обзор`,
@@ -145,7 +145,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   zh: {
     title: `隐私政策`,
     effectiveDate: `生效日期：2026年2月27日`,
-    intro: `NikiBStudio（以下简称"我们"）开发了 <strong>TaroTaper</strong>（以下简称"本应用"）作为一款商业应用程序。本隐私政策说明我们在您使用本应用时如何处理信息。`,
+    intro: `独立开发者波格丹·尼基申（以下简称"我们"）开发了 <strong>TaroTaper</strong>（以下简称"本应用"）作为一款商业应用程序。本隐私政策说明我们在您使用本应用时如何处理信息。`,
     sections: [
       {
         heading: `概述`,
@@ -209,7 +209,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   es: {
     title: `Política de privacidad`,
     effectiveDate: `Fecha de vigencia: 27 de febrero de 2026`,
-    intro: `NikiBStudio ("nosotros", "nuestro" o "nos") desarrolló <strong>TaroTaper</strong> ("la Aplicación") como una aplicación comercial. Esta Política de privacidad explica cómo manejamos la información cuando usted utiliza nuestra Aplicación.`,
+    intro: `Bogdan Nikishin, desarrollador independiente ("nosotros", "nuestro" o "nos"), desarrolló <strong>TaroTaper</strong> ("la Aplicación") como una aplicación comercial. Esta Política de privacidad explica cómo manejamos la información cuando usted utiliza nuestra Aplicación.`,
     sections: [
       {
         heading: `Resumen`,
@@ -273,7 +273,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   fr: {
     title: `Politique de confidentialité`,
     effectiveDate: `Date d'entrée en vigueur : 27 février 2026`,
-    intro: `NikiBStudio (« nous », « notre » ou « nos ») a développé <strong>TaroTaper</strong> (« l'Application ») en tant qu'application commerciale. La présente Politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez notre Application.`,
+    intro: `Bogdan Nikishin, développeur indépendant (« nous », « notre » ou « nos »), a développé <strong>TaroTaper</strong> (« l'Application ») en tant qu'application commerciale. La présente Politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez notre Application.`,
     sections: [
       {
         heading: `Aperçu`,
@@ -337,7 +337,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   de: {
     title: `Datenschutzrichtlinie`,
     effectiveDate: `Gültig ab: 27. Februar 2026`,
-    intro: `NikiBStudio („wir", „unser" oder „uns") hat <strong>TaroTaper</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzrichtlinie erläutert, wie wir mit Informationen umgehen, wenn Sie unsere App nutzen.`,
+    intro: `Bogdan Nikishin, ein unabhängiger Entwickler („wir", „unser" oder „uns"), hat <strong>TaroTaper</strong> („die App") als kommerzielle Anwendung entwickelt. Diese Datenschutzrichtlinie erläutert, wie wir mit Informationen umgehen, wenn Sie unsere App nutzen.`,
     sections: [
       {
         heading: `Überblick`,
@@ -401,7 +401,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   ja: {
     title: `プライバシーポリシー`,
     effectiveDate: `施行日：2026年2月27日`,
-    intro: `NikiBStudio（以下「当社」）は、<strong>TaroTaper</strong>（以下「本アプリ」）を商用アプリケーションとして開発しました。本プライバシーポリシーは、お客様が本アプリをご利用になる際の情報の取り扱いについて説明します。`,
+    intro: `個人開発者のボグダン・ニキシン（以下「当社」）は、<strong>TaroTaper</strong>（以下「本アプリ」）を商用アプリケーションとして開発しました。本プライバシーポリシーは、お客様が本アプリをご利用になる際の情報の取り扱いについて説明します。`,
     sections: [
       {
         heading: `概要`,
@@ -465,7 +465,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   ko: {
     title: `개인정보 처리방침`,
     effectiveDate: `시행일: 2026년 2월 27일`,
-    intro: `NikiBStudio("당사", "우리" 또는 "저희")는 <strong>TaroTaper</strong>("본 앱")을 상업용 애플리케이션으로 개발했습니다. 본 개인정보 처리방침은 귀하가 본 앱을 사용할 때 정보를 어떻게 처리하는지 설명합니다.`,
+    intro: `독립 개발자 보그단 니키신("당사", "우리" 또는 "저희")은 <strong>TaroTaper</strong>("본 앱")을 상업용 애플리케이션으로 개발했습니다. 본 개인정보 처리방침은 귀하가 본 앱을 사용할 때 정보를 어떻게 처리하는지 설명합니다.`,
     sections: [
       {
         heading: `개요`,
@@ -529,7 +529,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   pt: {
     title: `Política de Privacidade`,
     effectiveDate: `Data de vigência: 27 de fevereiro de 2026`,
-    intro: `NikiBStudio ("nós", "nosso" ou "nos") desenvolveu o <strong>TaroTaper</strong> ("o Aplicativo") como um aplicativo comercial. Esta Política de Privacidade explica como tratamos as informações quando você utiliza nosso Aplicativo.`,
+    intro: `Bogdan Nikishin, desenvolvedor independente ("nós", "nosso" ou "nos"), desenvolveu o <strong>TaroTaper</strong> ("o Aplicativo") como um aplicativo comercial. Esta Política de Privacidade explica como tratamos as informações quando você utiliza nosso Aplicativo.`,
     sections: [
       {
         heading: `Visão geral`,
@@ -593,7 +593,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   ar: {
     title: `سياسة الخصوصية`,
     effectiveDate: `تاريخ السريان: 27 فبراير 2026`,
-    intro: `قام NikiBStudio ("نحن" أو "لنا") بتطوير <strong>TaroTaper</strong> ("التطبيق") كتطبيق تجاري. توضح سياسة الخصوصية هذه كيفية تعاملنا مع المعلومات عند استخدامك لتطبيقنا.`,
+    intro: `قام المطوّر المستقل بوغدان نيكيشين ("نحن" أو "لنا") بتطوير <strong>TaroTaper</strong> ("التطبيق") كتطبيق تجاري. توضح سياسة الخصوصية هذه كيفية تعاملنا مع المعلومات عند استخدامك لتطبيقنا.`,
     sections: [
       {
         heading: `نظرة عامة`,
@@ -657,7 +657,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   it: {
     title: `Informativa sulla privacy`,
     effectiveDate: `Data di entrata in vigore: 27 febbraio 2026`,
-    intro: `NikiBStudio ("noi", "nostro" o "ci") ha sviluppato <strong>TaroTaper</strong> ("l'App") come applicazione commerciale. La presente Informativa sulla privacy spiega come trattiamo le informazioni quando utilizzi la nostra App.`,
+    intro: `Bogdan Nikishin, sviluppatore indipendente ("noi", "nostro" o "ci"), ha sviluppato <strong>TaroTaper</strong> ("l'App") come applicazione commerciale. La presente Informativa sulla privacy spiega come trattiamo le informazioni quando utilizzi la nostra App.`,
     sections: [
       {
         heading: `Panoramica`,
@@ -721,7 +721,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   hi: {
     title: `गोपनीयता नीति`,
     effectiveDate: `प्रभावी तिथि: 27 फरवरी 2026`,
-    intro: `NikiBStudio ("हम", "हमारा" या "हमें") ने <strong>TaroTaper</strong> ("ऐप") को एक व्यावसायिक एप्लिकेशन के रूप में विकसित किया है। यह गोपनीयता नीति बताती है कि जब आप हमारे ऐप का उपयोग करते हैं तो हम जानकारी को कैसे संभालते हैं।`,
+    intro: `स्वतंत्र डेवलपर बोगदान निकिशिन ("हम", "हमारा" या "हमें") ने <strong>TaroTaper</strong> ("ऐप") को एक व्यावसायिक एप्लिकेशन के रूप में विकसित किया है। यह गोपनीयता नीति बताती है कि जब आप हमारे ऐप का उपयोग करते हैं तो हम जानकारी को कैसे संभालते हैं।`,
     sections: [
       {
         heading: `अवलोकन`,
@@ -785,7 +785,7 @@ export const tarotaperPrivacy: Record<string, PrivacyPolicy> = {
   he: {
     title: `מדיניות פרטיות`,
     effectiveDate: `תאריך תחילה: 27 בפברואר 2026`,
-    intro: `NikiBStudio ("אנחנו", "שלנו" או "אותנו") פיתחה את <strong>TaroTaper</strong> ("האפליקציה") כאפליקציה מסחרית. מדיניות פרטיות זו מסבירה כיצד אנו מטפלים במידע כאשר אתם משתמשים באפליקציה שלנו.`,
+    intro: `בוגדן ניקישין, מפתח עצמאי ("אנחנו", "שלנו" או "אותנו"), פיתח את <strong>TaroTaper</strong> ("האפליקציה") כאפליקציה מסחרית. מדיניות פרטיות זו מסבירה כיצד אנו מטפלים במידע כאשר אתם משתמשים באפליקציה שלנו.`,
     sections: [
       {
         heading: `סקירה כללית`,

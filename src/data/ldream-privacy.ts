@@ -9,7 +9,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   en: {
     title: `Privacy Policy`,
     effectiveDate: `Effective Date: October 5, 2026`,
-    intro: `NikiBStudio ("we", "our", or "us") built <strong>LDream</strong> ("the App") as a commercial application. This Privacy Policy explains what information the App handles, what stays on your device, and what is sent, where, and why when you use its optional AI features.`,
+    intro: `Bogdan Nikishin, an independent developer ("we", "our", or "us"), built <strong>LDream</strong> ("the App") as a commercial application. This Privacy Policy explains what information the App handles, what stays on your device, and what is sent, where, and why when you use its optional AI features.`,
     sections: [
       {
         heading: `Overview`,
@@ -96,7 +96,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   ru: {
     title: `Политика конфиденциальности`,
     effectiveDate: `Дата вступления в силу: 5 октября 2026 г.`,
-    intro: `NikiBStudio («мы», «наш» или «нас») разработала приложение <strong>LDream</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности объясняет, с какой информацией работает Приложение, что остаётся на вашем устройстве и что, куда и зачем отправляется, когда вы пользуетесь его необязательными функциями ИИ.`,
+    intro: `Богдан Никишин, независимый разработчик («мы», «наш» или «нас»), разработал приложение <strong>LDream</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности объясняет, с какой информацией работает Приложение, что остаётся на вашем устройстве и что, куда и зачем отправляется, когда вы пользуетесь его необязательными функциями ИИ.`,
     sections: [
       {
         heading: `Обзор`,
@@ -183,7 +183,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   de: {
     title: `Datenschutzrichtlinie`,
     effectiveDate: `Gültig ab: 5. Oktober 2026`,
-    intro: `NikiBStudio („wir“, „unser“ oder „uns“) hat <strong>LDream</strong> („die App“) als kommerzielle Anwendung entwickelt. Diese Datenschutzrichtlinie erklärt, welche Informationen die App verarbeitet, was auf Ihrem Gerät bleibt und was wohin und wozu gesendet wird, wenn Sie ihre optionalen KI-Funktionen nutzen.`,
+    intro: `Bogdan Nikishin, ein unabhängiger Entwickler („wir“, „unser“ oder „uns“), hat <strong>LDream</strong> („die App“) als kommerzielle Anwendung entwickelt. Diese Datenschutzrichtlinie erklärt, welche Informationen die App verarbeitet, was auf Ihrem Gerät bleibt und was wohin und wozu gesendet wird, wenn Sie ihre optionalen KI-Funktionen nutzen.`,
     sections: [
       {
         heading: `Überblick`,
@@ -270,7 +270,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   fr: {
     title: `Politique de confidentialité`,
     effectiveDate: `Date d'entrée en vigueur : 5 octobre 2026`,
-    intro: `NikiBStudio (« nous », « notre » ou « nos ») a développé <strong>LDream</strong> (« l'Application ») en tant qu'application commerciale. La présente Politique de confidentialité explique quelles informations l'Application traite, ce qui reste sur votre appareil, et ce qui est envoyé, où et pourquoi lorsque vous utilisez ses fonctions d'IA facultatives.`,
+    intro: `Bogdan Nikishin, développeur indépendant (« nous », « notre » ou « nos »), a développé <strong>LDream</strong> (« l'Application ») en tant qu'application commerciale. La présente Politique de confidentialité explique quelles informations l'Application traite, ce qui reste sur votre appareil, et ce qui est envoyé, où et pourquoi lorsque vous utilisez ses fonctions d'IA facultatives.`,
     sections: [
       {
         heading: `Aperçu`,
@@ -357,7 +357,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   es: {
     title: `Política de privacidad`,
     effectiveDate: `Fecha de vigencia: 5 de octubre de 2026`,
-    intro: `NikiBStudio ("nosotros", "nuestro" o "nos") ha desarrollado <strong>LDream</strong> ("la Aplicación") como una aplicación comercial. Esta Política de privacidad explica qué información trata la Aplicación, qué permanece en su dispositivo y qué se envía, adónde y por qué cuando utiliza sus funciones opcionales de IA.`,
+    intro: `Bogdan Nikishin, desarrollador independiente ("nosotros", "nuestro" o "nos"), ha desarrollado <strong>LDream</strong> ("la Aplicación") como una aplicación comercial. Esta Política de privacidad explica qué información trata la Aplicación, qué permanece en su dispositivo y qué se envía, adónde y por qué cuando utiliza sus funciones opcionales de IA.`,
     sections: [
       {
         heading: `Descripción general`,
@@ -444,7 +444,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   it: {
     title: `Informativa sulla privacy`,
     effectiveDate: `Data di entrata in vigore: 5 ottobre 2026`,
-    intro: `NikiBStudio ("noi", "nostro" o "ci") ha sviluppato <strong>LDream</strong> ("l'App") come applicazione commerciale. La presente Informativa sulla privacy spiega quali informazioni tratta l'App, cosa resta sul tuo dispositivo e cosa viene inviato, dove e perché quando usi le sue funzioni di IA facoltative.`,
+    intro: `Bogdan Nikishin, sviluppatore indipendente ("noi", "nostro" o "ci"), ha sviluppato <strong>LDream</strong> ("l'App") come applicazione commerciale. La presente Informativa sulla privacy spiega quali informazioni tratta l'App, cosa resta sul tuo dispositivo e cosa viene inviato, dove e perché quando usi le sue funzioni di IA facoltative.`,
     sections: [
       {
         heading: `Panoramica`,
@@ -531,7 +531,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   pt: {
     title: `Política de Privacidade`,
     effectiveDate: `Data de vigência: 5 de outubro de 2026`,
-    intro: `NikiBStudio ("nós", "nosso" ou "nos") desenvolveu o <strong>LDream</strong> ("o Aplicativo") como um aplicativo comercial. Esta Política de Privacidade explica quais informações o Aplicativo trata, o que fica no seu dispositivo e o que é enviado, para onde e por quê, quando você usa os recursos opcionais de IA.`,
+    intro: `Bogdan Nikishin, desenvolvedor independente ("nós", "nosso" ou "nos"), desenvolveu o <strong>LDream</strong> ("o Aplicativo") como um aplicativo comercial. Esta Política de Privacidade explica quais informações o Aplicativo trata, o que fica no seu dispositivo e o que é enviado, para onde e por quê, quando você usa os recursos opcionais de IA.`,
     sections: [
       {
         heading: `Visão geral`,
@@ -618,7 +618,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   ja: {
     title: `プライバシーポリシー`,
     effectiveDate: `発効日：2026年10月5日`,
-    intro: `NikiBStudio（「当社」、「私たち」）は、商用アプリケーションとして<strong>LDream</strong>（「本アプリ」）を開発しました。本プライバシーポリシーでは、本アプリが扱う情報、お客様のデバイスに残るもの、そして任意のAI機能をご利用の際に何がどこへ、なぜ送信されるのかを説明します。`,
+    intro: `個人開発者のボグダン・ニキシン（「当社」、「私たち」）は、商用アプリケーションとして<strong>LDream</strong>（「本アプリ」）を開発しました。本プライバシーポリシーでは、本アプリが扱う情報、お客様のデバイスに残るもの、そして任意のAI機能をご利用の際に何がどこへ、なぜ送信されるのかを説明します。`,
     sections: [
       {
         heading: `概要`,
@@ -705,7 +705,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   ko: {
     title: `개인정보 처리방침`,
     effectiveDate: `시행일: 2026년 10월 5일`,
-    intro: `NikiBStudio("당사", "우리" 또는 "저희")는 상용 애플리케이션으로 <strong>LDream</strong>("본 앱")을 개발했습니다. 본 개인정보 처리방침은 본 앱이 어떤 정보를 다루는지, 무엇이 귀하의 기기에 남는지, 그리고 선택 사항인 AI 기능을 사용할 때 무엇이 어디로, 왜 전송되는지 설명합니다.`,
+    intro: `독립 개발자 보그단 니키신("당사", "우리" 또는 "저희")은 상용 애플리케이션으로 <strong>LDream</strong>("본 앱")을 개발했습니다. 본 개인정보 처리방침은 본 앱이 어떤 정보를 다루는지, 무엇이 귀하의 기기에 남는지, 그리고 선택 사항인 AI 기능을 사용할 때 무엇이 어디로, 왜 전송되는지 설명합니다.`,
     sections: [
       {
         heading: `개요`,
@@ -792,7 +792,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   zh: {
     title: `隐私政策`,
     effectiveDate: `生效日期：2026年10月5日`,
-    intro: `NikiBStudio（"我们"或"我方"）开发了 <strong>LDream</strong>（"本应用"）作为商业应用程序。本隐私政策说明本应用处理哪些信息、哪些内容留在您的设备上，以及您使用可选的 AI 功能时，哪些内容会被发送、发送到哪里以及原因。`,
+    intro: `独立开发者波格丹·尼基申（"我们"或"我方"）开发了 <strong>LDream</strong>（"本应用"）作为商业应用程序。本隐私政策说明本应用处理哪些信息、哪些内容留在您的设备上，以及您使用可选的 AI 功能时，哪些内容会被发送、发送到哪里以及原因。`,
     sections: [
       {
         heading: `概述`,
@@ -879,7 +879,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   ar: {
     title: `سياسة الخصوصية`,
     effectiveDate: `تاريخ السريان: 5 أكتوبر 2026`,
-    intro: `قامت NikiBStudio ("نحن" أو "لنا" أو "خاصتنا") بتطوير <strong>LDream</strong> ("التطبيق") كتطبيق تجاري. توضح سياسة الخصوصية هذه المعلومات التي يتعامل معها التطبيق، وما يبقى على جهازك، وما يُرسل وإلى أين ولماذا عند استخدامك لميزات الذكاء الاصطناعي الاختيارية.`,
+    intro: `قام المطوّر المستقل بوغدان نيكيشين ("نحن" أو "لنا" أو "خاصتنا") بتطوير <strong>LDream</strong> ("التطبيق") كتطبيق تجاري. توضح سياسة الخصوصية هذه المعلومات التي يتعامل معها التطبيق، وما يبقى على جهازك، وما يُرسل وإلى أين ولماذا عند استخدامك لميزات الذكاء الاصطناعي الاختيارية.`,
     sections: [
       {
         heading: `نظرة عامة`,
@@ -966,7 +966,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   hi: {
     title: `गोपनीयता नीति`,
     effectiveDate: `प्रभावी तिथि: 5 अक्टूबर 2026`,
-    intro: `NikiBStudio ("हम", "हमारा" या "हमें") ने <strong>LDream</strong> ("ऐप") को एक वाणिज्यिक एप्लिकेशन के रूप में विकसित किया है। यह गोपनीयता नीति बताती है कि ऐप कौन-सी जानकारी संभालता है, क्या आपके डिवाइस पर रहता है, और जब आप इसकी वैकल्पिक AI सुविधाओं का उपयोग करते हैं तो क्या, कहाँ और क्यों भेजा जाता है।`,
+    intro: `स्वतंत्र डेवलपर बोगदान निकिशिन ("हम", "हमारा" या "हमें") ने <strong>LDream</strong> ("ऐप") को एक वाणिज्यिक एप्लिकेशन के रूप में विकसित किया है। यह गोपनीयता नीति बताती है कि ऐप कौन-सी जानकारी संभालता है, क्या आपके डिवाइस पर रहता है, और जब आप इसकी वैकल्पिक AI सुविधाओं का उपयोग करते हैं तो क्या, कहाँ और क्यों भेजा जाता है।`,
     sections: [
       {
         heading: `अवलोकन`,
@@ -1053,7 +1053,7 @@ export const ldreamPrivacy: Record<string, PrivacyPolicy> = {
   he: {
     title: `מדיניות פרטיות`,
     effectiveDate: `תאריך תחילה: 5 באוקטובר 2026`,
-    intro: `NikiBStudio ("אנחנו", "שלנו" או "אותנו") פיתחה את <strong>LDream</strong> ("האפליקציה") כאפליקציה מסחרית. מדיניות פרטיות זו מסבירה באיזה מידע האפליקציה מטפלת, מה נשאר במכשיר שלכם, ומה נשלח, לאן ולמה כשאתם משתמשים בתכונות הבינה המלאכותית האופציונליות שלה.`,
+    intro: `בוגדן ניקישין, מפתח עצמאי ("אנחנו", "שלנו" או "אותנו"), פיתח את <strong>LDream</strong> ("האפליקציה") כאפליקציה מסחרית. מדיניות פרטיות זו מסבירה באיזה מידע האפליקציה מטפלת, מה נשאר במכשיר שלכם, ומה נשלח, לאן ולמה כשאתם משתמשים בתכונות הבינה המלאכותית האופציונליות שלה.`,
     sections: [
       {
         heading: `סקירה כללית`,

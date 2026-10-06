@@ -6,7 +6,7 @@ export const alinePrivacy: Record<string, PrivacyPolicy> = {
   en: {
     title: `Privacy Policy`,
     effectiveDate: `Effective Date: June 11, 2026`,
-    intro: `NikiBStudio ("we", "our", or "us") built <strong>Aliner</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
+    intro: `Bogdan Nikishin, an independent developer ("we", "our", or "us"), built <strong>Aliner</strong> ("the App") as a commercial application. This Privacy Policy explains how we handle information when you use our App.`,
     sections: [
       {
         heading: `Overview`,
@@ -82,7 +82,7 @@ export const alinePrivacy: Record<string, PrivacyPolicy> = {
   ru: {
     title: `Политика конфиденциальности`,
     effectiveDate: `Дата вступления в силу: 11 июня 2026 г.`,
-    intro: `NikiBStudio («мы», «наш» или «нас») разработала приложение <strong>Aliner</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
+    intro: `Богдан Никишин, независимый разработчик («мы», «наш» или «нас»), разработал приложение <strong>Aliner</strong> («Приложение») как коммерческий продукт. Настоящая Политика конфиденциальности описывает, как мы обращаемся с информацией при использовании вами нашего Приложения.`,
     sections: [
       {
         heading: `Обзор`,
