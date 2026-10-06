@@ -21,7 +21,15 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://nikibstudio.site'),
   title: 'Bogdan Nikishin — iPhone apps',
   description: 'Small iPhone apps and games by Bogdan Nikishin: Bookpather, LDream, Aliner, ColorBrain, SwirlBall and Cozy Ball. No ads, no accounts.',
-  icons: { icon: '/favicon.svg', shortcut: '/favicon.svg', apple: '/apple-touch-icon.png' },
+  // ?v=2: browsers cache favicons hard; bump it when the icon changes
+  icons: {
+    icon: [
+      { url: '/favicon.ico?v=2', sizes: '48x48' },
+      { url: '/favicon.svg?v=2', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.png?v=2',
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: 'Bogdan Nikishin — iPhone apps',
     description: 'Small iPhone apps and games I make myself. No ads, no accounts.',
